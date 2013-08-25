@@ -7,59 +7,61 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  * @package   Zend_Service
  */
-
 namespace ZendService\Amazon\ProductAdvertising;
 
 use DOMDocument;
 use DOMXPath;
 
 /**
- * @category   Zend
- * @package    Zend_Service
+ *
+ * @category Zend
+ * @package Zend_Service
  * @subpackage Amazon
  */
 class ItemResultSet implements \SeekableIterator
 {
+
     /**
      * A DOMNodeList of <Item> elements
      *
      * @var \DOMNodeList
      */
-    protected $_results = null;
+    protected $results = null;
 
     /**
      * Amazon Web Service Return Document
      *
      * @var DOMDocument
      */
-    protected $_dom;
+    protected $dom;
 
     /**
      * XPath Object for $this->_dom
      *
      * @var DOMXPath
      */
-    protected $_xpath;
+    protected $xpath;
 
     /**
      * Current index for SeekableIterator
      *
      * @var int
      */
-    protected $_currentIndex = 0;
+    protected $currentIndex = 0;
 
     /**
      * Create an instance of Zend_Service_Amazon_ResultSet and create the necessary data objects
      *
-     * @param  DOMDocument $dom
+     * @param DOMDocument $dom
      * @return void
      */
     public function __construct(DOMDocument $dom)
     {
-        $this->_dom = $dom;
-        $this->_xpath = new DOMXPath($dom);
-        $this->_xpath->registerNamespace('az', 'http://webservices.amazon.com/AWSECommerceService/' . ProductAdvertising::getVersion());
-        $this->_results = $this->_xpath->query('//az:Item');
+        $this->dom = $dom;
+        $this->xpath = new DOMXPath($dom);
+        $this->xpath->registerNamespace('az',
+            'http://webservices.amazon.com/AWSECommerceService/' . ProductAdvertising::getVersion());
+        $this->results = $this->xpath->query('//az:Item');
     }
 
     /**
@@ -69,7 +71,7 @@ class ItemResultSet implements \SeekableIterator
      */
     public function totalResults()
     {
-        $result = $this->_xpath->query('//az:TotalResults/text()');
+        $result = $this->xpath->query('//az:TotalResults/text()');
 
         return (int) (isset($result->item(0)->data) ? $result->item(0)->data : 0);
     }
@@ -81,7 +83,7 @@ class ItemResultSet implements \SeekableIterator
      */
     public function totalPages()
     {
-        $result = $this->_xpath->query('//az:TotalPages/text()');
+        $result = $this->xpath->query('//az:TotalPages/text()');
 
         return (int) (isset($result->item(0)->data) ? $result->item(0)->data : 0);
     }
@@ -93,7 +95,7 @@ class ItemResultSet implements \SeekableIterator
      */
     public function current()
     {
-        $dom = $this->_results->item($this->_currentIndex);
+        $dom = $this->results->item($this->currentIndex);
         if ($dom === null) {
             throw new Exception\RuntimeException('no results found');
         }
@@ -108,7 +110,7 @@ class ItemResultSet implements \SeekableIterator
      */
     public function key()
     {
-        return $this->_currentIndex;
+        return $this->currentIndex;
     }
 
     /**
@@ -118,7 +120,7 @@ class ItemResultSet implements \SeekableIterator
      */
     public function next()
     {
-        $this->_currentIndex += 1;
+        $this->currentIndex++;
     }
 
     /**
@@ -128,21 +130,21 @@ class ItemResultSet implements \SeekableIterator
      */
     public function rewind()
     {
-        $this->_currentIndex = 0;
+        $this->currentIndex = 0;
     }
 
     /**
      * Implement SeekableIterator::seek()
      *
-     * @param  int                            $index
+     * @param int $index
      * @throws Exception\OutOfBoundsException
      * @return void
      */
     public function seek($index)
     {
         $indexInt = (int) $index;
-        if ($indexInt >= 0 && (null === $this->_results || $indexInt < $this->_results->length)) {
-            $this->_currentIndex = $indexInt;
+        if ($indexInt >= 0 && (null === $this->results || $indexInt < $this->results->length)) {
+            $this->currentIndex = $indexInt;
         } else {
             throw new Exception\OutOfBoundsException("Illegal index '$index'");
         }
@@ -155,6 +157,11 @@ class ItemResultSet implements \SeekableIterator
      */
     public function valid()
     {
-        return null !== $this->_results && $this->_currentIndex < $this->_results->length;
+        return null !== $this->results && $this->currentIndex < $this->results->length;
+    }
+
+    public function asXml()
+    {
+        return $this->dom->ownerDocument->saveXML($this->dom);
     }
 }

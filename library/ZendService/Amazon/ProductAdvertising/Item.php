@@ -13,7 +13,6 @@ namespace ZendService\Amazon\ProductAdvertising;
 use DOMElement;
 use DOMXPath;
 use ZendService\Amazon\ProductAdvertising\Item;
-use ZendService\Amazon\ProductAdvertising\Item\Image\ImageSet;
 
 /**
  * @category   Zend
@@ -78,9 +77,9 @@ class Item
     public $ImageSets;
 
     /**
-     * @var array CustomerReview
+     * @var CustomerReview
      */
-    public $CustomerReviews = array();
+    public $CustomerReviews;
 
     /**
      * @var array Of SimilarProduct
@@ -144,7 +143,7 @@ class Item
         }
 
         foreach (array('SmallImage', 'MediumImage', 'LargeImage') as $im) {
-            $result = $xpath->query("./az:ImageSets/az:ImageSet[position() = 1]/az:$im", $dom);
+            $result = $xpath->query("./az:$im", $dom);
             if ($result->length == 1) {
                 $this->$im = new Item\Image\Image($result->item(0));
             }
@@ -155,13 +154,9 @@ class Item
             $this->SalesRank = (int) $result->item(0)->data;
         }
 
-        $result = $xpath->query('./az:CustomerReviews/az:Review', $dom);
-        if ($result->length >= 1) {
-            foreach ($result as $review) {
-                $this->CustomerReviews[] = new Item\CustomerReview($review);
-            }
-            $this->AverageRating = (float) $xpath->query('./az:CustomerReviews/az:AverageRating/text()', $dom)->item(0)->data;
-            $this->TotalReviews = (int) $xpath->query('./az:CustomerReviews/az:TotalReviews/text()', $dom)->item(0)->data;
+        $result = $xpath->query('./az:CustomerReviews', $dom);
+        if ($result->length == 1) {
+            $this->CustomerReviews = new Item\CustomerReviews($result->item(0));
         }
 
         $result = $xpath->query('./az:EditorialReviews/az:*', $dom);

@@ -13,51 +13,27 @@ namespace ZendService\Amazon\ProductAdvertising\Item;
 use DOMElement;
 use DOMXPath;
 use ZendService\Amazon\ProductAdvertising\ProductAdvertising;
+use Zend\Uri\UriFactory;
 
 /**
  * @category   Zend
  * @package    Zend_Service
  * @subpackage Amazon
  */
-class CustomerReview
+class CustomerReviews
 {
     /**
-     * @var string
+     * @var Uri
      */
-    public $Rating;
+    public $IFrameURL;
 
     /**
-     * @var string
+     * @var boolean
      */
-    public $HelpfulVotes;
+    public $HasReviews;
 
     /**
-     * @var string
-     */
-    public $CustomerId;
-
-    /**
-     * @var string
-     */
-    public $TotalVotes;
-
-    /**
-     * @var string
-     */
-    public $Date;
-
-    /**
-     * @var string
-     */
-    public $Summary;
-
-    /**
-     * @var string
-     */
-    public $Content;
-
-    /**
-     * Assigns values to properties relevant to CustomerReview
+     * Assigns values to properties relevant to CustomerReviews
      *
      * @param DOMElement $dom
      */
@@ -65,11 +41,8 @@ class CustomerReview
     {
         $xpath = new DOMXPath($dom->ownerDocument);
         $xpath->registerNamespace('az', 'http://webservices.amazon.com/AWSECommerceService/' . ProductAdvertising::getVersion());
-        foreach (array('Rating', 'HelpfulVotes', 'CustomerId', 'TotalVotes', 'Date', 'Summary', 'Content') as $el) {
-            $result = $xpath->query("./az:$el/text()", $dom);
-            if ($result->length == 1) {
-                $this->$el = (string) $result->item(0)->data;
-            }
-        }
+
+        $this->IFrameURL = UriFactory::factory($xpath->query('./az:IFrameURL/text()', $dom)->item(0)->data);
+        $this->HasReviews = (boolean) $xpath->query('./az:IFrameURL/text()', $dom)->item(0)->data;
     }
 }

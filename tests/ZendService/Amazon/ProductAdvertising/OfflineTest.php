@@ -318,7 +318,7 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
         $result->current();
     }
 
-    public function testItemSetFromXml()
+    public function testImageSetFromXml()
     {
         $xml = file_get_contents(__DIR__ . ' /../_files/amazon-response-valid.xml');
         $dom = new \DOMDocument();
@@ -329,6 +329,18 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
 
         $this->assertInstanceOf('ZendService\Amazon\ProductAdvertising\Item\Image\ImageSet', $itemSets[0]);
         $this->assertInstanceOf('ZendService\Amazon\ProductAdvertising\Item\Image\Image', $itemSets[0]->LargeImage);
+    }
+
+    public function testCustomerReviewsFromXml()
+    {
+        $xml = file_get_contents(__DIR__ . ' /../_files/amazon-response-with-reviews.xml');
+        $dom = new \DOMDocument();
+        $dom->loadXML($xml);
+
+        $result = new ProductAdvertising\ItemResultSet($dom);
+        $customerReviews = $result->current()->CustomerReviews;
+
+        $this->assertInstanceOf('ZendService\Amazon\ProductAdvertising\Item\CustomerReview', $customerReviews);
     }
 
     /**

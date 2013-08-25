@@ -1,0 +1,415 @@
+<Item>
+    <ASIN>B006GWO5WK</ASIN>
+    <DetailPageURL>http://www.amazon.com/Amazon-Kindle-PowerFast-Accelerated-Charging/dp/B006GWO5WK%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB006GWO5WK</DetailPageURL>
+    <ItemLinks>
+        <ItemLink>
+            <Description>Technical Details</Description>
+            <URL>http://www.amazon.com/Amazon-Kindle-PowerFast-Accelerated-Charging/dp/tech-data/B006GWO5WK%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB006GWO5WK</URL>
+        </ItemLink>
+        <ItemLink>
+            <Description>Add To Baby Registry</Description>
+            <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB006GWO5WK%26SubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB006GWO5WK</URL>
+        </ItemLink>
+        <ItemLink>
+            <Description>Add To Wedding Registry</Description>
+            <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB006GWO5WK%26SubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB006GWO5WK</URL>
+        </ItemLink>
+        <ItemLink>
+            <Description>Add To Wishlist</Description>
+            <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB006GWO5WK%26SubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB006GWO5WK</URL>
+        </ItemLink>
+        <ItemLink>
+            <Description>Tell A Friend</Description>
+            <URL>http://www.amazon.com/gp/pdp/taf/B006GWO5WK%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB006GWO5WK</URL>
+        </ItemLink>
+        <ItemLink>
+            <Description>All Customer Reviews</Description>
+            <URL>http://www.amazon.com/review/product/B006GWO5WK%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB006GWO5WK</URL>
+        </ItemLink>
+        <ItemLink>
+            <Description>All Offers</Description>
+            <URL>http://www.amazon.com/gp/offer-listing/B006GWO5WK%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB006GWO5WK</URL>
+        </ItemLink>
+    </ItemLinks>
+    <SmallImage>
+        <URL>http://ecx.images-amazon.com/images/I/31DNwvAtHhL._SL75_.jpg</URL>
+        <Height Units="pixels">75</Height>
+        <Width Units="pixels">74</Width>
+    </SmallImage>
+    <MediumImage>
+        <URL>http://ecx.images-amazon.com/images/I/31DNwvAtHhL._SL160_.jpg</URL>
+        <Height Units="pixels">160</Height>
+        <Width Units="pixels">159</Width>
+    </MediumImage>
+    <LargeImage>
+        <URL>http://ecx.images-amazon.com/images/I/31DNwvAtHhL.jpg</URL>
+        <Height Units="pixels">500</Height>
+        <Width Units="pixels">496</Width>
+    </LargeImage>
+    <ImageSets>
+        <ImageSet Category="primary">
+            <SwatchImage>
+                <URL>http://ecx.images-amazon.com/images/I/31DNwvAtHhL._SL30_.jpg</URL>
+                <Height Units="pixels">30</Height>
+                <Width Units="pixels">30</Width>
+            </SwatchImage>
+            <SmallImage>
+                <URL>http://ecx.images-amazon.com/images/I/31DNwvAtHhL._SL75_.jpg</URL>
+                <Height Units="pixels">75</Height>
+                <Width Units="pixels">74</Width>
+            </SmallImage>
+            <ThumbnailImage>
+                <URL>http://ecx.images-amazon.com/images/I/31DNwvAtHhL._SL75_.jpg</URL>
+                <Height Units="pixels">75</Height>
+                <Width Units="pixels">74</Width>
+            </ThumbnailImage>
+            <TinyImage>
+                <URL>http://ecx.images-amazon.com/images/I/31DNwvAtHhL._SL110_.jpg</URL>
+                <Height Units="pixels">110</Height>
+                <Width Units="pixels">109</Width>
+            </TinyImage>
+            <MediumImage>
+                <URL>http://ecx.images-amazon.com/images/I/31DNwvAtHhL._SL160_.jpg</URL>
+                <Height Units="pixels">160</Height>
+                <Width Units="pixels">159</Width>
+            </MediumImage>
+            <LargeImage>
+                <URL>http://ecx.images-amazon.com/images/I/31DNwvAtHhL.jpg</URL>
+                <Height Units="pixels">500</Height>
+                <Width Units="pixels">496</Width>
+            </LargeImage>
+        </ImageSet>
+        <ImageSet Category="variant">
+            <SwatchImage>
+                <URL>http://ecx.images-amazon.com/images/I/31IQZEL8CQL._SL30_.jpg</URL>
+                <Height Units="pixels">29</Height>
+                <Width Units="pixels">30</Width>
+            </SwatchImage>
+            <SmallImage>
+                <URL>http://ecx.images-amazon.com/images/I/31IQZEL8CQL._SL75_.jpg</URL>
+                <Height Units="pixels">74</Height>
+                <Width Units="pixels">75</Width>
+            </SmallImage>
+            <ThumbnailImage>
+                <URL>http://ecx.images-amazon.com/images/I/31IQZEL8CQL._SL75_.jpg</URL>
+                <Height Units="pixels">74</Height>
+                <Width Units="pixels">75</Width>
+            </ThumbnailImage>
+            <TinyImage>
+                <URL>http://ecx.images-amazon.com/images/I/31IQZEL8CQL._SL110_.jpg</URL>
+                <Height Units="pixels">108</Height>
+                <Width Units="pixels">110</Width>
+            </TinyImage>
+            <MediumImage>
+                <URL>http://ecx.images-amazon.com/images/I/31IQZEL8CQL._SL160_.jpg</URL>
+                <Height Units="pixels">157</Height>
+                <Width Units="pixels">160</Width>
+            </MediumImage>
+            <LargeImage>
+                <URL>http://ecx.images-amazon.com/images/I/31IQZEL8CQL.jpg</URL>
+                <Height Units="pixels">491</Height>
+                <Width Units="pixels">500</Width>
+            </LargeImage>
+        </ImageSet>
+    </ImageSets>
+    <ItemAttributes>
+        <Binding>Accessory</Binding>
+        <Brand>Amazon</Brand>
+        <CatalogNumberList>
+            <CatalogNumberListElement>53-000136</CatalogNumberListElement>
+        </CatalogNumberList>
+        <Color>Black</Color>
+        <EAN>0814916017171</EAN>
+        <EANList>
+            <EANListElement>0814916017171</EANListElement>
+            <EANListElement>0639767206372</EANListElement>
+            <EANListElement>0639767206198</EANListElement>
+        </EANList>
+        <Feature>Official Amazon 9W, 1.8A adapter charges Kindle Fire HD 8.9" in under 5 hours, Kindle Fire HD 7" in under 4 hours, and Kindle Fire in under 3 hours</Feature>
+        <Feature>Also the approved charger for Kindle Paperwhite and Kindle; charges Kindle Paperwhite in 4 hours or less and Kindle in 3 hours or less</Feature>
+        <Feature>Optimized for Kindle tablets: PowerFast is a 9W charger and will charge your Kindle tablets faster than the white 5W Kindle charger will</Feature>
+        <Feature>For use with the black micro USB cable included with Kindle Fire and Kindle Fire HD and with the white USB cable included with Kindle Paperwhite and Kindle</Feature>
+        <Feature>Adapter's prongs conveniently fold for storage and travel</Feature>
+        <ItemDimensions>
+            <Weight Units="hundredths-pounds">10</Weight>
+        </ItemDimensions>
+        <Label>Amazon Digital Services, Inc</Label>
+        <ListPrice>
+            <Amount>1999</Amount>
+            <CurrencyCode>USD</CurrencyCode>
+            <FormattedPrice>$19.99</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Amazon Digital Services, Inc</Manufacturer>
+        <Model>53-000136</Model>
+        <MPN>53-000136</MPN>
+        <PackageDimensions>
+            <Height Units="hundredths-inches">110</Height>
+            <Length Units="hundredths-inches">350</Length>
+            <Weight Units="hundredths-pounds">10</Weight>
+            <Width Units="hundredths-inches">280</Width>
+        </PackageDimensions>
+        <PackageQuantity>1</PackageQuantity>
+        <PartNumber>53-000136</PartNumber>
+        <ProductGroup>Digital Device Accessory</ProductGroup>
+        <ProductTypeName>ABIS_ELECTRONICS</ProductTypeName>
+        <Publisher>Amazon Digital Services, Inc</Publisher>
+        <ReleaseDate>2012-09-14</ReleaseDate>
+        <Studio>Amazon Digital Services, Inc</Studio>
+        <Title>Amazon Kindle PowerFast for Accelerated Charging</Title>
+        <UPC>814916017171</UPC>
+        <UPCList>
+            <UPCListElement>814916017171</UPCListElement>
+            <UPCListElement>639767206198</UPCListElement>
+            <UPCListElement>639767206372</UPCListElement>
+        </UPCList>
+    </ItemAttributes>
+    <OfferSummary>
+        <LowestNewPrice>
+            <Amount>1999</Amount>
+            <CurrencyCode>USD</CurrencyCode>
+            <FormattedPrice>$19.99</FormattedPrice>
+        </LowestNewPrice>
+        <LowestUsedPrice>
+            <Amount>792</Amount>
+            <CurrencyCode>USD</CurrencyCode>
+            <FormattedPrice>$7.92</FormattedPrice>
+        </LowestUsedPrice>
+        <TotalNew>1</TotalNew>
+        <TotalUsed>8</TotalUsed>
+        <TotalCollectible>0</TotalCollectible>
+        <TotalRefurbished>0</TotalRefurbished>
+    </OfferSummary>
+    <Offers>
+        <TotalOffers>1</TotalOffers>
+        <TotalOfferPages>1</TotalOfferPages>
+        <MoreOffersUrl>http://www.amazon.com/gp/offer-listing/B006GWO5WK%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB006GWO5WK</MoreOffersUrl>
+        <Offer>
+            <Merchant>
+                <Name>Amazon.com</Name>
+            </Merchant>
+            <OfferAttributes>
+                <Condition>New</Condition>
+            </OfferAttributes>
+            <OfferListing>
+                <OfferListingId>8%2B7PUF%2FVnqqm9xQZmjDmJPAC9HW3rv8Zmr%2Beze3He%2Foeu7X8%2BlPAlzMUR1Nnrc5rWKyGfMW4cLONwUlJGfAAthLVkAjYhRt8Ckf0HfQIk%2F7W0s7P29xP3Q%3D%3D</OfferListingId>
+                <Price>
+                    <Amount>1999</Amount>
+                    <CurrencyCode>USD</CurrencyCode>
+                    <FormattedPrice>$19.99</FormattedPrice>
+                </Price>
+                <Availability>Usually ships in 24 hours</Availability>
+                <AvailabilityAttributes>
+                    <AvailabilityType>now</AvailabilityType>
+                    <MinimumHours>0</MinimumHours>
+                    <MaximumHours>0</MaximumHours>
+                </AvailabilityAttributes>
+                <IsEligibleForSuperSaverShipping>1</IsEligibleForSuperSaverShipping>
+            </OfferListing>
+        </Offer>
+    </Offers>
+    <CustomerReviews>
+        <IFrameURL>http://www.amazon.com/reviews/iframe?akid=AKIAIYRRDCJ2LLHWQ2RA&amp;alinkCode=xm2&amp;asin=B006GWO5WK&amp;atag=thebesuserev-20&amp;exp=2013-08-26T21%3A39%3A06Z&amp;truncate=0&amp;v=2&amp;sig=ggqOo4AT9uu1ulM%2BTO5t7oCdZC3Svet7Pnpk9jynVC8%3D</IFrameURL>
+        <HasReviews>true</HasReviews>
+    </CustomerReviews>
+    <SimilarProducts>
+        <SimilarProduct>
+            <ASIN>B006GWO5NE</ASIN>
+            <Title>Amazon Kindle Fire 5ft USB to Micro-USB Cable (works with most Micro-USB Tablets)</Title>
+        </SimilarProduct>
+        <SimilarProduct>
+            <ASIN>B0083PWAPW</ASIN>
+            <Title>Kindle Fire HD 7", Dolby Audio, Dual-Band Wi-Fi, 16 GB - Includes Special Offers</Title>
+        </SimilarProduct>
+        <SimilarProduct>
+            <ASIN>B008GFRE5A</ASIN>
+            <Title>Kindle Fire HD 8.9", Dolby Audio, Dual-Band Wi-Fi, 16 GB - Includes Special Offers</Title>
+        </SimilarProduct>
+        <SimilarProduct>
+            <ASIN>B008GGH4FY</ASIN>
+            <Title>Amazon Kindle Fire HD 7" Standing Leather Case, Onyx Black (will only fit Kindle Fire HD 7")</Title>
+        </SimilarProduct>
+        <SimilarProduct>
+            <ASIN>B00902SFC4</ASIN>
+            <Title>Marware Capacitive Stylus for Kindle Fire, Fire HD, and Kindle Paperwhite, Black</Title>
+        </SimilarProduct>
+    </SimilarProducts>
+    <BrowseNodes>
+        <BrowseNode>
+            <BrowseNodeId>2516700011</BrowseNodeId>
+            <Name>Chargers &amp; Adapters</Name>
+            <Ancestors>
+                <BrowseNode>
+                    <BrowseNodeId>2348628011</BrowseNodeId>
+                    <Name>Touch Screen Tablet Accessories</Name>
+                    <Ancestors>
+                        <BrowseNode>
+                            <BrowseNodeId>541966</BrowseNodeId>
+                            <Name>Computers &amp; Accessories</Name>
+                            <Ancestors>
+                                <BrowseNode>
+                                    <BrowseNodeId>493964</BrowseNodeId>
+                                    <Name>Categories</Name>
+                                    <IsCategoryRoot>1</IsCategoryRoot>
+                                    <Ancestors>
+                                        <BrowseNode>
+                                            <BrowseNodeId>172282</BrowseNodeId>
+                                            <Name>Electronics</Name>
+                                        </BrowseNode>
+                                    </Ancestors>
+                                </BrowseNode>
+                            </Ancestors>
+                        </BrowseNode>
+                    </Ancestors>
+                </BrowseNode>
+            </Ancestors>
+        </BrowseNode>
+        <BrowseNode>
+            <BrowseNodeId>2642132011</BrowseNodeId>
+            <Name>Power Adapters</Name>
+            <Ancestors>
+                <BrowseNode>
+                    <BrowseNodeId>2642125011</BrowseNodeId>
+                    <Name>eBook Readers &amp; Accessories</Name>
+                    <Ancestors>
+                        <BrowseNode>
+                            <BrowseNodeId>493964</BrowseNodeId>
+                            <Name>Categories</Name>
+                            <IsCategoryRoot>1</IsCategoryRoot>
+                            <Ancestors>
+                                <BrowseNode>
+                                    <BrowseNodeId>172282</BrowseNodeId>
+                                    <Name>Electronics</Name>
+                                </BrowseNode>
+                            </Ancestors>
+                        </BrowseNode>
+                    </Ancestors>
+                </BrowseNode>
+            </Ancestors>
+        </BrowseNode>
+        <BrowseNode>
+            <BrowseNodeId>3013584011</BrowseNodeId>
+            <Name>Kindle Fire Power Adapters</Name>
+            <Ancestors>
+                <BrowseNode>
+                    <BrowseNodeId>1289282011</BrowseNodeId>
+                    <Name>Power Adapters</Name>
+                    <Ancestors>
+                        <BrowseNode>
+                            <BrowseNodeId>370783011</BrowseNodeId>
+                            <Name>Kindle Accessories</Name>
+                            <Ancestors>
+                                <BrowseNode>
+                                    <BrowseNodeId>133141011</BrowseNodeId>
+                                    <Name>Categories</Name>
+                                    <IsCategoryRoot>1</IsCategoryRoot>
+                                    <Ancestors>
+                                        <BrowseNode>
+                                            <BrowseNodeId>133140011</BrowseNodeId>
+                                            <Name>Kindle Store</Name>
+                                        </BrowseNode>
+                                    </Ancestors>
+                                </BrowseNode>
+                            </Ancestors>
+                        </BrowseNode>
+                    </Ancestors>
+                </BrowseNode>
+            </Ancestors>
+        </BrowseNode>
+        <BrowseNode>
+            <BrowseNodeId>5499853011</BrowseNodeId>
+            <Name>Kindle Fire HD 7" Power Adapters</Name>
+            <Ancestors>
+                <BrowseNode>
+                    <BrowseNodeId>1289282011</BrowseNodeId>
+                    <Name>Power Adapters</Name>
+                    <Ancestors>
+                        <BrowseNode>
+                            <BrowseNodeId>370783011</BrowseNodeId>
+                            <Name>Kindle Accessories</Name>
+                            <Ancestors>
+                                <BrowseNode>
+                                    <BrowseNodeId>133141011</BrowseNodeId>
+                                    <Name>Categories</Name>
+                                    <IsCategoryRoot>1</IsCategoryRoot>
+                                    <Ancestors>
+                                        <BrowseNode>
+                                            <BrowseNodeId>133140011</BrowseNodeId>
+                                            <Name>Kindle Store</Name>
+                                        </BrowseNode>
+                                    </Ancestors>
+                                </BrowseNode>
+                            </Ancestors>
+                        </BrowseNode>
+                    </Ancestors>
+                </BrowseNode>
+            </Ancestors>
+        </BrowseNode>
+        <BrowseNode>
+            <BrowseNodeId>5499854011</BrowseNodeId>
+            <Name>Kindle Fire HD 8.9" Power Adapters</Name>
+            <Ancestors>
+                <BrowseNode>
+                    <BrowseNodeId>1289282011</BrowseNodeId>
+                    <Name>Power Adapters</Name>
+                    <Ancestors>
+                        <BrowseNode>
+                            <BrowseNodeId>370783011</BrowseNodeId>
+                            <Name>Kindle Accessories</Name>
+                            <Ancestors>
+                                <BrowseNode>
+                                    <BrowseNodeId>133141011</BrowseNodeId>
+                                    <Name>Categories</Name>
+                                    <IsCategoryRoot>1</IsCategoryRoot>
+                                    <Ancestors>
+                                        <BrowseNode>
+                                            <BrowseNodeId>133140011</BrowseNodeId>
+                                            <Name>Kindle Store</Name>
+                                        </BrowseNode>
+                                    </Ancestors>
+                                </BrowseNode>
+                            </Ancestors>
+                        </BrowseNode>
+                    </Ancestors>
+                </BrowseNode>
+            </Ancestors>
+        </BrowseNode>
+        <BrowseNode>
+            <BrowseNodeId>1288264011</BrowseNodeId>
+            <Name>All Products</Name>
+            <Ancestors>
+                <BrowseNode>
+                    <BrowseNodeId>1267878011</BrowseNodeId>
+                    <Name>Products</Name>
+                    <IsCategoryRoot>1</IsCategoryRoot>
+                    <Ancestors>
+                        <BrowseNode>
+                            <BrowseNodeId>1267877011</BrowseNodeId>
+                        </BrowseNode>
+                    </Ancestors>
+                </BrowseNode>
+            </Ancestors>
+        </BrowseNode>
+        <BrowseNode>
+            <BrowseNodeId>6809983011</BrowseNodeId>
+            <Name>Kindle Accessories</Name>
+            <Ancestors>
+                <BrowseNode>
+                    <BrowseNodeId>4538815011</BrowseNodeId>
+                    <Name>Kindle</Name>
+                    <Ancestors>
+                        <BrowseNode>
+                            <BrowseNodeId>1267878011</BrowseNodeId>
+                            <Name>Products</Name>
+                            <IsCategoryRoot>1</IsCategoryRoot>
+                            <Ancestors>
+                                <BrowseNode>
+                                    <BrowseNodeId>1267877011</BrowseNodeId>
+                                </BrowseNode>
+                            </Ancestors>
+                        </BrowseNode>
+                    </Ancestors>
+                </BrowseNode>
+            </Ancestors>
+        </BrowseNode>
+    </BrowseNodes>
+</Item>
