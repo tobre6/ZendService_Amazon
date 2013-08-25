@@ -8,13 +8,14 @@
  * @package   Zend_Service
  */
 
-namespace ZendService\Amazon\Exception;
+namespace ZendService\Amazon\ProductAdvertising\Exception;
 
+use ZendService\Amazon\Exception as AmazonException;
 /**
  * @category   Zend
  * @package    Zend_Service
  * @subpackage Amazon
  */
-class OutOfBoundsException extends \OutOfBoundsException implements ExceptionInterface
+class RuntimeException extends AmazonException\RuntimeException implements AmazonException\ExceptionInterface
 {
 }

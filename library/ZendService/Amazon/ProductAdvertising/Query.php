@@ -8,14 +8,14 @@
  * @package   Zend_Service
  */
 
-namespace ZendService\Amazon;
+namespace ZendService\Amazon\ProductAdvertising;
 
 /**
  * @category   Zend
  * @package    Zend_Service
  * @subpackage Amazon
  */
-class Query extends Amazon
+class Query extends ProductAdvertising
 {
     /**
      * Search parameters

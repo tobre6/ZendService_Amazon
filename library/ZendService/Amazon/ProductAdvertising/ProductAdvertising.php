@@ -8,7 +8,7 @@
  * @package   Zend_Service
  */
 
-namespace ZendService\Amazon;
+namespace ZendService\Amazon\ProductAdvertising;
 
 use DOMDocument;
 use DOMXPath;
@@ -19,12 +19,12 @@ use ZendService\Amazon\Exception;
 /**
  * @category   Zend
  * @package    Zend_Service
- * @subpackage Amazon
+ * @subpackage ProductAdvertising
  */
-class Amazon
+class ProductAdvertising
 {
     /**
-     * Amazon Web Services Access Key ID
+     * ProductAdvertising Web Services Access Key ID
      *
      * @var string
      */
@@ -33,7 +33,12 @@ class Amazon
     /**
      * @var string
      */
-    protected $_secretKey = null;
+    protected $secretKey;
+    
+    /**
+     * @var string
+     */
+    protected $associateTag;
 
     /**
      * API Version
@@ -45,14 +50,14 @@ class Amazon
     /**
      * @var string
      */
-    protected $_baseUri = null;
+    protected $baseUri;
 
     /**
-     * List of Amazon Web Service base URLs, indexed by country code
+     * List of ProductAdvertising Web Service base URLs, indexed by country code
      *
      * @var array
      */
-    protected $_baseUriList = array('US' => 'http://webservices.amazon.com',
+    protected $baseUriList = array('US' => 'http://webservices.amazon.com',
                                     'UK' => 'http://webservices.amazon.co.uk',
                                     'DE' => 'http://webservices.amazon.de',
                                     'JP' => 'http://webservices.amazon.co.jp',
@@ -64,33 +69,34 @@ class Amazon
      *
      * @var RestClient
      */
-    protected $_rest = null;
+    protected $rest;
 
 
     /**
-     * Constructs a new Amazon Web Services Client
+     * Constructs a new ProductAdvertising Web Services Client
      *
-     * @param  string $accessKeyId       Developer's Amazon accessKeyId
-     * @param  string $countryCode Country code for Amazon service; may be US, UK, DE, JP, FR, CA
+     * @param  string $accessKeyId       Developer's ProductAdvertising accessKeyId
+     * @param  string $countryCode Country code for ProductAdvertising service; may be US, UK, DE, JP, FR, CA
      * @param  string $secretKey   API Secret Key
      * @param  string $version     API Version to use
      * @throws Exception\InvalidArgumentException
-     * @return Amazon
+     * @return ProductAdvertising
      */
-    public function __construct($accessKeyId, $countryCode = 'US', $secretKey = null, $version = null)
+    public function __construct($accessKeyId, $secretKey = null, $associateTag = null, $countryCode = 'US', $version = null)
     {
         $this->accessKeyId = (string) $accessKeyId;
-        $this->_secretKey = $secretKey;
+        $this->secretKey = $secretKey;
+        $this->associateTag = $associateTag;
 
         if (!is_null($version))
             self::setVersion($version);
 
         $countryCode = (string) $countryCode;
-        if (!isset($this->_baseUriList[$countryCode])) {
+        if (!isset($this->baseUriList[$countryCode])) {
             throw new Exception\InvalidArgumentException("Unknown country code: $countryCode");
         }
 
-        $this->_baseUri = $this->_baseUriList[$countryCode];
+        $this->baseUri = $this->baseUriList[$countryCode];
     }
 
 
@@ -105,10 +111,10 @@ class Amazon
     public function itemSearch(array $options)
     {
         $client = $this->getRestClient();
-        $client->setUri($this->_baseUri);
+        $client->setUri($this->baseUri);
 
         $defaultOptions = array('ResponseGroup' => 'Small');
-        $options = $this->_prepareOptions('ItemSearch', $options, $defaultOptions);
+        $options = $this->prepareOptions('ItemSearch', $options, $defaultOptions);
         $client->getHttpClient()->resetParameters();
         $response = $client->restGet('/onca/xml', $options);
 
@@ -119,7 +125,7 @@ class Amazon
 
         $dom = new DOMDocument();
         $dom->loadXML($response->getBody());
-        self::_checkErrors($dom);
+        self::checkErrors($dom);
 
         return new ResultSet($dom);
     }
@@ -128,7 +134,7 @@ class Amazon
     /**
      * Look up item(s) by ASIN
      *
-     * @param  string $asin    Amazon ASIN ID
+     * @param  string $asin    ProductAdvertising ASIN ID
      * @param  array  $options Query Options
      * @see http://www.amazon.com/gp/aws/sdk/main.html/102-9041115-9057709?s=AWSEcommerceService&v=2011-08-01&p=ApiReference/ItemLookupOperation
      * @throws Exception\RuntimeException
@@ -137,12 +143,12 @@ class Amazon
     public function itemLookup($asin, array $options = array())
     {
         $client = $this->getRestClient();
-        $client->setUri($this->_baseUri);
+        $client->setUri($this->baseUri);
         $client->getHttpClient()->resetParameters();
 
         $defaultOptions = array('ResponseGroup' => 'Small');
         $options['ItemId'] = (string) $asin;
-        $options = $this->_prepareOptions('ItemLookup', $options, $defaultOptions);
+        $options = $this->prepareOptions('ItemLookup', $options, $defaultOptions);
         $response = $client->restGet('/onca/xml', $options);
 
         if ($response->isClientError()) {
@@ -153,7 +159,7 @@ class Amazon
 
         $dom = new DOMDocument();
         $dom->loadXML($response->getBody());
-        self::_checkErrors($dom);
+        self::checkErrors($dom);
         $xpath = new DOMXPath($dom);
         $xpath->registerNamespace('az', 'http://webservices.amazon.com/AWSECommerceService/' . self::getVersion());
         $items = $xpath->query('//az:Items/az:Item');
@@ -173,21 +179,21 @@ class Amazon
      */
     public function getRestClient()
     {
-        if($this->_rest === null) {
-            $this->_rest = new RestClient();
+        if($this->rest === null) {
+            $this->rest = new RestClient();
         }
-        return $this->_rest;
+        return $this->rest;
     }
 
     /**
      * Set REST client
      *
      * @param RestClient $client
-     * @return Amazon
+     * @return ProductAdvertising
      */
     public function setRestClient(RestClient $client)
     {
-        $this->_rest = $client;
+        $this->rest = $client;
         return $this;
     }
 
@@ -200,12 +206,13 @@ class Amazon
      * @param  array  $defaultOptions Default options
      * @return array
      */
-    protected function _prepareOptions($query, array $options, array $defaultOptions)
+    protected function prepareOptions($query, array $options, array $defaultOptions)
     {
         $options['AWSAccessKeyId'] = $this->accessKeyId;
         $options['Service']        = 'AWSECommerceService';
         $options['Operation']      = (string) $query;
         $options['Version']        = self::getVersion();
+        $options['AssociateTag']   = $this->associateTag;
 
         // de-canonicalize out sort key
         if (isset($options['ResponseGroup'])) {
@@ -219,17 +226,17 @@ class Amazon
 
         $options = array_merge($defaultOptions, $options);
 
-        if($this->_secretKey !== null) {
+        if($this->secretKey !== null) {
             $options['Timestamp'] = gmdate("Y-m-d\TH:i:s\Z");
             ksort($options);
-            $options['Signature'] = self::computeSignature($this->_baseUri, $this->_secretKey, $options);
+            $options['Signature'] = self::computeSignature($this->baseUri, $this->secretKey, $options);
         }
 
         return $options;
     }
 
     /**
-     * Compute Signature for Authentication with Amazon Product Advertising Webservices
+     * Compute Signature for Authentication with ProductAdvertising Product Advertising Webservices
      *
      * @param  string $baseUri
      * @param  string $secretKey
@@ -254,14 +261,10 @@ class Amazon
     public static function buildRawSignature($baseUri, $options)
     {
         ksort($options);
-        $params = array();
-        foreach($options AS $k => $v) {
-            $params[] = $k."=".rawurlencode($v);
-        }
 
-        return sprintf("GET\n%s\n/onca/xml\n%s",
+        return sprintf("GET" . PHP_EOL . "%s" . PHP_EOL . "/onca/xml" . PHP_EOL . "%s",
             str_replace('http://', '', $baseUri),
-            implode("&", $params)
+            http_build_query($options, '', '&', PHP_QUERY_RFC3986)
         );
     }
 
@@ -273,7 +276,7 @@ class Amazon
      * @throws Exception\RuntimeException
      * @return void
      */
-    protected static function _checkErrors(DOMDocument $dom)
+    protected static function checkErrors(DOMDocument $dom)
     {
         $xpath = new DOMXPath($dom);
         $xpath->registerNamespace('az', 'http://webservices.amazon.com/AWSECommerceService/' . self::getVersion());
@@ -292,7 +295,7 @@ class Amazon
     }
 
     /**
-     * Set the Amazon API version
+     * Set the ProductAdvertising API version
      *
      * @static
      * @param string $version API Version
@@ -306,7 +309,7 @@ class Amazon
     }
 
     /**
-     * Return the Amazon API version
+     * Return the ProductAdvertising API version
      *
      * @static
      * @return string

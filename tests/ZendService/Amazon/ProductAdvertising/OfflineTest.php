@@ -8,9 +8,9 @@
  * @package   Zend_Service
  */
 
-namespace ZendServiceTest\Amazon;
+namespace ZendServiceTest\Amazon\ProductAdvertising;
 
-use ZendService\Amazon,
+use ZendService\Amazon\ProductAdvertising,
     Zend\Http\Client\Adapter\Test as HttpClientAdapter;
 
 /**
@@ -45,7 +45,11 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
      */
     public function setUp()
     {
-        $this->amazon = new Amazon\Amazon(constant('TESTS_ZEND_SERVICE_AMAZON_ONLINE_ACCESSKEYID'));
+        $this->amazon = new ProductAdvertising\ProductAdvertising(
+        	TESTS_ZEND_SERVICE_AMAZON_ONLINE_ACCESSKEYID,
+        	TESTS_ZEND_SERVICE_AMAZON_ONLINE_SECRETKEY,
+        	TESTS_ZEND_SERVICE_AMAZON_ONLINE_ASSOCIATE_TAG
+        );
 
         $this->httpClientTestAdapter = new HttpClientAdapter();
     }
@@ -61,7 +65,12 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
             'ZendService\Amazon\Exception\InvalidArgumentException',
             'Unknown country code: oops'
         );
-        $amazon = new Amazon\Amazon(constant('TESTS_ZEND_SERVICE_AMAZON_ONLINE_ACCESSKEYID'), 'oops');
+        $amazon = new ProductAdvertising\ProductAdvertising(
+        	TESTS_ZEND_SERVICE_AMAZON_ONLINE_ACCESSKEYID,
+        	TESTS_ZEND_SERVICE_AMAZON_ONLINE_SECRETKEY,
+        	TESTS_ZEND_SERVICE_AMAZON_ONLINE_ASSOCIATE_TAG,
+         	'oops'
+        );
     }
 
     /**
@@ -69,7 +78,7 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
      */
     public function testMozardSearchFromFile()
     {
-        $xml = file_get_contents(__DIR__."/_files/mozart_result.xml");
+        $xml = file_get_contents(__DIR__ . '/../_files/mozart_result.xml');
         $dom = new \DOMDocument();
         $dom->loadXML($xml);
 
@@ -86,7 +95,7 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
             'B00004SA87' => '42',
         );
 
-        $result = new Amazon\ResultSet($dom);
+        $result = new ProductAdvertising\ResultSet($dom);
 
         foreach($result AS $item) {
             $trackCount = $mozartTracks[$item->ASIN];
@@ -100,11 +109,11 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
     public function testSimilarProductConstructorMissingAttributeDoesNotThrowNotice()
     {
         $dom = new \DOMDocument();
-        $asin = $dom->createElement("ASIN", "TEST");
-        $product = $dom->createElement("product");
+        $asin = $dom->createElement('ASIN', 'TEST');
+        $product = $dom->createElement('product');
         $product->appendChild($asin);
 
-        $similarproduct = new Amazon\SimilarProduct($product);
+        $similarproduct = new ProductAdvertising\SimilarProduct($product);
     }
 
     /**
@@ -112,7 +121,7 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
      */
     public function testFullOffersFromFile()
     {
-        $xml = file_get_contents(__DIR__."/_files/offers_with_names.xml");
+        $xml = file_get_contents(__DIR__ . '/../_files/offers_with_names.xml');
         $dom = new \DOMDocument();
         $dom->loadXML($xml);
 
@@ -207,7 +216,7 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
             ),
         );
 
-        $result = new Amazon\ResultSet($dom);
+        $result = new ProductAdvertising\ResultSet($dom);
 
         foreach($result AS $item) {
             $data = $dataExpected[$item->ASIN];
@@ -232,13 +241,13 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
                     'Version' => '2009-01-06',
                     'Timestamp' => '2009-01-01T12:00:00Z',
                 ),
-                "GET\n".
-                "webservices.amazon.com\n".
-                "/onca/xml\n".
-                "AWSAccessKeyId=00000000000000000000&ItemId=0679722769&Operation=I".
-                "temLookup&ResponseGroup=ItemAttributes%2COffers%2CImages%2CReview".
-                "s&Service=AWSECommerceService&Timestamp=2009-01-01T12%3A00%3A00Z&".
-                "Version=2009-01-06",
+                'GET'. PHP_EOL .
+                'webservices.amazon.com'. PHP_EOL .
+                '/onca/xml'. PHP_EOL . 
+                'AWSAccessKeyId=00000000000000000000&ItemId=0679722769&Operation=I'.
+                'temLookup&ResponseGroup=ItemAttributes%2COffers%2CImages%2CReview'.
+                's&Service=AWSECommerceService&Timestamp=2009-01-01T12%3A00%3A00Z&'.
+                'Version=2009-01-06',
                 'Nace%2BU3Az4OhN7tISqgs1vdLBHBEijWcBeCqL5xN9xg%3D'
             ),
             array(
@@ -255,14 +264,14 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
                     'AssociateTag' => 'mytag-20',
                     'Timestamp' => '2009-01-01T12:00:00Z',
                 ),
-                "GET\n".
-                "ecs.amazonaws.co.uk\n".
-                "/onca/xml\n".
-                "AWSAccessKeyId=00000000000000000000&Actor=Johnny%20Depp&Associate".
-                "Tag=mytag-20&Operation=ItemSearch&ResponseGroup=ItemAttributes%2C".
-                "Offers%2CImages%2CReviews%2CVariations&SearchIndex=DVD&Service=AW".
-                "SECommerceService&Sort=salesrank&Timestamp=2009-01-01T12%3A00%3A0".
-                "0Z&Version=2009-01-01",
+                'GET' . PHP_EOL .
+                'ecs.amazonaws.co.uk'. PHP_EOL .
+                '/onca/xml'. PHP_EOL .
+                'AWSAccessKeyId=00000000000000000000&Actor=Johnny%20Depp&Associate'.
+                'Tag=mytag-20&Operation=ItemSearch&ResponseGroup=ItemAttributes%2C'.
+                'Offers%2CImages%2CReviews%2CVariations&SearchIndex=DVD&Service=AW'.
+                'SECommerceService&Sort=salesrank&Timestamp=2009-01-01T12%3A00%3A0'.
+                '0Z&Version=2009-01-01',
                 'TuM6E5L9u%2FuNqOX09ET03BXVmHLVFfJIna5cxXuHxiU%3D',
             ),
         );
@@ -278,12 +287,12 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
     {
         $this->assertEquals(
             $expectedStringToSign,
-            Amazon\Amazon::buildRawSignature($baseUri, $params)
+            ProductAdvertising\ProductAdvertising::buildRawSignature($baseUri, $params)
         );
 
         $this->assertEquals(
             $expectedSignature,
-            rawurlencode(Amazon\Amazon::computeSignature(
+            rawurlencode(ProductAdvertising\ProductAdvertising::computeSignature(
                 $baseUri, '1234567890', $params
             ))
         );
@@ -297,17 +306,17 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
      */
     public function testAmazonComponentHandlesValidBookResults()
     {
-        $xml = file_get_contents(__DIR__."/_files/amazon-response-valid.xml");
+        $xml = file_get_contents(__DIR__ . '/../_files/amazon-response-valid.xml');
         $dom = new \DOMDocument();
         $dom->loadXML($xml);
 
-        $result = new Amazon\ResultSet($dom);
+        $result = new ProductAdvertising\ResultSet($dom);
 
         $currentItem = null;
 
         $currentItem = $result->current();
 
-        $this->assertInstanceOf('ZendService\Amazon\Item', $currentItem);
+        $this->assertInstanceOf('ZendService\Amazon\ProductAdvertising\Item', $currentItem);
         $this->assertEquals('0754512673', $currentItem->ASIN);
     }
 
@@ -319,11 +328,11 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
      */
     public function testAmazonComponentHandlesEmptyBookResults()
     {
-        $xml = file_get_contents(__DIR__."/_files/amazon-response-invalid.xml");
+        $xml = file_get_contents(__DIR__. ' /../_files/amazon-response-invalid.xml');
         $dom = new \DOMDocument();
         $dom->loadXML($xml);
 
-        $result = new Amazon\ResultSet($dom);
+        $result = new ProductAdvertising\ResultSet($dom);
 
         $this->setExpectedException('ZendService\Amazon\Exception\ExceptionInterface');
         $result->current();
@@ -334,11 +343,11 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
      */
     public function testNoticeErrorDoesNotHappenInTotalResults()
     {
-        $xml = file_get_contents(__DIR__ . '/_files/amazon-response-request-throttled-error.xml');
+        $xml = file_get_contents(__DIR__ . '/../_files/amazon-response-request-throttled-error.xml');
         $dom = new \DOMDocument();
         $dom->loadXML($xml);
 
-        $result = new Amazon\ResultSet($dom);
+        $result = new ProductAdvertising\ResultSet($dom);
 
         try {
             $result->totalResults();
@@ -352,11 +361,11 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
      */
     public function testNoticeErrorDoesNotHappenInTotalPages()
     {
-        $xml = file_get_contents(__DIR__ . '/_files/amazon-response-request-throttled-error.xml');
+        $xml = file_get_contents(__DIR__ . '/../_files/amazon-response-request-throttled-error.xml');
         $dom = new \DOMDocument();
         $dom->loadXML($xml);
 
-        $result = new Amazon\ResultSet($dom);
+        $result = new ProductAdvertising\ResultSet($dom);
 
         try {
             $result->totalPages();

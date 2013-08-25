@@ -41,8 +41,8 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
      */
     public function setUp()
     {
-        if (!constant('TESTS_ZEND_SERVICE_AMAZON_ONLINE_ENABLED')) {
-            $this->markTestSkipped('Zend_Service_Amazon online tests are not enabled');
+        if (!TESTS_ZEND_SERVICE_AMAZON_ONLINE_SQS_ENABLED) {
+            $this->markTestSkipped('Zend_Service_Amazon SQS online tests are not enabled');
         }
         $this->_amazon = new \ZendService\Amazon\Sqs\Sqs(
             constant('TESTS_ZEND_SERVICE_AMAZON_ONLINE_ACCESSKEYID'),
@@ -95,7 +95,7 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
      */
     public function tearDown()
     {
-        if (!constant('TESTS_ZEND_SERVICE_AMAZON_ONLINE_ENABLED')) {
+        if (!TESTS_ZEND_SERVICE_AMAZON_ONLINE_SQS_ENABLED) {
             return;
         }
         unset($this->_amazon);

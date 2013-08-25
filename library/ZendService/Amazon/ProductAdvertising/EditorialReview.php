@@ -8,10 +8,9 @@
  * @package   Zend_Service
  */
 
-namespace ZendService\Amazon;
+namespace ZendService\Amazon\ProductAdvertising;
 
 use DOMElement;
-use DOMText;
 use DOMXPath;
 
 /**
@@ -19,32 +18,29 @@ use DOMXPath;
  * @package    Zend_Service
  * @subpackage Amazon
  */
-class SimilarProduct
+class EditorialReview
 {
     /**
      * @var string
      */
-    public $ASIN;
+    public $Source;
 
     /**
      * @var string
      */
-    public $Title;
+    public $Content;
 
     /**
-     * Assigns values to properties relevant to SimilarProduct
+     * Assigns values to properties relevant to EditorialReview
      *
      * @param  DOMElement $dom
      */
     public function __construct(DOMElement $dom)
     {
         $xpath = new DOMXPath($dom->ownerDocument);
-        $xpath->registerNamespace('az', 'http://webservices.amazon.com/AWSECommerceService/' . Amazon::getVersion());
-        foreach (array('ASIN', 'Title') as $el) {
-            $text = $xpath->query("./az:$el/text()", $dom)->item(0);
-            if ($text instanceof DOMText) {
-                $this->$el = (string)$text->data;
-            }
+        $xpath->registerNamespace('az', 'http://webservices.amazon.com/AWSECommerceService/' . ProductAdvertising::getVersion());
+        foreach (array('Source', 'Content') as $el) {
+            $this->$el = (string) $xpath->query("./az:$el/text()", $dom)->item(0)->data;
         }
     }
 }

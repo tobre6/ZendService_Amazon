@@ -8,7 +8,7 @@
  * @package   Zend_Service
  */
 
-namespace ZendService\Amazon;
+namespace ZendService\Amazon\ProductAdvertising;
 
 use DOMElement;
 use DOMText;
@@ -74,7 +74,7 @@ class Offer
     public function __construct(DOMElement $dom)
     {
         $xpath = new DOMXPath($dom->ownerDocument);
-        $xpath->registerNamespace('az', 'http://webservices.amazon.com/AWSECommerceService/' . Amazon::getVersion());
+        $xpath->registerNamespace('az', 'http://webservices.amazon.com/AWSECommerceService/' . ProductAdvertising::getVersion());
 
         $map = array(
             'MerchantId'     => './az:Merchant/az:MerchantId/text()',

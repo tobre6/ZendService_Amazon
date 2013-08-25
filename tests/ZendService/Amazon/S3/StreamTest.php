@@ -27,7 +27,7 @@ class StreamTest extends \PHPUnit_Framework_TestCase
      */
     public function setUp()
     {
-        if (!constant('TESTS_ZEND_SERVICE_AMAZON_ONLINE_ENABLED')) {
+        if (!constant('TESTS_ZEND_SERVICE_AMAZON_ONLINE_S3_ENABLED')) {
             $this->markTestSkipped('Zend_Service_Amazon_S3 online tests are not enabled');
         }
         $this->_amazon = new \ZendService\Amazon\S3\S3(constant('TESTS_ZEND_SERVICE_AMAZON_ONLINE_ACCESSKEYID'),

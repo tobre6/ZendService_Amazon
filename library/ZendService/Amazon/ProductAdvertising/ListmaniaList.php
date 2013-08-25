@@ -8,7 +8,7 @@
  * @package   Zend_Service
  */
 
-namespace ZendService\Amazon;
+namespace ZendService\Amazon\ProductAdvertising;
 
 use DOMElement;
 use DOMXPath;
@@ -18,28 +18,28 @@ use DOMXPath;
  * @package    Zend_Service
  * @subpackage Amazon
  */
-class Accessories
+class ListmaniaList
 {
     /**
      * @var string
      */
-    public $ASIN;
+    public $ListId;
 
     /**
      * @var string
      */
-    public $Title;
+    public $ListName;
 
     /**
-     * Assigns values to properties relevant to Accessories
+     * Assigns values to properties relevant to ListmaniaList
      *
      * @param  DOMElement $dom
      */
     public function __construct(DOMElement $dom)
     {
         $xpath = new DOMXPath($dom->ownerDocument);
-        $xpath->registerNamespace('az', 'http://webservices.amazon.com/AWSECommerceService/' . Amazon::getVersion());
-        foreach (array('ASIN', 'Title') as $el) {
+        $xpath->registerNamespace('az', 'http://webservices.amazon.com/AWSECommerceService/' . ProductAdvertising::getVersion());
+        foreach (array('ListId', 'ListName') as $el) {
             $this->$el = (string) $xpath->query("./az:$el/text()", $dom)->item(0)->data;
         }
     }

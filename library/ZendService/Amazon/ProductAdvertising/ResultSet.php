@@ -8,7 +8,7 @@
  * @package   Zend_Service
  */
 
-namespace ZendService\Amazon;
+namespace ZendService\Amazon\ProductAdvertising;
 
 use DOMDocument;
 use DOMXPath;
@@ -58,7 +58,7 @@ class ResultSet implements \SeekableIterator
     {
         $this->_dom = $dom;
         $this->_xpath = new DOMXPath($dom);
-        $this->_xpath->registerNamespace('az', 'http://webservices.amazon.com/AWSECommerceService/' . Amazon::getVersion());
+        $this->_xpath->registerNamespace('az', 'http://webservices.amazon.com/AWSECommerceService/' . ProductAdvertising::getVersion());
         $this->_results = $this->_xpath->query('//az:Item');
     }
 
