@@ -293,7 +293,7 @@ class ProductAdvertising
         foreach ($params as $key => $value) {
             $parts[] = sprintf('%s=%s', $key, rawurlencode($value));
         }
-    
+
         return implode($sep, $parts);
     }
 
