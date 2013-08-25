@@ -280,11 +280,11 @@ class ProductAdvertising
         return sprintf("GET" . PHP_EOL . "%s" . PHP_EOL . "/onca/xml" . PHP_EOL . "%s",
             str_replace('http://', '', $baseUri), self::httpBuildQuery3986($options));
     }
-    
+
     /**
      * Can be changed to httpBuildQuery3986($options, '', '&', \PHP_QUERY_RFC3986) for PHP 5.4
-     * @param array $params
-     * @param string $sep
+     * @param  array  $params
+     * @param  string $sep
      * @return string
      */
     private static function httpBuildQuery3986(array $params, $sep = '&')
