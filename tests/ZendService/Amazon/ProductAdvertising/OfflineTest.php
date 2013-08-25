@@ -318,6 +318,19 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
         $result->current();
     }
 
+    public function testItemSetFromXml()
+    {
+        $xml = file_get_contents(__DIR__ . ' /../_files/amazon-response-valid.xml');
+        $dom = new \DOMDocument();
+        $dom->loadXML($xml);
+
+        $result = new ProductAdvertising\ItemResultSet($dom);
+        $itemSets = $result->current()->ImageSets;
+
+        $this->assertInstanceOf('ZendService\Amazon\ProductAdvertising\Item\Image\ImageSet', $itemSets[0]);
+        $this->assertInstanceOf('ZendService\Amazon\ProductAdvertising\Item\Image\Image', $itemSets[0]->LargeImage);
+    }
+
     /**
      * NOTICE error does not occur even if RequestThrottled error happen in totalResults method.
      */

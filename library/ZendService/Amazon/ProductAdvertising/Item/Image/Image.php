@@ -8,7 +8,7 @@
  * @package   Zend_Service
  */
 
-namespace ZendService\Amazon\ProductAdvertising\Item;
+namespace ZendService\Amazon\ProductAdvertising\Item\Image;
 
 use DOMElement;
 use DOMXPath;
