@@ -275,7 +275,7 @@ class ProductAdvertising
         ksort($options);
         
         return sprintf("GET" . PHP_EOL . "%s" . PHP_EOL . "/onca/xml" . PHP_EOL . "%s", 
-            str_replace('http://', '', $baseUri), http_build_query($options, '', '&', PHP_QUERY_RFC3986));
+            str_replace('http://', '', $baseUri), http_build_query($options, '', '&', \PHP_QUERY_RFC3986));
     }
 
     /**
