@@ -138,7 +138,7 @@ class ProductAdvertising
         $dom->loadXML($response->getBody());
         self::checkErrors($dom);
 
-        return new ResultSet($dom);
+        return new ItemResultSet($dom);
     }
 
     /**
@@ -181,7 +181,7 @@ class ProductAdvertising
             return new Item($items->item(0));
         }
 
-        return new ResultSet($dom);
+        return new ItemResultSet($dom);
     }
 
     /**

@@ -8,10 +8,11 @@
  * @package   Zend_Service
  */
 
-namespace ZendService\Amazon\ProductAdvertising;
+namespace ZendService\Amazon\ProductAdvertising\Item;
 
 use DOMElement;
 use DOMXPath;
+use ZendService\Amazon\ProductAdvertising\ProductAdvertising;
 
 /**
  * @category   Zend

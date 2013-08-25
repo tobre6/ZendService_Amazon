@@ -18,7 +18,7 @@ use DOMXPath;
  * @package    Zend_Service
  * @subpackage Amazon
  */
-class ResultSet implements \SeekableIterator
+class ItemResultSet implements \SeekableIterator
 {
     /**
      * A DOMNodeList of <Item> elements

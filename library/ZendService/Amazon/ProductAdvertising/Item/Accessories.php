@@ -8,42 +8,31 @@
  * @package   Zend_Service
  */
 
-namespace ZendService\Amazon\ProductAdvertising;
+namespace ZendService\Amazon\ProductAdvertising\Item;
 
 use DOMElement;
 use DOMXPath;
-use Zend\Uri;
+use ZendService\Amazon\ProductAdvertising\ProductAdvertising;
 
 /**
  * @category   Zend
  * @package    Zend_Service
  * @subpackage Amazon
  */
-class Image
+class Accessories
 {
     /**
-     * Image URL
-     *
-     * @var Uri\Uri
+     * @var string
      */
-    public $Url;
+    public $ASIN;
 
     /**
-     * Image height in pixels
-     *
-     * @var int
+     * @var string
      */
-    public $Height;
+    public $Title;
 
     /**
-     * Image width in pixels
-     *
-     * @var int
-     */
-    public $Width;
-
-    /**
-     * Assigns values to properties relevant to Image
+     * Assigns values to properties relevant to Accessories
      *
      * @param DOMElement $dom
      */
@@ -51,9 +40,8 @@ class Image
     {
         $xpath = new DOMXPath($dom->ownerDocument);
         $xpath->registerNamespace('az', 'http://webservices.amazon.com/AWSECommerceService/' . ProductAdvertising::getVersion());
-
-        $this->Url    = Uri\UriFactory::factory($xpath->query('./az:URL/text()', $dom)->item(0)->data);
-        $this->Height = (int) $xpath->query('./az:Height/text()', $dom)->item(0)->data;
-        $this->Width  = (int) $xpath->query('./az:Width/text()', $dom)->item(0)->data;
+        foreach (array('ASIN', 'Title') as $el) {
+            $this->$el = (string) $xpath->query("./az:$el/text()", $dom)->item(0)->data;
+        }
     }
 }

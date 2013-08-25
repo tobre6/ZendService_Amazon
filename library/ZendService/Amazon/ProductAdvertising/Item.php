@@ -12,6 +12,7 @@ namespace ZendService\Amazon\ProductAdvertising;
 
 use DOMElement;
 use DOMXPath;
+use ZendService\Amazon\ProductAdvertising\Item;
 
 /**
  * @category   Zend
@@ -139,7 +140,7 @@ class Item
         foreach (array('SmallImage', 'MediumImage', 'LargeImage') as $im) {
             $result = $xpath->query("./az:ImageSets/az:ImageSet[position() = 1]/az:$im", $dom);
             if ($result->length == 1) {
-                $this->$im = new Image($result->item(0));
+                $this->$im = new Item\Image($result->item(0));
             }
         }
 
@@ -151,7 +152,7 @@ class Item
         $result = $xpath->query('./az:CustomerReviews/az:Review', $dom);
         if ($result->length >= 1) {
             foreach ($result as $review) {
-                $this->CustomerReviews[] = new CustomerReview($review);
+                $this->CustomerReviews[] = new Item\CustomerReview($review);
             }
             $this->AverageRating = (float) $xpath->query('./az:CustomerReviews/az:AverageRating/text()', $dom)->item(0)->data;
             $this->TotalReviews = (int) $xpath->query('./az:CustomerReviews/az:TotalReviews/text()', $dom)->item(0)->data;
@@ -160,21 +161,21 @@ class Item
         $result = $xpath->query('./az:EditorialReviews/az:*', $dom);
         if ($result->length >= 1) {
             foreach ($result as $r) {
-                $this->EditorialReviews[] = new EditorialReview($r);
+                $this->EditorialReviews[] = new Item\EditorialReview($r);
             }
         }
 
         $result = $xpath->query('./az:SimilarProducts/az:*', $dom);
         if ($result->length >= 1) {
             foreach ($result as $r) {
-                $this->SimilarProducts[] = new SimilarProduct($r);
+                $this->SimilarProducts[] = new Item\SimilarProduct($r);
             }
         }
 
         $result = $xpath->query('./az:ListmaniaLists/*', $dom);
         if ($result->length >= 1) {
             foreach ($result as $r) {
-                $this->ListmaniaLists[] = new ListmaniaList($r);
+                $this->ListmaniaLists[] = new Item\ListmaniaList($r);
             }
         }
 
@@ -196,13 +197,13 @@ class Item
         $result = $xpath->query('./az:Offers', $dom);
         $resultSummary = $xpath->query('./az:OfferSummary', $dom);
         if ($result->length > 1 || $resultSummary->length == 1) {
-            $this->Offers = new OfferSet($dom);
+            $this->Offers = new Item\OfferSet($dom);
         }
 
         $result = $xpath->query('./az:Accessories/*', $dom);
         if ($result->length > 1) {
             foreach ($result as $r) {
-                $this->Accessories[] = new Accessories($r);
+                $this->Accessories[] = new Item\Accessories($r);
             }
         }
 

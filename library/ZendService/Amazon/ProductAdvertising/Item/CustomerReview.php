@@ -8,22 +8,48 @@
  * @package   Zend_Service
  */
 
-namespace ZendService\Amazon\ProductAdvertising;
+namespace ZendService\Amazon\ProductAdvertising\Item;
 
 use DOMElement;
 use DOMXPath;
+use ZendService\Amazon\ProductAdvertising\ProductAdvertising;
 
 /**
  * @category   Zend
  * @package    Zend_Service
  * @subpackage Amazon
  */
-class EditorialReview
+class CustomerReview
 {
     /**
      * @var string
      */
-    public $Source;
+    public $Rating;
+
+    /**
+     * @var string
+     */
+    public $HelpfulVotes;
+
+    /**
+     * @var string
+     */
+    public $CustomerId;
+
+    /**
+     * @var string
+     */
+    public $TotalVotes;
+
+    /**
+     * @var string
+     */
+    public $Date;
+
+    /**
+     * @var string
+     */
+    public $Summary;
 
     /**
      * @var string
@@ -31,7 +57,7 @@ class EditorialReview
     public $Content;
 
     /**
-     * Assigns values to properties relevant to EditorialReview
+     * Assigns values to properties relevant to CustomerReview
      *
      * @param DOMElement $dom
      */
@@ -39,8 +65,11 @@ class EditorialReview
     {
         $xpath = new DOMXPath($dom->ownerDocument);
         $xpath->registerNamespace('az', 'http://webservices.amazon.com/AWSECommerceService/' . ProductAdvertising::getVersion());
-        foreach (array('Source', 'Content') as $el) {
-            $this->$el = (string) $xpath->query("./az:$el/text()", $dom)->item(0)->data;
+        foreach (array('Rating', 'HelpfulVotes', 'CustomerId', 'TotalVotes', 'Date', 'Summary', 'Content') as $el) {
+            $result = $xpath->query("./az:$el/text()", $dom);
+            if ($result->length == 1) {
+                $this->$el = (string) $result->item(0)->data;
+            }
         }
     }
 }

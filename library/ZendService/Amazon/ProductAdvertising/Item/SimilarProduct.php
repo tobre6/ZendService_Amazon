@@ -8,17 +8,19 @@
  * @package   Zend_Service
  */
 
-namespace ZendService\Amazon\ProductAdvertising;
+namespace ZendService\Amazon\ProductAdvertising\Item;
 
 use DOMElement;
+use DOMText;
 use DOMXPath;
+use ZendService\Amazon\ProductAdvertising\ProductAdvertising;
 
 /**
  * @category   Zend
  * @package    Zend_Service
  * @subpackage Amazon
  */
-class Accessories
+class SimilarProduct
 {
     /**
      * @var string
@@ -31,7 +33,7 @@ class Accessories
     public $Title;
 
     /**
-     * Assigns values to properties relevant to Accessories
+     * Assigns values to properties relevant to SimilarProduct
      *
      * @param DOMElement $dom
      */
@@ -40,7 +42,10 @@ class Accessories
         $xpath = new DOMXPath($dom->ownerDocument);
         $xpath->registerNamespace('az', 'http://webservices.amazon.com/AWSECommerceService/' . ProductAdvertising::getVersion());
         foreach (array('ASIN', 'Title') as $el) {
-            $this->$el = (string) $xpath->query("./az:$el/text()", $dom)->item(0)->data;
+            $text = $xpath->query("./az:$el/text()", $dom)->item(0);
+            if ($text instanceof DOMText) {
+                $this->$el = (string) $text->data;
+            }
         }
     }
 }

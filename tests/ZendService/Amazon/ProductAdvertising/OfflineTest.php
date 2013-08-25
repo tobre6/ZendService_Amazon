@@ -9,7 +9,9 @@
  */
 namespace ZendServiceTest\Amazon\ProductAdvertising;
 
-use ZendService\Amazon\ProductAdvertising, Zend\Http\Client\Adapter\Test as HttpClientAdapter;
+use ZendService\Amazon\ProductAdvertising;
+use Zend\Http\Client\Adapter\Test as HttpClientAdapter;
+use ZendService\Amazon\ProductAdvertising\Item;
 
 /**
  * Test helper
@@ -85,7 +87,7 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
             'B00004SA87' => '42'
         );
 
-        $result = new ProductAdvertising\ResultSet($dom);
+        $result = new ProductAdvertising\ItemResultSet($dom);
 
         foreach ($result as $item) {
             $trackCount = $mozartTracks[$item->ASIN];
@@ -103,7 +105,7 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
         $product = $dom->createElement('product');
         $product->appendChild($asin);
 
-        $similarproduct = new ProductAdvertising\SimilarProduct($product);
+        $similarproduct = new Item\SimilarProduct($product);
     }
 
     /**
@@ -206,7 +208,7 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
             )
         );
 
-        $result = new ProductAdvertising\ResultSet($dom);
+        $result = new ProductAdvertising\ItemResultSet($dom);
 
         foreach ($result as $item) {
             $data = $dataExpected[$item->ASIN];
@@ -288,7 +290,7 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
         $dom = new \DOMDocument();
         $dom->loadXML($xml);
 
-        $result = new ProductAdvertising\ResultSet($dom);
+        $result = new ProductAdvertising\ItemResultSet($dom);
 
         $currentItem = null;
 
@@ -310,7 +312,7 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
         $dom = new \DOMDocument();
         $dom->loadXML($xml);
 
-        $result = new ProductAdvertising\ResultSet($dom);
+        $result = new ProductAdvertising\ItemResultSet($dom);
 
         $this->setExpectedException('ZendService\Amazon\Exception\ExceptionInterface');
         $result->current();
@@ -325,7 +327,7 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
         $dom = new \DOMDocument();
         $dom->loadXML($xml);
 
-        $result = new ProductAdvertising\ResultSet($dom);
+        $result = new ProductAdvertising\ItemResultSet($dom);
 
         try {
             $result->totalResults();
@@ -343,7 +345,7 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
         $dom = new \DOMDocument();
         $dom->loadXML($xml);
 
-        $result = new ProductAdvertising\ResultSet($dom);
+        $result = new ProductAdvertising\ItemResultSet($dom);
 
         try {
             $result->totalPages();
