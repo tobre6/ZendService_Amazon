@@ -36,8 +36,8 @@ class Image extends AbstractEc2
      * If you make changes to an image, deregister the previous image and register
      * the new image. For more information, see DeregisterImage.
      *
-     * @param string $imageLocation         Full path to your AMI manifest in Amazon S3 storage.
-     * @return string                       The ami fro the newly registred image;
+     * @param  string $imageLocation Full path to your AMI manifest in Amazon S3 storage.
+     * @return string The ami fro the newly registred image;
      */
     public function register($imageLocation)
     {
@@ -83,9 +83,9 @@ class Image extends AbstractEc2
      * for the AMIs are returned. You can specify account IDs (if you own the AMI(s)), self
      * for AMIs for which you own or have explicit permissions, or all for public AMIs.
      *
-     * @param string|array $imageId             A list of image descriptions
-     * @param string|array $owner               Owners of AMIs to describe.
-     * @param string|array $executableBy        AMIs for which specified users have access.
+     * @param  string|array $imageId      A list of image descriptions
+     * @param  string|array $owner        Owners of AMIs to describe.
+     * @param  string|array $executableBy AMIs for which specified users have access.
      * @return array
      */
     public function describe($imageId = null, $owner = null, $executableBy = null)
@@ -93,27 +93,27 @@ class Image extends AbstractEc2
         $params = array();
         $params['Action'] = 'DescribeImages';
 
-        if(is_array($imageId) && !empty($imageId)) {
-            foreach($imageId as $k=>$name) {
+        if (is_array($imageId) && !empty($imageId)) {
+            foreach ($imageId as $k=>$name) {
                 $params['ImageId.' . ($k+1)] = $name;
             }
-        } elseif($imageId) {
+        } elseif ($imageId) {
             $params['ImageId.1'] = $imageId;
         }
 
-        if(is_array($owner) && !empty($owner)) {
-            foreach($owner as $k=>$name) {
+        if (is_array($owner) && !empty($owner)) {
+            foreach ($owner as $k=>$name) {
                 $params['Owner.' . ($k+1)] = $name;
             }
-        } elseif($owner) {
+        } elseif ($owner) {
             $params['Owner.1'] = $owner;
         }
 
-        if(is_array($executableBy) && !empty($executableBy)) {
-            foreach($executableBy as $k=>$name) {
+        if (is_array($executableBy) && !empty($executableBy)) {
+            foreach ($executableBy as $k=>$name) {
                 $params['ExecutableBy.' . ($k+1)] = $name;
             }
-        } elseif($executableBy) {
+        } elseif ($executableBy) {
             $params['ExecutableBy.1'] = $executableBy;
         }
 
@@ -147,7 +147,7 @@ class Image extends AbstractEc2
     /**
      * Deregisters an AMI. Once deregistered, instances of the AMI can no longer be launched.
      *
-     * @param string $imageId                   Unique ID of a machine image, returned by a call
+     * @param string $imageId Unique ID of a machine image, returned by a call
      *                                          to RegisterImage or DescribeImages.
      * @return boolean
      */
@@ -177,20 +177,20 @@ class Image extends AbstractEc2
      *                          product before they can launch the AMI. This is a write once attribute;
      *                          after it is set, it cannot be changed or removed.
      *
-     * @param string $imageId                   AMI ID to modify.
-     * @param string $attribute                 Specifies the attribute to modify. See the preceding
+     * @param string $imageId   AMI ID to modify.
+     * @param string $attribute Specifies the attribute to modify. See the preceding
      *                                          attributes table for supported attributes.
-     * @param string $operationType             Specifies the operation to perform on the attribute.
+     * @param string $operationType Specifies the operation to perform on the attribute.
      *                                          See the preceding attributes table for supported operations for attributes.
      *                                          Valid Values: add | remove
      *                                          Required for launchPermssion Attribute
      *
-     * @param string|array $userId              User IDs to add to or remove from the launchPermission attribute.
+     * @param string|array $userId User IDs to add to or remove from the launchPermission attribute.
      *                                          Required for launchPermssion Attribute
-     * @param string|array $userGroup           User groups to add to or remove from the launchPermission attribute.
+     * @param string|array $userGroup User groups to add to or remove from the launchPermission attribute.
      *                                          Currently, the all group is available, which will make it a public AMI.
      *                                          Required for launchPermssion Attribute
-     * @param string $productCode               Attaches a product code to the AMI. Currently only one product code
+     * @param string $productCode Attaches a product code to the AMI. Currently only one product code
      *                                          can be associated with an AMI. Once set, the product code cannot be changed or reset.
      *                                          Required for productCodes Attribute
      * @return boolean
@@ -203,26 +203,26 @@ class Image extends AbstractEc2
         $parmas['ImageId'] = $imageId;
         $params['Attribute'] = $attribute;
 
-        switch($attribute) {
+        switch ($attribute) {
             case 'launchPermission':
                 // break left out
             case 'launchpermission':
                 $params['Attribute'] = 'launchPermission';
                 $params['OperationType'] = $operationType;
 
-                if(is_array($userId) && !empty($userId)) {
-                    foreach($userId as $k=>$name) {
+                if (is_array($userId) && !empty($userId)) {
+                    foreach ($userId as $k=>$name) {
                         $params['UserId.' . ($k+1)] = $name;
                     }
-                } elseif($userId) {
+                } elseif ($userId) {
                     $params['UserId.1'] = $userId;
                 }
 
-                if(is_array($userGroup) && !empty($userGroup)) {
-                    foreach($userGroup as $k=>$name) {
+                if (is_array($userGroup) && !empty($userGroup)) {
+                    foreach ($userGroup as $k=>$name) {
                         $params['UserGroup.' . ($k+1)] = $name;
                     }
-                } elseif($userGroup) {
+                } elseif ($userGroup) {
                     $params['UserGroup.1'] = $userGroup;
                 }
 
@@ -268,23 +268,23 @@ class Image extends AbstractEc2
         $return['imageId'] = $xpath->evaluate('string(//ec2:imageId/text())');
 
         // check for launchPermission
-        if($attribute == 'launchPermission') {
+        if ($attribute == 'launchPermission') {
             $lPnodes = $xpath->query('//ec2:launchPermission/ec2:item');
 
-            if($lPnodes->length > 0) {
+            if ($lPnodes->length > 0) {
                 $return['launchPermission'] = array();
-                foreach($lPnodes as $node) {
+                foreach ($lPnodes as $node) {
                     $return['launchPermission'][] = $xpath->evaluate('string(ec2:userId/text())', $node);
                 }
             }
         }
 
         // check for product codes
-        if($attribute == 'productCodes') {
+        if ($attribute == 'productCodes') {
             $pCnodes = $xpath->query('//ec2:productCodes/ec2:item');
-            if($pCnodes->length > 0) {
+            if ($pCnodes->length > 0) {
                 $return['productCodes'] = array();
-                foreach($pCnodes as $node) {
+                foreach ($pCnodes as $node) {
                     $return['productCodes'][] = $xpath->evaluate('string(ec2:productCode/text())', $node);
                 }
             }

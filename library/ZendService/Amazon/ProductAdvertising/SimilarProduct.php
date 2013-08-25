@@ -34,7 +34,7 @@ class SimilarProduct
     /**
      * Assigns values to properties relevant to SimilarProduct
      *
-     * @param  DOMElement $dom
+     * @param DOMElement $dom
      */
     public function __construct(DOMElement $dom)
     {
@@ -43,7 +43,7 @@ class SimilarProduct
         foreach (array('ASIN', 'Title') as $el) {
             $text = $xpath->query("./az:$el/text()", $dom)->item(0);
             if ($text instanceof DOMText) {
-                $this->$el = (string)$text->data;
+                $this->$el = (string) $text->data;
             }
         }
     }

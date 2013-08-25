@@ -166,7 +166,7 @@ class ElasticIpTest extends \PHPUnit_Framework_TestCase
             )
         );
 
-        foreach($response as $k => $r) {
+        foreach ($response as $k => $r) {
             $this->assertSame($arrIps[$k], $r);
         }
     }

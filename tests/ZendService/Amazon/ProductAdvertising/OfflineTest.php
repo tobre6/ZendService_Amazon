@@ -44,9 +44,9 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
      */
     public function setUp()
     {
-        $this->amazon = new ProductAdvertising\ProductAdvertising(TESTS_ZEND_SERVICE_AMAZON_ONLINE_ACCESSKEYID, 
+        $this->amazon = new ProductAdvertising\ProductAdvertising(TESTS_ZEND_SERVICE_AMAZON_ONLINE_ACCESSKEYID,
             TESTS_ZEND_SERVICE_AMAZON_ONLINE_SECRETKEY, TESTS_ZEND_SERVICE_AMAZON_ONLINE_ASSOCIATE_TAG);
-        
+
         $this->httpClientTestAdapter = new HttpClientAdapter();
     }
 
@@ -57,9 +57,9 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
      */
     public function testConstructExceptionCountryCodeInvalid()
     {
-        $this->setExpectedException('ZendService\Amazon\Exception\InvalidArgumentException', 
+        $this->setExpectedException('ZendService\Amazon\Exception\InvalidArgumentException',
             'Unknown country code: oops');
-        $amazon = new ProductAdvertising\ProductAdvertising(TESTS_ZEND_SERVICE_AMAZON_ONLINE_ACCESSKEYID, 
+        $amazon = new ProductAdvertising\ProductAdvertising(TESTS_ZEND_SERVICE_AMAZON_ONLINE_ACCESSKEYID,
             TESTS_ZEND_SERVICE_AMAZON_ONLINE_SECRETKEY, TESTS_ZEND_SERVICE_AMAZON_ONLINE_ASSOCIATE_TAG, 'oops');
     }
 
@@ -71,7 +71,7 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
         $xml = file_get_contents(__DIR__ . '/../_files/mozart_result.xml');
         $dom = new \DOMDocument();
         $dom->loadXML($xml);
-        
+
         $mozartTracks = array(
             'B00005A8JZ' => '29',
             'B0000058HV' => '25',
@@ -84,9 +84,9 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
             'B0000041EV' => '12',
             'B00004SA87' => '42'
         );
-        
+
         $result = new ProductAdvertising\ResultSet($dom);
-        
+
         foreach ($result as $item) {
             $trackCount = $mozartTracks[$item->ASIN];
             $this->assertEquals($trackCount, count($item->Tracks));
@@ -102,7 +102,7 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
         $asin = $dom->createElement('ASIN', 'TEST');
         $product = $dom->createElement('product');
         $product->appendChild($asin);
-        
+
         $similarproduct = new ProductAdvertising\SimilarProduct($product);
     }
 
@@ -114,7 +114,7 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
         $xml = file_get_contents(__DIR__ . '/../_files/offers_with_names.xml');
         $dom = new \DOMDocument();
         $dom->loadXML($xml);
-        
+
         $dataExpected = array(
             '0439774098' => array(
                 'offers' => array(
@@ -205,9 +205,9 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
                 )
             )
         );
-        
+
         $result = new ProductAdvertising\ResultSet($dom);
-        
+
         foreach ($result as $item) {
             $data = $dataExpected[$item->ASIN];
             foreach ($item->Offers->Offers as $offer) {
@@ -269,10 +269,10 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
      */
     public function testSignatureEncryption($baseUri, $params, $expectedStringToSign, $expectedSignature)
     {
-        $this->assertEquals($expectedStringToSign, 
+        $this->assertEquals($expectedStringToSign,
             ProductAdvertising\ProductAdvertising::buildRawSignature($baseUri, $params));
-        
-        $this->assertEquals($expectedSignature, 
+
+        $this->assertEquals($expectedSignature,
             rawurlencode(ProductAdvertising\ProductAdvertising::computeSignature($baseUri, '1234567890', $params)));
     }
 
@@ -287,13 +287,13 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
         $xml = file_get_contents(__DIR__ . '/../_files/amazon-response-valid.xml');
         $dom = new \DOMDocument();
         $dom->loadXML($xml);
-        
+
         $result = new ProductAdvertising\ResultSet($dom);
-        
+
         $currentItem = null;
-        
+
         $currentItem = $result->current();
-        
+
         $this->assertInstanceOf('ZendService\Amazon\ProductAdvertising\Item', $currentItem);
         $this->assertEquals('0754512673', $currentItem->ASIN);
     }
@@ -309,9 +309,9 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
         $xml = file_get_contents(__DIR__ . ' /../_files/amazon-response-invalid.xml');
         $dom = new \DOMDocument();
         $dom->loadXML($xml);
-        
+
         $result = new ProductAdvertising\ResultSet($dom);
-        
+
         $this->setExpectedException('ZendService\Amazon\Exception\ExceptionInterface');
         $result->current();
     }
@@ -324,9 +324,9 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
         $xml = file_get_contents(__DIR__ . '/../_files/amazon-response-request-throttled-error.xml');
         $dom = new \DOMDocument();
         $dom->loadXML($xml);
-        
+
         $result = new ProductAdvertising\ResultSet($dom);
-        
+
         try {
             $result->totalResults();
         } catch (\PHPUnit_Framework_Error_Notice $e) {
@@ -342,9 +342,9 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
         $xml = file_get_contents(__DIR__ . '/../_files/amazon-response-request-throttled-error.xml');
         $dom = new \DOMDocument();
         $dom->loadXML($xml);
-        
+
         $result = new ProductAdvertising\ResultSet($dom);
-        
+
         try {
             $result->totalPages();
         } catch (\PHPUnit_Framework_Error_Notice $e) {

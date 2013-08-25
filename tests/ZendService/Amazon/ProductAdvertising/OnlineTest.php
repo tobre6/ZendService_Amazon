@@ -56,17 +56,17 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
         if (! defined('TESTS_ZEND_SERVICE_AMAZON_ONLINE_ACCESSKEYID') || ! defined('TESTS_ZEND_SERVICE_AMAZON_ONLINE_SECRETKEY')) {
             $this->markTestSkipped('Constants AccessKeyId and SecretKey have to be set.');
         }
-        
+
         $this->amazon = new ProductAdvertising\ProductAdvertising(TESTS_ZEND_SERVICE_AMAZON_ONLINE_ACCESSKEYID, TESTS_ZEND_SERVICE_AMAZON_ONLINE_SECRETKEY, TESTS_ZEND_SERVICE_AMAZON_ONLINE_ASSOCIATE_TAG);
-        
+
         $this->_query = new ProductAdvertising\Query(TESTS_ZEND_SERVICE_AMAZON_ONLINE_ACCESSKEYID, TESTS_ZEND_SERVICE_AMAZON_ONLINE_SECRETKEY, TESTS_ZEND_SERVICE_AMAZON_ONLINE_ASSOCIATE_TAG);
-        
+
         $this->_httpClientAdapterSocket = new \Zend\Http\Client\Adapter\Socket();
-        
+
         $this->amazon->getRestClient()
             ->getHttpClient()
             ->setAdapter($this->_httpClientAdapterSocket);
-        
+
         // terms of use compliance: no more than one query per second
         sleep(1);
     }
@@ -80,7 +80,7 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
     /**
      * Ensures that itemSearch() works as expected when searching for PHP books
      * @group ItemSearchPhp
-     * 
+     *
      * @return void
      */
     public function testItemSearchBooksPhp()
@@ -90,31 +90,31 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
             'Keywords' => 'php',
             'ResponseGroup' => 'Small,ItemAttributes,Images,SalesRank,Reviews,EditorialReview,Similarities'
         ));
-        
+
         $this->assertTrue(10 < $resultSet->totalResults());
         $this->assertTrue(1 < $resultSet->totalPages());
         $this->assertEquals(0, $resultSet->key());
-        
+
         try {
             $resultSet->seek(- 1);
             $this->fail('Expected OutOfBoundsException not thrown');
         } catch (\OutOfBoundsException $e) {
             $this->assertContains('Illegal index', $e->getMessage());
         }
-        
+
         $resultSet->seek(9);
-        
+
         try {
             $resultSet->seek(10);
             $this->fail('Expected OutOfBoundsException not thrown');
         } catch (\OutOfBoundsException $e) {
             $this->assertContains('Illegal index', $e->getMessage());
         }
-        
+
         foreach ($resultSet as $item) {
             $this->assertTrue($item instanceof ProductAdvertising\Item);
         }
-        
+
         $this->assertTrue(simplexml_load_string($item->asXml()) instanceof \SimpleXMLElement);
     }
 
@@ -130,7 +130,7 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
             'Keywords' => 'Mozart',
             'ResponseGroup' => 'Small,Tracks,Offers'
         ));
-        
+
         foreach ($resultSet as $item) {
             $this->assertTrue($item instanceof ProductAdvertising\Item);
         }
@@ -148,7 +148,7 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
             'Keywords' => 'digital camera',
             'ResponseGroup' => 'Accessories'
         ));
-        
+
         foreach ($resultSet as $item) {
             $this->assertTrue($item instanceof ProductAdvertising\Item);
         }
@@ -166,7 +166,7 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
             'Keywords' => 'php',
             'Sort' => '-titlerank'
         ));
-        
+
         foreach ($resultSet as $item) {
             $this->assertTrue($item instanceof ProductAdvertising\Item);
         }
@@ -217,13 +217,13 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
     public function testItemLookupMultiple()
     {
         $resultSet = $this->amazon->itemLookup('0596006810,1590593804');
-        
+
         $count = 0;
         foreach ($resultSet as $item) {
             $this->assertTrue($item instanceof ProductAdvertising\Item);
             $count ++;
         }
-        
+
         $this->assertEquals(2, $count);
     }
 
@@ -250,7 +250,7 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
         $resultSet = $this->_query->category('Books')
             ->Keywords('php')
             ->search();
-        
+
         foreach ($resultSet as $item) {
             $this->assertTrue($item instanceof ProductAdvertising\Item);
         }
@@ -289,5 +289,3 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
         $this->assertTrue($item instanceof ProductAdvertising\Item);
     }
 }
-
-

@@ -26,7 +26,7 @@ class Keypair extends AbstractEc2
      * Creates a new 2048 bit RSA key pair and returns a unique ID that can
      * be used to reference this key pair when launching new instances.
      *
-     * @param string $keyName           A unique name for the key pair.
+     * @param  string                             $keyName A unique name for the key pair.
      * @throws Exception\InvalidArgumentException
      * @return array
      */
@@ -36,7 +36,7 @@ class Keypair extends AbstractEc2
 
         $params['Action'] = 'CreateKeyPair';
 
-        if(!$keyName) {
+        if (!$keyName) {
             throw new Exception\InvalidArgumentException('Invalid Key Name');
         }
 
@@ -58,7 +58,7 @@ class Keypair extends AbstractEc2
      * key pairs, information about those key pairs is returned. Otherwise,
      * information for all registered key pairs is returned.
      *
-     * @param string|array $keyName Key pair IDs to describe.
+     * @param  string|array $keyName Key pair IDs to describe.
      * @return array
      */
     public function describe($keyName = null)
@@ -66,11 +66,11 @@ class Keypair extends AbstractEc2
         $params = array();
 
         $params['Action'] = 'DescribeKeyPairs';
-        if(is_array($keyName) && !empty($keyName)) {
-            foreach($keyName as $k=>$name) {
+        if (is_array($keyName) && !empty($keyName)) {
+            foreach ($keyName as $k=>$name) {
                 $params['KeyName.' . ($k+1)] = $name;
             }
-        } elseif($keyName) {
+        } elseif ($keyName) {
             $params['KeyName.1'] = $keyName;
         }
 
@@ -95,9 +95,9 @@ class Keypair extends AbstractEc2
     /**
      * Deletes a key pair
      *
-     * @param string $keyName           Name of the key pair to delete.
+     * @param  string                             $keyName Name of the key pair to delete.
      * @throws Exception\InvalidArgumentException
-     * @return boolean                  Return true or false from the deletion.
+     * @return boolean                            Return true or false from the deletion.
      */
     public function delete($keyName)
     {
@@ -105,7 +105,7 @@ class Keypair extends AbstractEc2
 
         $params['Action'] = 'DeleteKeyPair';
 
-        if(!$keyName) {
+        if (!$keyName) {
             throw new Exception\InvalidArgumentException('Invalid Key Name');
         }
 

@@ -11,7 +11,6 @@
 namespace ZendServiceTest\Amazon\Authentication;
 
 use ZendService\Amazon\Authentication;
-use ZendService\Amazon\Authentication\Exception;
 
 /**
  * Amazon V2 authentication test case

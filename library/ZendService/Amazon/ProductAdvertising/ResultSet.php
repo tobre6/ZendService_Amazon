@@ -70,7 +70,8 @@ class ResultSet implements \SeekableIterator
     public function totalResults()
     {
         $result = $this->_xpath->query('//az:TotalResults/text()');
-        return (int)(isset($result->item(0)->data) ? $result->item(0)->data : 0);
+
+        return (int) (isset($result->item(0)->data) ? $result->item(0)->data : 0);
     }
 
     /**
@@ -81,7 +82,8 @@ class ResultSet implements \SeekableIterator
     public function totalPages()
     {
         $result = $this->_xpath->query('//az:TotalPages/text()');
-        return (int)(isset($result->item(0)->data) ? $result->item(0)->data : 0);
+
+        return (int) (isset($result->item(0)->data) ? $result->item(0)->data : 0);
     }
 
     /**
@@ -95,6 +97,7 @@ class ResultSet implements \SeekableIterator
         if ($dom === null) {
             throw new Exception\RuntimeException('no results found');
         }
+
         return new Item($dom);
     }
 
@@ -131,7 +134,7 @@ class ResultSet implements \SeekableIterator
     /**
      * Implement SeekableIterator::seek()
      *
-     * @param  int $index
+     * @param  int                            $index
      * @throws Exception\OutOfBoundsException
      * @return void
      */

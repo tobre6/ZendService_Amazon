@@ -97,7 +97,6 @@ class Item
 
     protected $_dom;
 
-
     /**
      * Parse the given <Item> element
      *
@@ -209,7 +208,6 @@ class Item
 
         $this->_dom = $dom;
     }
-
 
     /**
      * Returns the item's original XML

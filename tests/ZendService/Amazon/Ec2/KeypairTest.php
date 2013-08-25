@@ -53,7 +53,6 @@ class KeypairTest extends \PHPUnit_Framework_TestCase
         $this->keypairInstance = new Ec2\Keypair('access_key', 'secret_access_key', null, $this->httpClient);
     }
 
-
     public function testCreateKeyPairNoNameThrowsException()
     {
         $this->setExpectedException(
@@ -179,7 +178,7 @@ class KeypairTest extends \PHPUnit_Framework_TestCase
             )
         );
 
-        foreach($response as $k => $r) {
+        foreach ($response as $k => $r) {
             $this->assertSame($arrKeys[$k], $r);
         }
     }

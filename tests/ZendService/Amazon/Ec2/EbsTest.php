@@ -15,7 +15,6 @@ use ZendService\Amazon\Ec2;
 use Zend\Http\Client as HttpClient;
 use Zend\Http\Client\Adapter\Test as HttpClientTestAdapter;
 
-
 /**
  * ZendService\Amazon\Ec2\Ebs test case.
  *
@@ -275,7 +274,6 @@ class EbsTest extends \PHPUnit_Framework_TestCase
         ));
 
         $this->assertSame($arrSnapshot, $return);
-
 
     }
 

@@ -26,7 +26,6 @@ After that, you should be able to run tests.');
     include_once __DIR__ . '/../vendor/autoload.php';
 }
 
-
 spl_autoload_register(function ($class) {
     if (0 !== strpos($class, 'ZendServiceTest\\')) {
         return false;
@@ -36,5 +35,6 @@ spl_autoload_register(function ($class) {
     if (!file_exists($filename)) {
         return false;
     }
+
     return include_once $filename;
 });

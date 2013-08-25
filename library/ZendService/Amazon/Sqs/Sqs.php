@@ -70,8 +70,8 @@ class Sqs extends Amazon\AbstractAmazon
      * timeout, then the message is deleted.  However, if the timeout expires
      * then the message will be made available to other queue readers.
      *
-     * @param  string  $queue_name queue name
-     * @param  integer $timeout    default visibility timeout
+     * @param  string                     $queue_name queue name
+     * @param  integer                    $timeout    default visibility timeout
      * @return string|boolean
      * @throws Exception\RuntimeException
      */
@@ -79,7 +79,7 @@ class Sqs extends Amazon\AbstractAmazon
     {
         $params = array();
         $params['QueueName'] = $queue_name;
-        $timeout = ($timeout === null) ? self::CREATE_TIMEOUT_DEFAULT : (int)$timeout;
+        $timeout = ($timeout === null) ? self::CREATE_TIMEOUT_DEFAULT : (int) $timeout;
         $params['DefaultVisibilityTimeout'] = $timeout;
 
         $retry_count = 0;
@@ -113,7 +113,7 @@ class Sqs extends Amazon\AbstractAmazon
      *
      * Returns false if the queue is not found, true if the queue exists
      *
-     * @param  string  $queue_url queue URL
+     * @param  string                     $queue_url queue URL
      * @return boolean
      * @throws Exception\RuntimeException
      */
@@ -144,7 +144,7 @@ class Sqs extends Amazon\AbstractAmazon
 
         $queues = array();
         foreach ($result->ListQueuesResult->QueueUrl as $queue_url) {
-            $queues[] = (string)$queue_url;
+            $queues[] = (string) $queue_url;
         }
 
         return $queues;
@@ -153,21 +153,21 @@ class Sqs extends Amazon\AbstractAmazon
     /**
      * Return the approximate number of messages in the queue
      *
-     * @param  string  $queue_url Queue URL
+     * @param  string                     $queue_url Queue URL
      * @return integer
      * @throws Exception\RuntimeException
      */
     public function count($queue_url)
     {
-        return (int)$this->getAttribute($queue_url, 'ApproximateNumberOfMessages');
+        return (int) $this->getAttribute($queue_url, 'ApproximateNumberOfMessages');
     }
 
     /**
      * Send a message to the queue
      *
-     * @param  string $queue_url Queue URL
-     * @param  string $message   Message to send to the queue
-     * @return string            Message ID
+     * @param  string                     $queue_url Queue URL
+     * @param  string                     $message   Message to send to the queue
+     * @return string                     Message ID
      * @throws Exception\RuntimeException
      */
     public function send($queue_url, $message)
@@ -191,9 +191,9 @@ class Sqs extends Amazon\AbstractAmazon
     /**
      * Get messages in the queue
      *
-     * @param  string  $queue_url    Queue name
-     * @param  integer $max_messages Maximum number of messages to return
-     * @param  integer $timeout      Visibility timeout for these messages
+     * @param  string                     $queue_url    Queue name
+     * @param  integer                    $max_messages Maximum number of messages to return
+     * @param  integer                    $timeout      Visibility timeout for these messages
      * @return array
      * @throws Exception\RuntimeException
      */
@@ -203,12 +203,12 @@ class Sqs extends Amazon\AbstractAmazon
 
         // If not set, the visibility timeout on the queue is used
         if ($timeout !== null) {
-            $params['VisibilityTimeout'] = (int)$timeout;
+            $params['VisibilityTimeout'] = (int) $timeout;
         }
 
         // SQS will default to only returning one message
         if ($max_messages !== null) {
-            $params['MaxNumberOfMessages'] = (int)$max_messages;
+            $params['MaxNumberOfMessages'] = (int) $max_messages;
         }
 
         $result = $this->_makeRequest($queue_url, 'ReceiveMessage', $params);
@@ -220,10 +220,10 @@ class Sqs extends Amazon\AbstractAmazon
         $data = array();
         foreach ($result->ReceiveMessageResult->Message as $message) {
             $data[] = array(
-                'message_id' => (string)$message->MessageId,
-                'handle'     => (string)$message->ReceiptHandle,
-                'md5'        => (string)$message->MD5OfBody,
-                'body'       => urldecode((string)$message->Body),
+                'message_id' => (string) $message->MessageId,
+                'handle'     => (string) $message->ReceiptHandle,
+                'md5'        => (string) $message->MD5OfBody,
+                'body'       => urldecode((string) $message->Body),
             );
         }
 
@@ -236,15 +236,15 @@ class Sqs extends Amazon\AbstractAmazon
      * Returns true if the message is deleted, false if the deletion is
      * unsuccessful.
      *
-     * @param  string $queue_url  Queue URL
-     * @param  string $handle     Message handle as returned by SQS
+     * @param  string                     $queue_url Queue URL
+     * @param  string                     $handle    Message handle as returned by SQS
      * @return boolean
      * @throws Exception\RuntimeException
      */
     public function deleteMessage($queue_url, $handle)
     {
         $params = array();
-        $params['ReceiptHandle'] = (string)$handle;
+        $params['ReceiptHandle'] = (string) $handle;
 
         $result = $this->_makeRequest($queue_url, 'DeleteMessage', $params);
 
@@ -259,8 +259,8 @@ class Sqs extends Amazon\AbstractAmazon
     /**
      * Get the attributes for the queue
      *
-     * @param  string $queue_url  Queue URL
-     * @param  string $attribute
+     * @param  string                     $queue_url Queue URL
+     * @param  string                     $attribute
      * @return string
      * @throws Exception\RuntimeException
      */
@@ -275,11 +275,12 @@ class Sqs extends Amazon\AbstractAmazon
             throw new Exception\RuntimeException($result->Error->Code);
         }
 
-        if(count($result->GetQueueAttributesResult->Attribute) > 1) {
+        if (count($result->GetQueueAttributesResult->Attribute) > 1) {
             $attr_result = array();
-            foreach($result->GetQueueAttributesResult->Attribute as $attribute) {
-                $attr_result[(string)$attribute->Name] = (string)$attribute->Value;
+            foreach ($result->GetQueueAttributesResult->Attribute as $attribute) {
+                $attr_result[(string) $attribute->Name] = (string) $attribute->Value;
             }
+
             return $attr_result;
         } else {
             return (string) $result->GetQueueAttributesResult->Attribute->Value;
@@ -354,8 +355,8 @@ class Sqs extends Amazon\AbstractAmazon
      * If a required parameter is already set in the <tt>$parameters</tt> array,
      * it is overwritten.
      *
-     * @param  string $queue_url  Queue URL
-     * @param  array  $parameters the array to which to add the required
+     * @param string $queue_url  Queue URL
+     * @param array  $parameters the array to which to add the required
      *                            parameters.
      * @return array
      */
@@ -386,8 +387,8 @@ class Sqs extends Amazon\AbstractAmazon
      *    values before constructing this string. Do not use any separator
      *    characters when appending strings.
      *
-     * @param  string $queue_url  Queue URL
-     * @param  array  $parameters the parameters for which to get the signature.
+     * @param string $queue_url  Queue URL
+     * @param array  $parameters the parameters for which to get the signature.
      *
      * @return string the signed data.
      */
@@ -406,7 +407,7 @@ class Sqs extends Amazon\AbstractAmazon
         unset($parameters['Signature']);
 
         $arrData = array();
-        foreach($parameters as $key => $value) {
+        foreach ($parameters as $key => $value) {
             $arrData[] = $key . '=' . str_replace('%7E', '~', urlencode($value));
         }
 

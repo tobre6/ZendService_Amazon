@@ -14,7 +14,6 @@ use ZendService\Amazon\SimpleDb;
 use ZendService\Amazon\SimpleDb\Exception;
 use Zend\Http\Client\Adapter\Socket;
 
-
 /**
  * @category   Zend
  * @package    ZendService\Amazon\SimpleDb
@@ -86,8 +85,8 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
     /**
      * Wrapper around remote calls to retry, apply wait, etc.
      *
-     * @param string $method SimpleDB method name
-     * @param array $args Method argument list
+     * @param  string $method SimpleDB method name
+     * @param  array  $args   Method argument list
      * @return void
      */
     public function request($method, $args = array())
@@ -105,6 +104,7 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
                 }
             }
         }
+
         return $response;
     }
 
@@ -143,7 +143,7 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
             $this->assertEquals($attributeValue2, current($results[$attributeName2]->getValues()));
 
             $this->request('deleteDomain', array($domainName));
-        } catch(Exception $e) {
+        } catch (Exception $e) {
             $this->request('deleteDomain', array($domainName));
             throw $e;
         }
@@ -176,7 +176,7 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
             $this->assertEquals($attributes[$attributeName1], $results[$attributeName1]);
             $this->assertEquals($attributes[$attributeName2], $results[$attributeName2]);
             $this->request('deleteDomain', array($domainName));
-        } catch(Exception $e) {
+        } catch (Exception $e) {
             $this->request('deleteDomain', array($domainName));
             throw $e;
         }
@@ -207,7 +207,6 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
                     $attributeName3 => new SimpleDb\Attribute($itemName2, $attributeName3, $attributeValue3),
                     $attributeName4 => new SimpleDb\Attribute($itemName2, $attributeName4, array($attributeValue4, $attributeValue5)))
                 );
-
 
             $replace = array(
                 $itemName1 => array(
@@ -269,7 +268,7 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
             $this->assertEquals($items[$itemName1], $this->request('getAttributes', array($domainName, $itemName1)));
 
             $this->request('deleteDomain', array($domainName));
-        } catch(Exception $e) {
+        } catch (Exception $e) {
             $this->request('deleteDomain', array($domainName));
             throw $e;
         }
@@ -336,7 +335,7 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
             $this->assertEquals(0, count($results));
 
             $this->request('deleteDomain', array($domainName));
-        } catch(Exception $e) {
+        } catch (Exception $e) {
             $this->request('deleteDomain', array($domainName));
             throw $e;
         }
@@ -346,14 +345,14 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
      *
      * @param $maxNumberOfDomains Integer between 1 and 100
      * @param $nextToken          Integer between 1 and 100
-     * @return array              0 or more domain names
+     * @return array 0 or more domain names
      */
     public function testListDomains()
     {
         $domainName = null;
         try {
             // Create some domains
-            for($i = 1; $i <= 3; $i++) {
+            for ($i = 1; $i <= 3; $i++) {
                 $domainName = $this->_testDomainNamePrefix . '_testListDomains' . $i;
                 $this->request('deleteDomain', array($domainName));
                 $this->request('createDomain', array($domainName));
@@ -398,13 +397,13 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
             $this->assertTrue($nextPage->isLast());
 
             // Delete the domains
-            for($i = 1; $i <= 3; $i++) {
+            for ($i = 1; $i <= 3; $i++) {
                 $domainName = $this->_testDomainNamePrefix . '_testListDomains' . $i;
                 $this->request('deleteDomain', array($domainName));
             }
-        } catch(Exception $e) {
+        } catch (Exception $e) {
             // Delete the domains
-            for($i = 1; $i <= 3; $i++) {
+            for ($i = 1; $i <= 3; $i++) {
                 $domainName = $this->_testDomainNamePrefix . '_testListDomains' . $i;
                 $this->request('deleteDomain', array($domainName));
             }
@@ -426,22 +425,22 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
             $this->assertTrue(is_array($metadata));
             $this->assertGreaterThan(0, count($metadata));
             $this->assertTrue(array_key_exists('ItemCount', $metadata));
-            $this->assertEquals(0, (int)$metadata['ItemCount']);
+            $this->assertEquals(0, (int) $metadata['ItemCount']);
             $this->assertTrue(array_key_exists('ItemNamesSizeBytes', $metadata));
-            $this->assertEquals(0, (int)$metadata['ItemNamesSizeBytes']);
+            $this->assertEquals(0, (int) $metadata['ItemNamesSizeBytes']);
             $this->assertTrue(array_key_exists('AttributeNameCount', $metadata));
-            $this->assertEquals(0, (int)$metadata['AttributeNameCount']);
+            $this->assertEquals(0, (int) $metadata['AttributeNameCount']);
             $this->assertTrue(array_key_exists('AttributeValueCount', $metadata));
-            $this->assertEquals(0, (int)$metadata['AttributeValueCount']);
+            $this->assertEquals(0, (int) $metadata['AttributeValueCount']);
             $this->assertTrue(array_key_exists('AttributeNamesSizeBytes', $metadata));
-            $this->assertEquals(0, (int)$metadata['AttributeNamesSizeBytes']);
+            $this->assertEquals(0, (int) $metadata['AttributeNamesSizeBytes']);
             $this->assertTrue(array_key_exists('AttributeValuesSizeBytes', $metadata));
-            $this->assertEquals(0, (int)$metadata['AttributeValuesSizeBytes']);
+            $this->assertEquals(0, (int) $metadata['AttributeValuesSizeBytes']);
             $this->assertTrue(array_key_exists('Timestamp', $metadata));
 
             // Delete the domain
             $this->request('deleteDomain', array($domainName));
-        } catch(Exception $e) {
+        } catch (Exception $e) {
             $this->request('deleteDomain', array($domainName));
             throw $e;
         }
@@ -450,7 +449,7 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
     /**
      *
      * @param $domainName	string	Valid domain name of the domain to create
-     * @return 				boolean True if successful, false if not
+     * @return boolean True if successful, false if not
      */
     public function testCreateDomain()
     {
@@ -462,7 +461,7 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
             $this->assertContains($domainName, $domainListPage->getData());
             // Delete the domain
             $this->request('deleteDomain', array($domainName));
-        } catch(Exception $e) {
+        } catch (Exception $e) {
             $this->request('deleteDomain', array($domainName));
             throw $e;
         }
@@ -481,7 +480,7 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
             $this->request('deleteDomain', array($domainName));
             $domainListPage = $this->request('listDomains');
             $this->assertNotContains($domainName, $domainListPage->getData());
-        } catch(Exception $e) {
+        } catch (Exception $e) {
             $this->request('deleteDomain', array($domainName));
             throw $e;
         }

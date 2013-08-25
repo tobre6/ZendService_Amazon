@@ -78,7 +78,6 @@ if (defined('TESTS_GENERATE_REPORT') && TESTS_GENERATE_REPORT === true) {
     unset($codeCoverageFilter);
 }
 
-
 /**
  * Start output buffering, if enabled
  */

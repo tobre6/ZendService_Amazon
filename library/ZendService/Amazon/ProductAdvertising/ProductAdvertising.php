@@ -96,15 +96,15 @@ class ProductAdvertising
         $this->accessKeyId = (string) $accessKeyId;
         $this->secretKey = $secretKey;
         $this->associateTag = $associateTag;
-        
+
         if (! is_null($version))
             self::setVersion($version);
-        
+
         $countryCode = (string) $countryCode;
         if (! isset($this->baseUriList[$countryCode])) {
             throw new Exception\InvalidArgumentException("Unknown country code: $countryCode");
         }
-        
+
         $this->baseUri = $this->baseUriList[$countryCode];
     }
 
@@ -121,23 +121,23 @@ class ProductAdvertising
     {
         $client = $this->getRestClient();
         $client->setUri($this->baseUri);
-        
+
         $defaultOptions = array(
             'ResponseGroup' => 'Small'
         );
         $options = $this->prepareOptions('ItemSearch', $options, $defaultOptions);
         $client->getHttpClient()->resetParameters();
         $response = $client->restGet('/onca/xml', $options);
-        
+
         if ($response->isClientError()) {
             throw new Exception\RuntimeException(
                 'An error occurred sending request. Status code: ' . $response->getStatusCode());
         }
-        
+
         $dom = new DOMDocument();
         $dom->loadXML($response->getBody());
         self::checkErrors($dom);
-        
+
         return new ResultSet($dom);
     }
 
@@ -150,37 +150,37 @@ class ProductAdvertising
      *            Query Options
      * @see http://www.amazon.com/gp/aws/sdk/main.html/102-9041115-9057709?s=AWSEcommerceService&v=2011-08-01&p=ApiReference/ItemLookupOperation
      * @throws Exception\RuntimeException
-     * @return Item ResultSet
+     * @return Item                       ResultSet
      */
     public function itemLookup($asin, array $options = array())
     {
         $client = $this->getRestClient();
         $client->setUri($this->baseUri);
         $client->getHttpClient()->resetParameters();
-        
+
         $defaultOptions = array(
             'ResponseGroup' => 'Small'
         );
         $options['ItemId'] = (string) $asin;
         $options = $this->prepareOptions('ItemLookup', $options, $defaultOptions);
         $response = $client->restGet('/onca/xml', $options);
-        
+
         if ($response->isClientError()) {
             throw new Exception\RuntimeException(
                 'An error occurred sending request. Status code: ' . $response->getStatusCode());
         }
-        
+
         $dom = new DOMDocument();
         $dom->loadXML($response->getBody());
         self::checkErrors($dom);
         $xpath = new DOMXPath($dom);
         $xpath->registerNamespace('az', 'http://webservices.amazon.com/AWSECommerceService/' . self::getVersion());
         $items = $xpath->query('//az:Items/az:Item');
-        
+
         if ($items->length == 1) {
             return new Item($items->item(0));
         }
-        
+
         return new ResultSet($dom);
     }
 
@@ -194,18 +194,20 @@ class ProductAdvertising
         if ($this->rest === null) {
             $this->rest = new RestClient();
         }
+
         return $this->rest;
     }
 
     /**
      * Set REST client
      *
-     * @param RestClient $client            
+     * @param  RestClient         $client
      * @return ProductAdvertising
      */
     public function setRestClient(RestClient $client)
     {
         $this->rest = $client;
+
         return $this;
     }
 
@@ -227,61 +229,62 @@ class ProductAdvertising
         $options['Operation'] = (string) $query;
         $options['Version'] = self::getVersion();
         $options['AssociateTag'] = $this->associateTag;
-        
+
         // de-canonicalize out sort key
         if (isset($options['ResponseGroup'])) {
             $responseGroup = explode(',', $options['ResponseGroup']);
-            
+
             if (! in_array('Request', $responseGroup)) {
                 $responseGroup[] = 'Request';
                 $options['ResponseGroup'] = implode(',', $responseGroup);
             }
         }
-        
+
         $options = array_merge($defaultOptions, $options);
-        
+
         if ($this->secretKey !== null) {
             $options['Timestamp'] = gmdate("Y-m-d\TH:i:s\Z");
             ksort($options);
             $options['Signature'] = self::computeSignature($this->baseUri, $this->secretKey, $options);
         }
-        
+
         return $options;
     }
 
     /**
      * Compute Signature for Authentication with ProductAdvertising Product Advertising Webservices
      *
-     * @param string $baseUri            
-     * @param string $secretKey            
-     * @param array $options            
+     * @param  string $baseUri
+     * @param  string $secretKey
+     * @param  array  $options
      * @return string
      */
     public static function computeSignature($baseUri, $secretKey, array $options)
     {
         $signature = self::buildRawSignature($baseUri, $options);
+
         return base64_encode(Hmac::compute($secretKey, 'sha256', $signature, Hmac::OUTPUT_BINARY));
     }
 
     /**
      * Build the Raw Signature Text
      *
-     * @param string $baseUri            
-     * @param array $options            
+     * @param  string $baseUri
+     * @param  array  $options
      * @return string
      */
     public static function buildRawSignature($baseUri, $options)
     {
         ksort($options);
-        
-        return sprintf("GET" . PHP_EOL . "%s" . PHP_EOL . "/onca/xml" . PHP_EOL . "%s", 
+
+        return sprintf("GET" . PHP_EOL . "%s" . PHP_EOL . "/onca/xml" . PHP_EOL . "%s",
             str_replace('http://', '', $baseUri), http_build_query($options, '', '&', \PHP_QUERY_RFC3986));
     }
 
     /**
      * Check result for errors
      *
-     * @param DOMDocument $dom            
+     * @param  DOMDocument                $dom
      * @throws Exception\RuntimeException
      * @return void
      */
@@ -289,11 +292,11 @@ class ProductAdvertising
     {
         $xpath = new DOMXPath($dom);
         $xpath->registerNamespace('az', 'http://webservices.amazon.com/AWSECommerceService/' . self::getVersion());
-        
+
         if ($xpath->query('//az:Error')->length >= 1) {
             $code = $xpath->query('//az:Error/az:Code/text()')->item(0)->data;
             $message = $xpath->query('//az:Error/az:Message/text()')->item(0)->data;
-            
+
             switch ($code) {
                 case 'AWS.ECommerceService.NoExactMatches':
                     break;
@@ -307,6 +310,8 @@ class ProductAdvertising
      * Set the ProductAdvertising API version
      *
      * @static
+     *
+     *
      *
      * @param string $version
      *            API Version
@@ -323,6 +328,8 @@ class ProductAdvertising
      * Return the ProductAdvertising API version
      *
      * @static
+     *
+     *
      *
      * @return string
      */

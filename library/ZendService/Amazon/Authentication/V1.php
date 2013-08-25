@@ -31,8 +31,8 @@ class V1 extends AbstractAuthentication
 
     /**
      * Generate the required attributes for the signature
-     * @param string $url
-     * @param array $parameters
+     * @param  string $url
+     * @param  array  $parameters
      * @return string
      */
     public function generateSignature($url, array &$parameters)
@@ -40,7 +40,7 @@ class V1 extends AbstractAuthentication
         $parameters['AWSAccessKeyId']   = $this->_accessKey;
         $parameters['SignatureVersion'] = $this->_signatureVersion;
         $parameters['Version']          = $this->_apiVersion;
-        if(!isset($parameters['Timestamp'])) {
+        if (!isset($parameters['Timestamp'])) {
             $parameters['Timestamp']    = gmdate('Y-m-d\TH:i:s\Z', time()+10);
         }
 
@@ -64,8 +64,8 @@ class V1 extends AbstractAuthentication
      *    values before constructing this string. Do not use any separator
      *    characters when appending strings.
      *
-     * @param string $url Queue URL
-     * @param array $parameters the parameters for which to get the signature.
+     * @param string $url        Queue URL
+     * @param array  $parameters the parameters for which to get the signature.
      *
      * @return string the signed data.
      */
@@ -76,7 +76,7 @@ class V1 extends AbstractAuthentication
         uksort($parameters, 'strcasecmp');
         unset($parameters['Signature']);
 
-        foreach($parameters as $key => $value) {
+        foreach ($parameters as $key => $value) {
             $data .= $key . $value;
         }
 

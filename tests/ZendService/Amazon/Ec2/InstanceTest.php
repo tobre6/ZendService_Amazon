@@ -15,7 +15,6 @@ use ZendService\Amazon\Ec2\Exception;
 use Zend\Http\Client as HttpClient;
 use Zend\Http\Client\Adapter\Test as HttpClientTestAdapter;
 
-
 /**
  * Zend_Service_Amazon_Ec2_Instance test case.
  *
@@ -377,7 +376,6 @@ class InstanceTest extends \PHPUnit_Framework_TestCase
                     . "</RunInstancesResponse>\r\n";
         $this->httpClientTestAdapter->setResponse($rawHttpResponse);
 
-
         $arrStart = array(
             'imageId' => 'ami-60a54009',
             'maxStart' => 3,
@@ -398,7 +396,7 @@ class InstanceTest extends \PHPUnit_Framework_TestCase
 
         $arrInstanceIds = array('i-2ba64342', 'i-2bc64242', 'i-2be64332');
 
-        foreach($return['instances'] as $k => $r) {
+        foreach ($return['instances'] as $k => $r) {
             $this->assertEquals($arrInstanceIds[$k], $r['instanceId']);
             $this->assertEquals($k, $r['amiLaunchIndex']);
         }
@@ -500,7 +498,7 @@ class InstanceTest extends \PHPUnit_Framework_TestCase
 
         $this->assertEquals(1, count($return));
 
-        foreach($return as $r) {
+        foreach ($return as $r) {
             $this->assertEquals('i-28a64341', $r['instanceId']);
         }
     }
@@ -550,7 +548,7 @@ class InstanceTest extends \PHPUnit_Framework_TestCase
 
         $this->assertEquals(2, count($return));
 
-        foreach($return as $k=>$r) {
+        foreach ($return as $k=>$r) {
             $this->assertEquals($arrInstanceIds[$k], $r['instanceId']);
         }
     }

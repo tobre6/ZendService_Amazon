@@ -26,7 +26,7 @@ class Attribute
      *
      * @param string $itemName
      * @param string $name
-     * @param array $values
+     * @param array  $values
      */
     public function __construct($itemName, $name, $values)
     {

@@ -58,9 +58,9 @@ abstract class AbstractAmazon
     /**
      * Constructor
      *
-     * @param null|string $accessKey Override the default Access Key
-     * @param null|string $secretKey Override the default Secret Key
-     * @param HttpClient $httpClient
+     * @param null|string $accessKey  Override the default Access Key
+     * @param null|string $secretKey  Override the default Secret Key
+     * @param HttpClient  $httpClient
      */
     public function __construct($accessKey = null, $secretKey = null, HttpClient $httpClient = null)
     {
@@ -81,12 +81,13 @@ abstract class AbstractAmazon
     }
 
     /**
-     * @param HttpClient $httpClient
+     * @param  HttpClient     $httpClient
      * @return AbstractAmazon
      */
     public function setHttpClient(HttpClient $httpClient)
     {
         $this->httpClient = $httpClient;
+
         return $this;
     }
 
@@ -103,7 +104,7 @@ abstract class AbstractAmazon
      * If preserve is set, the specific object is kept for further requests
      *
      * @param null|DateTime $date
-     * @param null|boolean $preserve if the set date must be kept for further requests
+     * @param null|boolean  $preserve if the set date must be kept for further requests
      */
     public function setRequestDate(DateTime $date = null, $preserve = null)
     {
@@ -175,6 +176,7 @@ abstract class AbstractAmazon
                 $this->requestDate = null;
             }
         }
+
         return $date->format(DateTime::RFC1123);
     }
 

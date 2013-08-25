@@ -25,15 +25,15 @@ class Ec2
     /**
      * Factory method to fetch what you want to work with.
      *
-     * @param string $section   Create the method that you want to work with
-     * @param string $key       Override the default aws key
-     * @param string $secretKey Override the default aws secret key
+     * @param  string                     $section   Create the method that you want to work with
+     * @param  string                     $key       Override the default aws key
+     * @param  string                     $secretKey Override the default aws secret key
      * @throws Exception\RuntimeException
      * @return object
      */
     public static function factory($section, $key = null, $secretKey = null)
     {
-        switch(strtolower($section)) {
+        switch (strtolower($section)) {
             case 'keypair':
                 $class = '\ZendService\Amazon\Ec2\Keypair';
                 break;

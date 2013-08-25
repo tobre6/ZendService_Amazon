@@ -52,7 +52,6 @@ class Instance extends AbstractEc2
      */
     const HCPU_XLARGE = 'c1.xlarge';
 
-
     /**
      * Launches a specified number of Instances.
      *
@@ -77,7 +76,7 @@ class Instance extends AbstractEc2
      *
      * Launching public images without a key pair ID will leave them inaccessible.
      *
-     * @param array $options                        An array that contins the options to start an instance.
+     * @param array $options An array that contins the options to start an instance.
      *                                              Required Values:
      *                                                imageId string        ID of the AMI with which to launch instances.
      *                                              Optional Values:
@@ -107,10 +106,9 @@ class Instance extends AbstractEc2
         // set / override the defualt optoins if they are not passed into the array;
         $options = array_merge($_defaultOptions, $options);
 
-        if(!isset($options['imageId'])) {
+        if (!isset($options['imageId'])) {
             throw new Exception\InvalidArgumentException('No Image Id Provided');
         }
-
 
         $params = array();
         $params['Action'] = 'RunInstances';
@@ -118,44 +116,44 @@ class Instance extends AbstractEc2
         $params['MinCount'] = $options['minCount'];
         $params['MaxCount'] = $options['maxCount'];
 
-        if(isset($options['keyName'])) {
+        if (isset($options['keyName'])) {
             $params['KeyName'] = $options['keyName'];
         }
 
-        if(is_array($options['securityGroup']) && !empty($options['securityGroup'])) {
-            foreach($options['securityGroup'] as $k=>$name) {
+        if (is_array($options['securityGroup']) && !empty($options['securityGroup'])) {
+            foreach ($options['securityGroup'] as $k=>$name) {
                 $params['SecurityGroup.' . ($k+1)] = $name;
             }
-        } elseif(isset($options['securityGroup'])) {
+        } elseif (isset($options['securityGroup'])) {
             $params['SecurityGroup.1'] = $options['securityGroup'];
         }
 
-        if(isset($options['userData'])) {
+        if (isset($options['userData'])) {
             $params['UserData'] = base64_encode($options['userData']);
         }
 
-        if(isset($options['instanceType'])) {
+        if (isset($options['instanceType'])) {
             $params['InstanceType'] = $options['instanceType'];
         }
 
-        if(isset($options['placement'])) {
+        if (isset($options['placement'])) {
             $params['Placement.AvailabilityZone'] = $options['placement'];
         }
 
-        if(isset($options['kernelId'])) {
+        if (isset($options['kernelId'])) {
             $params['KernelId'] = $options['kernelId'];
         }
 
-        if(isset($options['ramdiskId'])) {
+        if (isset($options['ramdiskId'])) {
             $params['RamdiskId'] = $options['ramdiskId'];
         }
 
-        if(isset($options['blockDeviceVirtualName']) && isset($options['blockDeviceName'])) {
+        if (isset($options['blockDeviceVirtualName']) && isset($options['blockDeviceName'])) {
             $params['BlockDeviceMapping.n.VirtualName'] = $options['blockDeviceVirtualName'];
             $params['BlockDeviceMapping.n.DeviceName'] = $options['blockDeviceName'];
         }
 
-        if(isset($options['monitor']) && $options['monitor'] === true) {
+        if (isset($options['monitor']) && $options['monitor'] === true) {
             $params['Monitoring.Enabled'] = true;
         }
 
@@ -168,14 +166,14 @@ class Instance extends AbstractEc2
         $return['ownerId'] = $xpath->evaluate('string(//ec2:ownerId/text())');
 
         $gs = $xpath->query('//ec2:groupSet/ec2:item');
-        foreach($gs as $gs_node) {
+        foreach ($gs as $gs_node) {
             $return['groupSet'][] = $xpath->evaluate('string(ec2:groupId/text())', $gs_node);
             unset($gs_node);
         }
         unset($gs);
 
         $is = $xpath->query('//ec2:instancesSet/ec2:item');
-        foreach($is as $is_node) {
+        foreach ($is as $is_node) {
             $item = array();
 
             $item['instanceId'] = $xpath->evaluate('string(ec2:instanceId/text())', $is_node);
@@ -212,8 +210,8 @@ class Instance extends AbstractEc2
      * Recently terminated instances might appear in the returned results.
      * This interval is usually less than one hour.
      *
-     * @param string|array $instanceId  Set of instances IDs of which to get the status.
-     * @param boolean $ignoreTerminated True to ignore Terminated Instances.
+     * @param  string|array $instanceId       Set of instances IDs of which to get the status.
+     * @param  boolean      $ignoreTerminated True to ignore Terminated Instances.
      * @return array
      */
     public function describe($instanceId = null, $ignoreTerminated = false)
@@ -221,11 +219,11 @@ class Instance extends AbstractEc2
         $params = array();
         $params['Action'] = 'DescribeInstances';
 
-        if(is_array($instanceId) && !empty($instanceId)) {
-            foreach($instanceId as $k=>$name) {
+        if (is_array($instanceId) && !empty($instanceId)) {
+            foreach ($instanceId as $k=>$name) {
                 $params['InstanceId.' . ($k+1)] = $name;
             }
-        } elseif($instanceId) {
+        } elseif ($instanceId) {
             $params['InstanceId.1'] = $instanceId;
         }
 
@@ -238,7 +236,7 @@ class Instance extends AbstractEc2
         $return = array();
         $return['instances'] = array();
 
-        foreach($nodes as $node) {
+        foreach ($nodes as $node) {
             if($xpath->evaluate('string(ec2:instancesSet/ec2:item/ec2:instanceState/ec2:code/text())', $node) == 48 && $ignoreTerminated) continue;
             $item = array();
 
@@ -246,7 +244,7 @@ class Instance extends AbstractEc2
             $item['ownerId'] = $xpath->evaluate('string(ec2:ownerId/text())', $node);
 
             $gs = $xpath->query('ec2:groupSet/ec2:item', $node);
-            foreach($gs as $gs_node) {
+            foreach ($gs as $gs_node) {
                 $item['groupSet'][] = $xpath->evaluate('string(ec2:groupId/text())', $gs_node);
                 unset($gs_node);
             }
@@ -254,7 +252,7 @@ class Instance extends AbstractEc2
 
             $is = $xpath->query('ec2:instancesSet/ec2:item', $node);
 
-            foreach($is as $is_node) {
+            foreach ($is as $is_node) {
 
                 $item['instanceId'] = $xpath->evaluate('string(ec2:instanceId/text())', $is_node);
                 $item['imageId'] = $xpath->evaluate('string(ec2:imageId/text())', $is_node);
@@ -289,8 +287,8 @@ class Instance extends AbstractEc2
      * Recently terminated instances might appear in the returned results.
      * This interval is usually less than one hour.
      *
-     * @param string $imageId           The imageId used to start the Instance.
-     * @param boolean $ignoreTerminated True to ignore Terminated Instances.
+     * @param  string  $imageId          The imageId used to start the Instance.
+     * @param  boolean $ignoreTerminated True to ignore Terminated Instances.
      * @return array
      */
     public function describeByImageId($imageId, $ignoreTerminated = false)
@@ -299,7 +297,7 @@ class Instance extends AbstractEc2
 
         $return = array();
 
-        foreach($arrInstances['instances'] as $instance) {
+        foreach ($arrInstances['instances'] as $instance) {
             if($instance['imageId'] !== $imageId) continue;
             $return[] = $instance;
         }
@@ -313,7 +311,7 @@ class Instance extends AbstractEc2
      *
      * Terminated instances will remain visible after termination (approximately one hour).
      *
-     * @param string|array $instanceId One or more instance IDs returned.
+     * @param  string|array $instanceId One or more instance IDs returned.
      * @return array
      */
     public function terminate($instanceId)
@@ -321,11 +319,11 @@ class Instance extends AbstractEc2
         $params = array();
         $params['Action'] = 'TerminateInstances';
 
-        if(is_array($instanceId) && !empty($instanceId)) {
-            foreach($instanceId as $k=>$name) {
+        if (is_array($instanceId) && !empty($instanceId)) {
+            foreach ($instanceId as $k=>$name) {
                 $params['InstanceId.' . ($k+1)] = $name;
             }
-        } elseif($instanceId) {
+        } elseif ($instanceId) {
             $params['InstanceId.1'] = $instanceId;
         }
 
@@ -335,7 +333,7 @@ class Instance extends AbstractEc2
         $nodes = $xpath->query('//ec2:instancesSet/ec2:item');
 
         $return = array();
-        foreach($nodes as $node) {
+        foreach ($nodes as $node) {
             $item = array();
 
             $item['instanceId'] = $xpath->evaluate('string(ec2:instanceId/text())', $node);
@@ -356,7 +354,7 @@ class Instance extends AbstractEc2
      * This operation is asynchronous; it only queues a request to reboot the specified instance(s). The operation
      * will succeed if the instances are valid and belong to the user. Requests to reboot terminated instances are ignored.
      *
-     * @param string|array $instanceId One or more instance IDs.
+     * @param  string|array $instanceId One or more instance IDs.
      * @return boolean
      */
     public function reboot($instanceId)
@@ -364,11 +362,11 @@ class Instance extends AbstractEc2
         $params = array();
         $params['Action'] = 'RebootInstances';
 
-        if(is_array($instanceId) && !empty($instanceId)) {
-            foreach($instanceId as $k=>$name) {
+        if (is_array($instanceId) && !empty($instanceId)) {
+            foreach ($instanceId as $k=>$name) {
                 $params['InstanceId.' . ($k+1)] = $name;
             }
-        } elseif($instanceId) {
+        } elseif ($instanceId) {
             $params['InstanceId.1'] = $instanceId;
         }
 
@@ -386,7 +384,7 @@ class Instance extends AbstractEc2
      * Instance console output is buffered and posted shortly after instance boot, reboot, and termination.
      * Amazon EC2 preserves the most recent 64 KB output which will be available for at least one hour after the most recent post.
      *
-     * @param string $instanceId An instance ID
+     * @param  string $instanceId An instance ID
      * @return array
      */
     public function consoleOutput($instanceId)
@@ -415,8 +413,8 @@ class Instance extends AbstractEc2
      * This feature is useful when an AMI owner is providing support and wants to
      * verify whether a user's instance is eligible.
      *
-     * @param string $productCode The product code to confirm.
-     * @param string $instanceId  The instance for which to confirm the product code.
+     * @param  string        $productCode The product code to confirm.
+     * @param  string        $instanceId  The instance for which to confirm the product code.
      * @return array|boolean An array if the product code is attached to the instance, false if it is not.
      */
     public function confirmProduct($productCode, $instanceId)
@@ -431,7 +429,7 @@ class Instance extends AbstractEc2
 
         $result = $xpath->evaluate('string(//ec2:result/text())');
 
-        if($result === "true") {
+        if ($result === "true") {
             $return['result'] = true;
             $return['ownerId'] = $xpath->evaluate('string(//ec2:ownerId/text())');
 
@@ -452,11 +450,11 @@ class Instance extends AbstractEc2
         $params = array();
         $params['Action'] = 'MonitorInstances';
 
-        if(is_array($instanceId) && !empty($instanceId)) {
-            foreach($instanceId as $k=>$name) {
+        if (is_array($instanceId) && !empty($instanceId)) {
+            foreach ($instanceId as $k=>$name) {
                 $params['InstanceId.' . ($k+1)] = $name;
             }
-        } elseif($instanceId) {
+        } elseif ($instanceId) {
             $params['InstanceId.1'] = $instanceId;
         }
 
@@ -467,7 +465,7 @@ class Instance extends AbstractEc2
         $items = $xpath->query('//ec2:instancesSet/ec2:item');
 
         $arrReturn = array();
-        foreach($items as $item) {
+        foreach ($items as $item) {
             $i = array();
             $i['instanceid'] = $xpath->evaluate('string(//ec2:instanceId/text())', $item);
             $i['monitorstate'] = $xpath->evaluate('string(//ec2:monitoring/ec2:state/text())');
@@ -488,11 +486,11 @@ class Instance extends AbstractEc2
         $params = array();
         $params['Action'] = 'UnmonitorInstances';
 
-        if(is_array($instanceId) && !empty($instanceId)) {
-            foreach($instanceId as $k=>$name) {
+        if (is_array($instanceId) && !empty($instanceId)) {
+            foreach ($instanceId as $k=>$name) {
                 $params['InstanceId.' . ($k+1)] = $name;
             }
-        } elseif($instanceId) {
+        } elseif ($instanceId) {
             $params['InstanceId.1'] = $instanceId;
         }
 
@@ -503,7 +501,7 @@ class Instance extends AbstractEc2
         $items = $xpath->query('//ec2:instancesSet/ec2:item');
 
         $arrReturn = array();
-        foreach($items as $item) {
+        foreach ($items as $item) {
             $i = array();
             $i['instanceid'] = $xpath->evaluate('string(//ec2:instanceId/text())', $item);
             $i['monitorstate'] = $xpath->evaluate('string(//ec2:monitoring/ec2:state/text())');

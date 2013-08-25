@@ -11,7 +11,6 @@
 namespace ZendServiceTest\Amazon\Authentication;
 
 use ZendService\Amazon\Authentication;
-use ZendService\Amazon\Authentication\Exception;
 
 /**
  * S3 authentication test case
@@ -44,7 +43,6 @@ class S3Test extends \PHPUnit_Framework_TestCase
     {
         $this->_amazon = null;
     }
-
 
     public function testGetGeneratesCorrectSignature()
     {
@@ -134,7 +132,6 @@ class S3Test extends \PHPUnit_Framework_TestCase
         $headers['Content-Disposition'] = "attachment; filename=database.dat";
         $headers['Content-Encoding'] = "gzip";
         $headers['Content-Length'] = "5913339";
-
 
         $ret = $this->_amazon->generateSignature('PUT', 'http://s3.amazonaws.com/static.johnsmith.net/db-backup.dat.gz', $headers);
 

@@ -45,7 +45,7 @@ class Image
     /**
      * Assigns values to properties relevant to Image
      *
-     * @param  DOMElement $dom
+     * @param DOMElement $dom
      */
     public function __construct(DOMElement $dom)
     {

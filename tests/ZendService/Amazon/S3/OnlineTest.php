@@ -254,7 +254,7 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
 
     protected function _fileTest($filename, $object, $type, $exp_type, $stream = false)
     {
-        if($stream) {
+        if ($stream) {
             $this->_amazon->putFile($filename, $object, array(S3\S3::S3_CONTENT_TYPE_HEADER => $type));
         } else {
             $this->_amazon->putFileStream($filename, $object, array(S3\S3::S3_CONTENT_TYPE_HEADER => $type));
@@ -324,6 +324,7 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
             $this->_amazon->putFile($filedir."nosuchfile", $this->_bucket."/zftestfile");
         } catch (S3\Exception\RuntimeException $e) {
             $this->assertFalse($this->_amazon->isObjectAvailable($this->_bucket."/zftestfile"));
+
             return;
         }
         $this->fail('Expected exception not thrown');
@@ -517,10 +518,11 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
     {
         try {
             $this->_amazon->createBucket("127.0.0.1");
-        } catch(S3\Exception\InvalidArgumentException $e) {
+        } catch (S3\Exception\InvalidArgumentException $e) {
             $this->_amazon->createBucket("123-456-789-123");
             $this->assertTrue($this->_amazon->isBucketAvailable("123-456-789-123"));
             $this->_amazon->removeBucket("123-456-789-123");
+
             return;
         }
         $this->fail("Failed to throw expected exception");

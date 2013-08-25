@@ -14,7 +14,6 @@ use ZendService\Amazon\Ec2;
 use Zend\Http\Client as HttpClient;
 use Zend\Http\Client\Adapter\Test as HttpClientTestAdapter;
 
-
 /**
  * ZendService\Amazon\Ec2\Securitygroups test case.
  *
@@ -259,7 +258,7 @@ class SecurityGroupsTest extends \PHPUnit_Framework_TestCase
                     ))
                 )
             );
-        foreach($return as $k => $r) {
+        foreach ($return as $k => $r) {
             $this->assertSame($arrGroups[$k], $r);
         }
     }
@@ -316,7 +315,7 @@ class SecurityGroupsTest extends \PHPUnit_Framework_TestCase
                     ))
                 )
             );
-        foreach($return as $k => $r) {
+        foreach ($return as $k => $r) {
             $this->assertSame($arrGroups[$k], $r);
         }
     }
@@ -379,7 +378,7 @@ class SecurityGroupsTest extends \PHPUnit_Framework_TestCase
                     ))
                 )
             );
-        foreach($return as $k => $r) {
+        foreach ($return as $k => $r) {
             $this->assertSame($arrGroups[$k], $r);
         }
     }
@@ -430,7 +429,6 @@ class SecurityGroupsTest extends \PHPUnit_Framework_TestCase
         $this->assertTrue($return);
 
     }
-
 
     public function testRevokeSecurityGroupName()
     {

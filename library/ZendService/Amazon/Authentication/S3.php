@@ -24,7 +24,7 @@ class S3 extends AbstractAuthentication
      *
      * @param  string $method
      * @param  string $path
-     * @param  array &$headers
+     * @param  array  &$headers
      * @return string
      */
     public function generateSignature($method, $path, &$headers)

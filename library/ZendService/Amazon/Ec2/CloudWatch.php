@@ -182,7 +182,7 @@ class CloudWatch extends AbstractEc2
      * also get all of the data at the granularity you originally asked for by making
      * multiple requests with adjacent time ranges.
      *
-     * @param array $options            The options you want to get statistics for:
+     * @param array $options The options you want to get statistics for:
      *                                  ** Required **
      *                                  MeasureName: The measure name that corresponds to
      *                                      the measure for the gathered metric. Valid EC2 Values are
@@ -234,36 +234,36 @@ class CloudWatch extends AbstractEc2
             throw new Exception\InvalidArgumentException('Invalid Metric Type: ' . $options['MeasureName']);
         }
 
-        if(!isset($options['Statistics'])) {
+        if (!isset($options['Statistics'])) {
             $options['Statistics'][] = 'Average';
-        } elseif(!is_array($options['Statistics'])) {
+        } elseif (!is_array($options['Statistics'])) {
             $options['Statistics'][] = $options['Statistics'];
         }
 
-        foreach($options['Statistics'] as $k=>$s) {
+        foreach ($options['Statistics'] as $k=>$s) {
             if(!in_array($s, $this->_validStatistics, true)) continue;
             $options['Statistics.member.' . ($k+1)] = $s;
             $_usedStatistics[] = $s;
         }
         unset($options['Statistics']);
 
-        if(isset($options['StartTime'])) {
+        if (isset($options['StartTime'])) {
             if(!is_numeric($options['StartTime'])) $options['StartTime'] = strtotime($options['StartTime']);
             $options['StartTime'] = gmdate('c', $options['StartTime']);
         } else {
             $options['StartTime'] = gmdate('c', strtotime('-1 hour'));
         }
 
-        if(isset($options['EndTime'])) {
+        if (isset($options['EndTime'])) {
             if(!is_numeric($options['EndTime'])) $options['EndTime'] = strtotime($options['EndTime']);
             $options['EndTime'] = gmdate('c', $options['EndTime']);
         } else {
             $options['EndTime'] = gmdate('c');
         }
 
-        if(isset($options['Dimensions'])) {
+        if (isset($options['Dimensions'])) {
             $x = 1;
-            foreach($options['Dimensions'] as $dimKey=>$dimVal) {
+            foreach ($options['Dimensions'] as $dimKey=>$dimVal) {
                 if(!in_array($dimKey, $this->_validDimensionsKeys, true)) continue;
                 $options['Dimensions.member.' . $x . '.Name'] = $dimKey;
                 $options['Dimensions.member.' . $x . '.Value'] = $dimVal;
@@ -283,13 +283,13 @@ class CloudWatch extends AbstractEc2
 
         $return = array();
         $return['label'] = $xpath->evaluate('string(//ec2:GetMetricStatisticsResult/ec2:Label/text())');
-        foreach ( $nodes as $node ) {
+        foreach ($nodes as $node) {
             $item = array();
 
             $item['Timestamp'] = $xpath->evaluate('string(ec2:Timestamp/text())', $node);
             $item['Unit'] = $xpath->evaluate('string(ec2:Unit/text())', $node);
             $item['Samples'] = $xpath->evaluate('string(ec2:Samples/text())', $node);
-            foreach($_usedStatistics as $us) {
+            foreach ($_usedStatistics as $us) {
                 $item[$us] = $xpath->evaluate('string(ec2:' . $us . '/text())', $node);
             }
 
@@ -324,7 +324,7 @@ class CloudWatch extends AbstractEc2
         $nodes = $xpath->query('//ec2:ListMetricsResult/ec2:Metrics/ec2:member');
 
         $return = array();
-        foreach ( $nodes as $node ) {
+        foreach ($nodes as $node) {
             $item = array();
 
             $item['MeasureName'] = $xpath->evaluate('string(ec2:MeasureName/text())', $node);

@@ -25,12 +25,12 @@ class WindowsInstance extends AbstractEc2
     /**
      * Bundles an Amazon EC2 instance running Windows
      *
-     * @param string $instanceId        The instance you want to bundle
-     * @param string $s3Bucket          Where you want the ami to live on S3
-     * @param string $s3Prefix          The prefix you want to assign to the AMI on S3
+     * @param string  $instanceId       The instance you want to bundle
+     * @param string  $s3Bucket         Where you want the ami to live on S3
+     * @param string  $s3Prefix         The prefix you want to assign to the AMI on S3
      * @param integer $uploadExpiration The expiration of the upload policy.  Amazon recommends 12 hours or longer.
      *                                  This is based in nubmer of minutes. Default is 1440 minutes (24 hours)
-     * @return array                    containing the information on the new bundle operation
+     * @return array containing the information on the new bundle operation
      */
     public function bundle($instanceId, $s3Bucket, $s3Prefix, $uploadExpiration = 1440)
     {
@@ -64,8 +64,8 @@ class WindowsInstance extends AbstractEc2
     /**
      * Cancels an Amazon EC2 bundling operation
      *
-     * @param string $bundleId The ID of the bundle task to cancel
-     * @return array           Information on the bundle task
+     * @param  string $bundleId The ID of the bundle task to cancel
+     * @return array  Information on the bundle task
      */
     public function cancelBundle($bundleId)
     {
@@ -95,18 +95,18 @@ class WindowsInstance extends AbstractEc2
      *
      * @param string|array $bundleId A single or a list of bundle tasks that you want
      *                               to find information for.
-     * @return array                 Information for the task that you requested
+     * @return array Information for the task that you requested
      */
     public function describeBundle($bundleId = '')
     {
         $params = array();
         $params['Action'] = 'DescribeBundleTasks';
 
-        if(is_array($bundleId) && !empty($bundleId)) {
-            foreach($bundleId as $k=>$name) {
+        if (is_array($bundleId) && !empty($bundleId)) {
+            foreach ($bundleId as $k=>$name) {
                 $params['bundleId.' . ($k+1)] = $name;
             }
-        } elseif(!empty($bundleId)) {
+        } elseif (!empty($bundleId)) {
             $params['bundleId.1'] = $bundleId;
         }
 
@@ -117,7 +117,7 @@ class WindowsInstance extends AbstractEc2
         $items = $xpath->evaluate('//ec2:bundleInstanceTasksSet/ec2:item');
         $return = array();
 
-        foreach($items as $item) {
+        foreach ($items as $item) {
             $i = array();
             $i['instanceId'] = $xpath->evaluate('string(ec2:instanceId/text())', $item);
             $i['bundleId'] = $xpath->evaluate('string(ec2:bundleId/text())', $item);
@@ -132,18 +132,17 @@ class WindowsInstance extends AbstractEc2
             unset($i);
         }
 
-
         return $return;
     }
 
     /**
      * Generates the S3 Upload Policy Information
      *
-     * @param string $bucketName        Which bucket you want the ami to live in on S3
-     * @param string $prefix            The prefix you want to assign to the AMI on S3
-     * @param integer $expireInMinutes  The expiration of the upload policy.  Amazon recommends 12 hours or longer.
+     * @param string  $bucketName      Which bucket you want the ami to live in on S3
+     * @param string  $prefix          The prefix you want to assign to the AMI on S3
+     * @param integer $expireInMinutes The expiration of the upload policy.  Amazon recommends 12 hours or longer.
      *                                  This is based in nubmer of minutes. Default is 1440 minutes (24 hours)
-     * @return string                   Base64 encoded string that is the upload policy
+     * @return string Base64 encoded string that is the upload policy
      */
     protected function _getS3UploadPolicy($bucketName, $prefix, $expireInMinutes = 1440)
     {
@@ -159,8 +158,8 @@ class WindowsInstance extends AbstractEc2
     /**
      * Signed S3 Upload Policy
      *
-     * @param string $policy Base64 Encoded string that is the upload policy
-     * @return string        SHA1 encoded S3 Upload Policy
+     * @param  string $policy Base64 Encoded string that is the upload policy
+     * @return string SHA1 encoded S3 Upload Policy
      */
     protected function _signS3UploadPolicy($policy)
     {

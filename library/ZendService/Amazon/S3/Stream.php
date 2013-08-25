@@ -60,7 +60,7 @@ class Stream
     /**
      * Retrieve client for this stream type
      *
-     * @param  string $path
+     * @param  string                             $path
      * @return S3
      * @throws Exception\InvalidArgumentException
      * @throws Exception\RuntimeException
@@ -86,7 +86,7 @@ class Stream
     /**
      * Extract object name from URL
      *
-     * @param string $path
+     * @param  string $path
      * @return string
      */
     protected function _getNamePart($path)
@@ -119,6 +119,7 @@ class Stream
             $this->_position = 0;
             $this->_writeBuffer = true;
             $this->_getS3Client($path);
+
             return true;
         } else {
             // Otherwise, just see if the file exists or not
@@ -130,9 +131,11 @@ class Stream
                 $this->_position = 0;
                 $this->_writeBuffer = false;
                 $this->_getS3Client($path);
+
                 return true;
             }
         }
+
         return false;
     }
 
@@ -194,13 +197,14 @@ class Stream
 
         $data = substr($this->_objectBuffer, $this->_position, $count);
         $this->_position += strlen($data);
+
         return $data;
     }
 
     /**
      * Write to the stream
      *
-     * @param  string $data
+     * @param  string  $data
      * @return integer
      */
     public function stream_write($data)
@@ -271,6 +275,7 @@ class Stream
         if ($ret) {
             $this->_position = $new_pos;
         }
+
         return $ret;
     }
 
@@ -319,7 +324,7 @@ class Stream
         $stat['blksize'] = 0;
         $stat['blocks'] = 0;
 
-    if(($slash = strchr($this->_objectName, '/')) === false || $slash == strlen($this->_objectName)-1) {
+    if (($slash = strchr($this->_objectName, '/')) === false || $slash == strlen($this->_objectName)-1) {
         /* bucket */
         $stat['mode'] |= 040000;
     } else {
@@ -338,7 +343,7 @@ class Stream
     /**
      * Attempt to delete the item
      *
-     * @param  string $path
+     * @param  string  $path
      * @return boolean
      */
     public function unlink($path)
@@ -387,7 +392,7 @@ class Stream
     /**
      * Attempt to open a directory
      *
-     * @param  string $path
+     * @param  string  $path
      * @param  integer $options
      * @return boolean
      */
@@ -407,7 +412,7 @@ class Stream
     /**
      * Return array of URL variables
      *
-     * @param  string $path
+     * @param  string  $path
      * @param  integer $flags
      * @return array
      */
@@ -429,7 +434,7 @@ class Stream
         $stat['blocks'] = 0;
 
     $name = $this->_getNamePart($path);
-    if(($slash = strchr($name, '/')) === false || $slash == strlen($name)-1) {
+    if (($slash = strchr($name, '/')) === false || $slash == strlen($name)-1) {
         /* bucket */
         $stat['mode'] |= 040000;
     } else {
@@ -457,6 +462,7 @@ class Stream
         if ($object !== false) {
             next($this->_bucketList);
         }
+
         return $object;
     }
 
@@ -468,6 +474,7 @@ class Stream
     public function dir_rewinddir()
     {
         reset($this->_bucketList);
+
         return true;
     }
 
@@ -479,6 +486,7 @@ class Stream
     public function dir_closedir()
     {
         $this->_bucketList = array();
+
         return true;
     }
 }

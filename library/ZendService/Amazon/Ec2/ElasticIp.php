@@ -11,7 +11,6 @@
 namespace ZendService\Amazon\Ec2;
 
 use ZendService\Amazon;
-use ZendService\Amazon\Ec2\Exception;
 
 /**
  * An Amazon EC2 interface to allocate, associate, describe and release Elastic IP address
@@ -44,7 +43,7 @@ class ElasticIp extends AbstractEc2
     /**
      * Lists elastic IP addresses assigned to your account.
      *
-     * @param string|array $publicIp Elastic IP or list of addresses to describe.
+     * @param  string|array $publicIp Elastic IP or list of addresses to describe.
      * @return array
      */
     public function describe($publicIp = null)
@@ -52,11 +51,11 @@ class ElasticIp extends AbstractEc2
         $params = array();
         $params['Action'] = 'DescribeAddresses';
 
-        if(is_array($publicIp) && !empty($publicIp)) {
-            foreach($publicIp as $k=>$name) {
+        if (is_array($publicIp) && !empty($publicIp)) {
+            foreach ($publicIp as $k=>$name) {
                 $params['PublicIp.' . ($k+1)] = $name;
             }
-        } elseif($publicIp) {
+        } elseif ($publicIp) {
             $params['PublicIp.1'] = $publicIp;
         }
 
@@ -81,7 +80,7 @@ class ElasticIp extends AbstractEc2
     /**
      * Releases an elastic IP address that is associated with your account
      *
-     * @param string $publicIp IP address that you are releasing from your account.
+     * @param  string  $publicIp IP address that you are releasing from your account.
      * @return boolean
      */
     public function release($publicIp)
@@ -101,8 +100,8 @@ class ElasticIp extends AbstractEc2
     /**
      * Associates an elastic IP address with an instance
      *
-     * @param string $instanceId The instance to which the IP address is assigned
-     * @param string $publicIp   IP address that you are assigning to the instance.
+     * @param  string  $instanceId The instance to which the IP address is assigned
+     * @param  string  $publicIp   IP address that you are assigning to the instance.
      * @return boolean
      */
     public function associate($instanceId, $publicIp)
@@ -124,7 +123,7 @@ class ElasticIp extends AbstractEc2
      * Disassociates the specified elastic IP address from the instance to which it is assigned.
      * This is an idempotent operation. If you enter it more than once, Amazon EC2 does not return an error.
      *
-     * @param string $publicIp IP address that you are disassociating from the instance.
+     * @param  string  $publicIp IP address that you are disassociating from the instance.
      * @return boolean
      */
     public function disassocate($publicIp)

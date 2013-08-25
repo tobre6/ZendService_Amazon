@@ -35,9 +35,9 @@ abstract class AbstractAuthentication
     /**
      * Constructor
      *
-     * @param  string $accessKey
-     * @param  string $secretKey
-     * @param  string $apiVersion
+     * @param string $accessKey
+     * @param string $secretKey
+     * @param string $apiVersion
      */
     public function __construct($accessKey, $secretKey, $apiVersion)
     {

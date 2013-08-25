@@ -73,7 +73,6 @@ class S3RestTest extends \PHPUnit_Framework_TestCase
                       ->method('isValid')
                       ->will($this->returnValue(true));
 
-
         // Create a S3 instance
         $this->amazon  = new S3($accessKey, $secretKey);
         // Inject the stub into the application.

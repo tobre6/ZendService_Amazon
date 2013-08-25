@@ -34,16 +34,17 @@ class Query extends ProductAdvertising
     /**
      * Prepares query parameters
      *
-     * @param  string $method
-     * @param  array  $args
+     * @param  string                     $method
+     * @param  array                      $args
      * @throws Exception\RuntimeException
-     * @return Query Provides a fluent interface
+     * @return Query                      Provides a fluent interface
      */
     public function __call($method, $args)
     {
         if (strtolower($method) === 'asin') {
             $this->_searchIndex = 'asin';
             $this->_search['ItemId'] = $args[0];
+
             return $this;
         }
 
@@ -69,6 +70,7 @@ class Query extends ProductAdvertising
         if ($this->_searchIndex === 'asin') {
             return $this->itemLookup($this->_search['ItemId'], $this->_search);
         }
+
         return $this->itemSearch($this->_search);
     }
 }

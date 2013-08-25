@@ -68,7 +68,7 @@ class OfferSet
     /**
      * Parse the given Offer Set Element
      *
-     * @param  DOMElement $dom
+     * @param DOMElement $dom
      */
     public function __construct(DOMElement $dom)
     {

@@ -53,8 +53,8 @@ class SimpleDb extends \ZendService\Amazon\AbstractAmazon
     /**
      * Create Amazon SimpleDB client.
      *
-     * @param  string $accessKey Override the default Access Key
-     * @param  string $secretKey Override the default Secret Key
+     * @param string $accessKey Override the default Access Key
+     * @param string $secretKey Override the default Secret Key
      */
     public function __construct($accessKey, $secretKey)
     {
@@ -65,19 +65,20 @@ class SimpleDb extends \ZendService\Amazon\AbstractAmazon
     /**
      * Set SimpleDB endpoint to use
      *
-     * @param string|Uri\Uri $endpoint
+     * @param  string|Uri\Uri                     $endpoint
      * @return SimpleDb
      * @throws Exception\InvalidArgumentException
      */
     public function setEndpoint($endpoint)
     {
-        if(!($endpoint instanceof Uri\Uri)) {
+        if (!($endpoint instanceof Uri\Uri)) {
             $endpoint = Uri\UriFactory::factory($endpoint);
         }
-        if(!$endpoint->isValid()) {
+        if (!$endpoint->isValid()) {
             throw new Exception\InvalidArgumentException("Invalid endpoint supplied");
         }
         $this->_endpoint = $endpoint;
+
         return $this;
     }
 
@@ -94,9 +95,9 @@ class SimpleDb extends \ZendService\Amazon\AbstractAmazon
     /**
      * Get attributes API method
      *
-     * @param string $domainName Domain name within database
-     * @param string $itemName
-     * @param string $attributeName
+     * @param  string $domainName    Domain name within database
+     * @param  string $itemName
+     * @param  string $attributeName
      * @return array
      */
     public function getAttributes(
@@ -118,17 +119,17 @@ class SimpleDb extends \ZendService\Amazon\AbstractAmazon
 
         // Return an array of arrays
         $attributes = array();
-        foreach($attributeNodes as $attributeNode) {
-            $name       = (string)$attributeNode->Name;
+        foreach ($attributeNodes as $attributeNode) {
+            $name       = (string) $attributeNode->Name;
             $valueNodes = $attributeNode->Value;
             $data       = null;
             if (is_array($valueNodes) && !empty($valueNodes)) {
                 $data = array();
-                foreach($valueNodes as $valueNode) {
-                    $data[] = (string)$valueNode;
+                foreach ($valueNodes as $valueNode) {
+                    $data[] = (string) $valueNode;
                 }
             } elseif (isset($valueNodes)) {
-                $data = (string)$valueNodes;
+                $data = (string) $valueNodes;
             }
             if (isset($attributes[$name])) {
                 $attributes[$name]->addValue($data);
@@ -136,16 +137,17 @@ class SimpleDb extends \ZendService\Amazon\AbstractAmazon
                 $attributes[$name] = new Attribute($itemName, $name, $data);
             }
         }
+
         return $attributes;
     }
 
     /**
      * Push attributes
      *
-     * @param  string $domainName
-     * @param  string $itemName
+     * @param  string             $domainName
+     * @param  string             $itemName
      * @param  array|\Traversable $attributes
-     * @param  array $replace
+     * @param  array              $replace
      * @return void
      */
     public function putAttributes(
@@ -164,7 +166,7 @@ class SimpleDb extends \ZendService\Amazon\AbstractAmazon
                 $params['Attribute.' . $index . '.Value'] = $value;
 
                 // Check if it should be replaced
-                if(array_key_exists($attributeName, $replace) && $replace[$attributeName]) {
+                if (array_key_exists($attributeName, $replace) && $replace[$attributeName]) {
                     $params['Attribute.' . $index . '.Replace'] = 'true';
                 }
                 $index++;
@@ -178,9 +180,9 @@ class SimpleDb extends \ZendService\Amazon\AbstractAmazon
     /**
      * Add many attributes at once
      *
-     * @param  array $items
+     * @param  array  $items
      * @param  string $domainName
-     * @param  array $replace
+     * @param  array  $replace
      * @return void
      */
     public function batchPutAttributes($items, $domainName, array $replace = array())
@@ -197,7 +199,7 @@ class SimpleDb extends \ZendService\Amazon\AbstractAmazon
             foreach ($attributes as $attribute) {
                 // attribute value cannot be array, so when several items are passed
                 // they are treated as separate values with the same attribute name
-                foreach($attribute->getValues() as $value) {
+                foreach ($attribute->getValues() as $value) {
                     $params['Item.' . $itemIndex . '.Attribute.' . $attributeIndex . '.Name'] = $attribute->getName();
                     $params['Item.' . $itemIndex . '.Attribute.' . $attributeIndex . '.Value'] = $value;
                     if (isset($replace[$name])
@@ -220,7 +222,7 @@ class SimpleDb extends \ZendService\Amazon\AbstractAmazon
      *
      * @param  string $domainName
      * @param  string $itemName
-     * @param  array $attributes
+     * @param  array  $attributes
      * @return bool
      */
     public function deleteAttributes($domainName, $itemName, array $attributes = array())
@@ -249,7 +251,7 @@ class SimpleDb extends \ZendService\Amazon\AbstractAmazon
      *
      * @param $maxNumberOfDomains int
      * @param $nextToken          int
-     * @return array              0 or more domain names
+     * @return array 0 or more domain names
      */
     public function listDomains($maxNumberOfDomains = 100, $nextToken = null)
     {
@@ -266,11 +268,11 @@ class SimpleDb extends \ZendService\Amazon\AbstractAmazon
 
         $data = array();
         foreach ($domainNodes as $domain) {
-            $data[] = (string)$domain;
+            $data[] = (string) $domain;
         }
 
         $nextTokenNode = $response->getSimpleXMLDocument()->ListDomainsResult->NextToken;
-        $nextToken     = (string)$nextTokenNode;
+        $nextToken     = (string) $nextTokenNode;
         $nextToken     = (trim($nextToken) === '') ? null : $nextToken;
 
         return new Page($data, $nextToken);
@@ -295,7 +297,7 @@ class SimpleDb extends \ZendService\Amazon\AbstractAmazon
         $metadata      = array();
         foreach ($metadataNodes as $metadataNode) {
             $name            = $metadataNode->getName();
-            $metadata[$name] = (string)$metadataNode;
+            $metadata[$name] = (string) $metadataNode;
         }
 
         return $metadata;
@@ -305,7 +307,7 @@ class SimpleDb extends \ZendService\Amazon\AbstractAmazon
      * Create a new domain
      *
      * @param $domainName	string	Valid domain name of the domain to create
-     * @return 				boolean True if successful, false if not
+     * @return boolean True if successful, false if not
      */
     public function createDomain($domainName)
     {
@@ -313,6 +315,7 @@ class SimpleDb extends \ZendService\Amazon\AbstractAmazon
         $params['Action']     = 'CreateDomain';
         $params['DomainName'] = $domainName;
         $response             = $this->_sendRequest($params);
+
         return $response->getHttpResponse()->isSuccess();
     }
 
@@ -328,13 +331,14 @@ class SimpleDb extends \ZendService\Amazon\AbstractAmazon
         $params['Action']     = 'DeleteDomain';
         $params['DomainName'] = $domainName;
         $response             = $this->_sendRequest($params);
+
         return $response->getHttpResponse()->isSuccessful();
     }
 
     /**
      * Select items from the database
      *
-     * @param  string $selectExpression
+     * @param  string      $selectExpression
      * @param  null|string $nextToken
      * @return Page
      */
@@ -353,20 +357,20 @@ class SimpleDb extends \ZendService\Amazon\AbstractAmazon
 
         $attributes = array();
         foreach ($xml->SelectResult->Item as $item) {
-            $itemName = (string)$item->Name;
+            $itemName = (string) $item->Name;
 
             foreach ($item->Attribute as $attribute) {
-                $attributeName = (string)$attribute->Name;
+                $attributeName = (string) $attribute->Name;
 
                 $values = array();
                 foreach ($attribute->Value as $value) {
-                    $values[] = (string)$value;
+                    $values[] = (string) $value;
                 }
                 $attributes[$itemName][$attributeName] = new Attribute($itemName, $attributeName, $values);
             }
         }
 
-        $nextToken = (string)$xml->SelectResult->NextToken;
+        $nextToken = (string) $xml->SelectResult->NextToken;
 
         return new Page($attributes, $nextToken);
     }
@@ -376,7 +380,7 @@ class SimpleDb extends \ZendService\Amazon\AbstractAmazon
      *
      * Wraps it in ''
      *
-     * @param string $value
+     * @param  string $value
      * @return string
      */
     public function quote($value)
@@ -389,7 +393,7 @@ class SimpleDb extends \ZendService\Amazon\AbstractAmazon
      * Quote SDB column or table name
      *
      * Wraps it in ``
-     * @param string $name
+     * @param  string                             $name
      * @return string
      * @throws Exception\InvalidArgumentException
      */
@@ -398,13 +402,14 @@ class SimpleDb extends \ZendService\Amazon\AbstractAmazon
         if (preg_match('/^[a-z_$][a-z0-9_$-]*$/i', $name) == false) {
             throw new Exception\InvalidArgumentException("Invalid name: can contain only alphanumeric characters, \$ and _");
         }
+
         return "`$name`";
     }
 
     /**
      * Sends a HTTP request to the SimpleDB service using Zend\Http\Client
      *
-     * @param array $params List of parameters to send with the request
+     * @param  array                      $params List of parameters to send with the request
      * @return Response
      * @throws Exception\RuntimeException
      */
@@ -426,7 +431,6 @@ class SimpleDb extends \ZendService\Amazon\AbstractAmazon
                 'timeout' => $this->_httpTimeout
             ));
 
-
             $request->setUri($this->getEndpoint());
             $request->setMethod('POST');
             $request->setParameterPost($params);
@@ -444,6 +448,7 @@ class SimpleDb extends \ZendService\Amazon\AbstractAmazon
 
         $response = new Response($httpResponse);
         $this->_checkForErrors($response);
+
         return $response;
     }
 
@@ -493,7 +498,7 @@ class SimpleDb extends \ZendService\Amazon\AbstractAmazon
      *    values before constructing this string. Do not use any separator
      *    characters when appending strings.
      *
-     * @param array  $parameters the parameters for which to get the signature.
+     * @param array $parameters the parameters for which to get the signature.
      *
      * @return string the signed data.
      */
@@ -540,7 +545,7 @@ class SimpleDb extends \ZendService\Amazon\AbstractAmazon
             $node    = $list->item(0);
             $code    = $xpath->evaluate('string(Code/text())', $node);
             $message = $xpath->evaluate('string(Message/text())', $node);
-            throw new Exception\RuntimeException($message, (double)$code);
+            throw new Exception\RuntimeException($message, (double) $code);
         }
     }
 }

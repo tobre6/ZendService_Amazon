@@ -33,7 +33,7 @@ class ListmaniaList
     /**
      * Assigns values to properties relevant to ListmaniaList
      *
-     * @param  DOMElement $dom
+     * @param DOMElement $dom
      */
     public function __construct(DOMElement $dom)
     {

@@ -22,7 +22,7 @@ class ReservedInstance extends AbstractEc2
     /**
      * Describes Reserved Instances that you purchased.
      *
-     * @param string|array $instanceId IDs of the Reserved Instance to describe.
+     * @param  string|array $instanceId IDs of the Reserved Instance to describe.
      * @return array
      */
     public function describeInstances($instanceId)
@@ -30,11 +30,11 @@ class ReservedInstance extends AbstractEc2
         $params = array();
         $params['Action'] = 'DescribeReservedInstances';
 
-        if(is_array($instanceId) && !empty($instanceId)) {
-            foreach($instanceId as $k=>$name) {
+        if (is_array($instanceId) && !empty($instanceId)) {
+            foreach ($instanceId as $k=>$name) {
                 $params['ReservedInstancesId.' . ($k+1)] = $name;
             }
-        } elseif($instanceId) {
+        } elseif ($instanceId) {
             $params['ReservedInstancesId.1'] = $instanceId;
         }
 
@@ -44,7 +44,7 @@ class ReservedInstance extends AbstractEc2
         $items = $xpath->query('//ec2:reservedInstancesSet/ec2:item');
 
         $return = array();
-        foreach($items as $item) {
+        foreach ($items as $item) {
             $i = array();
             $i['reservedInstancesId'] = $xpath->evaluate('string(ec2:reservedInstancesId/text())', $item);
             $i['instanceType'] = $xpath->evaluate('string(ec2:instanceType/text())', $item);
@@ -82,7 +82,7 @@ class ReservedInstance extends AbstractEc2
         $items = $xpath->query('//ec2:reservedInstancesOfferingsSet/ec2:item');
 
         $return = array();
-        foreach($items as $item) {
+        foreach ($items as $item) {
             $i = array();
             $i['reservedInstancesOfferingId'] = $xpath->evaluate('string(ec2:reservedInstancesOfferingId/text())', $item);
             $i['instanceType'] = $xpath->evaluate('string(ec2:instanceType/text())', $item);
@@ -105,9 +105,9 @@ class ReservedInstance extends AbstractEc2
      * for a period of time (without getting insufficient capacity errors) and
      * pay a lower usage rate for the actual time used.
      *
-     * @param string $offeringId     The offering ID of the Reserved Instance to purchase
-     * @param integer $instanceCount The number of Reserved Instances to purchase.
-     * @return string The ID of the purchased Reserved Instances.
+     * @param  string  $offeringId    The offering ID of the Reserved Instance to purchase
+     * @param  integer $instanceCount The number of Reserved Instances to purchase.
+     * @return string  The ID of the purchased Reserved Instances.
      */
     public function purchaseOffering($offeringId, $instanceCount = 1)
     {
