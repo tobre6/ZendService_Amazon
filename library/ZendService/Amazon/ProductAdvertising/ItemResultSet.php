@@ -162,6 +162,6 @@ class ItemResultSet implements \SeekableIterator
 
     public function asXml()
     {
-        return $this->dom->ownerDocument->saveXML($this->dom);
+        return $this->dom->saveXML();
     }
 }
