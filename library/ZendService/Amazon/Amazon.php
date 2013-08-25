@@ -28,7 +28,7 @@ class Amazon
      *
      * @var string
      */
-    public $appId;
+    public $accessKeyId;
 
     /**
      * @var string
@@ -70,16 +70,16 @@ class Amazon
     /**
      * Constructs a new Amazon Web Services Client
      *
-     * @param  string $appId       Developer's Amazon appid
+     * @param  string $accessKeyId       Developer's Amazon accessKeyId
      * @param  string $countryCode Country code for Amazon service; may be US, UK, DE, JP, FR, CA
      * @param  string $secretKey   API Secret Key
      * @param  string $version     API Version to use
      * @throws Exception\InvalidArgumentException
      * @return Amazon
      */
-    public function __construct($appId, $countryCode = 'US', $secretKey = null, $version = null)
+    public function __construct($accessKeyId, $countryCode = 'US', $secretKey = null, $version = null)
     {
-        $this->appId = (string) $appId;
+        $this->accessKeyId = (string) $accessKeyId;
         $this->_secretKey = $secretKey;
 
         if (!is_null($version))
@@ -202,7 +202,7 @@ class Amazon
      */
     protected function _prepareOptions($query, array $options, array $defaultOptions)
     {
-        $options['AWSAccessKeyId'] = $this->appId;
+        $options['AWSAccessKeyId'] = $this->accessKeyId;
         $options['Service']        = 'AWSECommerceService';
         $options['Operation']      = (string) $query;
         $options['Version']        = self::getVersion();
