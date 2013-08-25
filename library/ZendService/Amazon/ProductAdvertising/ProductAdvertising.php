@@ -93,7 +93,6 @@ class ProductAdvertising
      */
     public function __construct($accessKeyId, $secretKey = null, $associateTag = null, $countryCode = 'US', $version = null)
     {
-        echo 'aa';
         $this->accessKeyId = (string) $accessKeyId;
         $this->secretKey = $secretKey;
         $this->associateTag = $associateTag;
