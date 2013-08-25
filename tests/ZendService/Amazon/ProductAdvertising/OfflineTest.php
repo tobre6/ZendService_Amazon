@@ -340,7 +340,7 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
         $result = new ProductAdvertising\ItemResultSet($dom);
         $customerReviews = $result->current()->CustomerReviews;
 
-        $this->assertInstanceOf('ZendService\Amazon\ProductAdvertising\Item\CustomerReview', $customerReviews);
+        $this->assertInstanceOf('ZendService\Amazon\ProductAdvertising\Item\CustomerReviews', $customerReviews);
     }
 
     /**

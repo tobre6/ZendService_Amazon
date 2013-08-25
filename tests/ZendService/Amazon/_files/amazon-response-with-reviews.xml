@@ -1,415 +1,4635 @@
-<Item>
-    <ASIN>B006GWO5WK</ASIN>
-    <DetailPageURL>http://www.amazon.com/Amazon-Kindle-PowerFast-Accelerated-Charging/dp/B006GWO5WK%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB006GWO5WK</DetailPageURL>
-    <ItemLinks>
-        <ItemLink>
-            <Description>Technical Details</Description>
-            <URL>http://www.amazon.com/Amazon-Kindle-PowerFast-Accelerated-Charging/dp/tech-data/B006GWO5WK%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB006GWO5WK</URL>
-        </ItemLink>
-        <ItemLink>
-            <Description>Add To Baby Registry</Description>
-            <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB006GWO5WK%26SubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB006GWO5WK</URL>
-        </ItemLink>
-        <ItemLink>
-            <Description>Add To Wedding Registry</Description>
-            <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB006GWO5WK%26SubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB006GWO5WK</URL>
-        </ItemLink>
-        <ItemLink>
-            <Description>Add To Wishlist</Description>
-            <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB006GWO5WK%26SubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB006GWO5WK</URL>
-        </ItemLink>
-        <ItemLink>
-            <Description>Tell A Friend</Description>
-            <URL>http://www.amazon.com/gp/pdp/taf/B006GWO5WK%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB006GWO5WK</URL>
-        </ItemLink>
-        <ItemLink>
-            <Description>All Customer Reviews</Description>
-            <URL>http://www.amazon.com/review/product/B006GWO5WK%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB006GWO5WK</URL>
-        </ItemLink>
-        <ItemLink>
-            <Description>All Offers</Description>
-            <URL>http://www.amazon.com/gp/offer-listing/B006GWO5WK%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB006GWO5WK</URL>
-        </ItemLink>
-    </ItemLinks>
-    <SmallImage>
-        <URL>http://ecx.images-amazon.com/images/I/31DNwvAtHhL._SL75_.jpg</URL>
-        <Height Units="pixels">75</Height>
-        <Width Units="pixels">74</Width>
-    </SmallImage>
-    <MediumImage>
-        <URL>http://ecx.images-amazon.com/images/I/31DNwvAtHhL._SL160_.jpg</URL>
-        <Height Units="pixels">160</Height>
-        <Width Units="pixels">159</Width>
-    </MediumImage>
-    <LargeImage>
-        <URL>http://ecx.images-amazon.com/images/I/31DNwvAtHhL.jpg</URL>
-        <Height Units="pixels">500</Height>
-        <Width Units="pixels">496</Width>
-    </LargeImage>
-    <ImageSets>
-        <ImageSet Category="primary">
-            <SwatchImage>
-                <URL>http://ecx.images-amazon.com/images/I/31DNwvAtHhL._SL30_.jpg</URL>
-                <Height Units="pixels">30</Height>
-                <Width Units="pixels">30</Width>
-            </SwatchImage>
-            <SmallImage>
-                <URL>http://ecx.images-amazon.com/images/I/31DNwvAtHhL._SL75_.jpg</URL>
-                <Height Units="pixels">75</Height>
-                <Width Units="pixels">74</Width>
-            </SmallImage>
-            <ThumbnailImage>
-                <URL>http://ecx.images-amazon.com/images/I/31DNwvAtHhL._SL75_.jpg</URL>
-                <Height Units="pixels">75</Height>
-                <Width Units="pixels">74</Width>
-            </ThumbnailImage>
-            <TinyImage>
-                <URL>http://ecx.images-amazon.com/images/I/31DNwvAtHhL._SL110_.jpg</URL>
-                <Height Units="pixels">110</Height>
-                <Width Units="pixels">109</Width>
-            </TinyImage>
-            <MediumImage>
-                <URL>http://ecx.images-amazon.com/images/I/31DNwvAtHhL._SL160_.jpg</URL>
-                <Height Units="pixels">160</Height>
-                <Width Units="pixels">159</Width>
-            </MediumImage>
-            <LargeImage>
-                <URL>http://ecx.images-amazon.com/images/I/31DNwvAtHhL.jpg</URL>
-                <Height Units="pixels">500</Height>
-                <Width Units="pixels">496</Width>
-            </LargeImage>
-        </ImageSet>
-        <ImageSet Category="variant">
-            <SwatchImage>
-                <URL>http://ecx.images-amazon.com/images/I/31IQZEL8CQL._SL30_.jpg</URL>
-                <Height Units="pixels">29</Height>
-                <Width Units="pixels">30</Width>
-            </SwatchImage>
-            <SmallImage>
-                <URL>http://ecx.images-amazon.com/images/I/31IQZEL8CQL._SL75_.jpg</URL>
-                <Height Units="pixels">74</Height>
-                <Width Units="pixels">75</Width>
-            </SmallImage>
-            <ThumbnailImage>
-                <URL>http://ecx.images-amazon.com/images/I/31IQZEL8CQL._SL75_.jpg</URL>
-                <Height Units="pixels">74</Height>
-                <Width Units="pixels">75</Width>
-            </ThumbnailImage>
-            <TinyImage>
-                <URL>http://ecx.images-amazon.com/images/I/31IQZEL8CQL._SL110_.jpg</URL>
-                <Height Units="pixels">108</Height>
-                <Width Units="pixels">110</Width>
-            </TinyImage>
-            <MediumImage>
-                <URL>http://ecx.images-amazon.com/images/I/31IQZEL8CQL._SL160_.jpg</URL>
-                <Height Units="pixels">157</Height>
-                <Width Units="pixels">160</Width>
-            </MediumImage>
-            <LargeImage>
-                <URL>http://ecx.images-amazon.com/images/I/31IQZEL8CQL.jpg</URL>
-                <Height Units="pixels">491</Height>
-                <Width Units="pixels">500</Width>
-            </LargeImage>
-        </ImageSet>
-    </ImageSets>
-    <ItemAttributes>
-        <Binding>Accessory</Binding>
-        <Brand>Amazon</Brand>
-        <CatalogNumberList>
-            <CatalogNumberListElement>53-000136</CatalogNumberListElement>
-        </CatalogNumberList>
-        <Color>Black</Color>
-        <EAN>0814916017171</EAN>
-        <EANList>
-            <EANListElement>0814916017171</EANListElement>
-            <EANListElement>0639767206372</EANListElement>
-            <EANListElement>0639767206198</EANListElement>
-        </EANList>
-        <Feature>Official Amazon 9W, 1.8A adapter charges Kindle Fire HD 8.9" in under 5 hours, Kindle Fire HD 7" in under 4 hours, and Kindle Fire in under 3 hours</Feature>
-        <Feature>Also the approved charger for Kindle Paperwhite and Kindle; charges Kindle Paperwhite in 4 hours or less and Kindle in 3 hours or less</Feature>
-        <Feature>Optimized for Kindle tablets: PowerFast is a 9W charger and will charge your Kindle tablets faster than the white 5W Kindle charger will</Feature>
-        <Feature>For use with the black micro USB cable included with Kindle Fire and Kindle Fire HD and with the white USB cable included with Kindle Paperwhite and Kindle</Feature>
-        <Feature>Adapter's prongs conveniently fold for storage and travel</Feature>
-        <ItemDimensions>
-            <Weight Units="hundredths-pounds">10</Weight>
-        </ItemDimensions>
-        <Label>Amazon Digital Services, Inc</Label>
-        <ListPrice>
-            <Amount>1999</Amount>
-            <CurrencyCode>USD</CurrencyCode>
-            <FormattedPrice>$19.99</FormattedPrice>
-        </ListPrice>
-        <Manufacturer>Amazon Digital Services, Inc</Manufacturer>
-        <Model>53-000136</Model>
-        <MPN>53-000136</MPN>
-        <PackageDimensions>
-            <Height Units="hundredths-inches">110</Height>
-            <Length Units="hundredths-inches">350</Length>
-            <Weight Units="hundredths-pounds">10</Weight>
-            <Width Units="hundredths-inches">280</Width>
-        </PackageDimensions>
-        <PackageQuantity>1</PackageQuantity>
-        <PartNumber>53-000136</PartNumber>
-        <ProductGroup>Digital Device Accessory</ProductGroup>
-        <ProductTypeName>ABIS_ELECTRONICS</ProductTypeName>
-        <Publisher>Amazon Digital Services, Inc</Publisher>
-        <ReleaseDate>2012-09-14</ReleaseDate>
-        <Studio>Amazon Digital Services, Inc</Studio>
-        <Title>Amazon Kindle PowerFast for Accelerated Charging</Title>
-        <UPC>814916017171</UPC>
-        <UPCList>
-            <UPCListElement>814916017171</UPCListElement>
-            <UPCListElement>639767206198</UPCListElement>
-            <UPCListElement>639767206372</UPCListElement>
-        </UPCList>
-    </ItemAttributes>
-    <OfferSummary>
-        <LowestNewPrice>
-            <Amount>1999</Amount>
-            <CurrencyCode>USD</CurrencyCode>
-            <FormattedPrice>$19.99</FormattedPrice>
-        </LowestNewPrice>
-        <LowestUsedPrice>
-            <Amount>792</Amount>
-            <CurrencyCode>USD</CurrencyCode>
-            <FormattedPrice>$7.92</FormattedPrice>
-        </LowestUsedPrice>
-        <TotalNew>1</TotalNew>
-        <TotalUsed>8</TotalUsed>
-        <TotalCollectible>0</TotalCollectible>
-        <TotalRefurbished>0</TotalRefurbished>
-    </OfferSummary>
-    <Offers>
-        <TotalOffers>1</TotalOffers>
-        <TotalOfferPages>1</TotalOfferPages>
-        <MoreOffersUrl>http://www.amazon.com/gp/offer-listing/B006GWO5WK%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB006GWO5WK</MoreOffersUrl>
-        <Offer>
-            <Merchant>
-                <Name>Amazon.com</Name>
-            </Merchant>
-            <OfferAttributes>
-                <Condition>New</Condition>
-            </OfferAttributes>
-            <OfferListing>
-                <OfferListingId>8%2B7PUF%2FVnqqm9xQZmjDmJPAC9HW3rv8Zmr%2Beze3He%2Foeu7X8%2BlPAlzMUR1Nnrc5rWKyGfMW4cLONwUlJGfAAthLVkAjYhRt8Ckf0HfQIk%2F7W0s7P29xP3Q%3D%3D</OfferListingId>
-                <Price>
-                    <Amount>1999</Amount>
-                    <CurrencyCode>USD</CurrencyCode>
-                    <FormattedPrice>$19.99</FormattedPrice>
-                </Price>
-                <Availability>Usually ships in 24 hours</Availability>
-                <AvailabilityAttributes>
-                    <AvailabilityType>now</AvailabilityType>
-                    <MinimumHours>0</MinimumHours>
-                    <MaximumHours>0</MaximumHours>
-                </AvailabilityAttributes>
-                <IsEligibleForSuperSaverShipping>1</IsEligibleForSuperSaverShipping>
-            </OfferListing>
-        </Offer>
-    </Offers>
-    <CustomerReviews>
-        <IFrameURL>http://www.amazon.com/reviews/iframe?akid=AKIAIYRRDCJ2LLHWQ2RA&amp;alinkCode=xm2&amp;asin=B006GWO5WK&amp;atag=thebesuserev-20&amp;exp=2013-08-26T21%3A39%3A06Z&amp;truncate=0&amp;v=2&amp;sig=ggqOo4AT9uu1ulM%2BTO5t7oCdZC3Svet7Pnpk9jynVC8%3D</IFrameURL>
-        <HasReviews>true</HasReviews>
-    </CustomerReviews>
-    <SimilarProducts>
-        <SimilarProduct>
-            <ASIN>B006GWO5NE</ASIN>
-            <Title>Amazon Kindle Fire 5ft USB to Micro-USB Cable (works with most Micro-USB Tablets)</Title>
-        </SimilarProduct>
-        <SimilarProduct>
-            <ASIN>B0083PWAPW</ASIN>
-            <Title>Kindle Fire HD 7", Dolby Audio, Dual-Band Wi-Fi, 16 GB - Includes Special Offers</Title>
-        </SimilarProduct>
-        <SimilarProduct>
-            <ASIN>B008GFRE5A</ASIN>
-            <Title>Kindle Fire HD 8.9", Dolby Audio, Dual-Band Wi-Fi, 16 GB - Includes Special Offers</Title>
-        </SimilarProduct>
-        <SimilarProduct>
-            <ASIN>B008GGH4FY</ASIN>
-            <Title>Amazon Kindle Fire HD 7" Standing Leather Case, Onyx Black (will only fit Kindle Fire HD 7")</Title>
-        </SimilarProduct>
-        <SimilarProduct>
-            <ASIN>B00902SFC4</ASIN>
-            <Title>Marware Capacitive Stylus for Kindle Fire, Fire HD, and Kindle Paperwhite, Black</Title>
-        </SimilarProduct>
-    </SimilarProducts>
-    <BrowseNodes>
-        <BrowseNode>
-            <BrowseNodeId>2516700011</BrowseNodeId>
-            <Name>Chargers &amp; Adapters</Name>
-            <Ancestors>
-                <BrowseNode>
-                    <BrowseNodeId>2348628011</BrowseNodeId>
-                    <Name>Touch Screen Tablet Accessories</Name>
-                    <Ancestors>
-                        <BrowseNode>
-                            <BrowseNodeId>541966</BrowseNodeId>
-                            <Name>Computers &amp; Accessories</Name>
-                            <Ancestors>
-                                <BrowseNode>
-                                    <BrowseNodeId>493964</BrowseNodeId>
-                                    <Name>Categories</Name>
-                                    <IsCategoryRoot>1</IsCategoryRoot>
-                                    <Ancestors>
-                                        <BrowseNode>
-                                            <BrowseNodeId>172282</BrowseNodeId>
-                                            <Name>Electronics</Name>
-                                        </BrowseNode>
-                                    </Ancestors>
-                                </BrowseNode>
-                            </Ancestors>
-                        </BrowseNode>
-                    </Ancestors>
-                </BrowseNode>
-            </Ancestors>
-        </BrowseNode>
-        <BrowseNode>
-            <BrowseNodeId>2642132011</BrowseNodeId>
-            <Name>Power Adapters</Name>
-            <Ancestors>
-                <BrowseNode>
-                    <BrowseNodeId>2642125011</BrowseNodeId>
-                    <Name>eBook Readers &amp; Accessories</Name>
-                    <Ancestors>
-                        <BrowseNode>
-                            <BrowseNodeId>493964</BrowseNodeId>
-                            <Name>Categories</Name>
-                            <IsCategoryRoot>1</IsCategoryRoot>
-                            <Ancestors>
-                                <BrowseNode>
-                                    <BrowseNodeId>172282</BrowseNodeId>
-                                    <Name>Electronics</Name>
-                                </BrowseNode>
-                            </Ancestors>
-                        </BrowseNode>
-                    </Ancestors>
-                </BrowseNode>
-            </Ancestors>
-        </BrowseNode>
-        <BrowseNode>
-            <BrowseNodeId>3013584011</BrowseNodeId>
-            <Name>Kindle Fire Power Adapters</Name>
-            <Ancestors>
-                <BrowseNode>
-                    <BrowseNodeId>1289282011</BrowseNodeId>
-                    <Name>Power Adapters</Name>
-                    <Ancestors>
-                        <BrowseNode>
-                            <BrowseNodeId>370783011</BrowseNodeId>
-                            <Name>Kindle Accessories</Name>
-                            <Ancestors>
-                                <BrowseNode>
-                                    <BrowseNodeId>133141011</BrowseNodeId>
-                                    <Name>Categories</Name>
-                                    <IsCategoryRoot>1</IsCategoryRoot>
-                                    <Ancestors>
-                                        <BrowseNode>
-                                            <BrowseNodeId>133140011</BrowseNodeId>
-                                            <Name>Kindle Store</Name>
-                                        </BrowseNode>
-                                    </Ancestors>
-                                </BrowseNode>
-                            </Ancestors>
-                        </BrowseNode>
-                    </Ancestors>
-                </BrowseNode>
-            </Ancestors>
-        </BrowseNode>
-        <BrowseNode>
-            <BrowseNodeId>5499853011</BrowseNodeId>
-            <Name>Kindle Fire HD 7" Power Adapters</Name>
-            <Ancestors>
-                <BrowseNode>
-                    <BrowseNodeId>1289282011</BrowseNodeId>
-                    <Name>Power Adapters</Name>
-                    <Ancestors>
-                        <BrowseNode>
-                            <BrowseNodeId>370783011</BrowseNodeId>
-                            <Name>Kindle Accessories</Name>
-                            <Ancestors>
-                                <BrowseNode>
-                                    <BrowseNodeId>133141011</BrowseNodeId>
-                                    <Name>Categories</Name>
-                                    <IsCategoryRoot>1</IsCategoryRoot>
-                                    <Ancestors>
-                                        <BrowseNode>
-                                            <BrowseNodeId>133140011</BrowseNodeId>
-                                            <Name>Kindle Store</Name>
-                                        </BrowseNode>
-                                    </Ancestors>
-                                </BrowseNode>
-                            </Ancestors>
-                        </BrowseNode>
-                    </Ancestors>
-                </BrowseNode>
-            </Ancestors>
-        </BrowseNode>
-        <BrowseNode>
-            <BrowseNodeId>5499854011</BrowseNodeId>
-            <Name>Kindle Fire HD 8.9" Power Adapters</Name>
-            <Ancestors>
-                <BrowseNode>
-                    <BrowseNodeId>1289282011</BrowseNodeId>
-                    <Name>Power Adapters</Name>
-                    <Ancestors>
-                        <BrowseNode>
-                            <BrowseNodeId>370783011</BrowseNodeId>
-                            <Name>Kindle Accessories</Name>
-                            <Ancestors>
-                                <BrowseNode>
-                                    <BrowseNodeId>133141011</BrowseNodeId>
-                                    <Name>Categories</Name>
-                                    <IsCategoryRoot>1</IsCategoryRoot>
-                                    <Ancestors>
-                                        <BrowseNode>
-                                            <BrowseNodeId>133140011</BrowseNodeId>
-                                            <Name>Kindle Store</Name>
-                                        </BrowseNode>
-                                    </Ancestors>
-                                </BrowseNode>
-                            </Ancestors>
-                        </BrowseNode>
-                    </Ancestors>
-                </BrowseNode>
-            </Ancestors>
-        </BrowseNode>
-        <BrowseNode>
-            <BrowseNodeId>1288264011</BrowseNodeId>
-            <Name>All Products</Name>
-            <Ancestors>
-                <BrowseNode>
-                    <BrowseNodeId>1267878011</BrowseNodeId>
-                    <Name>Products</Name>
-                    <IsCategoryRoot>1</IsCategoryRoot>
-                    <Ancestors>
-                        <BrowseNode>
-                            <BrowseNodeId>1267877011</BrowseNodeId>
-                        </BrowseNode>
-                    </Ancestors>
-                </BrowseNode>
-            </Ancestors>
-        </BrowseNode>
-        <BrowseNode>
-            <BrowseNodeId>6809983011</BrowseNodeId>
-            <Name>Kindle Accessories</Name>
-            <Ancestors>
-                <BrowseNode>
-                    <BrowseNodeId>4538815011</BrowseNodeId>
-                    <Name>Kindle</Name>
-                    <Ancestors>
-                        <BrowseNode>
-                            <BrowseNodeId>1267878011</BrowseNodeId>
-                            <Name>Products</Name>
-                            <IsCategoryRoot>1</IsCategoryRoot>
-                            <Ancestors>
-                                <BrowseNode>
-                                    <BrowseNodeId>1267877011</BrowseNodeId>
-                                </BrowseNode>
-                            </Ancestors>
-                        </BrowseNode>
-                    </Ancestors>
-                </BrowseNode>
-            </Ancestors>
-        </BrowseNode>
-    </BrowseNodes>
-</Item>
+<?xml version="1.0"?>
+<ItemSearchResponse
+	xmlns="http://webservices.amazon.com/AWSECommerceService/2011-08-01">
+	<OperationRequest>
+		<HTTPHeaders>
+			<Header Name="UserAgent" Value="Zend\Http\Client" />
+		</HTTPHeaders>
+		<RequestId>f4b53d9d-c3b4-4ab6-b28c-c4c733df54b1</RequestId>
+		<Arguments>
+			<Argument Name="Condition" Value="New" />
+			<Argument Name="Service" Value="AWSECommerceService" />
+			<Argument Name="Keywords" Value="All" />
+			<Argument Name="MerchantId" Value="Amazon" />
+			<Argument Name="Timestamp" Value="2013-08-25T22:59:49Z" />
+			<Argument Name="Operation" Value="ItemSearch" />
+			<Argument Name="AssociateTag" Value="thebesuserev-20" />
+			<Argument Name="BrowseNode" Value="493964" />
+			<Argument Name="Version" Value="2011-08-01" />
+			<Argument Name="Sort" Value="salesrank" />
+			<Argument Name="TruncateReviewsAt" Value="0" />
+			<Argument Name="SearchIndex" Value="Electronics" />
+			<Argument Name="Signature"
+				Value="NeH+Fr/bhHM+GIjHhUlSer5FQo0RgtQl1n9xACJxHoo=" />
+			<Argument Name="AWSAccessKeyId" Value="AKIAIYRRDCJ2LLHWQ2RA" />
+			<Argument Name="ResponseGroup" Value="Large,OfferFull,Request" />
+		</Arguments>
+		<RequestProcessingTime>0.7063500000000000</RequestProcessingTime>
+	</OperationRequest>
+	<Items>
+		<Request>
+			<IsValid>True</IsValid>
+			<ItemSearchRequest>
+				<BrowseNode>493964</BrowseNode>
+				<Condition>New</Condition>
+				<Keywords>All</Keywords>
+				<MerchantId>Deprecated</MerchantId>
+				<ResponseGroup>Large</ResponseGroup>
+				<ResponseGroup>OfferFull</ResponseGroup>
+				<ResponseGroup>Request</ResponseGroup>
+				<SearchIndex>Electronics</SearchIndex>
+				<Sort>salesrank</Sort>
+				<TruncateReviewsAt>0</TruncateReviewsAt>
+			</ItemSearchRequest>
+		</Request>
+		<TotalResults>52645</TotalResults>
+		<TotalPages>5265</TotalPages>
+		<MoreSearchResultsUrl>http://www.amazon.com/gp/redirect.html?camp=2025&amp;creative=386001&amp;location=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fsearch%3Fnode%3D493964%26keywords%3DAll%26url%3Dsearch-alias%253Delectronics&amp;linkCode=xm2&amp;tag=thebesuserev-20&amp;SubscriptionId=AKIAIYRRDCJ2LLHWQ2RA
+		</MoreSearchResultsUrl>
+		<Item>
+			<ASIN>B006GWO5WK</ASIN>
+			<DetailPageURL>http://www.amazon.com/Amazon-Kindle-PowerFast-Accelerated-Charging/dp/B006GWO5WK%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB006GWO5WK
+			</DetailPageURL>
+			<ItemLinks>
+				<ItemLink>
+					<Description>Technical Details</Description>
+					<URL>http://www.amazon.com/Amazon-Kindle-PowerFast-Accelerated-Charging/dp/tech-data/B006GWO5WK%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB006GWO5WK
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Add To Baby Registry</Description>
+					<URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB006GWO5WK%26SubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB006GWO5WK
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Add To Wedding Registry</Description>
+					<URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB006GWO5WK%26SubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB006GWO5WK
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Add To Wishlist</Description>
+					<URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB006GWO5WK%26SubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB006GWO5WK
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Tell A Friend</Description>
+					<URL>http://www.amazon.com/gp/pdp/taf/B006GWO5WK%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB006GWO5WK
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>All Customer Reviews</Description>
+					<URL>http://www.amazon.com/review/product/B006GWO5WK%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB006GWO5WK
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>All Offers</Description>
+					<URL>http://www.amazon.com/gp/offer-listing/B006GWO5WK%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB006GWO5WK
+					</URL>
+				</ItemLink>
+			</ItemLinks>
+			<SmallImage>
+				<URL>http://ecx.images-amazon.com/images/I/31DNwvAtHhL._SL75_.jpg
+				</URL>
+				<Height Units="pixels">75</Height>
+				<Width Units="pixels">74</Width>
+			</SmallImage>
+			<MediumImage>
+				<URL>http://ecx.images-amazon.com/images/I/31DNwvAtHhL._SL160_.jpg
+				</URL>
+				<Height Units="pixels">160</Height>
+				<Width Units="pixels">159</Width>
+			</MediumImage>
+			<LargeImage>
+				<URL>http://ecx.images-amazon.com/images/I/31DNwvAtHhL.jpg</URL>
+				<Height Units="pixels">500</Height>
+				<Width Units="pixels">496</Width>
+			</LargeImage>
+			<ImageSets>
+				<ImageSet Category="primary">
+					<SwatchImage>
+						<URL>http://ecx.images-amazon.com/images/I/31DNwvAtHhL._SL30_.jpg
+						</URL>
+						<Height Units="pixels">30</Height>
+						<Width Units="pixels">30</Width>
+					</SwatchImage>
+					<SmallImage>
+						<URL>http://ecx.images-amazon.com/images/I/31DNwvAtHhL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">74</Width>
+					</SmallImage>
+					<ThumbnailImage>
+						<URL>http://ecx.images-amazon.com/images/I/31DNwvAtHhL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">74</Width>
+					</ThumbnailImage>
+					<TinyImage>
+						<URL>http://ecx.images-amazon.com/images/I/31DNwvAtHhL._SL110_.jpg
+						</URL>
+						<Height Units="pixels">110</Height>
+						<Width Units="pixels">109</Width>
+					</TinyImage>
+					<MediumImage>
+						<URL>http://ecx.images-amazon.com/images/I/31DNwvAtHhL._SL160_.jpg
+						</URL>
+						<Height Units="pixels">160</Height>
+						<Width Units="pixels">159</Width>
+					</MediumImage>
+					<LargeImage>
+						<URL>http://ecx.images-amazon.com/images/I/31DNwvAtHhL.jpg</URL>
+						<Height Units="pixels">500</Height>
+						<Width Units="pixels">496</Width>
+					</LargeImage>
+				</ImageSet>
+				<ImageSet Category="variant">
+					<SwatchImage>
+						<URL>http://ecx.images-amazon.com/images/I/31IQZEL8CQL._SL30_.jpg
+						</URL>
+						<Height Units="pixels">29</Height>
+						<Width Units="pixels">30</Width>
+					</SwatchImage>
+					<SmallImage>
+						<URL>http://ecx.images-amazon.com/images/I/31IQZEL8CQL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">74</Height>
+						<Width Units="pixels">75</Width>
+					</SmallImage>
+					<ThumbnailImage>
+						<URL>http://ecx.images-amazon.com/images/I/31IQZEL8CQL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">74</Height>
+						<Width Units="pixels">75</Width>
+					</ThumbnailImage>
+					<TinyImage>
+						<URL>http://ecx.images-amazon.com/images/I/31IQZEL8CQL._SL110_.jpg
+						</URL>
+						<Height Units="pixels">108</Height>
+						<Width Units="pixels">110</Width>
+					</TinyImage>
+					<MediumImage>
+						<URL>http://ecx.images-amazon.com/images/I/31IQZEL8CQL._SL160_.jpg
+						</URL>
+						<Height Units="pixels">157</Height>
+						<Width Units="pixels">160</Width>
+					</MediumImage>
+					<LargeImage>
+						<URL>http://ecx.images-amazon.com/images/I/31IQZEL8CQL.jpg</URL>
+						<Height Units="pixels">491</Height>
+						<Width Units="pixels">500</Width>
+					</LargeImage>
+				</ImageSet>
+			</ImageSets>
+			<ItemAttributes>
+				<Binding>Accessory</Binding>
+				<Brand>Amazon</Brand>
+				<CatalogNumberList>
+					<CatalogNumberListElement>53-000136</CatalogNumberListElement>
+				</CatalogNumberList>
+				<Color>Black</Color>
+				<EAN>0814916017171</EAN>
+				<EANList>
+					<EANListElement>0814916017171</EANListElement>
+					<EANListElement>0639767206372</EANListElement>
+					<EANListElement>0639767206198</EANListElement>
+				</EANList>
+				<Feature>Official Amazon 9W, 1.8A adapter charges Kindle Fire HD
+					8.9" in under 5 hours, Kindle Fire HD 7" in under 4 hours, and
+					Kindle Fire in under 3 hours</Feature>
+				<Feature>Also the approved charger for Kindle Paperwhite and Kindle;
+					charges Kindle Paperwhite in 4 hours or less and Kindle in 3 hours
+					or less</Feature>
+				<Feature>Optimized for Kindle tablets: PowerFast is a 9W charger and
+					will charge your Kindle tablets faster than the white 5W Kindle
+					charger will</Feature>
+				<Feature>For use with the black micro USB cable included with Kindle
+					Fire and Kindle Fire HD and with the white USB cable included with
+					Kindle Paperwhite and Kindle</Feature>
+				<Feature>Adapter's prongs conveniently fold for storage and travel
+				</Feature>
+				<ItemDimensions>
+					<Weight Units="hundredths-pounds">10</Weight>
+				</ItemDimensions>
+				<Label>Amazon Digital Services, Inc</Label>
+				<ListPrice>
+					<Amount>1999</Amount>
+					<CurrencyCode>USD</CurrencyCode>
+					<FormattedPrice>$19.99</FormattedPrice>
+				</ListPrice>
+				<Manufacturer>Amazon Digital Services, Inc</Manufacturer>
+				<Model>53-000136</Model>
+				<MPN>53-000136</MPN>
+				<PackageDimensions>
+					<Height Units="hundredths-inches">110</Height>
+					<Length Units="hundredths-inches">350</Length>
+					<Weight Units="hundredths-pounds">10</Weight>
+					<Width Units="hundredths-inches">280</Width>
+				</PackageDimensions>
+				<PackageQuantity>1</PackageQuantity>
+				<PartNumber>53-000136</PartNumber>
+				<ProductGroup>Digital Device Accessory</ProductGroup>
+				<ProductTypeName>ABIS_ELECTRONICS</ProductTypeName>
+				<Publisher>Amazon Digital Services, Inc</Publisher>
+				<ReleaseDate>2012-09-14</ReleaseDate>
+				<Studio>Amazon Digital Services, Inc</Studio>
+				<Title>Amazon Kindle PowerFast for Accelerated Charging</Title>
+				<UPC>814916017171</UPC>
+				<UPCList>
+					<UPCListElement>814916017171</UPCListElement>
+					<UPCListElement>639767206198</UPCListElement>
+					<UPCListElement>639767206372</UPCListElement>
+				</UPCList>
+			</ItemAttributes>
+			<OfferSummary>
+				<LowestNewPrice>
+					<Amount>1999</Amount>
+					<CurrencyCode>USD</CurrencyCode>
+					<FormattedPrice>$19.99</FormattedPrice>
+				</LowestNewPrice>
+				<LowestUsedPrice>
+					<Amount>792</Amount>
+					<CurrencyCode>USD</CurrencyCode>
+					<FormattedPrice>$7.92</FormattedPrice>
+				</LowestUsedPrice>
+				<TotalNew>1</TotalNew>
+				<TotalUsed>9</TotalUsed>
+				<TotalCollectible>0</TotalCollectible>
+				<TotalRefurbished>0</TotalRefurbished>
+			</OfferSummary>
+			<Offers>
+				<TotalOffers>1</TotalOffers>
+				<TotalOfferPages>1</TotalOfferPages>
+				<MoreOffersUrl>http://www.amazon.com/gp/offer-listing/B006GWO5WK%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB006GWO5WK
+				</MoreOffersUrl>
+				<Offer>
+					<Merchant>
+						<Name>Amazon.com</Name>
+					</Merchant>
+					<OfferAttributes>
+						<Condition>New</Condition>
+					</OfferAttributes>
+					<OfferListing>
+						<OfferListingId>2zpAjA875nLny3iE41N4uyKUNbtdjptpD%2BrEuIxqS%2BUy9rbi0WzjwiTmBoIdoSKy7ce3GeDC8atSTJZXNOjIYBYJye6kw3axQey%2Fmdl6fjidp4%2Br%2BqrX1A%3D%3D
+						</OfferListingId>
+						<Price>
+							<Amount>1999</Amount>
+							<CurrencyCode>USD</CurrencyCode>
+							<FormattedPrice>$19.99</FormattedPrice>
+						</Price>
+						<Availability>Usually ships in 24 hours</Availability>
+						<AvailabilityAttributes>
+							<AvailabilityType>now</AvailabilityType>
+							<MinimumHours>0</MinimumHours>
+							<MaximumHours>0</MaximumHours>
+						</AvailabilityAttributes>
+						<IsEligibleForSuperSaverShipping>1
+						</IsEligibleForSuperSaverShipping>
+					</OfferListing>
+				</Offer>
+			</Offers>
+			<CustomerReviews>
+				<IFrameURL>http://www.amazon.com/reviews/iframe?akid=AKIAIYRRDCJ2LLHWQ2RA&amp;alinkCode=xm2&amp;asin=B006GWO5WK&amp;atag=thebesuserev-20&amp;exp=2013-08-26T22%3A59%3A50Z&amp;truncate=0&amp;v=2&amp;sig=wtJ2qboxbq92DXhhf6jUYah3KHSPEB%2Fu3K8IH2PQIes%3D
+				</IFrameURL>
+				<HasReviews>true</HasReviews>
+			</CustomerReviews>
+			<SimilarProducts>
+				<SimilarProduct>
+					<ASIN>B006GWO5NE</ASIN>
+					<Title>Amazon Kindle Fire 5ft USB to Micro-USB Cable (works with
+						most Micro-USB Tablets)</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B0083PWAPW</ASIN>
+					<Title>Kindle Fire HD 7", Dolby Audio, Dual-Band Wi-Fi, 16 GB -
+						Includes Special Offers</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B008GFRE5A</ASIN>
+					<Title>Kindle Fire HD 8.9", Dolby Audio, Dual-Band Wi-Fi, 16 GB -
+						Includes Special Offers</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B008GGH4FY</ASIN>
+					<Title>Amazon Kindle Fire HD 7" Standing Leather Case, Onyx Black
+						(will only fit Kindle Fire HD 7")</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B00902SFC4</ASIN>
+					<Title>Marware Capacitive Stylus for Kindle Fire, Fire HD, and
+						Kindle Paperwhite, Black</Title>
+				</SimilarProduct>
+			</SimilarProducts>
+			<BrowseNodes>
+				<BrowseNode>
+					<BrowseNodeId>2516700011</BrowseNodeId>
+					<Name>Chargers &amp; Adapters</Name>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>2348628011</BrowseNodeId>
+							<Name>Touch Screen Tablet Accessories</Name>
+							<Ancestors>
+								<BrowseNode>
+									<BrowseNodeId>541966</BrowseNodeId>
+									<Name>Computers &amp; Accessories</Name>
+									<Ancestors>
+										<BrowseNode>
+											<BrowseNodeId>493964</BrowseNodeId>
+											<Name>Categories</Name>
+											<IsCategoryRoot>1</IsCategoryRoot>
+											<Ancestors>
+												<BrowseNode>
+													<BrowseNodeId>172282</BrowseNodeId>
+													<Name>Electronics</Name>
+												</BrowseNode>
+											</Ancestors>
+										</BrowseNode>
+									</Ancestors>
+								</BrowseNode>
+							</Ancestors>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>2642132011</BrowseNodeId>
+					<Name>Power Adapters</Name>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>2642125011</BrowseNodeId>
+							<Name>eBook Readers &amp; Accessories</Name>
+							<Ancestors>
+								<BrowseNode>
+									<BrowseNodeId>493964</BrowseNodeId>
+									<Name>Categories</Name>
+									<IsCategoryRoot>1</IsCategoryRoot>
+									<Ancestors>
+										<BrowseNode>
+											<BrowseNodeId>172282</BrowseNodeId>
+											<Name>Electronics</Name>
+										</BrowseNode>
+									</Ancestors>
+								</BrowseNode>
+							</Ancestors>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>3013584011</BrowseNodeId>
+					<Name>Kindle Fire Power Adapters</Name>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>1289282011</BrowseNodeId>
+							<Name>Power Adapters</Name>
+							<Ancestors>
+								<BrowseNode>
+									<BrowseNodeId>370783011</BrowseNodeId>
+									<Name>Kindle Accessories</Name>
+									<Ancestors>
+										<BrowseNode>
+											<BrowseNodeId>133141011</BrowseNodeId>
+											<Name>Categories</Name>
+											<IsCategoryRoot>1</IsCategoryRoot>
+											<Ancestors>
+												<BrowseNode>
+													<BrowseNodeId>133140011</BrowseNodeId>
+													<Name>Kindle Store</Name>
+												</BrowseNode>
+											</Ancestors>
+										</BrowseNode>
+									</Ancestors>
+								</BrowseNode>
+							</Ancestors>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>5499853011</BrowseNodeId>
+					<Name>Kindle Fire HD 7" Power Adapters</Name>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>1289282011</BrowseNodeId>
+							<Name>Power Adapters</Name>
+							<Ancestors>
+								<BrowseNode>
+									<BrowseNodeId>370783011</BrowseNodeId>
+									<Name>Kindle Accessories</Name>
+									<Ancestors>
+										<BrowseNode>
+											<BrowseNodeId>133141011</BrowseNodeId>
+											<Name>Categories</Name>
+											<IsCategoryRoot>1</IsCategoryRoot>
+											<Ancestors>
+												<BrowseNode>
+													<BrowseNodeId>133140011</BrowseNodeId>
+													<Name>Kindle Store</Name>
+												</BrowseNode>
+											</Ancestors>
+										</BrowseNode>
+									</Ancestors>
+								</BrowseNode>
+							</Ancestors>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>5499854011</BrowseNodeId>
+					<Name>Kindle Fire HD 8.9" Power Adapters</Name>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>1289282011</BrowseNodeId>
+							<Name>Power Adapters</Name>
+							<Ancestors>
+								<BrowseNode>
+									<BrowseNodeId>370783011</BrowseNodeId>
+									<Name>Kindle Accessories</Name>
+									<Ancestors>
+										<BrowseNode>
+											<BrowseNodeId>133141011</BrowseNodeId>
+											<Name>Categories</Name>
+											<IsCategoryRoot>1</IsCategoryRoot>
+											<Ancestors>
+												<BrowseNode>
+													<BrowseNodeId>133140011</BrowseNodeId>
+													<Name>Kindle Store</Name>
+												</BrowseNode>
+											</Ancestors>
+										</BrowseNode>
+									</Ancestors>
+								</BrowseNode>
+							</Ancestors>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>1288264011</BrowseNodeId>
+					<Name>All Products</Name>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>1267878011</BrowseNodeId>
+							<Name>Products</Name>
+							<IsCategoryRoot>1</IsCategoryRoot>
+							<Ancestors>
+								<BrowseNode>
+									<BrowseNodeId>1267877011</BrowseNodeId>
+								</BrowseNode>
+							</Ancestors>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>6809983011</BrowseNodeId>
+					<Name>Kindle Accessories</Name>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>4538815011</BrowseNodeId>
+							<Name>Kindle</Name>
+							<Ancestors>
+								<BrowseNode>
+									<BrowseNodeId>1267878011</BrowseNodeId>
+									<Name>Products</Name>
+									<IsCategoryRoot>1</IsCategoryRoot>
+									<Ancestors>
+										<BrowseNode>
+											<BrowseNodeId>1267877011</BrowseNodeId>
+										</BrowseNode>
+									</Ancestors>
+								</BrowseNode>
+							</Ancestors>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+			</BrowseNodes>
+		</Item>
+		<Item>
+			<ASIN>B003L1ZYYM</ASIN>
+			<ParentASIN>B005014LRC</ParentASIN>
+			<DetailPageURL>http://www.amazon.com/AmazonBasics-High-Speed-HDMI-Cable-Meters/dp/B003L1ZYYM%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB003L1ZYYM
+			</DetailPageURL>
+			<ItemLinks>
+				<ItemLink>
+					<Description>Technical Details</Description>
+					<URL>http://www.amazon.com/AmazonBasics-High-Speed-HDMI-Cable-Meters/dp/tech-data/B003L1ZYYM%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB003L1ZYYM
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Add To Baby Registry</Description>
+					<URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB003L1ZYYM%26SubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB003L1ZYYM
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Add To Wedding Registry</Description>
+					<URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB003L1ZYYM%26SubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB003L1ZYYM
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Add To Wishlist</Description>
+					<URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB003L1ZYYM%26SubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB003L1ZYYM
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Tell A Friend</Description>
+					<URL>http://www.amazon.com/gp/pdp/taf/B003L1ZYYM%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB003L1ZYYM
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>All Customer Reviews</Description>
+					<URL>http://www.amazon.com/review/product/B003L1ZYYM%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB003L1ZYYM
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>All Offers</Description>
+					<URL>http://www.amazon.com/gp/offer-listing/B003L1ZYYM%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB003L1ZYYM
+					</URL>
+				</ItemLink>
+			</ItemLinks>
+			<SmallImage>
+				<URL>http://ecx.images-amazon.com/images/I/417qWBWXqYL._SL75_.jpg
+				</URL>
+				<Height Units="pixels">47</Height>
+				<Width Units="pixels">75</Width>
+			</SmallImage>
+			<MediumImage>
+				<URL>http://ecx.images-amazon.com/images/I/417qWBWXqYL._SL160_.jpg
+				</URL>
+				<Height Units="pixels">100</Height>
+				<Width Units="pixels">160</Width>
+			</MediumImage>
+			<LargeImage>
+				<URL>http://ecx.images-amazon.com/images/I/417qWBWXqYL.jpg</URL>
+				<Height Units="pixels">314</Height>
+				<Width Units="pixels">500</Width>
+			</LargeImage>
+			<ImageSets>
+				<ImageSet Category="primary">
+					<SwatchImage>
+						<URL>http://ecx.images-amazon.com/images/I/417qWBWXqYL._SL30_.jpg
+						</URL>
+						<Height Units="pixels">19</Height>
+						<Width Units="pixels">30</Width>
+					</SwatchImage>
+					<SmallImage>
+						<URL>http://ecx.images-amazon.com/images/I/417qWBWXqYL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">47</Height>
+						<Width Units="pixels">75</Width>
+					</SmallImage>
+					<ThumbnailImage>
+						<URL>http://ecx.images-amazon.com/images/I/417qWBWXqYL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">47</Height>
+						<Width Units="pixels">75</Width>
+					</ThumbnailImage>
+					<TinyImage>
+						<URL>http://ecx.images-amazon.com/images/I/417qWBWXqYL._SL110_.jpg
+						</URL>
+						<Height Units="pixels">69</Height>
+						<Width Units="pixels">110</Width>
+					</TinyImage>
+					<MediumImage>
+						<URL>http://ecx.images-amazon.com/images/I/417qWBWXqYL._SL160_.jpg
+						</URL>
+						<Height Units="pixels">100</Height>
+						<Width Units="pixels">160</Width>
+					</MediumImage>
+					<LargeImage>
+						<URL>http://ecx.images-amazon.com/images/I/417qWBWXqYL.jpg</URL>
+						<Height Units="pixels">314</Height>
+						<Width Units="pixels">500</Width>
+					</LargeImage>
+				</ImageSet>
+				<ImageSet Category="swatch">
+					<SwatchImage>
+						<URL>http://ecx.images-amazon.com/images/I/417qWBWXqYL._SL30_.jpg
+						</URL>
+						<Height Units="pixels">19</Height>
+						<Width Units="pixels">30</Width>
+					</SwatchImage>
+					<SmallImage>
+						<URL>http://ecx.images-amazon.com/images/I/417qWBWXqYL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">47</Height>
+						<Width Units="pixels">75</Width>
+					</SmallImage>
+					<ThumbnailImage>
+						<URL>http://ecx.images-amazon.com/images/I/417qWBWXqYL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">47</Height>
+						<Width Units="pixels">75</Width>
+					</ThumbnailImage>
+					<TinyImage>
+						<URL>http://ecx.images-amazon.com/images/I/417qWBWXqYL._SL110_.jpg
+						</URL>
+						<Height Units="pixels">69</Height>
+						<Width Units="pixels">110</Width>
+					</TinyImage>
+					<MediumImage>
+						<URL>http://ecx.images-amazon.com/images/I/417qWBWXqYL._SL160_.jpg
+						</URL>
+						<Height Units="pixels">100</Height>
+						<Width Units="pixels">160</Width>
+					</MediumImage>
+					<LargeImage>
+						<URL>http://ecx.images-amazon.com/images/I/417qWBWXqYL.jpg</URL>
+						<Height Units="pixels">314</Height>
+						<Width Units="pixels">500</Width>
+					</LargeImage>
+				</ImageSet>
+				<ImageSet Category="variant">
+					<SwatchImage>
+						<URL>http://ecx.images-amazon.com/images/I/41zeTj6eu8L._SL30_.jpg
+						</URL>
+						<Height Units="pixels">28</Height>
+						<Width Units="pixels">30</Width>
+					</SwatchImage>
+					<SmallImage>
+						<URL>http://ecx.images-amazon.com/images/I/41zeTj6eu8L._SL75_.jpg
+						</URL>
+						<Height Units="pixels">70</Height>
+						<Width Units="pixels">75</Width>
+					</SmallImage>
+					<ThumbnailImage>
+						<URL>http://ecx.images-amazon.com/images/I/41zeTj6eu8L._SL75_.jpg
+						</URL>
+						<Height Units="pixels">70</Height>
+						<Width Units="pixels">75</Width>
+					</ThumbnailImage>
+					<TinyImage>
+						<URL>http://ecx.images-amazon.com/images/I/41zeTj6eu8L._SL110_.jpg
+						</URL>
+						<Height Units="pixels">102</Height>
+						<Width Units="pixels">110</Width>
+					</TinyImage>
+					<MediumImage>
+						<URL>http://ecx.images-amazon.com/images/I/41zeTj6eu8L._SL160_.jpg
+						</URL>
+						<Height Units="pixels">149</Height>
+						<Width Units="pixels">160</Width>
+					</MediumImage>
+					<LargeImage>
+						<URL>http://ecx.images-amazon.com/images/I/41zeTj6eu8L.jpg</URL>
+						<Height Units="pixels">465</Height>
+						<Width Units="pixels">500</Width>
+					</LargeImage>
+				</ImageSet>
+			</ImageSets>
+			<ItemAttributes>
+				<Binding>Electronics</Binding>
+				<Brand>AmazonBasics</Brand>
+				<CatalogNumberList>
+					<CatalogNumberListElement>B003L1ZYYM</CatalogNumberListElement>
+					<CatalogNumberListElement>max1.4 hdmi 2m</CatalogNumberListElement>
+				</CatalogNumberList>
+				<Color>Black</Color>
+				<EAN>5050053303752</EAN>
+				<EANList>
+					<EANListElement>5050053303752</EANListElement>
+				</EANList>
+				<Feature>Ships in Certified Frustration-Free Packaging</Feature>
+				<Feature>HDMI A Male to A Male Cable</Feature>
+				<Feature>Cable allows you to share an Internet connection among
+					multiple devices without the need for a separate Ethernet cable.
+				</Feature>
+				<ItemDimensions>
+					<Height Units="hundredths-inches">50</Height>
+					<Length Units="hundredths-inches">7874</Length>
+					<Weight Units="hundredths-pounds">20</Weight>
+					<Width Units="hundredths-inches">22</Width>
+				</ItemDimensions>
+				<Label>AmazonBasics</Label>
+				<Manufacturer>AmazonBasics</Manufacturer>
+				<Model>max1.4 hdmi 2m</Model>
+				<MPN>max1.4 hdmi 2m</MPN>
+				<PackageDimensions>
+					<Height Units="hundredths-inches">87</Height>
+					<Length Units="hundredths-inches">606</Length>
+					<Weight Units="hundredths-pounds">18</Weight>
+					<Width Units="hundredths-inches">591</Width>
+				</PackageDimensions>
+				<PackageQuantity>1</PackageQuantity>
+				<PartNumber>max1.4 hdmi 2m</PartNumber>
+				<ProductGroup>CE</ProductGroup>
+				<ProductTypeName>CABLE_OR_ADAPTER</ProductTypeName>
+				<Publisher>AmazonBasics</Publisher>
+				<Size>2 Meters</Size>
+				<Studio>AmazonBasics</Studio>
+				<Title>AmazonBasics High-Speed HDMI Cable (6.5 Feet/2.0 Meters) -
+					Supports Ethernet, 3D, and Audio Return [Newest Standard]</Title>
+				<Warranty>12 months</Warranty>
+			</ItemAttributes>
+			<OfferSummary>
+				<LowestNewPrice>
+					<Amount>579</Amount>
+					<CurrencyCode>USD</CurrencyCode>
+					<FormattedPrice>$5.79</FormattedPrice>
+				</LowestNewPrice>
+				<TotalNew>1</TotalNew>
+				<TotalUsed>0</TotalUsed>
+				<TotalCollectible>0</TotalCollectible>
+				<TotalRefurbished>0</TotalRefurbished>
+			</OfferSummary>
+			<Offers>
+				<TotalOffers>1</TotalOffers>
+				<TotalOfferPages>1</TotalOfferPages>
+				<MoreOffersUrl>http://www.amazon.com/gp/offer-listing/B003L1ZYYM%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB003L1ZYYM
+				</MoreOffersUrl>
+				<Offer>
+					<Merchant>
+						<Name>Amazon.com</Name>
+					</Merchant>
+					<OfferAttributes>
+						<Condition>New</Condition>
+					</OfferAttributes>
+					<OfferListing>
+						<OfferListingId>5MyySnmhTwh3HmZ9TZ0%2Fn7OZeNB%2ButXwc%2FkYyrvGDYAWIaP9nCEXWADYQ4IPdqbdvXA6aPmsOgsQbwEAQrSm1EjCrR%2BrCMSQs88jefwrMBl4OhkFvPeNRw%3D%3D
+						</OfferListingId>
+						<Price>
+							<Amount>579</Amount>
+							<CurrencyCode>USD</CurrencyCode>
+							<FormattedPrice>$5.79</FormattedPrice>
+						</Price>
+						<Availability>Usually ships in 24 hours</Availability>
+						<AvailabilityAttributes>
+							<AvailabilityType>now</AvailabilityType>
+							<MinimumHours>0</MinimumHours>
+							<MaximumHours>0</MaximumHours>
+						</AvailabilityAttributes>
+						<IsEligibleForSuperSaverShipping>1
+						</IsEligibleForSuperSaverShipping>
+					</OfferListing>
+				</Offer>
+			</Offers>
+			<CustomerReviews>
+				<IFrameURL>http://www.amazon.com/reviews/iframe?akid=AKIAIYRRDCJ2LLHWQ2RA&amp;alinkCode=xm2&amp;asin=B003L1ZYYM&amp;atag=thebesuserev-20&amp;exp=2013-08-26T22%3A59%3A50Z&amp;truncate=0&amp;v=2&amp;sig=SUG%2FwkQ%2FtmzU6YBStmtdWJhFmxsmy%2BHBR%2FBqD3fbMrE%3D
+				</IFrameURL>
+				<HasReviews>true</HasReviews>
+			</CustomerReviews>
+			<SimilarProducts>
+				<SimilarProduct>
+					<ASIN>B00BGGDVOO</ASIN>
+					<Title>Roku 3 Streaming Player</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B001TH7GSW</ASIN>
+					<Title>AmazonBasics Digital Optical Audio Toslink Cable, 6 Feet
+					</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B00AWKC0EC</ASIN>
+					<Title>Sony BDP-S3100 Blu-ray Disc Player with Wi-Fi</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B008R7EVE4</ASIN>
+					<Title>Roku LT Streaming Player</Title>
+				</SimilarProduct>
+			</SimilarProducts>
+			<BrowseNodes>
+				<BrowseNode>
+					<BrowseNodeId>202505011</BrowseNodeId>
+					<Name>HDMI Cables</Name>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>464418</BrowseNodeId>
+							<Name>Video Cables</Name>
+							<Ancestors>
+								<BrowseNode>
+									<BrowseNodeId>172540</BrowseNodeId>
+									<Name>Cables &amp; Interconnects</Name>
+									<Ancestors>
+										<BrowseNode>
+											<BrowseNodeId>172532</BrowseNodeId>
+											<Name>Audio &amp; Video Accessories</Name>
+											<Ancestors>
+												<BrowseNode>
+													<BrowseNodeId>281407</BrowseNodeId>
+													<Name>Accessories &amp; Supplies</Name>
+													<Ancestors>
+														<BrowseNode>
+															<BrowseNodeId>493964</BrowseNodeId>
+															<Name>Categories</Name>
+															<IsCategoryRoot>1</IsCategoryRoot>
+															<Ancestors>
+																<BrowseNode>
+																	<BrowseNodeId>172282</BrowseNodeId>
+																	<Name>Electronics</Name>
+																</BrowseNode>
+															</Ancestors>
+														</BrowseNode>
+													</Ancestors>
+												</BrowseNode>
+											</Ancestors>
+										</BrowseNode>
+									</Ancestors>
+								</BrowseNode>
+							</Ancestors>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>13900851</BrowseNodeId>
+					<Name>Electronics Features</Name>
+					<Children>
+						<BrowseNode>
+							<BrowseNodeId>51549011</BrowseNodeId>
+							<Name>Featured Categories</Name>
+						</BrowseNode>
+						<BrowseNode>
+							<BrowseNodeId>3302711</BrowseNodeId>
+							<Name>Gold Merchants</Name>
+						</BrowseNode>
+						<BrowseNode>
+							<BrowseNodeId>2354568011</BrowseNodeId>
+							<Name>Specialty Boutique</Name>
+						</BrowseNode>
+					</Children>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>172282</BrowseNodeId>
+							<Name>Electronics</Name>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>1288264011</BrowseNodeId>
+					<Name>All Products</Name>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>1267878011</BrowseNodeId>
+							<Name>Products</Name>
+							<IsCategoryRoot>1</IsCategoryRoot>
+							<Ancestors>
+								<BrowseNode>
+									<BrowseNodeId>1267877011</BrowseNodeId>
+								</BrowseNode>
+							</Ancestors>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>3545101011</BrowseNodeId>
+					<Name>Accessories</Name>
+					<Children>
+						<BrowseNode>
+							<BrowseNodeId>6351876011</BrowseNodeId>
+							<Name>Headphones</Name>
+						</BrowseNode>
+					</Children>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>1294447011</BrowseNodeId>
+							<Name>Electronics</Name>
+							<Ancestors>
+								<BrowseNode>
+									<BrowseNodeId>1267878011</BrowseNodeId>
+									<Name>Products</Name>
+									<IsCategoryRoot>1</IsCategoryRoot>
+									<Ancestors>
+										<BrowseNode>
+											<BrowseNodeId>1267877011</BrowseNodeId>
+										</BrowseNode>
+									</Ancestors>
+								</BrowseNode>
+							</Ancestors>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>1293319011</BrowseNodeId>
+					<Name>Electronics</Name>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>1267879011</BrowseNodeId>
+							<Name>Special Features</Name>
+							<Ancestors>
+								<BrowseNode>
+									<BrowseNodeId>1267877011</BrowseNodeId>
+								</BrowseNode>
+							</Ancestors>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>6320312011</BrowseNodeId>
+					<Name>AV Accessories</Name>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>1267879011</BrowseNodeId>
+							<Name>Special Features</Name>
+							<Ancestors>
+								<BrowseNode>
+									<BrowseNodeId>1267877011</BrowseNodeId>
+								</BrowseNode>
+							</Ancestors>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+			</BrowseNodes>
+		</Item>
+		<Item>
+			<ASIN>B0083PWAPW</ASIN>
+			<ParentASIN>B008GGCAVM</ParentASIN>
+			<DetailPageURL>http://www.amazon.com/Kindle-Fire-HD/dp/B0083PWAPW%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB0083PWAPW
+			</DetailPageURL>
+			<ItemLinks>
+				<ItemLink>
+					<Description>Technical Details</Description>
+					<URL>http://www.amazon.com/Kindle-Fire-HD/dp/tech-data/B0083PWAPW%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0083PWAPW
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Add To Baby Registry</Description>
+					<URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB0083PWAPW%26SubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0083PWAPW
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Add To Wedding Registry</Description>
+					<URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB0083PWAPW%26SubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0083PWAPW
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Add To Wishlist</Description>
+					<URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB0083PWAPW%26SubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0083PWAPW
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Tell A Friend</Description>
+					<URL>http://www.amazon.com/gp/pdp/taf/B0083PWAPW%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0083PWAPW
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>All Customer Reviews</Description>
+					<URL>http://www.amazon.com/review/product/B0083PWAPW%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0083PWAPW
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>All Offers</Description>
+					<URL>http://www.amazon.com/gp/offer-listing/B0083PWAPW%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0083PWAPW
+					</URL>
+				</ItemLink>
+			</ItemLinks>
+			<SalesRank>1</SalesRank>
+			<SmallImage>
+				<URL>http://ecx.images-amazon.com/images/I/51CmqtIEySL._SL75_.jpg
+				</URL>
+				<Height Units="pixels">75</Height>
+				<Width Units="pixels">70</Width>
+			</SmallImage>
+			<MediumImage>
+				<URL>http://ecx.images-amazon.com/images/I/51CmqtIEySL._SL160_.jpg
+				</URL>
+				<Height Units="pixels">160</Height>
+				<Width Units="pixels">149</Width>
+			</MediumImage>
+			<LargeImage>
+				<URL>http://ecx.images-amazon.com/images/I/51CmqtIEySL.jpg</URL>
+				<Height Units="pixels">500</Height>
+				<Width Units="pixels">467</Width>
+			</LargeImage>
+			<ImageSets>
+				<ImageSet Category="primary">
+					<SwatchImage>
+						<URL>http://ecx.images-amazon.com/images/I/51CmqtIEySL._SL30_.jpg
+						</URL>
+						<Height Units="pixels">30</Height>
+						<Width Units="pixels">28</Width>
+					</SwatchImage>
+					<SmallImage>
+						<URL>http://ecx.images-amazon.com/images/I/51CmqtIEySL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">70</Width>
+					</SmallImage>
+					<ThumbnailImage>
+						<URL>http://ecx.images-amazon.com/images/I/51CmqtIEySL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">70</Width>
+					</ThumbnailImage>
+					<TinyImage>
+						<URL>http://ecx.images-amazon.com/images/I/51CmqtIEySL._SL110_.jpg
+						</URL>
+						<Height Units="pixels">110</Height>
+						<Width Units="pixels">103</Width>
+					</TinyImage>
+					<MediumImage>
+						<URL>http://ecx.images-amazon.com/images/I/51CmqtIEySL._SL160_.jpg
+						</URL>
+						<Height Units="pixels">160</Height>
+						<Width Units="pixels">149</Width>
+					</MediumImage>
+					<LargeImage>
+						<URL>http://ecx.images-amazon.com/images/I/51CmqtIEySL.jpg</URL>
+						<Height Units="pixels">500</Height>
+						<Width Units="pixels">467</Width>
+					</LargeImage>
+				</ImageSet>
+			</ImageSets>
+			<ItemAttributes>
+				<Binding>Electronics</Binding>
+				<Brand>Kindle</Brand>
+				<CatalogNumberList>
+					<CatalogNumberListElement>53-000406</CatalogNumberListElement>
+				</CatalogNumberList>
+				<Color>Black</Color>
+				<EAN>2609000009136</EAN>
+				<EANList>
+					<EANListElement>2609000009136</EANListElement>
+					<EANListElement>2609000005336</EANListElement>
+					<EANListElement>2609000005497</EANListElement>
+					<EANListElement>2609000006364</EANListElement>
+					<EANListElement>2609000005244</EANListElement>
+					<EANListElement>2609000006326</EANListElement>
+					<EANListElement>2609000009471</EANListElement>
+					<EANListElement>2412437002003</EANListElement>
+					<EANListElement>0848719003796</EANListElement>
+					<EANListElement>2097270920006</EANListElement>
+					<EANListElement>2720320491521</EANListElement>
+					<EANListElement>2609000006388</EANListElement>
+					<EANListElement>2609000009327</EANListElement>
+					<EANListElement>2486103219309</EANListElement>
+				</EANList>
+				<Feature>Stunning 1280x800 HD display with rich color and deep
+					contrast from any viewing angle</Feature>
+				<Feature>Exclusive Dolby audio and dual driver stereo speakers for
+					crisp, booming sound without distortion</Feature>
+				<Feature>Ultra-fast Wi-Fi- dual-antenna, dual-band Wi-Fi for 35%
+					faster downloads and streaming</Feature>
+				<Feature>Over 22 million movies, TV shows, songs, magazines, books,
+					audiobooks, and popular apps and games</Feature>
+				<ItemDimensions>
+					<Height Units="hundredths-inches">40</Height>
+					<Length Units="hundredths-inches">760</Length>
+					<Weight Units="hundredths-pounds">87</Weight>
+					<Width Units="hundredths-inches">540</Width>
+				</ItemDimensions>
+				<Label>Amazon Digital Services, Inc</Label>
+				<ListPrice>
+					<Amount>19900</Amount>
+					<CurrencyCode>USD</CurrencyCode>
+					<FormattedPrice>$199.00</FormattedPrice>
+				</ListPrice>
+				<Manufacturer>Amazon Digital Services, Inc</Manufacturer>
+				<MediaType>Flash</MediaType>
+				<Model>53-000406</Model>
+				<MPN>53-000406</MPN>
+				<PackageDimensions>
+					<Height Units="hundredths-inches">140</Height>
+					<Length Units="hundredths-inches">1020</Length>
+					<Weight Units="hundredths-pounds">130</Weight>
+					<Width Units="hundredths-inches">730</Width>
+				</PackageDimensions>
+				<PackageQuantity>1</PackageQuantity>
+				<PartNumber>53-000406</PartNumber>
+				<ProductGroup>Amazon Devices</ProductGroup>
+				<ProductTypeName>ABIS_ELECTRONICS</ProductTypeName>
+				<Publisher>Amazon Digital Services, Inc</Publisher>
+				<ReleaseDate>2012-09-14</ReleaseDate>
+				<Studio>Amazon Digital Services, Inc</Studio>
+				<Title>Kindle Fire HD 7", Dolby Audio, Dual-Band Wi-Fi, 16 GB -
+					Includes Special Offers</Title>
+				<UPC>848719003796</UPC>
+				<UPCList>
+					<UPCListElement>848719003796</UPCListElement>
+				</UPCList>
+			</ItemAttributes>
+			<OfferSummary>
+				<LowestNewPrice>
+					<Amount>19900</Amount>
+					<CurrencyCode>USD</CurrencyCode>
+					<FormattedPrice>$199.00</FormattedPrice>
+				</LowestNewPrice>
+				<LowestUsedPrice>
+					<Amount>17500</Amount>
+					<CurrencyCode>USD</CurrencyCode>
+					<FormattedPrice>$175.00</FormattedPrice>
+				</LowestUsedPrice>
+				<TotalNew>1</TotalNew>
+				<TotalUsed>26</TotalUsed>
+				<TotalCollectible>0</TotalCollectible>
+				<TotalRefurbished>0</TotalRefurbished>
+			</OfferSummary>
+			<Offers>
+				<TotalOffers>1</TotalOffers>
+				<TotalOfferPages>1</TotalOfferPages>
+				<MoreOffersUrl>http://www.amazon.com/gp/offer-listing/B0083PWAPW%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0083PWAPW
+				</MoreOffersUrl>
+				<Offer>
+					<Merchant>
+						<Name>Amazon.com</Name>
+					</Merchant>
+					<OfferAttributes>
+						<Condition>New</Condition>
+					</OfferAttributes>
+					<OfferListing>
+						<OfferListingId>32IrlSwhAD2b96M2dwaaP%2BAPdK02B%2BHrOaFhsFEZjYzX15UprENqtiiZwkYa47hMe5draF80L%2F1%2Bl4k74iF0l1sI7TVkxcJQxPqBkioW4P0D%2FnjGldmOsQ%3D%3D
+						</OfferListingId>
+						<Price>
+							<Amount>19900</Amount>
+							<CurrencyCode>USD</CurrencyCode>
+							<FormattedPrice>$199.00</FormattedPrice>
+						</Price>
+						<Availability>Usually ships in 24 hours</Availability>
+						<AvailabilityAttributes>
+							<AvailabilityType>now</AvailabilityType>
+							<MinimumHours>0</MinimumHours>
+							<MaximumHours>0</MaximumHours>
+						</AvailabilityAttributes>
+						<IsEligibleForSuperSaverShipping>1
+						</IsEligibleForSuperSaverShipping>
+					</OfferListing>
+				</Offer>
+			</Offers>
+			<CustomerReviews>
+				<IFrameURL>http://www.amazon.com/reviews/iframe?akid=AKIAIYRRDCJ2LLHWQ2RA&amp;alinkCode=xm2&amp;asin=B0083PWAPW&amp;atag=thebesuserev-20&amp;exp=2013-08-26T22%3A59%3A50Z&amp;truncate=0&amp;v=2&amp;sig=PXv6JFAAD%2FxFXKXxgdFNOdbGZqs0hohtudJe%2BxvZu4w%3D
+				</IFrameURL>
+				<HasReviews>true</HasReviews>
+			</CustomerReviews>
+			<EditorialReviews>
+				<EditorialReview>
+					<Source>Product Description</Source>
+					<Content>World's most advanced 7" tablet with stunning HD display,
+						exclusive Dolby audio, and the fastest Wi-Fi found on a tablet.
+						When it comes to HD displays, great resolution is just the start.
+						Kindle Fire HD delivers rich color and deep contrast from every
+						angle, with an advanced polarizing filter and custom anti-glare
+						technology. Our exclusive Dolby Digital Plus audio includes
+						technology to adjust volume, create virtual surround sound, and
+						deliver easier-to-understand dialogue in movies and TV shows.
+					</Content>
+					<IsLinkSuppressed>0</IsLinkSuppressed>
+				</EditorialReview>
+			</EditorialReviews>
+			<SimilarProducts>
+				<SimilarProduct>
+					<ASIN>B008GGH4FY</ASIN>
+					<Title>Amazon Kindle Fire HD 7" Standing Leather Case, Onyx Black
+						(will only fit Kindle Fire HD 7")</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B006GWO5WK</ASIN>
+					<Title>Amazon Kindle PowerFast for Accelerated Charging</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B0086829D4</ASIN>
+					<Title>2-Year SquareTrade Warranty plus Accident Protection for
+						Kindle Fire HD 7"</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B008IJRAAS</ASIN>
+					<Title>Amazon Kindle Fire HD 7" Standing Leather Case, Royal Purple
+						(will only fit Kindle Fire HD 7")</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B008GGH5HQ</ASIN>
+					<Title>Amazon Kindle Fire HD 7" Standing Leather Case, Fuchsia
+						(will only fit Kindle Fire HD 7")</Title>
+				</SimilarProduct>
+			</SimilarProducts>
+			<BrowseNodes>
+				<BrowseNode>
+					<BrowseNodeId>1232597011</BrowseNodeId>
+					<Name>Tablets</Name>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>541966</BrowseNodeId>
+							<Name>Computers &amp; Accessories</Name>
+							<Ancestors>
+								<BrowseNode>
+									<BrowseNodeId>493964</BrowseNodeId>
+									<Name>Categories</Name>
+									<IsCategoryRoot>1</IsCategoryRoot>
+									<Ancestors>
+										<BrowseNode>
+											<BrowseNodeId>172282</BrowseNodeId>
+											<Name>Electronics</Name>
+										</BrowseNode>
+									</Ancestors>
+								</BrowseNode>
+							</Ancestors>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>13900851</BrowseNodeId>
+					<Name>Electronics Features</Name>
+					<Children>
+						<BrowseNode>
+							<BrowseNodeId>51549011</BrowseNodeId>
+							<Name>Featured Categories</Name>
+						</BrowseNode>
+						<BrowseNode>
+							<BrowseNodeId>3302711</BrowseNodeId>
+							<Name>Gold Merchants</Name>
+						</BrowseNode>
+						<BrowseNode>
+							<BrowseNodeId>2354568011</BrowseNodeId>
+							<Name>Specialty Boutique</Name>
+						</BrowseNode>
+					</Children>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>172282</BrowseNodeId>
+							<Name>Electronics</Name>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>13900871</BrowseNodeId>
+					<Name>Computers Features</Name>
+					<Children>
+						<BrowseNode>
+							<BrowseNodeId>51548011</BrowseNodeId>
+							<Name>Featured Categories</Name>
+						</BrowseNode>
+					</Children>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>172282</BrowseNodeId>
+							<Name>Electronics</Name>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>2516034011</BrowseNodeId>
+					<Name>Holiday Toy List</Name>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>551412</BrowseNodeId>
+							<Name>Promotions</Name>
+							<Ancestors>
+								<BrowseNode>
+									<BrowseNodeId>507846</BrowseNodeId>
+									<Name>Amazon.com</Name>
+									<Ancestors>
+										<BrowseNode>
+											<BrowseNodeId>468120</BrowseNodeId>
+											<Name>Spine</Name>
+										</BrowseNode>
+									</Ancestors>
+								</BrowseNode>
+							</Ancestors>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>13900821</BrowseNodeId>
+					<Name>Kitchen &amp; Dining Features</Name>
+					<Children>
+						<BrowseNode>
+							<BrowseNodeId>51552011</BrowseNodeId>
+							<Name>Featured Categories</Name>
+						</BrowseNode>
+					</Children>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>1055398</BrowseNodeId>
+							<Name>Home &amp; Kitchen</Name>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>2102313011</BrowseNodeId>
+					<Name>Kindle Devices</Name>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>133141011</BrowseNodeId>
+							<Name>Categories</Name>
+							<IsCategoryRoot>1</IsCategoryRoot>
+							<Ancestors>
+								<BrowseNode>
+									<BrowseNodeId>133140011</BrowseNodeId>
+									<Name>Kindle Store</Name>
+								</BrowseNode>
+							</Ancestors>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+			</BrowseNodes>
+		</Item>
+		<Item>
+			<ASIN>B009QZH7BU</ASIN>
+			<ParentASIN>B008J0Z9TA</ParentASIN>
+			<DetailPageURL>http://www.amazon.com/SanDisk-MicroSDHC-Memory-Adapter-SDSDQU-032G-AFFP-A/dp/B009QZH7BU%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB009QZH7BU
+			</DetailPageURL>
+			<ItemLinks>
+				<ItemLink>
+					<Description>Technical Details</Description>
+					<URL>http://www.amazon.com/SanDisk-MicroSDHC-Memory-Adapter-SDSDQU-032G-AFFP-A/dp/tech-data/B009QZH7BU%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB009QZH7BU
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Add To Baby Registry</Description>
+					<URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB009QZH7BU%26SubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB009QZH7BU
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Add To Wedding Registry</Description>
+					<URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB009QZH7BU%26SubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB009QZH7BU
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Add To Wishlist</Description>
+					<URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB009QZH7BU%26SubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB009QZH7BU
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Tell A Friend</Description>
+					<URL>http://www.amazon.com/gp/pdp/taf/B009QZH7BU%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB009QZH7BU
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>All Customer Reviews</Description>
+					<URL>http://www.amazon.com/review/product/B009QZH7BU%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB009QZH7BU
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>All Offers</Description>
+					<URL>http://www.amazon.com/gp/offer-listing/B009QZH7BU%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB009QZH7BU
+					</URL>
+				</ItemLink>
+			</ItemLinks>
+			<SalesRank>3</SalesRank>
+			<SmallImage>
+				<URL>http://ecx.images-amazon.com/images/I/41gaujlFYTL._SL75_.jpg
+				</URL>
+				<Height Units="pixels">62</Height>
+				<Width Units="pixels">75</Width>
+			</SmallImage>
+			<MediumImage>
+				<URL>http://ecx.images-amazon.com/images/I/41gaujlFYTL._SL160_.jpg
+				</URL>
+				<Height Units="pixels">131</Height>
+				<Width Units="pixels">160</Width>
+			</MediumImage>
+			<LargeImage>
+				<URL>http://ecx.images-amazon.com/images/I/41gaujlFYTL.jpg</URL>
+				<Height Units="pixels">410</Height>
+				<Width Units="pixels">500</Width>
+			</LargeImage>
+			<ImageSets>
+				<ImageSet Category="primary">
+					<SwatchImage>
+						<URL>http://ecx.images-amazon.com/images/I/41gaujlFYTL._SL30_.jpg
+						</URL>
+						<Height Units="pixels">25</Height>
+						<Width Units="pixels">30</Width>
+					</SwatchImage>
+					<SmallImage>
+						<URL>http://ecx.images-amazon.com/images/I/41gaujlFYTL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">62</Height>
+						<Width Units="pixels">75</Width>
+					</SmallImage>
+					<ThumbnailImage>
+						<URL>http://ecx.images-amazon.com/images/I/41gaujlFYTL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">62</Height>
+						<Width Units="pixels">75</Width>
+					</ThumbnailImage>
+					<TinyImage>
+						<URL>http://ecx.images-amazon.com/images/I/41gaujlFYTL._SL110_.jpg
+						</URL>
+						<Height Units="pixels">90</Height>
+						<Width Units="pixels">110</Width>
+					</TinyImage>
+					<MediumImage>
+						<URL>http://ecx.images-amazon.com/images/I/41gaujlFYTL._SL160_.jpg
+						</URL>
+						<Height Units="pixels">131</Height>
+						<Width Units="pixels">160</Width>
+					</MediumImage>
+					<LargeImage>
+						<URL>http://ecx.images-amazon.com/images/I/41gaujlFYTL.jpg</URL>
+						<Height Units="pixels">410</Height>
+						<Width Units="pixels">500</Width>
+					</LargeImage>
+				</ImageSet>
+				<ImageSet Category="variant">
+					<SwatchImage>
+						<URL>http://ecx.images-amazon.com/images/I/51M1tZ9RhNL._SL30_.jpg
+						</URL>
+						<Height Units="pixels">30</Height>
+						<Width Units="pixels">30</Width>
+					</SwatchImage>
+					<SmallImage>
+						<URL>http://ecx.images-amazon.com/images/I/51M1tZ9RhNL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">75</Width>
+					</SmallImage>
+					<ThumbnailImage>
+						<URL>http://ecx.images-amazon.com/images/I/51M1tZ9RhNL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">75</Width>
+					</ThumbnailImage>
+					<TinyImage>
+						<URL>http://ecx.images-amazon.com/images/I/51M1tZ9RhNL._SL110_.jpg
+						</URL>
+						<Height Units="pixels">110</Height>
+						<Width Units="pixels">110</Width>
+					</TinyImage>
+					<MediumImage>
+						<URL>http://ecx.images-amazon.com/images/I/51M1tZ9RhNL._SL160_.jpg
+						</URL>
+						<Height Units="pixels">160</Height>
+						<Width Units="pixels">160</Width>
+					</MediumImage>
+					<LargeImage>
+						<URL>http://ecx.images-amazon.com/images/I/51M1tZ9RhNL.jpg</URL>
+						<Height Units="pixels">500</Height>
+						<Width Units="pixels">500</Width>
+					</LargeImage>
+				</ImageSet>
+			</ImageSets>
+			<ItemAttributes>
+				<Binding>Personal Computers</Binding>
+				<Brand>SanDisk</Brand>
+				<CatalogNumberList>
+					<CatalogNumberListElement>SDSDQU-032G-AFFP-A
+					</CatalogNumberListElement>
+				</CatalogNumberList>
+				<Color>Silver/red</Color>
+				<EAN>0619659078713</EAN>
+				<EANList>
+					<EANListElement>0619659078713</EANListElement>
+				</EANList>
+				<Feature>Highest Full HD video recording performance available with
+					class 10 rating</Feature>
+				<Feature>Ideal for Android, other smartphones and tablets</Feature>
+				<Feature>UHS-1 enabled</Feature>
+				<Feature>Faster app performance with transfer speeds up to 30MB/s
+				</Feature>
+				<Feature>Ships in Certified Frustration-Free Packaging</Feature>
+				<Feature>Water-proof, temperature proof, X-ray proof, shock proof
+				</Feature>
+				<ItemDimensions>
+					<Height Units="hundredths-inches">43</Height>
+					<Length Units="hundredths-inches">31</Length>
+					<Weight Units="hundredths-pounds">2</Weight>
+					<Width Units="hundredths-inches">59</Width>
+				</ItemDimensions>
+				<Label>SanDisk</Label>
+				<ListPrice>
+					<Amount>6999</Amount>
+					<CurrencyCode>USD</CurrencyCode>
+					<FormattedPrice>$69.99</FormattedPrice>
+				</ListPrice>
+				<Manufacturer>SanDisk</Manufacturer>
+				<Model>SDSDQU-032G-AFFP-A</Model>
+				<MPN>SDSDQU-032G-AFFP-A</MPN>
+				<PackageDimensions>
+					<Height Units="hundredths-inches">20</Height>
+					<Length Units="hundredths-inches">610</Length>
+					<Weight Units="hundredths-pounds">2</Weight>
+					<Width Units="hundredths-inches">420</Width>
+				</PackageDimensions>
+				<PackageQuantity>1</PackageQuantity>
+				<PartNumber>SDSDQU-032G-AFFP-A</PartNumber>
+				<ProductGroup>CE</ProductGroup>
+				<ProductTypeName>FLASH_MEMORY</ProductTypeName>
+				<Publisher>SanDisk</Publisher>
+				<Size>32GB</Size>
+				<Studio>SanDisk</Studio>
+				<Title>SanDisk Ultra 32 GB MicroSDHC C10/UHS1 Memory Card with
+					Adapter (SDSDQU-032G-AFFP-A)</Title>
+				<UPC>619659078713</UPC>
+				<UPCList>
+					<UPCListElement>619659078713</UPCListElement>
+				</UPCList>
+				<Warranty>Lifetime limited warranty</Warranty>
+			</ItemAttributes>
+			<OfferSummary>
+				<LowestNewPrice>
+					<Amount>2338</Amount>
+					<CurrencyCode>USD</CurrencyCode>
+					<FormattedPrice>$23.38</FormattedPrice>
+				</LowestNewPrice>
+				<TotalNew>1</TotalNew>
+				<TotalUsed>0</TotalUsed>
+				<TotalCollectible>0</TotalCollectible>
+				<TotalRefurbished>0</TotalRefurbished>
+			</OfferSummary>
+			<Offers>
+				<TotalOffers>1</TotalOffers>
+				<TotalOfferPages>1</TotalOfferPages>
+				<MoreOffersUrl>http://www.amazon.com/gp/offer-listing/B009QZH7BU%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB009QZH7BU
+				</MoreOffersUrl>
+				<Offer>
+					<Merchant>
+						<Name>Amazon.com</Name>
+					</Merchant>
+					<OfferAttributes>
+						<Condition>New</Condition>
+					</OfferAttributes>
+					<OfferListing>
+						<OfferListingId>BJVxCtrxwyPWW7VuukIb0LSX1UxEQX7Vw9QmTCSrM%2FKBP0lRtfb4dQI%2F0YiMpXFmjDXzuRc2lBH15FzUy3iHzsaKj8E4067VGugSHeQ3mDVn7HHIiC3qYQ%3D%3D
+						</OfferListingId>
+						<Price>
+							<Amount>2338</Amount>
+							<CurrencyCode>USD</CurrencyCode>
+							<FormattedPrice>$23.38</FormattedPrice>
+						</Price>
+						<AmountSaved>
+							<Amount>4661</Amount>
+							<CurrencyCode>USD</CurrencyCode>
+							<FormattedPrice>$46.61</FormattedPrice>
+						</AmountSaved>
+						<PercentageSaved>67</PercentageSaved>
+						<Availability>Usually ships in 24 hours</Availability>
+						<AvailabilityAttributes>
+							<AvailabilityType>now</AvailabilityType>
+							<MinimumHours>0</MinimumHours>
+							<MaximumHours>0</MaximumHours>
+						</AvailabilityAttributes>
+						<IsEligibleForSuperSaverShipping>1
+						</IsEligibleForSuperSaverShipping>
+					</OfferListing>
+				</Offer>
+			</Offers>
+			<CustomerReviews>
+				<IFrameURL>http://www.amazon.com/reviews/iframe?akid=AKIAIYRRDCJ2LLHWQ2RA&amp;alinkCode=xm2&amp;asin=B009QZH7BU&amp;atag=thebesuserev-20&amp;exp=2013-08-26T22%3A59%3A50Z&amp;truncate=0&amp;v=2&amp;sig=apw4itjARZQTTq0V%2BmkSjJmdDGKNLJMAwet6%2BgeuHTM%3D
+				</IFrameURL>
+				<HasReviews>true</HasReviews>
+			</CustomerReviews>
+			<EditorialReviews>
+				<EditorialReview>
+					<Source>Product Description</Source>
+					<Content>Perfect for today's high-performance Android smartphone
+						and tablet users who want to get the most out of memory-intensive
+						activities like 3-D gaming and apps, the SanDisk Mobile Ultra
+						microSDHC UHS-I card drives transfer speeds of up to 30MB/s for
+						faster app response times. For shooting Full HD video and
+						high-megapixel pictures, it delivers two times the speed of
+						typical microSD memory cards and a class 10 rating for the highest
+						video recording performance available. In addition, the included
+						SanDisk Memory Zone app lets you easily view, access, and backup
+						all of your digital files from your phone's memory, additional
+						memory card and cloud services all in one convenient place.
+					</Content>
+					<IsLinkSuppressed>0</IsLinkSuppressed>
+				</EditorialReview>
+			</EditorialReviews>
+			<SimilarProducts>
+				<SimilarProduct>
+					<ASIN>B00ATNL9AS</ASIN>
+					<Title>TOP Secret Spy Camera Mini Clock Radio Hidden DVR-
+						Continuous power or battery</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B00AAIPT76</ASIN>
+					<Title>Wasabi Power Battery (2-Pack) and Charger for GoPro HD HERO3
+						and GoPro AHDBT-201, AHDBT-301</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B002PAX9QU</ASIN>
+					<Title>GoPro Head Strap Mount for HERO Cameras</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B009PK9S90</ASIN>
+					<Title>GoPro HERO3: Silver Edition</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B009TCCTSQ</ASIN>
+					<Title>GoPro HERO3: White Edition</Title>
+				</SimilarProduct>
+			</SimilarProducts>
+			<BrowseNodes>
+				<BrowseNode>
+					<BrowseNodeId>3015433011</BrowseNodeId>
+					<Name>Micro SD Cards</Name>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>516866</BrowseNodeId>
+							<Name>Memory Cards</Name>
+							<Ancestors>
+								<BrowseNode>
+									<BrowseNodeId>172456</BrowseNodeId>
+									<Name>Cables &amp; Accessories</Name>
+									<Ancestors>
+										<BrowseNode>
+											<BrowseNodeId>541966</BrowseNodeId>
+											<Name>Computers &amp; Accessories</Name>
+											<Ancestors>
+												<BrowseNode>
+													<BrowseNodeId>493964</BrowseNodeId>
+													<Name>Categories</Name>
+													<IsCategoryRoot>1</IsCategoryRoot>
+													<Ancestors>
+														<BrowseNode>
+															<BrowseNodeId>172282</BrowseNodeId>
+															<Name>Electronics</Name>
+														</BrowseNode>
+													</Ancestors>
+												</BrowseNode>
+											</Ancestors>
+										</BrowseNode>
+									</Ancestors>
+								</BrowseNode>
+							</Ancestors>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>13900851</BrowseNodeId>
+					<Name>Electronics Features</Name>
+					<Children>
+						<BrowseNode>
+							<BrowseNodeId>51549011</BrowseNodeId>
+							<Name>Featured Categories</Name>
+						</BrowseNode>
+						<BrowseNode>
+							<BrowseNodeId>3302711</BrowseNodeId>
+							<Name>Gold Merchants</Name>
+						</BrowseNode>
+						<BrowseNode>
+							<BrowseNodeId>2354568011</BrowseNodeId>
+							<Name>Specialty Boutique</Name>
+						</BrowseNode>
+					</Children>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>172282</BrowseNodeId>
+							<Name>Electronics</Name>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>13900871</BrowseNodeId>
+					<Name>Computers Features</Name>
+					<Children>
+						<BrowseNode>
+							<BrowseNodeId>51548011</BrowseNodeId>
+							<Name>Featured Categories</Name>
+						</BrowseNode>
+					</Children>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>172282</BrowseNodeId>
+							<Name>Electronics</Name>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+			</BrowseNodes>
+		</Item>
+		<Item>
+			<ASIN>B005DOK8NW</ASIN>
+			<DetailPageURL>http://www.amazon.com/Amazon-53-000078-5W-USB-Charger/dp/B005DOK8NW%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB005DOK8NW
+			</DetailPageURL>
+			<ItemLinks>
+				<ItemLink>
+					<Description>Technical Details</Description>
+					<URL>http://www.amazon.com/Amazon-53-000078-5W-USB-Charger/dp/tech-data/B005DOK8NW%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB005DOK8NW
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Add To Baby Registry</Description>
+					<URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB005DOK8NW%26SubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB005DOK8NW
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Add To Wedding Registry</Description>
+					<URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB005DOK8NW%26SubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB005DOK8NW
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Add To Wishlist</Description>
+					<URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB005DOK8NW%26SubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB005DOK8NW
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Tell A Friend</Description>
+					<URL>http://www.amazon.com/gp/pdp/taf/B005DOK8NW%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB005DOK8NW
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>All Customer Reviews</Description>
+					<URL>http://www.amazon.com/review/product/B005DOK8NW%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB005DOK8NW
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>All Offers</Description>
+					<URL>http://www.amazon.com/gp/offer-listing/B005DOK8NW%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB005DOK8NW
+					</URL>
+				</ItemLink>
+			</ItemLinks>
+			<SmallImage>
+				<URL>http://ecx.images-amazon.com/images/I/31iwY-qltqL._SL75_.jpg
+				</URL>
+				<Height Units="pixels">64</Height>
+				<Width Units="pixels">75</Width>
+			</SmallImage>
+			<MediumImage>
+				<URL>http://ecx.images-amazon.com/images/I/31iwY-qltqL._SL160_.jpg
+				</URL>
+				<Height Units="pixels">136</Height>
+				<Width Units="pixels">160</Width>
+			</MediumImage>
+			<LargeImage>
+				<URL>http://ecx.images-amazon.com/images/I/31iwY-qltqL.jpg</URL>
+				<Height Units="pixels">425</Height>
+				<Width Units="pixels">500</Width>
+			</LargeImage>
+			<ImageSets>
+				<ImageSet Category="primary">
+					<SwatchImage>
+						<URL>http://ecx.images-amazon.com/images/I/31iwY-qltqL._SL30_.jpg
+						</URL>
+						<Height Units="pixels">26</Height>
+						<Width Units="pixels">30</Width>
+					</SwatchImage>
+					<SmallImage>
+						<URL>http://ecx.images-amazon.com/images/I/31iwY-qltqL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">64</Height>
+						<Width Units="pixels">75</Width>
+					</SmallImage>
+					<ThumbnailImage>
+						<URL>http://ecx.images-amazon.com/images/I/31iwY-qltqL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">64</Height>
+						<Width Units="pixels">75</Width>
+					</ThumbnailImage>
+					<TinyImage>
+						<URL>http://ecx.images-amazon.com/images/I/31iwY-qltqL._SL110_.jpg
+						</URL>
+						<Height Units="pixels">94</Height>
+						<Width Units="pixels">110</Width>
+					</TinyImage>
+					<MediumImage>
+						<URL>http://ecx.images-amazon.com/images/I/31iwY-qltqL._SL160_.jpg
+						</URL>
+						<Height Units="pixels">136</Height>
+						<Width Units="pixels">160</Width>
+					</MediumImage>
+					<LargeImage>
+						<URL>http://ecx.images-amazon.com/images/I/31iwY-qltqL.jpg</URL>
+						<Height Units="pixels">425</Height>
+						<Width Units="pixels">500</Width>
+					</LargeImage>
+				</ImageSet>
+			</ImageSets>
+			<ItemAttributes>
+				<Binding>Accessory</Binding>
+				<Brand>Amazon</Brand>
+				<CatalogNumberList>
+					<CatalogNumberListElement>53-000078</CatalogNumberListElement>
+				</CatalogNumberList>
+				<EAN>0690922692348</EAN>
+				<EANList>
+					<EANListElement>0690922692348</EANListElement>
+					<EANListElement>0639713369144</EANListElement>
+					<EANListElement>0610393485218</EANListElement>
+					<EANListElement>0814916014699</EANListElement>
+				</EANList>
+				<Feature>The United States Kindle power adapter</Feature>
+				<Feature>Fully charges Kindle Touch, Kindle Keyboard and Kindle DX
+					in 4 hours or less</Feature>
+				<Feature>See Kindle User's Guide for instructions and important
+					safety information</Feature>
+				<ItemDimensions>
+					<Height Units="hundredths-inches">100</Height>
+					<Length Units="hundredths-inches">100</Length>
+					<Width Units="hundredths-inches">100</Width>
+				</ItemDimensions>
+				<Label>Foxlink (US)</Label>
+				<ListPrice>
+					<Amount>1999</Amount>
+					<CurrencyCode>USD</CurrencyCode>
+					<FormattedPrice>$19.99</FormattedPrice>
+				</ListPrice>
+				<Manufacturer>Foxlink (US)</Manufacturer>
+				<Model>53-000078</Model>
+				<MPN>A00810-02</MPN>
+				<PackageDimensions>
+					<Height Units="hundredths-inches">120</Height>
+					<Length Units="hundredths-inches">350</Length>
+					<Weight Units="hundredths-pounds">5</Weight>
+					<Width Units="hundredths-inches">280</Width>
+				</PackageDimensions>
+				<PackageQuantity>1</PackageQuantity>
+				<PartNumber>A00810-02</PartNumber>
+				<ProductGroup>Digital Device Accessory</ProductGroup>
+				<ProductTypeName>ABIS_ELECTRONICS</ProductTypeName>
+				<Publisher>Foxlink (US)</Publisher>
+				<SKU>COSH-LF-016</SKU>
+				<Studio>Foxlink (US)</Studio>
+				<Title>Amazon 5W USB Charger</Title>
+				<UPC>690922692348</UPC>
+				<UPCList>
+					<UPCListElement>690922692348</UPCListElement>
+					<UPCListElement>639713369144</UPCListElement>
+					<UPCListElement>610393485218</UPCListElement>
+					<UPCListElement>814916014699</UPCListElement>
+				</UPCList>
+			</ItemAttributes>
+			<OfferSummary>
+				<LowestNewPrice>
+					<Amount>1999</Amount>
+					<CurrencyCode>USD</CurrencyCode>
+					<FormattedPrice>$19.99</FormattedPrice>
+				</LowestNewPrice>
+				<LowestUsedPrice>
+					<Amount>1</Amount>
+					<CurrencyCode>USD</CurrencyCode>
+					<FormattedPrice>$0.01</FormattedPrice>
+				</LowestUsedPrice>
+				<TotalNew>1</TotalNew>
+				<TotalUsed>16</TotalUsed>
+				<TotalCollectible>0</TotalCollectible>
+				<TotalRefurbished>0</TotalRefurbished>
+			</OfferSummary>
+			<Offers>
+				<TotalOffers>1</TotalOffers>
+				<TotalOfferPages>1</TotalOfferPages>
+				<MoreOffersUrl>http://www.amazon.com/gp/offer-listing/B005DOK8NW%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB005DOK8NW
+				</MoreOffersUrl>
+				<Offer>
+					<Merchant>
+						<Name>Amazon.com</Name>
+					</Merchant>
+					<OfferAttributes>
+						<Condition>New</Condition>
+					</OfferAttributes>
+					<OfferListing>
+						<OfferListingId>%2BpWjMxhmFmrkICDbbhe4DFl4e20qGdPObVhxpc7FSp5Dyd3yIMAxZDFezt9gUEbLM1Lk8I1pGfkySKHQWlFrh4PFl3P88PK%2B8SEJDjQiGG02O8%2BJ2wKsTg%3D%3D
+						</OfferListingId>
+						<Price>
+							<Amount>1999</Amount>
+							<CurrencyCode>USD</CurrencyCode>
+							<FormattedPrice>$19.99</FormattedPrice>
+						</Price>
+						<Availability>Usually ships in 24 hours</Availability>
+						<AvailabilityAttributes>
+							<AvailabilityType>now</AvailabilityType>
+							<MinimumHours>0</MinimumHours>
+							<MaximumHours>0</MaximumHours>
+						</AvailabilityAttributes>
+						<IsEligibleForSuperSaverShipping>1
+						</IsEligibleForSuperSaverShipping>
+					</OfferListing>
+				</Offer>
+			</Offers>
+			<CustomerReviews>
+				<IFrameURL>http://www.amazon.com/reviews/iframe?akid=AKIAIYRRDCJ2LLHWQ2RA&amp;alinkCode=xm2&amp;asin=B005DOK8NW&amp;atag=thebesuserev-20&amp;exp=2013-08-26T22%3A59%3A50Z&amp;truncate=0&amp;v=2&amp;sig=so4RLYPPG9l4%2BT1qAsjJiDO89Z94SHBoRdEDq44wZQ0%3D
+				</IFrameURL>
+				<HasReviews>true</HasReviews>
+			</CustomerReviews>
+			<EditorialReviews>
+				<EditorialReview>
+					<Source>Product Description</Source>
+					<Content>Product Features
+						The United States Kindle power adapter
+						Fully charges Kindle Touch, Kindle Keyboard, or Kindle DX in 4 hours or
+						less
+						See Kindle User's Guide for instructions and important safety
+						information
+					</Content>
+					<IsLinkSuppressed>0</IsLinkSuppressed>
+				</EditorialReview>
+			</EditorialReviews>
+			<SimilarProducts>
+				<SimilarProduct>
+					<ASIN>B007OZNZG0</ASIN>
+					<Title>Kindle Paperwhite, 6" High Resolution Display with Built-in
+						Light, Wi-Fi - Includes Special Offers</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B007OZNUCE</ASIN>
+					<Title>Kindle Paperwhite 3G, 6" High Resolution Display with
+						Built-in Light, Free 3G + Wi-Fi - Includes Special Offers</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B007R5YFS4</ASIN>
+					<Title>Amazon Kindle Paperwhite Leather Cover, Onyx Black (does not
+						fit Kindle or Kindle Touch)</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B00CXADBRY</ASIN>
+					<Title>Moshi AirFoil Screen Protector for Kindle Paperwhite,
+						Kindle, and Kindle Keyboard (2 Pack)</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B007HCCNJU</ASIN>
+					<Title>Kindle, 6" E Ink Display, Wi-Fi - Includes Special Offers
+						(Black)</Title>
+				</SimilarProduct>
+			</SimilarProducts>
+			<BrowseNodes>
+				<BrowseNode>
+					<BrowseNodeId>2642132011</BrowseNodeId>
+					<Name>Power Adapters</Name>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>2642125011</BrowseNodeId>
+							<Name>eBook Readers &amp; Accessories</Name>
+							<Ancestors>
+								<BrowseNode>
+									<BrowseNodeId>493964</BrowseNodeId>
+									<Name>Categories</Name>
+									<IsCategoryRoot>1</IsCategoryRoot>
+									<Ancestors>
+										<BrowseNode>
+											<BrowseNodeId>172282</BrowseNodeId>
+											<Name>Electronics</Name>
+										</BrowseNode>
+									</Ancestors>
+								</BrowseNode>
+							</Ancestors>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>2965688011</BrowseNodeId>
+					<Name>Kindle Power Adapters</Name>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>1289282011</BrowseNodeId>
+							<Name>Power Adapters</Name>
+							<Ancestors>
+								<BrowseNode>
+									<BrowseNodeId>370783011</BrowseNodeId>
+									<Name>Kindle Accessories</Name>
+									<Ancestors>
+										<BrowseNode>
+											<BrowseNodeId>133141011</BrowseNodeId>
+											<Name>Categories</Name>
+											<IsCategoryRoot>1</IsCategoryRoot>
+											<Ancestors>
+												<BrowseNode>
+													<BrowseNodeId>133140011</BrowseNodeId>
+													<Name>Kindle Store</Name>
+												</BrowseNode>
+											</Ancestors>
+										</BrowseNode>
+									</Ancestors>
+								</BrowseNode>
+							</Ancestors>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>3013577011</BrowseNodeId>
+					<Name>Kindle Touch Power Adapters</Name>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>1289282011</BrowseNodeId>
+							<Name>Power Adapters</Name>
+							<Ancestors>
+								<BrowseNode>
+									<BrowseNodeId>370783011</BrowseNodeId>
+									<Name>Kindle Accessories</Name>
+									<Ancestors>
+										<BrowseNode>
+											<BrowseNodeId>133141011</BrowseNodeId>
+											<Name>Categories</Name>
+											<IsCategoryRoot>1</IsCategoryRoot>
+											<Ancestors>
+												<BrowseNode>
+													<BrowseNodeId>133140011</BrowseNodeId>
+													<Name>Kindle Store</Name>
+												</BrowseNode>
+											</Ancestors>
+										</BrowseNode>
+									</Ancestors>
+								</BrowseNode>
+							</Ancestors>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>5499852011</BrowseNodeId>
+					<Name>Kindle Paperwhite Power Adapters</Name>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>1289282011</BrowseNodeId>
+							<Name>Power Adapters</Name>
+							<Ancestors>
+								<BrowseNode>
+									<BrowseNodeId>370783011</BrowseNodeId>
+									<Name>Kindle Accessories</Name>
+									<Ancestors>
+										<BrowseNode>
+											<BrowseNodeId>133141011</BrowseNodeId>
+											<Name>Categories</Name>
+											<IsCategoryRoot>1</IsCategoryRoot>
+											<Ancestors>
+												<BrowseNode>
+													<BrowseNodeId>133140011</BrowseNodeId>
+													<Name>Kindle Store</Name>
+												</BrowseNode>
+											</Ancestors>
+										</BrowseNode>
+									</Ancestors>
+								</BrowseNode>
+							</Ancestors>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+			</BrowseNodes>
+		</Item>
+		<Item>
+			<ASIN>B007OZNZG0</ASIN>
+			<ParentASIN>B008GEKXUO</ParentASIN>
+			<DetailPageURL>http://www.amazon.com/Kindle-Paperwhite-Touch-light/dp/B007OZNZG0%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB007OZNZG0
+			</DetailPageURL>
+			<ItemLinks>
+				<ItemLink>
+					<Description>Technical Details</Description>
+					<URL>http://www.amazon.com/Kindle-Paperwhite-Touch-light/dp/tech-data/B007OZNZG0%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB007OZNZG0
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Add To Baby Registry</Description>
+					<URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB007OZNZG0%26SubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB007OZNZG0
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Add To Wedding Registry</Description>
+					<URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB007OZNZG0%26SubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB007OZNZG0
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Add To Wishlist</Description>
+					<URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB007OZNZG0%26SubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB007OZNZG0
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Tell A Friend</Description>
+					<URL>http://www.amazon.com/gp/pdp/taf/B007OZNZG0%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB007OZNZG0
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>All Customer Reviews</Description>
+					<URL>http://www.amazon.com/review/product/B007OZNZG0%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB007OZNZG0
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>All Offers</Description>
+					<URL>http://www.amazon.com/gp/offer-listing/B007OZNZG0%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB007OZNZG0
+					</URL>
+				</ItemLink>
+			</ItemLinks>
+			<SalesRank>2</SalesRank>
+			<SmallImage>
+				<URL>http://ecx.images-amazon.com/images/I/41BWHf4RXSL._SL75_.jpg
+				</URL>
+				<Height Units="pixels">75</Height>
+				<Width Units="pixels">75</Width>
+			</SmallImage>
+			<MediumImage>
+				<URL>http://ecx.images-amazon.com/images/I/41BWHf4RXSL._SL160_.jpg
+				</URL>
+				<Height Units="pixels">160</Height>
+				<Width Units="pixels">160</Width>
+			</MediumImage>
+			<LargeImage>
+				<URL>http://ecx.images-amazon.com/images/I/41BWHf4RXSL.jpg</URL>
+				<Height Units="pixels">500</Height>
+				<Width Units="pixels">500</Width>
+			</LargeImage>
+			<ImageSets>
+				<ImageSet Category="primary">
+					<SwatchImage>
+						<URL>http://ecx.images-amazon.com/images/I/41BWHf4RXSL._SL30_.jpg
+						</URL>
+						<Height Units="pixels">30</Height>
+						<Width Units="pixels">30</Width>
+					</SwatchImage>
+					<SmallImage>
+						<URL>http://ecx.images-amazon.com/images/I/41BWHf4RXSL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">75</Width>
+					</SmallImage>
+					<ThumbnailImage>
+						<URL>http://ecx.images-amazon.com/images/I/41BWHf4RXSL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">75</Width>
+					</ThumbnailImage>
+					<TinyImage>
+						<URL>http://ecx.images-amazon.com/images/I/41BWHf4RXSL._SL110_.jpg
+						</URL>
+						<Height Units="pixels">110</Height>
+						<Width Units="pixels">110</Width>
+					</TinyImage>
+					<MediumImage>
+						<URL>http://ecx.images-amazon.com/images/I/41BWHf4RXSL._SL160_.jpg
+						</URL>
+						<Height Units="pixels">160</Height>
+						<Width Units="pixels">160</Width>
+					</MediumImage>
+					<LargeImage>
+						<URL>http://ecx.images-amazon.com/images/I/41BWHf4RXSL.jpg</URL>
+						<Height Units="pixels">500</Height>
+						<Width Units="pixels">500</Width>
+					</LargeImage>
+				</ImageSet>
+			</ImageSets>
+			<ItemAttributes>
+				<Binding>Electronics</Binding>
+				<Brand>Kindle</Brand>
+				<CatalogNumberList>
+					<CatalogNumberListElement>53-000276</CatalogNumberListElement>
+				</CatalogNumberList>
+				<Color>Black</Color>
+				<EAN>0848719000139</EAN>
+				<EANList>
+					<EANListElement>0848719000139</EANListElement>
+				</EANList>
+				<Feature>Patented built-in light evenly illuminates the screen to
+					provide the perfect reading experience in all lighting conditions
+				</Feature>
+				<Feature>Paperwhite has 62% more pixels and 25% better contrast for
+					sharp, dark text</Feature>
+				<Feature>Up to 8-week battery life, even with the light on at
+					setting 10</Feature>
+				<Feature>Download books in 60 seconds with built-in Wi-Fi - holds up
+					to 1,100 books</Feature>
+				<ItemDimensions>
+					<Height Units="hundredths-inches">130</Height>
+					<Length Units="hundredths-inches">960</Length>
+					<Weight Units="hundredths-pounds">47</Weight>
+					<Width Units="hundredths-inches">680</Width>
+				</ItemDimensions>
+				<Label>Amazon</Label>
+				<ListPrice>
+					<Amount>11900</Amount>
+					<CurrencyCode>USD</CurrencyCode>
+					<FormattedPrice>$119.00</FormattedPrice>
+				</ListPrice>
+				<Manufacturer>Amazon</Manufacturer>
+				<Model>53-000276</Model>
+				<MPN>53-000276</MPN>
+				<PackageDimensions>
+					<Height Units="hundredths-inches">110</Height>
+					<Length Units="hundredths-inches">950</Length>
+					<Weight Units="hundredths-pounds">70</Weight>
+					<Width Units="hundredths-inches">680</Width>
+				</PackageDimensions>
+				<PackageQuantity>1</PackageQuantity>
+				<PartNumber>53-000276</PartNumber>
+				<ProductGroup>Amazon Devices</ProductGroup>
+				<ProductTypeName>ABIS_ELECTRONICS</ProductTypeName>
+				<Publisher>Amazon</Publisher>
+				<ReleaseDate>2012-10-01</ReleaseDate>
+				<Studio>Amazon</Studio>
+				<Title>Kindle Paperwhite, 6" High Resolution Display with Built-in
+					Light, Wi-Fi - Includes Special Offers</Title>
+				<UPC>848719000139</UPC>
+				<UPCList>
+					<UPCListElement>848719000139</UPCListElement>
+				</UPCList>
+			</ItemAttributes>
+			<OfferSummary>
+				<LowestNewPrice>
+					<Amount>11900</Amount>
+					<CurrencyCode>USD</CurrencyCode>
+					<FormattedPrice>$119.00</FormattedPrice>
+				</LowestNewPrice>
+				<LowestUsedPrice>
+					<Amount>5499</Amount>
+					<CurrencyCode>USD</CurrencyCode>
+					<FormattedPrice>$54.99</FormattedPrice>
+				</LowestUsedPrice>
+				<TotalNew>1</TotalNew>
+				<TotalUsed>6</TotalUsed>
+				<TotalCollectible>0</TotalCollectible>
+				<TotalRefurbished>0</TotalRefurbished>
+			</OfferSummary>
+			<Offers>
+				<TotalOffers>1</TotalOffers>
+				<TotalOfferPages>1</TotalOfferPages>
+				<MoreOffersUrl>http://www.amazon.com/gp/offer-listing/B007OZNZG0%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB007OZNZG0
+				</MoreOffersUrl>
+				<Offer>
+					<Merchant>
+						<Name>Amazon.com</Name>
+					</Merchant>
+					<OfferAttributes>
+						<Condition>New</Condition>
+					</OfferAttributes>
+					<OfferListing>
+						<OfferListingId>yyCrXvkSWY%2FJuK1HeEknMVpjGbYW4MBqYaIfVmFAHTIFXHd6Omh3kVjZzgyCOhjQK%2Fj993iXSykvn4fXoB0j7ftD9IJ7rTzJ0vLAGFF5dlLxIZR0Y3aQpw%3D%3D
+						</OfferListingId>
+						<Price>
+							<Amount>11900</Amount>
+							<CurrencyCode>USD</CurrencyCode>
+							<FormattedPrice>$119.00</FormattedPrice>
+						</Price>
+						<AvailabilityAttributes>
+							<AvailabilityType>futureDate</AvailabilityType>
+							<MinimumHours>0</MinimumHours>
+							<MaximumHours>0</MaximumHours>
+						</AvailabilityAttributes>
+						<IsEligibleForSuperSaverShipping>1
+						</IsEligibleForSuperSaverShipping>
+					</OfferListing>
+				</Offer>
+			</Offers>
+			<CustomerReviews>
+				<IFrameURL>http://www.amazon.com/reviews/iframe?akid=AKIAIYRRDCJ2LLHWQ2RA&amp;alinkCode=xm2&amp;asin=B007OZNZG0&amp;atag=thebesuserev-20&amp;exp=2013-08-26T22%3A59%3A50Z&amp;truncate=0&amp;v=2&amp;sig=uxZerZh7s2DRp2%2B6Ls9siZbHQ1nmsShMZU%2FM6mVF2Do%3D
+				</IFrameURL>
+				<HasReviews>true</HasReviews>
+			</CustomerReviews>
+			<EditorialReviews>
+				<EditorialReview>
+					<Source>Product Description</Source>
+					<Content>World's most advanced e-reader - high resolution, high
+						contrast touchscreen with built-in light and up to 8-week battery
+						life, even with the light on at setting 10. Kindle Paperwhite
+						delivers clear, crisp text and images with no glare, even in
+						bright sunlight. The patented built-in light evenly illuminates
+						the screen, not the entire room, so you won't disturb your partner
+						when you can't put your book down at night.</Content>
+					<IsLinkSuppressed>0</IsLinkSuppressed>
+				</EditorialReview>
+			</EditorialReviews>
+			<SimilarProducts>
+				<SimilarProduct>
+					<ASIN>B005DOK8NW</ASIN>
+					<Title>Amazon 5W USB Charger</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B008681XSG</ASIN>
+					<Title>2-Year Protection Plan plus Accident Coverage for Kindle
+						Paperwhite, US customers only</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B007R5YFS4</ASIN>
+					<Title>Amazon Kindle Paperwhite Leather Cover, Onyx Black (does not
+						fit Kindle or Kindle Touch)</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B008IJR79W</ASIN>
+					<Title>Amazon Kindle Paperwhite Leather Cover, Royal Purple (does
+						not fit Kindle or Kindle Touch)</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B00CXADBRY</ASIN>
+					<Title>Moshi AirFoil Screen Protector for Kindle Paperwhite,
+						Kindle, and Kindle Keyboard (2 Pack)</Title>
+				</SimilarProduct>
+			</SimilarProducts>
+			<BrowseNodes>
+				<BrowseNode>
+					<BrowseNodeId>2642129011</BrowseNodeId>
+					<Name>eBook Readers</Name>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>2642125011</BrowseNodeId>
+							<Name>eBook Readers &amp; Accessories</Name>
+							<Ancestors>
+								<BrowseNode>
+									<BrowseNodeId>493964</BrowseNodeId>
+									<Name>Categories</Name>
+									<IsCategoryRoot>1</IsCategoryRoot>
+									<Ancestors>
+										<BrowseNode>
+											<BrowseNodeId>172282</BrowseNodeId>
+											<Name>Electronics</Name>
+										</BrowseNode>
+									</Ancestors>
+								</BrowseNode>
+							</Ancestors>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>2354568011</BrowseNodeId>
+					<Name>Specialty Boutique</Name>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>13900851</BrowseNodeId>
+							<Name>Electronics Features</Name>
+							<Ancestors>
+								<BrowseNode>
+									<BrowseNodeId>172282</BrowseNodeId>
+									<Name>Electronics</Name>
+								</BrowseNode>
+							</Ancestors>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>13900871</BrowseNodeId>
+					<Name>Computers Features</Name>
+					<Children>
+						<BrowseNode>
+							<BrowseNodeId>51548011</BrowseNodeId>
+							<Name>Featured Categories</Name>
+						</BrowseNode>
+					</Children>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>172282</BrowseNodeId>
+							<Name>Electronics</Name>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>2102313011</BrowseNodeId>
+					<Name>Kindle Devices</Name>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>133141011</BrowseNodeId>
+							<Name>Categories</Name>
+							<IsCategoryRoot>1</IsCategoryRoot>
+							<Ancestors>
+								<BrowseNode>
+									<BrowseNodeId>133140011</BrowseNodeId>
+									<Name>Kindle Store</Name>
+								</BrowseNode>
+							</Ancestors>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+			</BrowseNodes>
+		</Item>
+		<Item>
+			<ASIN>B00E83X9P8</ASIN>
+			<ParentASIN>B00EHFJGW2</ParentASIN>
+			<DetailPageURL>http://www.amazon.com/Passport-Ultra-Portable-External-Backup/dp/B00E83X9P8%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00E83X9P8
+			</DetailPageURL>
+			<ItemLinks>
+				<ItemLink>
+					<Description>Technical Details</Description>
+					<URL>http://www.amazon.com/Passport-Ultra-Portable-External-Backup/dp/tech-data/B00E83X9P8%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00E83X9P8
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Add To Baby Registry</Description>
+					<URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB00E83X9P8%26SubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00E83X9P8
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Add To Wedding Registry</Description>
+					<URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB00E83X9P8%26SubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00E83X9P8
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Add To Wishlist</Description>
+					<URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB00E83X9P8%26SubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00E83X9P8
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Tell A Friend</Description>
+					<URL>http://www.amazon.com/gp/pdp/taf/B00E83X9P8%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00E83X9P8
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>All Customer Reviews</Description>
+					<URL>http://www.amazon.com/review/product/B00E83X9P8%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00E83X9P8
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>All Offers</Description>
+					<URL>http://www.amazon.com/gp/offer-listing/B00E83X9P8%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00E83X9P8
+					</URL>
+				</ItemLink>
+			</ItemLinks>
+			<SmallImage>
+				<URL>http://ecx.images-amazon.com/images/I/41ya70hyEyL._SL75_.jpg
+				</URL>
+				<Height Units="pixels">75</Height>
+				<Width Units="pixels">75</Width>
+			</SmallImage>
+			<MediumImage>
+				<URL>http://ecx.images-amazon.com/images/I/41ya70hyEyL._SL160_.jpg
+				</URL>
+				<Height Units="pixels">160</Height>
+				<Width Units="pixels">160</Width>
+			</MediumImage>
+			<LargeImage>
+				<URL>http://ecx.images-amazon.com/images/I/41ya70hyEyL.jpg</URL>
+				<Height Units="pixels">500</Height>
+				<Width Units="pixels">500</Width>
+			</LargeImage>
+			<ImageSets>
+				<ImageSet Category="primary">
+					<SwatchImage>
+						<URL>http://ecx.images-amazon.com/images/I/41ya70hyEyL._SL30_.jpg
+						</URL>
+						<Height Units="pixels">30</Height>
+						<Width Units="pixels">30</Width>
+					</SwatchImage>
+					<SmallImage>
+						<URL>http://ecx.images-amazon.com/images/I/41ya70hyEyL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">75</Width>
+					</SmallImage>
+					<ThumbnailImage>
+						<URL>http://ecx.images-amazon.com/images/I/41ya70hyEyL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">75</Width>
+					</ThumbnailImage>
+					<TinyImage>
+						<URL>http://ecx.images-amazon.com/images/I/41ya70hyEyL._SL110_.jpg
+						</URL>
+						<Height Units="pixels">110</Height>
+						<Width Units="pixels">110</Width>
+					</TinyImage>
+					<MediumImage>
+						<URL>http://ecx.images-amazon.com/images/I/41ya70hyEyL._SL160_.jpg
+						</URL>
+						<Height Units="pixels">160</Height>
+						<Width Units="pixels">160</Width>
+					</MediumImage>
+					<LargeImage>
+						<URL>http://ecx.images-amazon.com/images/I/41ya70hyEyL.jpg</URL>
+						<Height Units="pixels">500</Height>
+						<Width Units="pixels">500</Width>
+					</LargeImage>
+				</ImageSet>
+				<ImageSet Category="variant">
+					<SwatchImage>
+						<URL>http://ecx.images-amazon.com/images/I/411Hoi2W99L._SL30_.jpg
+						</URL>
+						<Height Units="pixels">30</Height>
+						<Width Units="pixels">30</Width>
+					</SwatchImage>
+					<SmallImage>
+						<URL>http://ecx.images-amazon.com/images/I/411Hoi2W99L._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">75</Width>
+					</SmallImage>
+					<ThumbnailImage>
+						<URL>http://ecx.images-amazon.com/images/I/411Hoi2W99L._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">75</Width>
+					</ThumbnailImage>
+					<TinyImage>
+						<URL>http://ecx.images-amazon.com/images/I/411Hoi2W99L._SL110_.jpg
+						</URL>
+						<Height Units="pixels">110</Height>
+						<Width Units="pixels">110</Width>
+					</TinyImage>
+					<MediumImage>
+						<URL>http://ecx.images-amazon.com/images/I/411Hoi2W99L._SL160_.jpg
+						</URL>
+						<Height Units="pixels">160</Height>
+						<Width Units="pixels">160</Width>
+					</MediumImage>
+					<LargeImage>
+						<URL>http://ecx.images-amazon.com/images/I/411Hoi2W99L.jpg</URL>
+						<Height Units="pixels">500</Height>
+						<Width Units="pixels">500</Width>
+					</LargeImage>
+				</ImageSet>
+				<ImageSet Category="variant">
+					<SwatchImage>
+						<URL>http://ecx.images-amazon.com/images/I/31m9JKu9OML._SL30_.jpg
+						</URL>
+						<Height Units="pixels">30</Height>
+						<Width Units="pixels">30</Width>
+					</SwatchImage>
+					<SmallImage>
+						<URL>http://ecx.images-amazon.com/images/I/31m9JKu9OML._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">75</Width>
+					</SmallImage>
+					<ThumbnailImage>
+						<URL>http://ecx.images-amazon.com/images/I/31m9JKu9OML._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">75</Width>
+					</ThumbnailImage>
+					<TinyImage>
+						<URL>http://ecx.images-amazon.com/images/I/31m9JKu9OML._SL110_.jpg
+						</URL>
+						<Height Units="pixels">110</Height>
+						<Width Units="pixels">110</Width>
+					</TinyImage>
+					<MediumImage>
+						<URL>http://ecx.images-amazon.com/images/I/31m9JKu9OML._SL160_.jpg
+						</URL>
+						<Height Units="pixels">160</Height>
+						<Width Units="pixels">160</Width>
+					</MediumImage>
+					<LargeImage>
+						<URL>http://ecx.images-amazon.com/images/I/31m9JKu9OML.jpg</URL>
+						<Height Units="pixels">500</Height>
+						<Width Units="pixels">500</Width>
+					</LargeImage>
+				</ImageSet>
+				<ImageSet Category="variant">
+					<SwatchImage>
+						<URL>http://ecx.images-amazon.com/images/I/31wTJ46U8vL._SL30_.jpg
+						</URL>
+						<Height Units="pixels">30</Height>
+						<Width Units="pixels">30</Width>
+					</SwatchImage>
+					<SmallImage>
+						<URL>http://ecx.images-amazon.com/images/I/31wTJ46U8vL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">75</Width>
+					</SmallImage>
+					<ThumbnailImage>
+						<URL>http://ecx.images-amazon.com/images/I/31wTJ46U8vL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">75</Width>
+					</ThumbnailImage>
+					<TinyImage>
+						<URL>http://ecx.images-amazon.com/images/I/31wTJ46U8vL._SL110_.jpg
+						</URL>
+						<Height Units="pixels">110</Height>
+						<Width Units="pixels">110</Width>
+					</TinyImage>
+					<MediumImage>
+						<URL>http://ecx.images-amazon.com/images/I/31wTJ46U8vL._SL160_.jpg
+						</URL>
+						<Height Units="pixels">160</Height>
+						<Width Units="pixels">160</Width>
+					</MediumImage>
+					<LargeImage>
+						<URL>http://ecx.images-amazon.com/images/I/31wTJ46U8vL.jpg</URL>
+						<Height Units="pixels">500</Height>
+						<Width Units="pixels">500</Width>
+					</LargeImage>
+				</ImageSet>
+				<ImageSet Category="variant">
+					<SwatchImage>
+						<URL>http://ecx.images-amazon.com/images/I/31voJLNv7uL._SL30_.jpg
+						</URL>
+						<Height Units="pixels">30</Height>
+						<Width Units="pixels">30</Width>
+					</SwatchImage>
+					<SmallImage>
+						<URL>http://ecx.images-amazon.com/images/I/31voJLNv7uL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">75</Width>
+					</SmallImage>
+					<ThumbnailImage>
+						<URL>http://ecx.images-amazon.com/images/I/31voJLNv7uL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">75</Width>
+					</ThumbnailImage>
+					<TinyImage>
+						<URL>http://ecx.images-amazon.com/images/I/31voJLNv7uL._SL110_.jpg
+						</URL>
+						<Height Units="pixels">110</Height>
+						<Width Units="pixels">110</Width>
+					</TinyImage>
+					<MediumImage>
+						<URL>http://ecx.images-amazon.com/images/I/31voJLNv7uL._SL160_.jpg
+						</URL>
+						<Height Units="pixels">160</Height>
+						<Width Units="pixels">160</Width>
+					</MediumImage>
+					<LargeImage>
+						<URL>http://ecx.images-amazon.com/images/I/31voJLNv7uL.jpg</URL>
+						<Height Units="pixels">500</Height>
+						<Width Units="pixels">500</Width>
+					</LargeImage>
+				</ImageSet>
+				<ImageSet Category="variant">
+					<SwatchImage>
+						<URL>http://ecx.images-amazon.com/images/I/51hHrK4ZLpL._SL30_.jpg
+						</URL>
+						<Height Units="pixels">30</Height>
+						<Width Units="pixels">30</Width>
+					</SwatchImage>
+					<SmallImage>
+						<URL>http://ecx.images-amazon.com/images/I/51hHrK4ZLpL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">75</Width>
+					</SmallImage>
+					<ThumbnailImage>
+						<URL>http://ecx.images-amazon.com/images/I/51hHrK4ZLpL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">75</Width>
+					</ThumbnailImage>
+					<TinyImage>
+						<URL>http://ecx.images-amazon.com/images/I/51hHrK4ZLpL._SL110_.jpg
+						</URL>
+						<Height Units="pixels">110</Height>
+						<Width Units="pixels">110</Width>
+					</TinyImage>
+					<MediumImage>
+						<URL>http://ecx.images-amazon.com/images/I/51hHrK4ZLpL._SL160_.jpg
+						</URL>
+						<Height Units="pixels">160</Height>
+						<Width Units="pixels">160</Width>
+					</MediumImage>
+					<LargeImage>
+						<URL>http://ecx.images-amazon.com/images/I/51hHrK4ZLpL.jpg</URL>
+						<Height Units="pixels">500</Height>
+						<Width Units="pixels">500</Width>
+					</LargeImage>
+				</ImageSet>
+			</ImageSets>
+			<ItemAttributes>
+				<Binding>Personal Computers</Binding>
+				<Brand>Western Digital</Brand>
+				<CatalogNumberList>
+					<CatalogNumberListElement>WDBZFP0010BBK-NESN
+					</CatalogNumberListElement>
+				</CatalogNumberList>
+				<Color>Black</Color>
+				<EAN>0718037807386</EAN>
+				<EANList>
+					<EANListElement>0718037807386</EANListElement>
+				</EANList>
+				<Feature>USB 3.0 connectivity</Feature>
+				<Feature>Automatic and cloud backup</Feature>
+				<Feature>Password protection and hardware encryption</Feature>
+				<Feature>Works great with Windows 8</Feature>
+				<Feature>Free Windows 8 app</Feature>
+				<Feature>3-year limited warranty</Feature>
+				<IsAutographed>0</IsAutographed>
+				<IsMemorabilia>0</IsMemorabilia>
+				<ItemDimensions>
+					<Height Units="hundredths-inches">435</Height>
+					<Length Units="hundredths-inches">61</Length>
+					<Weight Units="hundredths-pounds">34</Weight>
+					<Width Units="hundredths-inches">323</Width>
+				</ItemDimensions>
+				<Label>Western Digital</Label>
+				<Languages>
+					<Language>
+						<Name>English</Name>
+						<Type>Original Language</Type>
+					</Language>
+				</Languages>
+				<ListPrice>
+					<Amount>11999</Amount>
+					<CurrencyCode>USD</CurrencyCode>
+					<FormattedPrice>$119.99</FormattedPrice>
+				</ListPrice>
+				<Manufacturer>Western Digital</Manufacturer>
+				<Model>WDBZFP0010BBK-NESN</Model>
+				<MPN>WDBZFP0010BBK-NESN</MPN>
+				<PackageDimensions>
+					<Height Units="hundredths-inches">190</Height>
+					<Length Units="hundredths-inches">670</Length>
+					<Weight Units="hundredths-pounds">60</Weight>
+					<Width Units="hundredths-inches">490</Width>
+				</PackageDimensions>
+				<PackageQuantity>1</PackageQuantity>
+				<PartNumber>WDBZFP0010BBK-NESN</PartNumber>
+				<ProductGroup>Personal Computer</ProductGroup>
+				<ProductTypeName>COMPUTER_DRIVE_OR_STORAGE</ProductTypeName>
+				<Publisher>Western Digital</Publisher>
+				<Size>1 TB</Size>
+				<Studio>Western Digital</Studio>
+				<Title>WD My Passport Ultra 1TB Portable External Hard Drive USB 3.0
+					with Auto and Cloud Backup - Black (WDBZFP0010BBK-NESN)</Title>
+				<UPC>718037807386</UPC>
+				<UPCList>
+					<UPCListElement>718037807386</UPCListElement>
+				</UPCList>
+				<Warranty>3 year limited warranty</Warranty>
+			</ItemAttributes>
+			<OfferSummary>
+				<LowestNewPrice>
+					<Amount>8500</Amount>
+					<CurrencyCode>USD</CurrencyCode>
+					<FormattedPrice>$85.00</FormattedPrice>
+				</LowestNewPrice>
+				<TotalNew>42</TotalNew>
+				<TotalUsed>0</TotalUsed>
+				<TotalCollectible>0</TotalCollectible>
+				<TotalRefurbished>0</TotalRefurbished>
+			</OfferSummary>
+			<Offers>
+				<TotalOffers>1</TotalOffers>
+				<TotalOfferPages>1</TotalOfferPages>
+				<MoreOffersUrl>http://www.amazon.com/gp/offer-listing/B00E83X9P8%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00E83X9P8
+				</MoreOffersUrl>
+				<Offer>
+					<Merchant>
+						<Name>Amazon.com</Name>
+					</Merchant>
+					<OfferAttributes>
+						<Condition>New</Condition>
+					</OfferAttributes>
+					<OfferListing>
+						<OfferListingId>DeKnhPuK4KVhaAb95pEVAwCAtOIfWiYDDpj3B9MZ1nVmexbN78COzVYIMqC7VoRCHMf7jQ%2B66dRTrCvoAz%2BmetJL83SRU6bsGFWzwrdcZ2%2BuSZySTPiQcQ%3D%3D
+						</OfferListingId>
+						<Price>
+							<Amount>8999</Amount>
+							<CurrencyCode>USD</CurrencyCode>
+							<FormattedPrice>$89.99</FormattedPrice>
+						</Price>
+						<AmountSaved>
+							<Amount>3000</Amount>
+							<CurrencyCode>USD</CurrencyCode>
+							<FormattedPrice>$30.00</FormattedPrice>
+						</AmountSaved>
+						<PercentageSaved>25</PercentageSaved>
+						<Availability>Usually ships in 24 hours</Availability>
+						<AvailabilityAttributes>
+							<AvailabilityType>now</AvailabilityType>
+							<MinimumHours>0</MinimumHours>
+							<MaximumHours>0</MaximumHours>
+						</AvailabilityAttributes>
+						<IsEligibleForSuperSaverShipping>1
+						</IsEligibleForSuperSaverShipping>
+					</OfferListing>
+				</Offer>
+			</Offers>
+			<CustomerReviews>
+				<IFrameURL>http://www.amazon.com/reviews/iframe?akid=AKIAIYRRDCJ2LLHWQ2RA&amp;alinkCode=xm2&amp;asin=B00E83X9P8&amp;atag=thebesuserev-20&amp;exp=2013-08-26T22%3A59%3A50Z&amp;truncate=0&amp;v=2&amp;sig=ZQHeNLP%2FYbM37g7O7mz3EE6hjkZZ%2F4gF%2BD76NcYcSOU%3D
+				</IFrameURL>
+				<HasReviews>true</HasReviews>
+			</CustomerReviews>
+			<EditorialReviews>
+				<EditorialReview>
+					<Source>Product Description</Source>
+					<Content>My Passport Ultra with USB 3.0 and high capacity features
+						automatic and cloud backup; password protection and hardware
+						encryption, 3-year limited warranty.</Content>
+					<IsLinkSuppressed>0</IsLinkSuppressed>
+				</EditorialReview>
+			</EditorialReviews>
+			<SimilarProducts>
+				<SimilarProduct>
+					<ASIN>B003LSTD38</ASIN>
+					<Title>AmazonBasics Hard Carrying Case for My Passport Essential -
+						Black</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B008I647MA</ASIN>
+					<Title>SquareTrade 2-Year PC Peripherals Protection Plan ($75-$100)
+					</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B00505EZZ6</ASIN>
+					<Title>WD Nomad Rugged Case</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B008I647YS</ASIN>
+					<Title>SquareTrade 2-Year PC Peripherals Protection Plan
+						($100-$125)</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B00B4G2YXA</ASIN>
+					<Title>Kingston Digital DataTraveler SE9 32GB USB 2.0 Flash Drive
+						(DTSE9H/32GBZ)</Title>
+				</SimilarProduct>
+			</SimilarProducts>
+			<BrowseNodes>
+				<BrowseNode>
+					<BrowseNodeId>595048</BrowseNodeId>
+					<Name>External Hard Drives</Name>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>1292110011</BrowseNodeId>
+							<Name>Data Storage</Name>
+							<Ancestors>
+								<BrowseNode>
+									<BrowseNodeId>541966</BrowseNodeId>
+									<Name>Computers &amp; Accessories</Name>
+									<Ancestors>
+										<BrowseNode>
+											<BrowseNodeId>493964</BrowseNodeId>
+											<Name>Categories</Name>
+											<IsCategoryRoot>1</IsCategoryRoot>
+											<Ancestors>
+												<BrowseNode>
+													<BrowseNodeId>172282</BrowseNodeId>
+													<Name>Electronics</Name>
+												</BrowseNode>
+											</Ancestors>
+										</BrowseNode>
+									</Ancestors>
+								</BrowseNode>
+							</Ancestors>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>13900851</BrowseNodeId>
+					<Name>Electronics Features</Name>
+					<Children>
+						<BrowseNode>
+							<BrowseNodeId>51549011</BrowseNodeId>
+							<Name>Featured Categories</Name>
+						</BrowseNode>
+						<BrowseNode>
+							<BrowseNodeId>3302711</BrowseNodeId>
+							<Name>Gold Merchants</Name>
+						</BrowseNode>
+						<BrowseNode>
+							<BrowseNodeId>2354568011</BrowseNodeId>
+							<Name>Specialty Boutique</Name>
+						</BrowseNode>
+					</Children>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>172282</BrowseNodeId>
+							<Name>Electronics</Name>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+			</BrowseNodes>
+		</Item>
+		<Item>
+			<ASIN>B006Y5UV4A</ASIN>
+			<ParentASIN>B007TISRBK</ParentASIN>
+			<DetailPageURL>http://www.amazon.com/Passport-Portable-External-Drive-Storage/dp/B006Y5UV4A%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB006Y5UV4A
+			</DetailPageURL>
+			<ItemLinks>
+				<ItemLink>
+					<Description>Technical Details</Description>
+					<URL>http://www.amazon.com/Passport-Portable-External-Drive-Storage/dp/tech-data/B006Y5UV4A%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB006Y5UV4A
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Add To Baby Registry</Description>
+					<URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB006Y5UV4A%26SubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB006Y5UV4A
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Add To Wedding Registry</Description>
+					<URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB006Y5UV4A%26SubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB006Y5UV4A
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Add To Wishlist</Description>
+					<URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB006Y5UV4A%26SubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB006Y5UV4A
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Tell A Friend</Description>
+					<URL>http://www.amazon.com/gp/pdp/taf/B006Y5UV4A%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB006Y5UV4A
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>All Customer Reviews</Description>
+					<URL>http://www.amazon.com/review/product/B006Y5UV4A%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB006Y5UV4A
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>All Offers</Description>
+					<URL>http://www.amazon.com/gp/offer-listing/B006Y5UV4A%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB006Y5UV4A
+					</URL>
+				</ItemLink>
+			</ItemLinks>
+			<SmallImage>
+				<URL>http://ecx.images-amazon.com/images/I/41HtR3SSfVL._SL75_.jpg
+				</URL>
+				<Height Units="pixels">75</Height>
+				<Width Units="pixels">75</Width>
+			</SmallImage>
+			<MediumImage>
+				<URL>http://ecx.images-amazon.com/images/I/41HtR3SSfVL._SL160_.jpg
+				</URL>
+				<Height Units="pixels">160</Height>
+				<Width Units="pixels">160</Width>
+			</MediumImage>
+			<LargeImage>
+				<URL>http://ecx.images-amazon.com/images/I/41HtR3SSfVL.jpg</URL>
+				<Height Units="pixels">500</Height>
+				<Width Units="pixels">500</Width>
+			</LargeImage>
+			<ImageSets>
+				<ImageSet Category="primary">
+					<SwatchImage>
+						<URL>http://ecx.images-amazon.com/images/I/41HtR3SSfVL._SL30_.jpg
+						</URL>
+						<Height Units="pixels">30</Height>
+						<Width Units="pixels">30</Width>
+					</SwatchImage>
+					<SmallImage>
+						<URL>http://ecx.images-amazon.com/images/I/41HtR3SSfVL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">75</Width>
+					</SmallImage>
+					<ThumbnailImage>
+						<URL>http://ecx.images-amazon.com/images/I/41HtR3SSfVL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">75</Width>
+					</ThumbnailImage>
+					<TinyImage>
+						<URL>http://ecx.images-amazon.com/images/I/41HtR3SSfVL._SL110_.jpg
+						</URL>
+						<Height Units="pixels">110</Height>
+						<Width Units="pixels">110</Width>
+					</TinyImage>
+					<MediumImage>
+						<URL>http://ecx.images-amazon.com/images/I/41HtR3SSfVL._SL160_.jpg
+						</URL>
+						<Height Units="pixels">160</Height>
+						<Width Units="pixels">160</Width>
+					</MediumImage>
+					<LargeImage>
+						<URL>http://ecx.images-amazon.com/images/I/41HtR3SSfVL.jpg</URL>
+						<Height Units="pixels">500</Height>
+						<Width Units="pixels">500</Width>
+					</LargeImage>
+				</ImageSet>
+				<ImageSet Category="variant">
+					<SwatchImage>
+						<URL>http://ecx.images-amazon.com/images/I/41QEp45kZIL._SL30_.jpg
+						</URL>
+						<Height Units="pixels">30</Height>
+						<Width Units="pixels">30</Width>
+					</SwatchImage>
+					<SmallImage>
+						<URL>http://ecx.images-amazon.com/images/I/41QEp45kZIL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">75</Width>
+					</SmallImage>
+					<ThumbnailImage>
+						<URL>http://ecx.images-amazon.com/images/I/41QEp45kZIL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">75</Width>
+					</ThumbnailImage>
+					<TinyImage>
+						<URL>http://ecx.images-amazon.com/images/I/41QEp45kZIL._SL110_.jpg
+						</URL>
+						<Height Units="pixels">110</Height>
+						<Width Units="pixels">110</Width>
+					</TinyImage>
+					<MediumImage>
+						<URL>http://ecx.images-amazon.com/images/I/41QEp45kZIL._SL160_.jpg
+						</URL>
+						<Height Units="pixels">160</Height>
+						<Width Units="pixels">160</Width>
+					</MediumImage>
+					<LargeImage>
+						<URL>http://ecx.images-amazon.com/images/I/41QEp45kZIL.jpg</URL>
+						<Height Units="pixels">500</Height>
+						<Width Units="pixels">500</Width>
+					</LargeImage>
+				</ImageSet>
+				<ImageSet Category="variant">
+					<SwatchImage>
+						<URL>http://ecx.images-amazon.com/images/I/316FJos21PL._SL30_.jpg
+						</URL>
+						<Height Units="pixels">30</Height>
+						<Width Units="pixels">30</Width>
+					</SwatchImage>
+					<SmallImage>
+						<URL>http://ecx.images-amazon.com/images/I/316FJos21PL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">75</Width>
+					</SmallImage>
+					<ThumbnailImage>
+						<URL>http://ecx.images-amazon.com/images/I/316FJos21PL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">75</Width>
+					</ThumbnailImage>
+					<TinyImage>
+						<URL>http://ecx.images-amazon.com/images/I/316FJos21PL._SL110_.jpg
+						</URL>
+						<Height Units="pixels">110</Height>
+						<Width Units="pixels">110</Width>
+					</TinyImage>
+					<MediumImage>
+						<URL>http://ecx.images-amazon.com/images/I/316FJos21PL._SL160_.jpg
+						</URL>
+						<Height Units="pixels">160</Height>
+						<Width Units="pixels">160</Width>
+					</MediumImage>
+					<LargeImage>
+						<URL>http://ecx.images-amazon.com/images/I/316FJos21PL.jpg</URL>
+						<Height Units="pixels">500</Height>
+						<Width Units="pixels">500</Width>
+					</LargeImage>
+				</ImageSet>
+				<ImageSet Category="variant">
+					<SwatchImage>
+						<URL>http://ecx.images-amazon.com/images/I/41dmANJ5vcL._SL30_.jpg
+						</URL>
+						<Height Units="pixels">30</Height>
+						<Width Units="pixels">30</Width>
+					</SwatchImage>
+					<SmallImage>
+						<URL>http://ecx.images-amazon.com/images/I/41dmANJ5vcL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">75</Width>
+					</SmallImage>
+					<ThumbnailImage>
+						<URL>http://ecx.images-amazon.com/images/I/41dmANJ5vcL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">75</Width>
+					</ThumbnailImage>
+					<TinyImage>
+						<URL>http://ecx.images-amazon.com/images/I/41dmANJ5vcL._SL110_.jpg
+						</URL>
+						<Height Units="pixels">110</Height>
+						<Width Units="pixels">110</Width>
+					</TinyImage>
+					<MediumImage>
+						<URL>http://ecx.images-amazon.com/images/I/41dmANJ5vcL._SL160_.jpg
+						</URL>
+						<Height Units="pixels">160</Height>
+						<Width Units="pixels">160</Width>
+					</MediumImage>
+					<LargeImage>
+						<URL>http://ecx.images-amazon.com/images/I/41dmANJ5vcL.jpg</URL>
+						<Height Units="pixels">500</Height>
+						<Width Units="pixels">500</Width>
+					</LargeImage>
+				</ImageSet>
+				<ImageSet Category="variant">
+					<SwatchImage>
+						<URL>http://ecx.images-amazon.com/images/I/41pOp1Bi28L._SL30_.jpg
+						</URL>
+						<Height Units="pixels">30</Height>
+						<Width Units="pixels">30</Width>
+					</SwatchImage>
+					<SmallImage>
+						<URL>http://ecx.images-amazon.com/images/I/41pOp1Bi28L._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">75</Width>
+					</SmallImage>
+					<ThumbnailImage>
+						<URL>http://ecx.images-amazon.com/images/I/41pOp1Bi28L._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">75</Width>
+					</ThumbnailImage>
+					<TinyImage>
+						<URL>http://ecx.images-amazon.com/images/I/41pOp1Bi28L._SL110_.jpg
+						</URL>
+						<Height Units="pixels">110</Height>
+						<Width Units="pixels">110</Width>
+					</TinyImage>
+					<MediumImage>
+						<URL>http://ecx.images-amazon.com/images/I/41pOp1Bi28L._SL160_.jpg
+						</URL>
+						<Height Units="pixels">160</Height>
+						<Width Units="pixels">160</Width>
+					</MediumImage>
+					<LargeImage>
+						<URL>http://ecx.images-amazon.com/images/I/41pOp1Bi28L.jpg</URL>
+						<Height Units="pixels">500</Height>
+						<Width Units="pixels">500</Width>
+					</LargeImage>
+				</ImageSet>
+				<ImageSet Category="variant">
+					<SwatchImage>
+						<URL>http://ecx.images-amazon.com/images/I/51%2BLlDFttLL._SL30_.jpg
+						</URL>
+						<Height Units="pixels">30</Height>
+						<Width Units="pixels">30</Width>
+					</SwatchImage>
+					<SmallImage>
+						<URL>http://ecx.images-amazon.com/images/I/51%2BLlDFttLL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">75</Width>
+					</SmallImage>
+					<ThumbnailImage>
+						<URL>http://ecx.images-amazon.com/images/I/51%2BLlDFttLL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">75</Width>
+					</ThumbnailImage>
+					<TinyImage>
+						<URL>http://ecx.images-amazon.com/images/I/51%2BLlDFttLL._SL110_.jpg
+						</URL>
+						<Height Units="pixels">110</Height>
+						<Width Units="pixels">110</Width>
+					</TinyImage>
+					<MediumImage>
+						<URL>http://ecx.images-amazon.com/images/I/51%2BLlDFttLL._SL160_.jpg
+						</URL>
+						<Height Units="pixels">160</Height>
+						<Width Units="pixels">160</Width>
+					</MediumImage>
+					<LargeImage>
+						<URL>http://ecx.images-amazon.com/images/I/51%2BLlDFttLL.jpg</URL>
+						<Height Units="pixels">500</Height>
+						<Width Units="pixels">500</Width>
+					</LargeImage>
+				</ImageSet>
+				<ImageSet Category="variant">
+					<SwatchImage>
+						<URL>http://ecx.images-amazon.com/images/I/41twhxALY9L._SL30_.jpg
+						</URL>
+						<Height Units="pixels">30</Height>
+						<Width Units="pixels">30</Width>
+					</SwatchImage>
+					<SmallImage>
+						<URL>http://ecx.images-amazon.com/images/I/41twhxALY9L._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">75</Width>
+					</SmallImage>
+					<ThumbnailImage>
+						<URL>http://ecx.images-amazon.com/images/I/41twhxALY9L._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">75</Width>
+					</ThumbnailImage>
+					<TinyImage>
+						<URL>http://ecx.images-amazon.com/images/I/41twhxALY9L._SL110_.jpg
+						</URL>
+						<Height Units="pixels">110</Height>
+						<Width Units="pixels">110</Width>
+					</TinyImage>
+					<MediumImage>
+						<URL>http://ecx.images-amazon.com/images/I/41twhxALY9L._SL160_.jpg
+						</URL>
+						<Height Units="pixels">160</Height>
+						<Width Units="pixels">160</Width>
+					</MediumImage>
+					<LargeImage>
+						<URL>http://ecx.images-amazon.com/images/I/41twhxALY9L.jpg</URL>
+						<Height Units="pixels">500</Height>
+						<Width Units="pixels">500</Width>
+					</LargeImage>
+				</ImageSet>
+			</ImageSets>
+			<ItemAttributes>
+				<Binding>Personal Computers</Binding>
+				<Brand>Western Digital</Brand>
+				<CatalogNumberList>
+					<CatalogNumberListElement>WDBBEP0010BBK-NESN
+					</CatalogNumberListElement>
+					<CatalogNumberListElement>0399-WDBBEP0010BBK-NESN
+					</CatalogNumberListElement>
+					<CatalogNumberListElement>S10396671</CatalogNumberListElement>
+				</CatalogNumberList>
+				<Color>Black</Color>
+				<EAN>0033584008483</EAN>
+				<EANList>
+					<EANListElement>0033584008483</EANListElement>
+					<EANListElement>0718037804545</EANListElement>
+					<EANListElement>0080050260432</EANListElement>
+					<EANListElement>0151903626757</EANListElement>
+					<EANListElement>0718037784595</EANListElement>
+					<EANListElement>0745449860937</EANListElement>
+				</EANList>
+				<Feature>Sleek, compact design</Feature>
+				<Feature>Automatic backup software</Feature>
+				<Feature>Password protection and hardware encryption</Feature>
+				<Feature>Data Transfer Rate on USB up to 5 Gbps</Feature>
+				<Feature>2-Year Limited Warranty</Feature>
+				<Feature>Sleek compact design with plenty of storage</Feature>
+				<Feature>Ultra-fast data transfers with USB 3.0 interface</Feature>
+				<Format>CD-ROM</Format>
+				<HardwarePlatform>PC</HardwarePlatform>
+				<IsAutographed>0</IsAutographed>
+				<IsEligibleForTradeIn>1</IsEligibleForTradeIn>
+				<IsMemorabilia>0</IsMemorabilia>
+				<ItemDimensions>
+					<Height Units="hundredths-inches">300</Height>
+					<Length Units="hundredths-inches">400</Length>
+					<Weight Units="hundredths-pounds">42</Weight>
+					<Width Units="hundredths-inches">100</Width>
+				</ItemDimensions>
+				<Label>Western Digital</Label>
+				<Languages>
+					<Language>
+						<Name>English</Name>
+						<Type>Original Language</Type>
+					</Language>
+				</Languages>
+				<LegalDisclaimer>No returns as I will include a copy of the receipt
+					for warranty purposes... Thank You!!</LegalDisclaimer>
+				<ListPrice>
+					<Amount>8499</Amount>
+					<CurrencyCode>USD</CurrencyCode>
+					<FormattedPrice>$84.99</FormattedPrice>
+				</ListPrice>
+				<Manufacturer>Western Digital</Manufacturer>
+				<Model>WDBBEP0010BBK-NESN</Model>
+				<MPN>WDBBEP0010BBK-NESN</MPN>
+				<NumberOfItems>1</NumberOfItems>
+				<OperatingSystem>N/A</OperatingSystem>
+				<PackageDimensions>
+					<Height Units="hundredths-inches">190</Height>
+					<Length Units="hundredths-inches">660</Length>
+					<Weight Units="hundredths-pounds">60</Weight>
+					<Width Units="hundredths-inches">520</Width>
+				</PackageDimensions>
+				<PackageQuantity>1</PackageQuantity>
+				<PartNumber>WDBBEP0010BBK-NESN</PartNumber>
+				<ProductGroup>Personal Computer</ProductGroup>
+				<ProductTypeName>COMPUTER_DRIVE_OR_STORAGE</ProductTypeName>
+				<Publisher>Western Digital</Publisher>
+				<Size>1 TB</Size>
+				<SKU>SYNX3178660</SKU>
+				<Studio>Western Digital</Studio>
+				<Title>WD My Passport 1TB Portable External Hard Drive Storage USB
+					3.0 Black</Title>
+				<TradeInValue>
+					<Amount>2465</Amount>
+					<CurrencyCode>USD</CurrencyCode>
+					<FormattedPrice>$24.65</FormattedPrice>
+				</TradeInValue>
+				<UPC>718037784595</UPC>
+				<UPCList>
+					<UPCListElement>718037784595</UPCListElement>
+					<UPCListElement>033584008483</UPCListElement>
+					<UPCListElement>718037804545</UPCListElement>
+					<UPCListElement>151903626757</UPCListElement>
+					<UPCListElement>745449860937</UPCListElement>
+					<UPCListElement>080050260432</UPCListElement>
+				</UPCList>
+			</ItemAttributes>
+			<OfferSummary>
+				<LowestNewPrice>
+					<FormattedPrice>Too low to display</FormattedPrice>
+				</LowestNewPrice>
+				<LowestUsedPrice>
+					<Amount>6999</Amount>
+					<CurrencyCode>USD</CurrencyCode>
+					<FormattedPrice>$69.99</FormattedPrice>
+				</LowestUsedPrice>
+				<LowestRefurbishedPrice>
+					<Amount>6499</Amount>
+					<CurrencyCode>USD</CurrencyCode>
+					<FormattedPrice>$64.99</FormattedPrice>
+				</LowestRefurbishedPrice>
+				<TotalNew>113</TotalNew>
+				<TotalUsed>8</TotalUsed>
+				<TotalCollectible>0</TotalCollectible>
+				<TotalRefurbished>2</TotalRefurbished>
+			</OfferSummary>
+			<Offers>
+				<TotalOffers>1</TotalOffers>
+				<TotalOfferPages>1</TotalOfferPages>
+				<MoreOffersUrl>http://www.amazon.com/gp/offer-listing/B006Y5UV4A%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB006Y5UV4A
+				</MoreOffersUrl>
+				<Offer>
+					<Merchant>
+						<Name>Amazon.com</Name>
+					</Merchant>
+					<OfferAttributes>
+						<Condition>New</Condition>
+					</OfferAttributes>
+					<OfferListing>
+						<OfferListingId>KauSz56EM3yd%2F4opgkZTDLYlq8dUSl3k3YicoikV%2BD4ppOYaQUgo7krBR0ws3ZKE%2FDG%2BjXz2lxtE4eZb7QVS5%2F2%2FKQeHNWntd7S9dDMMz3FsYHSGAHX1PA%3D%3D
+						</OfferListingId>
+						<Price>
+							<FormattedPrice>Too low to display</FormattedPrice>
+						</Price>
+						<Availability>Usually ships in 24 hours</Availability>
+						<AvailabilityAttributes>
+							<AvailabilityType>now</AvailabilityType>
+							<MinimumHours>0</MinimumHours>
+							<MaximumHours>0</MaximumHours>
+						</AvailabilityAttributes>
+						<IsEligibleForSuperSaverShipping>1
+						</IsEligibleForSuperSaverShipping>
+					</OfferListing>
+				</Offer>
+			</Offers>
+			<CustomerReviews>
+				<IFrameURL>http://www.amazon.com/reviews/iframe?akid=AKIAIYRRDCJ2LLHWQ2RA&amp;alinkCode=xm2&amp;asin=B006Y5UV4A&amp;atag=thebesuserev-20&amp;exp=2013-08-26T22%3A59%3A50Z&amp;truncate=0&amp;v=2&amp;sig=gTAf5aYx1zK3YdgYHOw0smhTCupBetFH1kF7GUcY3o4%3D
+				</IFrameURL>
+				<HasReviews>true</HasReviews>
+			</CustomerReviews>
+			<EditorialReviews>
+				<EditorialReview>
+					<Source>Product Description</Source>
+					<Content>My Passport offers up to 1 TB capacity in an amazingly
+						small enclosure. It features ultra-fast USB 3.0 connectivity;
+						compatibility with USB 2.0; automatic, backup software; and
+						password protection and hardware encryption to help protect your
+						files from unauthorized use.</Content>
+					<IsLinkSuppressed>0</IsLinkSuppressed>
+				</EditorialReview>
+			</EditorialReviews>
+			<SimilarProducts>
+				<SimilarProduct>
+					<ASIN>B003LSTD38</ASIN>
+					<Title>AmazonBasics Hard Carrying Case for My Passport Essential -
+						Black</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B002R9CQYK</ASIN>
+					<Title>WD WDBABK0000NBK-WRSN My Passport Carrying Case - Black
+					</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B00505EZZ6</ASIN>
+					<Title>WD Nomad Rugged Case</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B008EQZ25K</ASIN>
+					<Title>AmazonBasics USB Cable - 3.0 A Male to Micro B (6 Feet / 1.8
+						Meters)</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B00AMLX1BW</ASIN>
+					<Title>USA Gear Hard Shell Carrying Case for Western Digital My
+						Passport , Transcend StoreJet , Toshiba Canvio , Seagate Backup
+						&amp; More Portable External Hard Drives Includes Mousepad</Title>
+				</SimilarProduct>
+			</SimilarProducts>
+			<BrowseNodes>
+				<BrowseNode>
+					<BrowseNodeId>595048</BrowseNodeId>
+					<Name>External Hard Drives</Name>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>1292110011</BrowseNodeId>
+							<Name>Data Storage</Name>
+							<Ancestors>
+								<BrowseNode>
+									<BrowseNodeId>541966</BrowseNodeId>
+									<Name>Computers &amp; Accessories</Name>
+									<Ancestors>
+										<BrowseNode>
+											<BrowseNodeId>493964</BrowseNodeId>
+											<Name>Categories</Name>
+											<IsCategoryRoot>1</IsCategoryRoot>
+											<Ancestors>
+												<BrowseNode>
+													<BrowseNodeId>172282</BrowseNodeId>
+													<Name>Electronics</Name>
+												</BrowseNode>
+											</Ancestors>
+										</BrowseNode>
+									</Ancestors>
+								</BrowseNode>
+							</Ancestors>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>13900851</BrowseNodeId>
+					<Name>Electronics Features</Name>
+					<Children>
+						<BrowseNode>
+							<BrowseNodeId>51549011</BrowseNodeId>
+							<Name>Featured Categories</Name>
+						</BrowseNode>
+						<BrowseNode>
+							<BrowseNodeId>3302711</BrowseNodeId>
+							<Name>Gold Merchants</Name>
+						</BrowseNode>
+						<BrowseNode>
+							<BrowseNodeId>2354568011</BrowseNodeId>
+							<Name>Specialty Boutique</Name>
+						</BrowseNode>
+					</Children>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>172282</BrowseNodeId>
+							<Name>Electronics</Name>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>13900871</BrowseNodeId>
+					<Name>Computers Features</Name>
+					<Children>
+						<BrowseNode>
+							<BrowseNodeId>51548011</BrowseNodeId>
+							<Name>Featured Categories</Name>
+						</BrowseNode>
+					</Children>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>172282</BrowseNodeId>
+							<Name>Electronics</Name>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>1288264011</BrowseNodeId>
+					<Name>All Products</Name>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>1267878011</BrowseNodeId>
+							<Name>Products</Name>
+							<IsCategoryRoot>1</IsCategoryRoot>
+							<Ancestors>
+								<BrowseNode>
+									<BrowseNodeId>1267877011</BrowseNodeId>
+								</BrowseNode>
+							</Ancestors>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>3559764011</BrowseNodeId>
+					<Name>Computers</Name>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>1294447011</BrowseNodeId>
+							<Name>Electronics</Name>
+							<Ancestors>
+								<BrowseNode>
+									<BrowseNodeId>1267878011</BrowseNodeId>
+									<Name>Products</Name>
+									<IsCategoryRoot>1</IsCategoryRoot>
+									<Ancestors>
+										<BrowseNode>
+											<BrowseNodeId>1267877011</BrowseNodeId>
+										</BrowseNode>
+									</Ancestors>
+								</BrowseNode>
+							</Ancestors>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>3545136011</BrowseNodeId>
+					<Name>Peripherals</Name>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>3545095011</BrowseNodeId>
+							<Name>Computers</Name>
+							<Ancestors>
+								<BrowseNode>
+									<BrowseNodeId>1267878011</BrowseNodeId>
+									<Name>Products</Name>
+									<IsCategoryRoot>1</IsCategoryRoot>
+									<Ancestors>
+										<BrowseNode>
+											<BrowseNodeId>1267877011</BrowseNodeId>
+										</BrowseNode>
+									</Ancestors>
+								</BrowseNode>
+							</Ancestors>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>6183716011</BrowseNodeId>
+					<Name>External Hard Drives</Name>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>3545095011</BrowseNodeId>
+							<Name>Computers</Name>
+							<Ancestors>
+								<BrowseNode>
+									<BrowseNodeId>1267878011</BrowseNodeId>
+									<Name>Products</Name>
+									<IsCategoryRoot>1</IsCategoryRoot>
+									<Ancestors>
+										<BrowseNode>
+											<BrowseNodeId>1267877011</BrowseNodeId>
+										</BrowseNode>
+									</Ancestors>
+								</BrowseNode>
+							</Ancestors>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>1293322011</BrowseNodeId>
+					<Name>Computers</Name>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>1267879011</BrowseNodeId>
+							<Name>Special Features</Name>
+							<Ancestors>
+								<BrowseNode>
+									<BrowseNodeId>1267877011</BrowseNodeId>
+								</BrowseNode>
+							</Ancestors>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+			</BrowseNodes>
+		</Item>
+		<Item>
+			<ASIN>B009SYZ8OC</ASIN>
+			<ParentASIN>B00CXK47FE</ParentASIN>
+			<DetailPageURL>http://www.amazon.com/AmazonBasics-Lightning-Compatible-Cable-Meter/dp/B009SYZ8OC%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB009SYZ8OC
+			</DetailPageURL>
+			<ItemLinks>
+				<ItemLink>
+					<Description>Technical Details</Description>
+					<URL>http://www.amazon.com/AmazonBasics-Lightning-Compatible-Cable-Meter/dp/tech-data/B009SYZ8OC%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB009SYZ8OC
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Add To Baby Registry</Description>
+					<URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB009SYZ8OC%26SubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB009SYZ8OC
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Add To Wedding Registry</Description>
+					<URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB009SYZ8OC%26SubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB009SYZ8OC
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Add To Wishlist</Description>
+					<URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB009SYZ8OC%26SubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB009SYZ8OC
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Tell A Friend</Description>
+					<URL>http://www.amazon.com/gp/pdp/taf/B009SYZ8OC%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB009SYZ8OC
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>All Customer Reviews</Description>
+					<URL>http://www.amazon.com/review/product/B009SYZ8OC%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB009SYZ8OC
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>All Offers</Description>
+					<URL>http://www.amazon.com/gp/offer-listing/B009SYZ8OC%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB009SYZ8OC
+					</URL>
+				</ItemLink>
+			</ItemLinks>
+			<SalesRank>7</SalesRank>
+			<SmallImage>
+				<URL>http://ecx.images-amazon.com/images/I/41p3C82XdLL._SL75_.jpg
+				</URL>
+				<Height Units="pixels">62</Height>
+				<Width Units="pixels">75</Width>
+			</SmallImage>
+			<MediumImage>
+				<URL>http://ecx.images-amazon.com/images/I/41p3C82XdLL._SL160_.jpg
+				</URL>
+				<Height Units="pixels">133</Height>
+				<Width Units="pixels">160</Width>
+			</MediumImage>
+			<LargeImage>
+				<URL>http://ecx.images-amazon.com/images/I/41p3C82XdLL.jpg</URL>
+				<Height Units="pixels">416</Height>
+				<Width Units="pixels">500</Width>
+			</LargeImage>
+			<ImageSets>
+				<ImageSet Category="primary">
+					<SwatchImage>
+						<URL>http://ecx.images-amazon.com/images/I/41p3C82XdLL._SL30_.jpg
+						</URL>
+						<Height Units="pixels">25</Height>
+						<Width Units="pixels">30</Width>
+					</SwatchImage>
+					<SmallImage>
+						<URL>http://ecx.images-amazon.com/images/I/41p3C82XdLL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">62</Height>
+						<Width Units="pixels">75</Width>
+					</SmallImage>
+					<ThumbnailImage>
+						<URL>http://ecx.images-amazon.com/images/I/41p3C82XdLL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">62</Height>
+						<Width Units="pixels">75</Width>
+					</ThumbnailImage>
+					<TinyImage>
+						<URL>http://ecx.images-amazon.com/images/I/41p3C82XdLL._SL110_.jpg
+						</URL>
+						<Height Units="pixels">92</Height>
+						<Width Units="pixels">110</Width>
+					</TinyImage>
+					<MediumImage>
+						<URL>http://ecx.images-amazon.com/images/I/41p3C82XdLL._SL160_.jpg
+						</URL>
+						<Height Units="pixels">133</Height>
+						<Width Units="pixels">160</Width>
+					</MediumImage>
+					<LargeImage>
+						<URL>http://ecx.images-amazon.com/images/I/41p3C82XdLL.jpg</URL>
+						<Height Units="pixels">416</Height>
+						<Width Units="pixels">500</Width>
+					</LargeImage>
+				</ImageSet>
+				<ImageSet Category="variant">
+					<SwatchImage>
+						<URL>http://ecx.images-amazon.com/images/I/41bFZ6mEUXL._SL30_.jpg
+						</URL>
+						<Height Units="pixels">30</Height>
+						<Width Units="pixels">22</Width>
+					</SwatchImage>
+					<SmallImage>
+						<URL>http://ecx.images-amazon.com/images/I/41bFZ6mEUXL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">56</Width>
+					</SmallImage>
+					<ThumbnailImage>
+						<URL>http://ecx.images-amazon.com/images/I/41bFZ6mEUXL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">56</Width>
+					</ThumbnailImage>
+					<TinyImage>
+						<URL>http://ecx.images-amazon.com/images/I/41bFZ6mEUXL._SL110_.jpg
+						</URL>
+						<Height Units="pixels">110</Height>
+						<Width Units="pixels">82</Width>
+					</TinyImage>
+					<MediumImage>
+						<URL>http://ecx.images-amazon.com/images/I/41bFZ6mEUXL._SL160_.jpg
+						</URL>
+						<Height Units="pixels">160</Height>
+						<Width Units="pixels">119</Width>
+					</MediumImage>
+					<LargeImage>
+						<URL>http://ecx.images-amazon.com/images/I/41bFZ6mEUXL.jpg</URL>
+						<Height Units="pixels">500</Height>
+						<Width Units="pixels">371</Width>
+					</LargeImage>
+				</ImageSet>
+				<ImageSet Category="variant">
+					<SwatchImage>
+						<URL>http://ecx.images-amazon.com/images/I/41KYrdfqFjL._SL30_.jpg
+						</URL>
+						<Height Units="pixels">18</Height>
+						<Width Units="pixels">30</Width>
+					</SwatchImage>
+					<SmallImage>
+						<URL>http://ecx.images-amazon.com/images/I/41KYrdfqFjL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">45</Height>
+						<Width Units="pixels">75</Width>
+					</SmallImage>
+					<ThumbnailImage>
+						<URL>http://ecx.images-amazon.com/images/I/41KYrdfqFjL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">45</Height>
+						<Width Units="pixels">75</Width>
+					</ThumbnailImage>
+					<TinyImage>
+						<URL>http://ecx.images-amazon.com/images/I/41KYrdfqFjL._SL110_.jpg
+						</URL>
+						<Height Units="pixels">66</Height>
+						<Width Units="pixels">110</Width>
+					</TinyImage>
+					<MediumImage>
+						<URL>http://ecx.images-amazon.com/images/I/41KYrdfqFjL._SL160_.jpg
+						</URL>
+						<Height Units="pixels">96</Height>
+						<Width Units="pixels">160</Width>
+					</MediumImage>
+					<LargeImage>
+						<URL>http://ecx.images-amazon.com/images/I/41KYrdfqFjL.jpg</URL>
+						<Height Units="pixels">301</Height>
+						<Width Units="pixels">500</Width>
+					</LargeImage>
+				</ImageSet>
+				<ImageSet Category="variant">
+					<SwatchImage>
+						<URL>http://ecx.images-amazon.com/images/I/51CwO2s4XqL._SL30_.jpg
+						</URL>
+						<Height Units="pixels">30</Height>
+						<Width Units="pixels">26</Width>
+					</SwatchImage>
+					<SmallImage>
+						<URL>http://ecx.images-amazon.com/images/I/51CwO2s4XqL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">65</Width>
+					</SmallImage>
+					<ThumbnailImage>
+						<URL>http://ecx.images-amazon.com/images/I/51CwO2s4XqL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">65</Width>
+					</ThumbnailImage>
+					<TinyImage>
+						<URL>http://ecx.images-amazon.com/images/I/51CwO2s4XqL._SL110_.jpg
+						</URL>
+						<Height Units="pixels">110</Height>
+						<Width Units="pixels">96</Width>
+					</TinyImage>
+					<MediumImage>
+						<URL>http://ecx.images-amazon.com/images/I/51CwO2s4XqL._SL160_.jpg
+						</URL>
+						<Height Units="pixels">160</Height>
+						<Width Units="pixels">140</Width>
+					</MediumImage>
+					<LargeImage>
+						<URL>http://ecx.images-amazon.com/images/I/51CwO2s4XqL.jpg</URL>
+						<Height Units="pixels">500</Height>
+						<Width Units="pixels">436</Width>
+					</LargeImage>
+				</ImageSet>
+			</ImageSets>
+			<ItemAttributes>
+				<Binding>Electronics</Binding>
+				<Brand>AmazonBasics</Brand>
+				<CatalogNumberList>
+					<CatalogNumberListElement>Lightning CABLE
+					</CatalogNumberListElement>
+				</CatalogNumberList>
+				<EAN>5050053547866</EAN>
+				<EANList>
+					<EANListElement>5050053547866</EANListElement>
+				</EANList>
+				<Feature>Ships in Certified Frustration-Free Packaging</Feature>
+				<ItemDimensions>
+					<Height Units="hundredths-inches">78</Height>
+					<Length Units="hundredths-inches">900</Length>
+					<Weight Units="hundredths-pounds">11</Weight>
+					<Width Units="hundredths-inches">600</Width>
+				</ItemDimensions>
+				<Label>AmazonBasics</Label>
+				<Manufacturer>AmazonBasics</Manufacturer>
+				<Model>Lightning CABLE</Model>
+				<MPN>Lightning CABLE</MPN>
+				<PackageDimensions>
+					<Height Units="hundredths-inches">142</Height>
+					<Length Units="hundredths-inches">638</Length>
+					<Weight Units="hundredths-pounds">13</Weight>
+					<Width Units="hundredths-inches">441</Width>
+				</PackageDimensions>
+				<PackageQuantity>1</PackageQuantity>
+				<PartNumber>Lightning CABLE</PartNumber>
+				<ProductGroup>Network Media Player</ProductGroup>
+				<ProductTypeName>ACCESSORY_OR_PART_OR_SUPPLY</ProductTypeName>
+				<Publisher>AmazonBasics</Publisher>
+				<Size>3 feet/0.9 meter</Size>
+				<Studio>AmazonBasics</Studio>
+				<Title>AmazonBasics USB A to Lightning Compatible Cable (3 Feet/0.9
+					Meter)</Title>
+				<Warranty>1 year</Warranty>
+			</ItemAttributes>
+			<OfferSummary>
+				<LowestNewPrice>
+					<Amount>1399</Amount>
+					<CurrencyCode>USD</CurrencyCode>
+					<FormattedPrice>$13.99</FormattedPrice>
+				</LowestNewPrice>
+				<LowestUsedPrice>
+					<Amount>1219</Amount>
+					<CurrencyCode>USD</CurrencyCode>
+					<FormattedPrice>$12.19</FormattedPrice>
+				</LowestUsedPrice>
+				<TotalNew>1</TotalNew>
+				<TotalUsed>3</TotalUsed>
+				<TotalCollectible>0</TotalCollectible>
+				<TotalRefurbished>0</TotalRefurbished>
+			</OfferSummary>
+			<Offers>
+				<TotalOffers>1</TotalOffers>
+				<TotalOfferPages>1</TotalOfferPages>
+				<MoreOffersUrl>http://www.amazon.com/gp/offer-listing/B009SYZ8OC%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB009SYZ8OC
+				</MoreOffersUrl>
+				<Offer>
+					<Merchant>
+						<Name>Amazon.com</Name>
+					</Merchant>
+					<OfferAttributes>
+						<Condition>New</Condition>
+					</OfferAttributes>
+					<OfferListing>
+						<OfferListingId>keFwJG1fQ8A8EfW6ZJuWYGvHEVnxDQmt0F1SMnJjHT7MjdkgsjENJuMsJyzNMOvO%2BP5Mg%2FYC9njisnLR0qwjG4q4SnjVcvkXTVb8KdsjQmVIaejalgEY1g%3D%3D
+						</OfferListingId>
+						<Price>
+							<Amount>1399</Amount>
+							<CurrencyCode>USD</CurrencyCode>
+							<FormattedPrice>$13.99</FormattedPrice>
+						</Price>
+						<Availability>Usually ships in 24 hours</Availability>
+						<AvailabilityAttributes>
+							<AvailabilityType>now</AvailabilityType>
+							<MinimumHours>0</MinimumHours>
+							<MaximumHours>0</MaximumHours>
+						</AvailabilityAttributes>
+						<IsEligibleForSuperSaverShipping>1
+						</IsEligibleForSuperSaverShipping>
+					</OfferListing>
+				</Offer>
+			</Offers>
+			<CustomerReviews>
+				<IFrameURL>http://www.amazon.com/reviews/iframe?akid=AKIAIYRRDCJ2LLHWQ2RA&amp;alinkCode=xm2&amp;asin=B009SYZ8OC&amp;atag=thebesuserev-20&amp;exp=2013-08-26T22%3A59%3A50Z&amp;truncate=0&amp;v=2&amp;sig=s4vAy0r9p7dg%2BuuglY3YJiEM9v%2Bbmobi2v3rSwJMXr8%3D
+				</IFrameURL>
+				<HasReviews>true</HasReviews>
+			</CustomerReviews>
+			<EditorialReviews>
+				<EditorialReview>
+					<Source>Product Description</Source>
+					<Content>AmazonBasics USB A to Lightning Cable (3 Feet/0.9 Meter)
+					</Content>
+					<IsLinkSuppressed>0</IsLinkSuppressed>
+				</EditorialReview>
+				<EditorialReview>
+					<Source>Amazon.com</Source>
+					<Content>&lt;div class="aplus"&gt;&lt;!--Intro on what the product
+						does--&gt; &lt;h4&gt;AmazonBasics Lightning to USB A Charging/Sync
+						Cable&lt;/h4&gt; &lt;p&gt;This Lightning to USB A charging/sync
+						cable lets you connect you iPhone, iPad, or iPod with Lightning
+						connector to charge your device or sync with your media
+						library.&lt;/p&gt; &lt;!--Image 1--&gt; &lt;div class="leftImage"
+						style="width: 200px;"&gt; &lt;img alt="Lightning charging/sync
+						cable"
+						src="http://ecx.images-amazon.com/images/I/41p3C82XdLL._AA300.jpg"
+						width="200" /&gt; &lt;div class="imageCaption"&gt;Lightning
+						charging/sync cable&lt;/div&gt; &lt;/div&gt; &lt;!--Box Table DO
+						NOT TOUCH--&gt; &lt;table align="right" border="0"
+						cellpadding="15" cellspacing="0" width="250"&gt; &lt;tbody&gt;
+						&lt;tr&gt; &lt;td&gt; &lt;table border="0" cellpadding="0"
+						cellspacing="0"&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td
+						align="center"&gt;&lt;img
+						src="http://g-ec2.images-amazon.com/images/G/01/electronics/detail-page/AmazonBasics-Apple-Certifie.jpg"
+						mce_src="http://g-ec2.images-amazon.com/images/G/01/electronics/detail-page/AmazonBasics-Apple-Certifie.jpg"
+						width="275" alt="AmazonBasics Apple Certified"&gt; &lt;!--&lt;div
+						class="imageCaption"&gt;AmazonBasics Lightning to USB A
+						Charging/Sync Cable&lt;/div&gt;--&gt; &lt;br&gt;&lt;/td&gt;
+						&lt;/tr&gt; &lt;!--Top of box image and background DO NOT
+						TOUCH--&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;&lt;img
+						alt="AmazonBasics header" border="0"
+						src="http://g-ecx.images-amazon.com/images/G/01/electronics/detail-page/AmazonBasics_AtAGlance_master.png"
+						/&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td
+						background="http://g-ecx.images-amazon.com/images/G/01/electronics/detail-page/c26-amazonbasics-callout2.jpg"&gt;
+						&lt;table align="center" border="0" cellpadding="5"
+						cellspacing="0" width="260"&gt; &lt;tbody&gt; &lt;tr&gt;
+						&lt;td&gt;&lt;br /&gt; &lt;!--Features Bullets can add li as
+						needed--&gt; &lt;div align="center"&gt; &lt;h4&gt;Key
+						Features&lt;/h4&gt; &lt;/div&gt; &lt;p&gt;&lt;/p&gt; &lt;ul&gt;
+						&lt;li&gt;Compatible with iPhone 5, iPad mini, iPad 4th
+						generation, iPod 5th generation, and iPod nano 7th
+						generation&lt;/li&gt; &lt;li&gt;Charges the iPod, iPhone, or iPad
+						with Lightning connector and syncs with your computer through an
+						available USB port&lt;/li&gt; &lt;/ul&gt; &lt;!--Dimensions and
+						Warranty are in the box with bold--&gt;
+						&lt;p&gt;&lt;strong&gt;Dimensions:&lt;/strong&gt;3 feet/0.9 meters
+						(L)&lt;/p&gt;
+						&lt;p&gt;&lt;strong&gt;Warranty:&lt;/strong&gt;AmazonBasics 1-Year
+						Limited Warranty [PDF]&lt;/p&gt; &lt;!--Bottom of box image DO NOT
+						TOUCH--&gt;&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt;
+						&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;&lt;img
+						alt="AmazonBasics bottom" border="0"
+						src="http://g-ecx.images-amazon.com/images/G/01/electronics/detail-page/c26-amazonbasics-callout3.jpg"
+						/&gt;&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt;
+						&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt; &lt;!--Body
+						Paragraphs--&gt; &lt;h4&gt;Just right&lt;/h4&gt; &lt;p&gt;The 3
+						feet/0.9 meter length lets you easily reach a USB port on the
+						front or back of most computers. Light-weight and easily coiled,
+						you can carry this cable wherever you go.&lt;/p&gt;
+						&lt;h4&gt;Amazon Frustration-Free Packaging&lt;/h4&gt;
+						&lt;p&gt;This AmazonBasics product features Amazon
+						Frustration-Free Packaging that is recyclable. It comes without
+						excess packaging materials such as hard plastic clamshell casings,
+						plastic bindings, or wire ties. The packaging is designed to be
+						opened without the use of a box cutter or knife, and it will
+						protect your product just as well as traditional packaging.
+						Products with Amazon Frustration-Free Packaging can frequently be
+						shipped in their own boxes, without an additional shipping box,
+						saving on resources and reducing waste.&lt;/p&gt;
+						&lt;h4&gt;Warranty&lt;/h4&gt; &lt;p&gt;AmazonBasics 1-Year Limited
+						Warranty [PDF]&lt;/p&gt; &lt;!--Enter Title Here--&gt;
+						&lt;h4&gt;What's in the Box&lt;/h4&gt; &lt;p&gt;AmazonBasics
+						Lightning to USB A Charging/Sync Cable&lt;/p&gt; &lt;/div&gt;
+						&lt;div class="emptyClear"&gt;&lt;/div&gt;</Content>
+					<IsLinkSuppressed>1</IsLinkSuppressed>
+				</EditorialReview>
+			</EditorialReviews>
+			<SimilarProducts>
+				<SimilarProduct>
+					<ASIN>B004SBBD8U</ASIN>
+					<Title>AmazonBasics 3.2 feet 1.0 Meter USB Charging/Sync Cable for
+						Apple iPod, iPhone, and iPad</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B006SU0SX0</ASIN>
+					<Title>PowerGen 2.4Amps / 12W Dual USB Car charger Designed for
+						Apple and Android Devices - Black</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B00511PS3C</ASIN>
+					<Title>AmazonBasics 2-Port USB Car Charger with 2.1 Amp Output
+						(Black)</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B0073FCPSK</ASIN>
+					<Title>PowerGen Black 2.4-Amp (12 Watt) Dual USB Wall Charger
+						w/Sviwal Plug Designed for Apple and Android Devices</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B0091XIUKY</ASIN>
+					<Title>PowerGen Dual USB 3.1A 15w Travel Wall Charger with Swivel
+						plug for Apple iPad 2, New iPad 3, iPhone 5 4s 4 3 3Gs, Amazon
+						Kindle Fire HD DX KeyBoard, Samsung Galaxy Tab (USB Cable NOT
+						included) - BLACK</Title>
+				</SimilarProduct>
+			</SimilarProducts>
+			<BrowseNodes>
+				<BrowseNode>
+					<BrowseNodeId>15379741</BrowseNodeId>
+					<Name>Chargers</Name>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>290438</BrowseNodeId>
+							<Name>MP3 Player Accessories</Name>
+							<Ancestors>
+								<BrowseNode>
+									<BrowseNodeId>172630</BrowseNodeId>
+									<Name>MP3 Players &amp; Accessories</Name>
+									<Ancestors>
+										<BrowseNode>
+											<BrowseNodeId>172623</BrowseNodeId>
+											<Name>Portable Audio &amp; Video</Name>
+											<Ancestors>
+												<BrowseNode>
+													<BrowseNodeId>493964</BrowseNodeId>
+													<Name>Categories</Name>
+													<IsCategoryRoot>1</IsCategoryRoot>
+													<Ancestors>
+														<BrowseNode>
+															<BrowseNodeId>172282</BrowseNodeId>
+															<Name>Electronics</Name>
+														</BrowseNode>
+													</Ancestors>
+												</BrowseNode>
+											</Ancestors>
+										</BrowseNode>
+									</Ancestors>
+								</BrowseNode>
+							</Ancestors>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>2516700011</BrowseNodeId>
+					<Name>Chargers &amp; Adapters</Name>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>2348628011</BrowseNodeId>
+							<Name>Touch Screen Tablet Accessories</Name>
+							<Ancestors>
+								<BrowseNode>
+									<BrowseNodeId>541966</BrowseNodeId>
+									<Name>Computers &amp; Accessories</Name>
+									<Ancestors>
+										<BrowseNode>
+											<BrowseNodeId>493964</BrowseNodeId>
+											<Name>Categories</Name>
+											<IsCategoryRoot>1</IsCategoryRoot>
+											<Ancestors>
+												<BrowseNode>
+													<BrowseNodeId>172282</BrowseNodeId>
+													<Name>Electronics</Name>
+												</BrowseNode>
+											</Ancestors>
+										</BrowseNode>
+									</Ancestors>
+								</BrowseNode>
+							</Ancestors>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>13900851</BrowseNodeId>
+					<Name>Electronics Features</Name>
+					<Children>
+						<BrowseNode>
+							<BrowseNodeId>51549011</BrowseNodeId>
+							<Name>Featured Categories</Name>
+						</BrowseNode>
+						<BrowseNode>
+							<BrowseNodeId>3302711</BrowseNodeId>
+							<Name>Gold Merchants</Name>
+						</BrowseNode>
+						<BrowseNode>
+							<BrowseNodeId>2354568011</BrowseNodeId>
+							<Name>Specialty Boutique</Name>
+						</BrowseNode>
+					</Children>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>172282</BrowseNodeId>
+							<Name>Electronics</Name>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>13900871</BrowseNodeId>
+					<Name>Computers Features</Name>
+					<Children>
+						<BrowseNode>
+							<BrowseNodeId>51548011</BrowseNodeId>
+							<Name>Featured Categories</Name>
+						</BrowseNode>
+					</Children>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>172282</BrowseNodeId>
+							<Name>Electronics</Name>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>2407761011</BrowseNodeId>
+					<Name>Chargers</Name>
+					<Children>
+						<BrowseNode>
+							<BrowseNodeId>2407770011</BrowseNodeId>
+							<Name>Car Chargers</Name>
+						</BrowseNode>
+						<BrowseNode>
+							<BrowseNodeId>2407771011</BrowseNodeId>
+							<Name>Cell Phone Docks</Name>
+						</BrowseNode>
+						<BrowseNode>
+							<BrowseNodeId>2407772011</BrowseNodeId>
+							<Name>International Chargers</Name>
+						</BrowseNode>
+						<BrowseNode>
+							<BrowseNodeId>2407762011</BrowseNodeId>
+							<Name>Solar Chargers</Name>
+						</BrowseNode>
+						<BrowseNode>
+							<BrowseNodeId>2407773011</BrowseNodeId>
+							<Name>Travel Chargers</Name>
+						</BrowseNode>
+					</Children>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>2407755011</BrowseNodeId>
+							<Name>Accessories</Name>
+							<Ancestors>
+								<BrowseNode>
+									<BrowseNodeId>2335753011</BrowseNodeId>
+									<Name>Categories</Name>
+									<IsCategoryRoot>1</IsCategoryRoot>
+									<Ancestors>
+										<BrowseNode>
+											<BrowseNodeId>2335752011</BrowseNodeId>
+											<Name>Cell Phones &amp; Accessories</Name>
+										</BrowseNode>
+									</Ancestors>
+								</BrowseNode>
+							</Ancestors>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>2407774011</BrowseNodeId>
+					<Name>Data Cables</Name>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>2407755011</BrowseNodeId>
+							<Name>Accessories</Name>
+							<Ancestors>
+								<BrowseNode>
+									<BrowseNodeId>2335753011</BrowseNodeId>
+									<Name>Categories</Name>
+									<IsCategoryRoot>1</IsCategoryRoot>
+									<Ancestors>
+										<BrowseNode>
+											<BrowseNodeId>2335752011</BrowseNodeId>
+											<Name>Cell Phones &amp; Accessories</Name>
+										</BrowseNode>
+									</Ancestors>
+								</BrowseNode>
+							</Ancestors>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+			</BrowseNodes>
+		</Item>
+		<Item>
+			<ASIN>B003VNKNF0</ASIN>
+			<ParentASIN>B00E4HUAE6</ParentASIN>
+			<DetailPageURL>http://www.amazon.com/Transcend-Class-Flash-Memory-TS32GSDHC10E/dp/B003VNKNF0%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB003VNKNF0
+			</DetailPageURL>
+			<ItemLinks>
+				<ItemLink>
+					<Description>Technical Details</Description>
+					<URL>http://www.amazon.com/Transcend-Class-Flash-Memory-TS32GSDHC10E/dp/tech-data/B003VNKNF0%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB003VNKNF0
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Add To Baby Registry</Description>
+					<URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB003VNKNF0%26SubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB003VNKNF0
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Add To Wedding Registry</Description>
+					<URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB003VNKNF0%26SubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB003VNKNF0
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Add To Wishlist</Description>
+					<URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB003VNKNF0%26SubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB003VNKNF0
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>Tell A Friend</Description>
+					<URL>http://www.amazon.com/gp/pdp/taf/B003VNKNF0%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB003VNKNF0
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>All Customer Reviews</Description>
+					<URL>http://www.amazon.com/review/product/B003VNKNF0%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB003VNKNF0
+					</URL>
+				</ItemLink>
+				<ItemLink>
+					<Description>All Offers</Description>
+					<URL>http://www.amazon.com/gp/offer-listing/B003VNKNF0%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB003VNKNF0
+					</URL>
+				</ItemLink>
+			</ItemLinks>
+			<SmallImage>
+				<URL>http://ecx.images-amazon.com/images/I/51XB52M0hWL._SL75_.jpg
+				</URL>
+				<Height Units="pixels">75</Height>
+				<Width Units="pixels">58</Width>
+			</SmallImage>
+			<MediumImage>
+				<URL>http://ecx.images-amazon.com/images/I/51XB52M0hWL._SL160_.jpg
+				</URL>
+				<Height Units="pixels">160</Height>
+				<Width Units="pixels">124</Width>
+			</MediumImage>
+			<LargeImage>
+				<URL>http://ecx.images-amazon.com/images/I/51XB52M0hWL.jpg</URL>
+				<Height Units="pixels">500</Height>
+				<Width Units="pixels">389</Width>
+			</LargeImage>
+			<ImageSets>
+				<ImageSet Category="primary">
+					<SwatchImage>
+						<URL>http://ecx.images-amazon.com/images/I/51XB52M0hWL._SL30_.jpg
+						</URL>
+						<Height Units="pixels">30</Height>
+						<Width Units="pixels">23</Width>
+					</SwatchImage>
+					<SmallImage>
+						<URL>http://ecx.images-amazon.com/images/I/51XB52M0hWL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">58</Width>
+					</SmallImage>
+					<ThumbnailImage>
+						<URL>http://ecx.images-amazon.com/images/I/51XB52M0hWL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">75</Height>
+						<Width Units="pixels">58</Width>
+					</ThumbnailImage>
+					<TinyImage>
+						<URL>http://ecx.images-amazon.com/images/I/51XB52M0hWL._SL110_.jpg
+						</URL>
+						<Height Units="pixels">110</Height>
+						<Width Units="pixels">86</Width>
+					</TinyImage>
+					<MediumImage>
+						<URL>http://ecx.images-amazon.com/images/I/51XB52M0hWL._SL160_.jpg
+						</URL>
+						<Height Units="pixels">160</Height>
+						<Width Units="pixels">124</Width>
+					</MediumImage>
+					<LargeImage>
+						<URL>http://ecx.images-amazon.com/images/I/51XB52M0hWL.jpg</URL>
+						<Height Units="pixels">500</Height>
+						<Width Units="pixels">389</Width>
+					</LargeImage>
+				</ImageSet>
+				<ImageSet Category="variant">
+					<SwatchImage>
+						<URL>http://ecx.images-amazon.com/images/I/41qvo-ueaqL._SL30_.jpg
+						</URL>
+						<Height Units="pixels">23</Height>
+						<Width Units="pixels">30</Width>
+					</SwatchImage>
+					<SmallImage>
+						<URL>http://ecx.images-amazon.com/images/I/41qvo-ueaqL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">57</Height>
+						<Width Units="pixels">75</Width>
+					</SmallImage>
+					<ThumbnailImage>
+						<URL>http://ecx.images-amazon.com/images/I/41qvo-ueaqL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">57</Height>
+						<Width Units="pixels">75</Width>
+					</ThumbnailImage>
+					<TinyImage>
+						<URL>http://ecx.images-amazon.com/images/I/41qvo-ueaqL._SL110_.jpg
+						</URL>
+						<Height Units="pixels">83</Height>
+						<Width Units="pixels">110</Width>
+					</TinyImage>
+					<MediumImage>
+						<URL>http://ecx.images-amazon.com/images/I/41qvo-ueaqL._SL160_.jpg
+						</URL>
+						<Height Units="pixels">121</Height>
+						<Width Units="pixels">160</Width>
+					</MediumImage>
+					<LargeImage>
+						<URL>http://ecx.images-amazon.com/images/I/41qvo-ueaqL.jpg</URL>
+						<Height Units="pixels">379</Height>
+						<Width Units="pixels">500</Width>
+					</LargeImage>
+				</ImageSet>
+				<ImageSet Category="variant">
+					<SwatchImage>
+						<URL>http://ecx.images-amazon.com/images/I/41bw1iZMBtL._SL30_.jpg
+						</URL>
+						<Height Units="pixels">22</Height>
+						<Width Units="pixels">30</Width>
+					</SwatchImage>
+					<SmallImage>
+						<URL>http://ecx.images-amazon.com/images/I/41bw1iZMBtL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">55</Height>
+						<Width Units="pixels">75</Width>
+					</SmallImage>
+					<ThumbnailImage>
+						<URL>http://ecx.images-amazon.com/images/I/41bw1iZMBtL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">55</Height>
+						<Width Units="pixels">75</Width>
+					</ThumbnailImage>
+					<TinyImage>
+						<URL>http://ecx.images-amazon.com/images/I/41bw1iZMBtL._SL110_.jpg
+						</URL>
+						<Height Units="pixels">80</Height>
+						<Width Units="pixels">110</Width>
+					</TinyImage>
+					<MediumImage>
+						<URL>http://ecx.images-amazon.com/images/I/41bw1iZMBtL._SL160_.jpg
+						</URL>
+						<Height Units="pixels">116</Height>
+						<Width Units="pixels">160</Width>
+					</MediumImage>
+					<LargeImage>
+						<URL>http://ecx.images-amazon.com/images/I/41bw1iZMBtL.jpg</URL>
+						<Height Units="pixels">364</Height>
+						<Width Units="pixels">500</Width>
+					</LargeImage>
+				</ImageSet>
+				<ImageSet Category="variant">
+					<SwatchImage>
+						<URL>http://ecx.images-amazon.com/images/I/51kDuCqZu8L._SL30_.jpg
+						</URL>
+						<Height Units="pixels">23</Height>
+						<Width Units="pixels">30</Width>
+					</SwatchImage>
+					<SmallImage>
+						<URL>http://ecx.images-amazon.com/images/I/51kDuCqZu8L._SL75_.jpg
+						</URL>
+						<Height Units="pixels">58</Height>
+						<Width Units="pixels">75</Width>
+					</SmallImage>
+					<ThumbnailImage>
+						<URL>http://ecx.images-amazon.com/images/I/51kDuCqZu8L._SL75_.jpg
+						</URL>
+						<Height Units="pixels">58</Height>
+						<Width Units="pixels">75</Width>
+					</ThumbnailImage>
+					<TinyImage>
+						<URL>http://ecx.images-amazon.com/images/I/51kDuCqZu8L._SL110_.jpg
+						</URL>
+						<Height Units="pixels">85</Height>
+						<Width Units="pixels">110</Width>
+					</TinyImage>
+					<MediumImage>
+						<URL>http://ecx.images-amazon.com/images/I/51kDuCqZu8L._SL160_.jpg
+						</URL>
+						<Height Units="pixels">124</Height>
+						<Width Units="pixels">160</Width>
+					</MediumImage>
+					<LargeImage>
+						<URL>http://ecx.images-amazon.com/images/I/51kDuCqZu8L.jpg</URL>
+						<Height Units="pixels">386</Height>
+						<Width Units="pixels">500</Width>
+					</LargeImage>
+				</ImageSet>
+				<ImageSet Category="variant">
+					<SwatchImage>
+						<URL>http://ecx.images-amazon.com/images/I/51b2UddhToL._SL30_.jpg
+						</URL>
+						<Height Units="pixels">23</Height>
+						<Width Units="pixels">30</Width>
+					</SwatchImage>
+					<SmallImage>
+						<URL>http://ecx.images-amazon.com/images/I/51b2UddhToL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">58</Height>
+						<Width Units="pixels">75</Width>
+					</SmallImage>
+					<ThumbnailImage>
+						<URL>http://ecx.images-amazon.com/images/I/51b2UddhToL._SL75_.jpg
+						</URL>
+						<Height Units="pixels">58</Height>
+						<Width Units="pixels">75</Width>
+					</ThumbnailImage>
+					<TinyImage>
+						<URL>http://ecx.images-amazon.com/images/I/51b2UddhToL._SL110_.jpg
+						</URL>
+						<Height Units="pixels">85</Height>
+						<Width Units="pixels">110</Width>
+					</TinyImage>
+					<MediumImage>
+						<URL>http://ecx.images-amazon.com/images/I/51b2UddhToL._SL160_.jpg
+						</URL>
+						<Height Units="pixels">124</Height>
+						<Width Units="pixels">160</Width>
+					</MediumImage>
+					<LargeImage>
+						<URL>http://ecx.images-amazon.com/images/I/51b2UddhToL.jpg</URL>
+						<Height Units="pixels">386</Height>
+						<Width Units="pixels">500</Width>
+					</LargeImage>
+				</ImageSet>
+			</ImageSets>
+			<ItemAttributes>
+				<Binding>Personal Computers</Binding>
+				<Brand>Transcend</Brand>
+				<CatalogNumberList>
+					<CatalogNumberListElement>TS32GSDHC10E</CatalogNumberListElement>
+					<CatalogNumberListElement>0760557818601</CatalogNumberListElement>
+				</CatalogNumberList>
+				<EAN>0760557818601</EAN>
+				<EANList>
+					<EANListElement>0760557818601</EANListElement>
+				</EANList>
+				<Feature>Lifetime warranty, the data storage solution you can trust
+				</Feature>
+				<Feature>Perfect for vast amounts of HD video and high-resolution
+					images</Feature>
+				<Feature>Compatible with all SDHC-labeled host devices (not
+					compatible with standard SD)</Feature>
+				<Feature>Built-in error correction(ECC) automatically detects and
+					fixes transfer errors</Feature>
+				<ItemDimensions>
+					<Height Units="hundredths-inches">8</Height>
+					<Length Units="hundredths-inches">126</Length>
+					<Width Units="hundredths-inches">94</Width>
+				</ItemDimensions>
+				<Label>TRANSCEND</Label>
+				<ListPrice>
+					<Amount>3199</Amount>
+					<CurrencyCode>USD</CurrencyCode>
+					<FormattedPrice>$31.99</FormattedPrice>
+				</ListPrice>
+				<Manufacturer>TRANSCEND</Manufacturer>
+				<Model>TS32GSDHC10E</Model>
+				<MPN>0760557818601</MPN>
+				<PackageDimensions>
+					<Height Units="hundredths-inches">31</Height>
+					<Length Units="hundredths-inches">764</Length>
+					<Weight Units="hundredths-pounds">2</Weight>
+					<Width Units="hundredths-inches">488</Width>
+				</PackageDimensions>
+				<PackageQuantity>1</PackageQuantity>
+				<PartNumber>0760557818601</PartNumber>
+				<ProductGroup>CE</ProductGroup>
+				<ProductTypeName>FLASH_MEMORY</ProductTypeName>
+				<Publisher>TRANSCEND</Publisher>
+				<Size>32GB</Size>
+				<Studio>TRANSCEND</Studio>
+				<Title>Transcend 32 GB Class 10 SDHC Flash Memory Card
+					(TS32GSDHC10E)</Title>
+				<UPC>760557818601</UPC>
+				<UPCList>
+					<UPCListElement>760557818601</UPCListElement>
+				</UPCList>
+				<Warranty>Limited Lifetime Warranty</Warranty>
+			</ItemAttributes>
+			<OfferSummary>
+				<LowestNewPrice>
+					<Amount>2399</Amount>
+					<CurrencyCode>USD</CurrencyCode>
+					<FormattedPrice>$23.99</FormattedPrice>
+				</LowestNewPrice>
+				<TotalNew>1</TotalNew>
+				<TotalUsed>0</TotalUsed>
+				<TotalCollectible>0</TotalCollectible>
+				<TotalRefurbished>0</TotalRefurbished>
+			</OfferSummary>
+			<Offers>
+				<TotalOffers>1</TotalOffers>
+				<TotalOfferPages>1</TotalOfferPages>
+				<MoreOffersUrl>http://www.amazon.com/gp/offer-listing/B003VNKNF0%3FSubscriptionId%3DAKIAIYRRDCJ2LLHWQ2RA%26tag%3Dthebesuserev-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB003VNKNF0
+				</MoreOffersUrl>
+				<Offer>
+					<Merchant>
+						<Name>Amazon.com</Name>
+					</Merchant>
+					<OfferAttributes>
+						<Condition>New</Condition>
+					</OfferAttributes>
+					<OfferListing>
+						<OfferListingId>VYkyH12CmKiP9fuGyrXuMiw6BwOfDNnbPS%2Bqc169SQXJDM7%2F6VjInFd7%2FxXwYaNAPsDknHB%2Bju%2BGIviVk%2B18ecGSAzIev6IyPM%2BEKbaY%2FINWADWpLzjqXg%3D%3D
+						</OfferListingId>
+						<Price>
+							<Amount>2399</Amount>
+							<CurrencyCode>USD</CurrencyCode>
+							<FormattedPrice>$23.99</FormattedPrice>
+						</Price>
+						<AmountSaved>
+							<Amount>800</Amount>
+							<CurrencyCode>USD</CurrencyCode>
+							<FormattedPrice>$8.00</FormattedPrice>
+						</AmountSaved>
+						<PercentageSaved>25</PercentageSaved>
+						<Availability>Usually ships in 24 hours</Availability>
+						<AvailabilityAttributes>
+							<AvailabilityType>now</AvailabilityType>
+							<MinimumHours>0</MinimumHours>
+							<MaximumHours>0</MaximumHours>
+						</AvailabilityAttributes>
+						<IsEligibleForSuperSaverShipping>1
+						</IsEligibleForSuperSaverShipping>
+					</OfferListing>
+				</Offer>
+			</Offers>
+			<CustomerReviews>
+				<IFrameURL>http://www.amazon.com/reviews/iframe?akid=AKIAIYRRDCJ2LLHWQ2RA&amp;alinkCode=xm2&amp;asin=B003VNKNF0&amp;atag=thebesuserev-20&amp;exp=2013-08-26T22%3A59%3A50Z&amp;truncate=0&amp;v=2&amp;sig=QVDHQF1emfWI1jfADu59EFTTymRCq3ZzF73vxFwWYsY%3D
+				</IFrameURL>
+				<HasReviews>true</HasReviews>
+			</CustomerReviews>
+			<EditorialReviews>
+				<EditorialReview>
+					<Source>Product Description</Source>
+					<Content>This Transcend 32GB Class 10 SDHC Memory Card is for you
+						to expand the memory capacity for your compatible device like
+						digital camera, camcorders, music players, and more cool device
+						that is with a SD card slot available.&lt;br&gt;It is ideal for
+						storing media-rich files such as music, videos, and photographs.
+						&lt;br&gt;&lt;br&gt;FEATURES:&lt;br&gt;&lt;li&gt; Fully compatible
+						with SD 2.0 Standards&lt;/li&gt;&lt;li&gt; Class 10
+						compliant&lt;/li&gt;&lt;li&gt; Easy to use, plug and play
+						operation&lt;/li&gt;&lt;li&gt; Built-in Error Correcting Code
+						(ECC) to detect and correct transfer errors&lt;/li&gt;&lt;li&gt;
+						Supports Content Protection for Recordable Media(CPRM)
+						&lt;/li&gt;&lt;li&gt; Allows In System Programming (ISP) for
+						updating firmware&lt;/li&gt;&lt;li&gt; Supports auto-standby,
+						power-off and sleep modes&lt;/li&gt;&lt;li&gt; Mechanical
+						write-protection switch&lt;/li&gt;&lt;li&gt; RoHS
+						compliant&lt;/li&gt;&lt;li&gt; Lifetime
+						Warranty&lt;/li&gt;&lt;li&gt; High storage capacity for storing
+						essential digital content such as high quality photos, videos,
+						music and more.&lt;/li&gt;&lt;li&gt; Transcend Memory card for
+						reliable quality. &lt;/li&gt;&lt;li&gt; Non-volatile solid-state;
+						no moving parts maximizes battery power. Data is not lost when
+						power is turned off.&lt;/li&gt;&lt;li&gt; Fast transfer rate for
+						reliable copy, download, back&lt;li&gt; up.&lt;/li&gt;&lt;li&gt;
+						This SD card is compatible with all digital devices and more cool
+						devices with a SD memory card
+						slot.&lt;/li&gt;&lt;br&gt;SPECIFICATIONS: &lt;br&gt;Size: 32mm x
+						24mm x 2.1mm (L x W x H)&lt;br&gt;Op. Voltage:
+						2.7V~3.6V&lt;br&gt;Op. Temperature: -13</Content>
+					<IsLinkSuppressed>0</IsLinkSuppressed>
+				</EditorialReview>
+			</EditorialReviews>
+			<SimilarProducts>
+				<SimilarProduct>
+					<ASIN>B0039BPG1A</ASIN>
+					<Title>Case Logic DCB-304 Compact System/Hybrid Camera Case (Black)
+					</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B005HNF01O</ASIN>
+					<Title>Case Logic TBC-302 FFP Compact Camera Case (Black)</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B00B7N9CWG</ASIN>
+					<Title>Nikon COOLPIX L820 16 MP CMOS Digital Camera with 30x Zoom
+						Lens and Full HD 1080p Video (Black)</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B009B0MZ1M</ASIN>
+					<Title>Canon PowerShot SX50 HS 12MP Digital Camera with 2.8-Inch
+						LCD (Black)</Title>
+				</SimilarProduct>
+				<SimilarProduct>
+					<ASIN>B004J3V90Y</ASIN>
+					<Title>Canon EOS Rebel T3i 18 MP CMOS Digital SLR Camera and DIGIC
+						4 Imaging with EF-S 18-55mm f/3.5-5.6 IS Lens</Title>
+				</SimilarProduct>
+			</SimilarProducts>
+			<Accessories>
+				<Accessory>
+					<ASIN>B003JBHQP4</ASIN>
+					<Title>AmazonBasics 21-in-1 USB 2.0 Flash Memory Card Reader
+					</Title>
+				</Accessory>
+			</Accessories>
+			<BrowseNodes>
+				<BrowseNode>
+					<BrowseNodeId>172840</BrowseNodeId>
+					<Name>Blank Video Media</Name>
+					<Children>
+						<BrowseNode>
+							<BrowseNodeId>172845</BrowseNodeId>
+							<Name>Hi-8</Name>
+						</BrowseNode>
+						<BrowseNode>
+							<BrowseNodeId>3345901</BrowseNodeId>
+							<Name>MiniDV</Name>
+						</BrowseNode>
+						<BrowseNode>
+							<BrowseNodeId>172848</BrowseNodeId>
+							<Name>VHS</Name>
+						</BrowseNode>
+						<BrowseNode>
+							<BrowseNodeId>172849</BrowseNodeId>
+							<Name>VHS-C</Name>
+						</BrowseNode>
+					</Children>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>172435</BrowseNodeId>
+							<Name>Accessories</Name>
+							<Ancestors>
+								<BrowseNode>
+									<BrowseNodeId>502394</BrowseNodeId>
+									<Name>Camera &amp; Photo</Name>
+									<Ancestors>
+										<BrowseNode>
+											<BrowseNodeId>493964</BrowseNodeId>
+											<Name>Categories</Name>
+											<IsCategoryRoot>1</IsCategoryRoot>
+											<Ancestors>
+												<BrowseNode>
+													<BrowseNodeId>172282</BrowseNodeId>
+													<Name>Electronics</Name>
+												</BrowseNode>
+											</Ancestors>
+										</BrowseNode>
+									</Ancestors>
+								</BrowseNode>
+							</Ancestors>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>1197396</BrowseNodeId>
+					<Name>SD &amp; SDHC Cards</Name>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>516866</BrowseNodeId>
+							<Name>Memory Cards</Name>
+							<Ancestors>
+								<BrowseNode>
+									<BrowseNodeId>172456</BrowseNodeId>
+									<Name>Cables &amp; Accessories</Name>
+									<Ancestors>
+										<BrowseNode>
+											<BrowseNodeId>541966</BrowseNodeId>
+											<Name>Computers &amp; Accessories</Name>
+											<Ancestors>
+												<BrowseNode>
+													<BrowseNodeId>493964</BrowseNodeId>
+													<Name>Categories</Name>
+													<IsCategoryRoot>1</IsCategoryRoot>
+													<Ancestors>
+														<BrowseNode>
+															<BrowseNodeId>172282</BrowseNodeId>
+															<Name>Electronics</Name>
+														</BrowseNode>
+													</Ancestors>
+												</BrowseNode>
+											</Ancestors>
+										</BrowseNode>
+									</Ancestors>
+								</BrowseNode>
+							</Ancestors>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>13900851</BrowseNodeId>
+					<Name>Electronics Features</Name>
+					<Children>
+						<BrowseNode>
+							<BrowseNodeId>51549011</BrowseNodeId>
+							<Name>Featured Categories</Name>
+						</BrowseNode>
+						<BrowseNode>
+							<BrowseNodeId>3302711</BrowseNodeId>
+							<Name>Gold Merchants</Name>
+						</BrowseNode>
+						<BrowseNode>
+							<BrowseNodeId>2354568011</BrowseNodeId>
+							<Name>Specialty Boutique</Name>
+						</BrowseNode>
+					</Children>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>172282</BrowseNodeId>
+							<Name>Electronics</Name>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+				<BrowseNode>
+					<BrowseNodeId>13900871</BrowseNodeId>
+					<Name>Computers Features</Name>
+					<Children>
+						<BrowseNode>
+							<BrowseNodeId>51548011</BrowseNodeId>
+							<Name>Featured Categories</Name>
+						</BrowseNode>
+					</Children>
+					<Ancestors>
+						<BrowseNode>
+							<BrowseNodeId>172282</BrowseNodeId>
+							<Name>Electronics</Name>
+						</BrowseNode>
+					</Ancestors>
+				</BrowseNode>
+			</BrowseNodes>
+		</Item>
+	</Items>
+</ItemSearchResponse>
