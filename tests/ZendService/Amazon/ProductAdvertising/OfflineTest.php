@@ -7,23 +7,22 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  * @package   Zend_Service
  */
-
 namespace ZendServiceTest\Amazon\ProductAdvertising;
 
-use ZendService\Amazon\ProductAdvertising,
-    Zend\Http\Client\Adapter\Test as HttpClientAdapter;
+use ZendService\Amazon\ProductAdvertising, Zend\Http\Client\Adapter\Test as HttpClientAdapter;
 
 /**
  * Test helper
  *
- * @category   Zend
- * @package    Zend_Service_Amazon
+ * @category Zend
+ * @package Zend_Service_Amazon
  * @subpackage UnitTests
- * @group      Zend_Service
- * @group      Zend_Service_Amazon
+ *             @group Zend_Service
+ *             @group Zend_Service_Amazon
  */
 class OfflineTest extends \PHPUnit_Framework_TestCase
 {
+
     /**
      * Reference to Amazon service consumer object
      *
@@ -45,12 +44,9 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
      */
     public function setUp()
     {
-        $this->amazon = new ProductAdvertising\ProductAdvertising(
-        	TESTS_ZEND_SERVICE_AMAZON_ONLINE_ACCESSKEYID,
-        	TESTS_ZEND_SERVICE_AMAZON_ONLINE_SECRETKEY,
-        	TESTS_ZEND_SERVICE_AMAZON_ONLINE_ASSOCIATE_TAG
-        );
-
+        $this->amazon = new ProductAdvertising\ProductAdvertising(TESTS_ZEND_SERVICE_AMAZON_ONLINE_ACCESSKEYID, 
+            TESTS_ZEND_SERVICE_AMAZON_ONLINE_SECRETKEY, TESTS_ZEND_SERVICE_AMAZON_ONLINE_ASSOCIATE_TAG);
+        
         $this->httpClientTestAdapter = new HttpClientAdapter();
     }
 
@@ -61,16 +57,10 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
      */
     public function testConstructExceptionCountryCodeInvalid()
     {
-        $this->setExpectedException(
-            'ZendService\Amazon\Exception\InvalidArgumentException',
-            'Unknown country code: oops'
-        );
-        $amazon = new ProductAdvertising\ProductAdvertising(
-        	TESTS_ZEND_SERVICE_AMAZON_ONLINE_ACCESSKEYID,
-        	TESTS_ZEND_SERVICE_AMAZON_ONLINE_SECRETKEY,
-        	TESTS_ZEND_SERVICE_AMAZON_ONLINE_ASSOCIATE_TAG,
-         	'oops'
-        );
+        $this->setExpectedException('ZendService\Amazon\Exception\InvalidArgumentException', 
+            'Unknown country code: oops');
+        $amazon = new ProductAdvertising\ProductAdvertising(TESTS_ZEND_SERVICE_AMAZON_ONLINE_ACCESSKEYID, 
+            TESTS_ZEND_SERVICE_AMAZON_ONLINE_SECRETKEY, TESTS_ZEND_SERVICE_AMAZON_ONLINE_ASSOCIATE_TAG, 'oops');
     }
 
     /**
@@ -81,7 +71,7 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
         $xml = file_get_contents(__DIR__ . '/../_files/mozart_result.xml');
         $dom = new \DOMDocument();
         $dom->loadXML($xml);
-
+        
         $mozartTracks = array(
             'B00005A8JZ' => '29',
             'B0000058HV' => '25',
@@ -92,12 +82,12 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
             'B000004166' => '20',
             'B00002DEH1' => '58',
             'B0000041EV' => '12',
-            'B00004SA87' => '42',
+            'B00004SA87' => '42'
         );
-
+        
         $result = new ProductAdvertising\ResultSet($dom);
-
-        foreach($result AS $item) {
+        
+        foreach ($result as $item) {
             $trackCount = $mozartTracks[$item->ASIN];
             $this->assertEquals($trackCount, count($item->Tracks));
         }
@@ -112,7 +102,7 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
         $asin = $dom->createElement('ASIN', 'TEST');
         $product = $dom->createElement('product');
         $product->appendChild($asin);
-
+        
         $similarproduct = new ProductAdvertising\SimilarProduct($product);
     }
 
@@ -124,103 +114,103 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
         $xml = file_get_contents(__DIR__ . '/../_files/offers_with_names.xml');
         $dom = new \DOMDocument();
         $dom->loadXML($xml);
-
+        
         $dataExpected = array(
             '0439774098' => array(
                 'offers' => array(
                     'A79CLRHOQ3NF4' => array(
-                        'name'  => 'PLEXSUPPLY',
+                        'name' => 'PLEXSUPPLY',
                         'price' => '5153'
                     ),
                     'A2K9NS8DSVOE2W' => array(
-                        'name'  => 'nangsuer',
+                        'name' => 'nangsuer',
                         'price' => '5153'
                     ),
                     'A31EVTLIC13ORD' => array(
-                        'name'  => 'Wizard of Math',
+                        'name' => 'Wizard of Math',
                         'price' => '7599'
                     ),
                     'A3SKJE188CW5XG' => array(
-                        'name'  => 'ReStockIt',
+                        'name' => 'ReStockIt',
                         'price' => '5299'
                     ),
                     'A1729W3053T57N' => array(
-                        'name'  => 'The Price Pros',
+                        'name' => 'The Price Pros',
                         'price' => '5487'
                     ),
                     'A29PHU0KPCGV8S' => array(
-                        'name'  => 'TheFactoryDepot',
+                        'name' => 'TheFactoryDepot',
                         'price' => '5821'
                     ),
                     'AIHRRFGW11GJ8' => array(
-                        'name'  => 'Design Tec Office Products',
+                        'name' => 'Design Tec Office Products',
                         'price' => '5987'
                     ),
                     'A27OK403WRHSGI' => array(
-                        'name'  => 'Kaplan Early Learning Company',
+                        'name' => 'Kaplan Early Learning Company',
                         'price' => '7595'
                     ),
                     'A25DVOZOPBFMAN' => array(
-                        'name'  => 'Deerso',
+                        'name' => 'Deerso',
                         'price' => '7599'
                     ),
                     'A6IFKC796Y64H' => array(
-                        'name'  => 'The Education Station Inc',
+                        'name' => 'The Education Station Inc',
                         'price' => '7599'
-                    ),
-                ),
+                    )
+                )
             ),
             'B00000194U' => array(
                 'offers' => array(
                     'A3UOG6723G7MG0' => array(
-                        'name'  => 'Efunctional',
+                        'name' => 'Efunctional',
                         'price' => '480'
                     ),
                     'A3SNNXCKUIW1O2' => array(
-                        'name'  => 'Universal Mania',
+                        'name' => 'Universal Mania',
                         'price' => '531'
                     ),
                     'A18ACDNYOEMMOL' => array(
-                        'name'  => 'ApexSuppliers',
+                        'name' => 'ApexSuppliers',
                         'price' => '589'
                     ),
                     'A2NYACAJP9I1IY' => array(
-                        'name'  => 'GizmosForLife',
+                        'name' => 'GizmosForLife',
                         'price' => '608'
                     ),
                     'A1729W3053T57N' => array(
-                        'name'  => 'The Price Pros',
+                        'name' => 'The Price Pros',
                         'price' => '628'
                     ),
                     'A29PHU0KPCGV8S' => array(
-                        'name'  => 'TheFactoryDepot',
+                        'name' => 'TheFactoryDepot',
                         'price' => '638'
                     ),
                     'A3Q3IAIX1CLBMZ' => array(
-                        'name'  => 'ElectroGalaxy',
+                        'name' => 'ElectroGalaxy',
                         'price' => '697'
                     ),
                     'A1PC5XI7QQLW5G' => array(
-                        'name'  => 'Long Trading Company',
+                        'name' => 'Long Trading Company',
                         'price' => '860'
                     ),
                     'A2R0FX412W1BDT' => array(
-                        'name'  => 'Beach Audio',
+                        'name' => 'Beach Audio',
                         'price' => '896'
                     ),
                     'AKJJGJ0JKT8F1' => array(
-                        'name'  => 'Buy.com',
+                        'name' => 'Buy.com',
                         'price' => '899'
-                    ),
-                ),
-            ),
+                    )
+                )
+            )
         );
-
+        
         $result = new ProductAdvertising\ResultSet($dom);
-
-        foreach($result AS $item) {
+        
+        foreach ($result as $item) {
             $data = $dataExpected[$item->ASIN];
-            foreach($item->Offers->Offers as $offer) {
+            foreach ($item->Offers->Offers as $offer) {
                 $this->assertEquals($data['offers'][$offer->MerchantId]['name'], $offer->MerchantName);
                 $this->assertEquals($data['offers'][$offer->MerchantId]['price'], $offer->Price);
             }
@@ -239,16 +229,13 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
                     'ItemId' => '0679722769',
                     'ResponseGroup' => 'ItemAttributes,Offers,Images,Reviews',
                     'Version' => '2009-01-06',
-                    'Timestamp' => '2009-01-01T12:00:00Z',
+                    'Timestamp' => '2009-01-01T12:00:00Z'
                 ),
-                'GET'. PHP_EOL .
-                'webservices.amazon.com'. PHP_EOL .
-                '/onca/xml'. PHP_EOL . 
-                'AWSAccessKeyId=00000000000000000000&ItemId=0679722769&Operation=I'.
-                'temLookup&ResponseGroup=ItemAttributes%2COffers%2CImages%2CReview'.
-                's&Service=AWSECommerceService&Timestamp=2009-01-01T12%3A00%3A00Z&'.
-                'Version=2009-01-06',
-                'Nace%2BU3Az4OhN7tISqgs1vdLBHBEijWcBeCqL5xN9xg%3D'
+                'GET' . PHP_EOL . 'webservices.amazon.com' . PHP_EOL . '/onca/xml' . PHP_EOL .
+                     'AWSAccessKeyId=00000000000000000000&ItemId=0679722769&Operation=I' .
+                     'temLookup&ResponseGroup=ItemAttributes%2COffers%2CImages%2CReview' .
+                     's&Service=AWSECommerceService&Timestamp=2009-01-01T12%3A00%3A00Z&' . 'Version=2009-01-06',
+                    'Nace%2BU3Az4OhN7tISqgs1vdLBHBEijWcBeCqL5xN9xg%3D'
             ),
             array(
                 'http://ecs.amazonaws.co.uk',
@@ -262,18 +249,15 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
                     'SearchIndex' => 'DVD',
                     'Sort' => 'salesrank',
                     'AssociateTag' => 'mytag-20',
-                    'Timestamp' => '2009-01-01T12:00:00Z',
+                    'Timestamp' => '2009-01-01T12:00:00Z'
                 ),
-                'GET' . PHP_EOL .
-                'ecs.amazonaws.co.uk'. PHP_EOL .
-                '/onca/xml'. PHP_EOL .
-                'AWSAccessKeyId=00000000000000000000&Actor=Johnny%20Depp&Associate'.
-                'Tag=mytag-20&Operation=ItemSearch&ResponseGroup=ItemAttributes%2C'.
-                'Offers%2CImages%2CReviews%2CVariations&SearchIndex=DVD&Service=AW'.
-                'SECommerceService&Sort=salesrank&Timestamp=2009-01-01T12%3A00%3A0'.
-                '0Z&Version=2009-01-01',
-                'TuM6E5L9u%2FuNqOX09ET03BXVmHLVFfJIna5cxXuHxiU%3D',
-            ),
+                'GET' . PHP_EOL . 'ecs.amazonaws.co.uk' . PHP_EOL . '/onca/xml' . PHP_EOL .
+                 'AWSAccessKeyId=00000000000000000000&Actor=Johnny%20Depp&Associate' .
+                 'Tag=mytag-20&Operation=ItemSearch&ResponseGroup=ItemAttributes%2C' .
+                 'Offers%2CImages%2CReviews%2CVariations&SearchIndex=DVD&Service=AW' .
+                 'SECommerceService&Sort=salesrank&Timestamp=2009-01-01T12%3A00%3A0' . '0Z&Version=2009-01-01',
+                'TuM6E5L9u%2FuNqOX09ET03BXVmHLVFfJIna5cxXuHxiU%3D'
+            )
         );
     }
 
@@ -285,17 +269,11 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
      */
     public function testSignatureEncryption($baseUri, $params, $expectedStringToSign, $expectedSignature)
     {
-        $this->assertEquals(
-            $expectedStringToSign,
-            ProductAdvertising\ProductAdvertising::buildRawSignature($baseUri, $params)
-        );
-
-        $this->assertEquals(
-            $expectedSignature,
-            rawurlencode(ProductAdvertising\ProductAdvertising::computeSignature(
-                $baseUri, '1234567890', $params
-            ))
-        );
+        $this->assertEquals($expectedStringToSign, 
+            ProductAdvertising\ProductAdvertising::buildRawSignature($baseUri, $params));
+        
+        $this->assertEquals($expectedSignature, 
+            rawurlencode(ProductAdvertising\ProductAdvertising::computeSignature($baseUri, '1234567890', $params)));
     }
 
     /**
@@ -309,13 +287,13 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
         $xml = file_get_contents(__DIR__ . '/../_files/amazon-response-valid.xml');
         $dom = new \DOMDocument();
         $dom->loadXML($xml);
-
+        
         $result = new ProductAdvertising\ResultSet($dom);
-
+        
         $currentItem = null;
-
+        
         $currentItem = $result->current();
-
+        
         $this->assertInstanceOf('ZendService\Amazon\ProductAdvertising\Item', $currentItem);
         $this->assertEquals('0754512673', $currentItem->ASIN);
     }
@@ -328,12 +306,12 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
      */
     public function testAmazonComponentHandlesEmptyBookResults()
     {
-        $xml = file_get_contents(__DIR__. ' /../_files/amazon-response-invalid.xml');
+        $xml = file_get_contents(__DIR__ . ' /../_files/amazon-response-invalid.xml');
         $dom = new \DOMDocument();
         $dom->loadXML($xml);
-
+        
         $result = new ProductAdvertising\ResultSet($dom);
-
+        
         $this->setExpectedException('ZendService\Amazon\Exception\ExceptionInterface');
         $result->current();
     }
@@ -346,9 +324,9 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
         $xml = file_get_contents(__DIR__ . '/../_files/amazon-response-request-throttled-error.xml');
         $dom = new \DOMDocument();
         $dom->loadXML($xml);
-
+        
         $result = new ProductAdvertising\ResultSet($dom);
-
+        
         try {
             $result->totalResults();
         } catch (\PHPUnit_Framework_Error_Notice $e) {
@@ -364,9 +342,9 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
         $xml = file_get_contents(__DIR__ . '/../_files/amazon-response-request-throttled-error.xml');
         $dom = new \DOMDocument();
         $dom->loadXML($xml);
-
+        
         $result = new ProductAdvertising\ResultSet($dom);
-
+        
         try {
             $result->totalPages();
         } catch (\PHPUnit_Framework_Error_Notice $e) {

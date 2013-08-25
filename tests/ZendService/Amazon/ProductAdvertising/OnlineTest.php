@@ -7,20 +7,21 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  * @package   Zend_Service
  */
-
 namespace ZendServiceTest\Amazon\ProductAdvertising;
 
 use ZendService\Amazon\ProductAdvertising;
 
 /**
- * @category   Zend
- * @package    Zend_Service_Amazon
+ *
+ * @category Zend
+ * @package Zend_Service_Amazon
  * @subpackage UnitTests
- * @group      Zend_Service
- * @group      Zend_Service_Amazon
+ *             @group Zend_Service
+ *             @group Zend_Service_Amazon
  */
 class OnlineTest extends \PHPUnit_Framework_TestCase
 {
+
     /**
      * Reference to Amazon service consumer object
      *
@@ -49,85 +50,71 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
      */
     public function setUp()
     {
-        if (!constant('TESTS_ZEND_SERVICE_AMAZON_PRODUCT_ADVERISING_ONLINE_ENABLED')) {
+        if (! constant('TESTS_ZEND_SERVICE_AMAZON_PRODUCT_ADVERISING_ONLINE_ENABLED')) {
             $this->markTestSkipped('Zend_Service_ProductAdvertising online tests are not enabled');
         }
-        if(!defined('TESTS_ZEND_SERVICE_AMAZON_ONLINE_ACCESSKEYID') || !defined('TESTS_ZEND_SERVICE_AMAZON_ONLINE_SECRETKEY')) {
+        if (! defined('TESTS_ZEND_SERVICE_AMAZON_ONLINE_ACCESSKEYID') || ! defined('TESTS_ZEND_SERVICE_AMAZON_ONLINE_SECRETKEY')) {
             $this->markTestSkipped('Constants AccessKeyId and SecretKey have to be set.');
         }
-
-        $this->amazon = new ProductAdvertising\ProductAdvertising(
-            TESTS_ZEND_SERVICE_AMAZON_ONLINE_ACCESSKEYID,
-            TESTS_ZEND_SERVICE_AMAZON_ONLINE_SECRETKEY,
-        	TESTS_ZEND_SERVICE_AMAZON_ONLINE_ASSOCIATE_TAG
-        );
-
-        $this->_query = new ProductAdvertising\Query(
-            TESTS_ZEND_SERVICE_AMAZON_ONLINE_ACCESSKEYID,
-            TESTS_ZEND_SERVICE_AMAZON_ONLINE_SECRETKEY,
-        	TESTS_ZEND_SERVICE_AMAZON_ONLINE_ASSOCIATE_TAG
-        );
-
+        
+        $this->amazon = new ProductAdvertising\ProductAdvertising(TESTS_ZEND_SERVICE_AMAZON_ONLINE_ACCESSKEYID, TESTS_ZEND_SERVICE_AMAZON_ONLINE_SECRETKEY, TESTS_ZEND_SERVICE_AMAZON_ONLINE_ASSOCIATE_TAG);
+        
+        $this->_query = new ProductAdvertising\Query(TESTS_ZEND_SERVICE_AMAZON_ONLINE_ACCESSKEYID, TESTS_ZEND_SERVICE_AMAZON_ONLINE_SECRETKEY, TESTS_ZEND_SERVICE_AMAZON_ONLINE_ASSOCIATE_TAG);
+        
         $this->_httpClientAdapterSocket = new \Zend\Http\Client\Adapter\Socket();
-
+        
         $this->amazon->getRestClient()
-                      ->getHttpClient()
-                      ->setAdapter($this->_httpClientAdapterSocket);
-
+            ->getHttpClient()
+            ->setAdapter($this->_httpClientAdapterSocket);
+        
         // terms of use compliance: no more than one query per second
         sleep(1);
     }
 
     public function testUnknownCountryException()
     {
-        $this->setExpectedException(
-            'ZendService\Amazon\Exception\InvalidArgumentException',
-            'Unknown country code: wrong-country-code');
-        $aws = new ProductAdvertising\ProductAdvertising(
-            TESTS_ZEND_SERVICE_AMAZON_ONLINE_ACCESSKEYID,
-            TESTS_ZEND_SERVICE_AMAZON_ONLINE_SECRETKEY,
-        	TESTS_ZEND_SERVICE_AMAZON_ONLINE_ASSOCIATE_TAG,
-        	'wrong-country-code'
-        );
+        $this->setExpectedException('ZendService\Amazon\Exception\InvalidArgumentException', 'Unknown country code: wrong-country-code');
+        $aws = new ProductAdvertising\ProductAdvertising(TESTS_ZEND_SERVICE_AMAZON_ONLINE_ACCESSKEYID, TESTS_ZEND_SERVICE_AMAZON_ONLINE_SECRETKEY, TESTS_ZEND_SERVICE_AMAZON_ONLINE_ASSOCIATE_TAG, 'wrong-country-code');
     }
 
     /**
      * Ensures that itemSearch() works as expected when searching for PHP books
      * @group ItemSearchPhp
+     * 
      * @return void
      */
     public function testItemSearchBooksPhp()
     {
         $resultSet = $this->amazon->itemSearch(array(
-            'SearchIndex'   => 'Books',
-            'Keywords'      => 'php',
-            'ResponseGroup' => 'Small,ItemAttributes,Images,SalesRank,Reviews,EditorialReview,Similarities',
-            ));
-
+            'SearchIndex' => 'Books',
+            'Keywords' => 'php',
+            'ResponseGroup' => 'Small,ItemAttributes,Images,SalesRank,Reviews,EditorialReview,Similarities'
+        ));
+        
         $this->assertTrue(10 < $resultSet->totalResults());
         $this->assertTrue(1 < $resultSet->totalPages());
         $this->assertEquals(0, $resultSet->key());
-
+        
         try {
-            $resultSet->seek(-1);
+            $resultSet->seek(- 1);
             $this->fail('Expected OutOfBoundsException not thrown');
         } catch (\OutOfBoundsException $e) {
             $this->assertContains('Illegal index', $e->getMessage());
         }
-
+        
         $resultSet->seek(9);
-
+        
         try {
             $resultSet->seek(10);
             $this->fail('Expected OutOfBoundsException not thrown');
         } catch (\OutOfBoundsException $e) {
             $this->assertContains('Illegal index', $e->getMessage());
         }
-
+        
         foreach ($resultSet as $item) {
             $this->assertTrue($item instanceof ProductAdvertising\Item);
         }
-
+        
         $this->assertTrue(simplexml_load_string($item->asXml()) instanceof \SimpleXMLElement);
     }
 
@@ -139,11 +126,11 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
     public function testItemSearchMusicMozart()
     {
         $resultSet = $this->amazon->itemSearch(array(
-            'SearchIndex'   => 'Music',
-            'Keywords'      => 'Mozart',
+            'SearchIndex' => 'Music',
+            'Keywords' => 'Mozart',
             'ResponseGroup' => 'Small,Tracks,Offers'
-            ));
-
+        ));
+        
         foreach ($resultSet as $item) {
             $this->assertTrue($item instanceof ProductAdvertising\Item);
         }
@@ -157,11 +144,11 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
     public function testItemSearchElectronicsDigitalCamera()
     {
         $resultSet = $this->amazon->itemSearch(array(
-            'SearchIndex'   => 'Electronics',
-            'Keywords'      => 'digital camera',
+            'SearchIndex' => 'Electronics',
+            'Keywords' => 'digital camera',
             'ResponseGroup' => 'Accessories'
-            ));
-
+        ));
+        
         foreach ($resultSet as $item) {
             $this->assertTrue($item instanceof ProductAdvertising\Item);
         }
@@ -176,10 +163,10 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
     {
         $resultSet = $this->amazon->itemSearch(array(
             'SearchIndex' => 'Books',
-            'Keywords'    => 'php',
-            'Sort'        => '-titlerank'
-            ));
-
+            'Keywords' => 'php',
+            'Sort' => '-titlerank'
+        ));
+        
         foreach ($resultSet as $item) {
             $this->assertTrue($item instanceof ProductAdvertising\Item);
         }
@@ -192,15 +179,12 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
      */
     public function testItemSearchExceptionCityInvalid()
     {
-        $this->setExpectedException(
-            'ZendService\Amazon\Exception\RuntimeException',
-            'The value you specified for SearchIndex is invalid.'
-        );
+        $this->setExpectedException('ZendService\Amazon\Exception\RuntimeException', 'The value you specified for SearchIndex is invalid.');
         $this->amazon->itemSearch(array(
             'SearchIndex' => 'Restaurants',
-            'Keywords'    => 'seafood',
-            'City'        => 'Des Moines'
-            ));
+            'Keywords' => 'seafood',
+            'City' => 'Des Moines'
+        ));
     }
 
     /**
@@ -221,10 +205,7 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
      */
     public function testItemLookupExceptionAsinInvalid()
     {
-        $this->setExpectedException(
-            'ZendService\Amazon\Exception\RuntimeException',
-            'OOPS is not a valid value for ItemId. Please change this value and retry your request. (AWS.InvalidParameterValue)'
-        );
+        $this->setExpectedException('ZendService\Amazon\Exception\RuntimeException', 'OOPS is not a valid value for ItemId. Please change this value and retry your request. (AWS.InvalidParameterValue)');
         $this->amazon->itemLookup('oops');
     }
 
@@ -236,13 +217,13 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
     public function testItemLookupMultiple()
     {
         $resultSet = $this->amazon->itemLookup('0596006810,1590593804');
-
+        
         $count = 0;
         foreach ($resultSet as $item) {
             $this->assertTrue($item instanceof ProductAdvertising\Item);
-            $count++;
+            $count ++;
         }
-
+        
         $this->assertEquals(2, $count);
     }
 
@@ -253,11 +234,10 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
      */
     public function testItemLookupExceptionSearchIndex()
     {
-        $this->setExpectedException(
-            'ZendService\Amazon\Exception\RuntimeException',
-            'Your request contained a restricted parameter combination.  When IdType equals ASIN, SearchIndex cannot be present.'
-        );
-        $this->amazon->itemLookup('oops', array('SearchIndex' => 'Books'));
+        $this->setExpectedException('ZendService\Amazon\Exception\RuntimeException', 'Your request contained a restricted parameter combination.  When IdType equals ASIN, SearchIndex cannot be present.');
+        $this->amazon->itemLookup('oops', array(
+            'SearchIndex' => 'Books'
+        ));
     }
 
     /**
@@ -267,8 +247,10 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
      */
     public function testQueryBooksPhp()
     {
-        $resultSet = $this->_query->category('Books')->Keywords('php')->search();
-
+        $resultSet = $this->_query->category('Books')
+            ->Keywords('php')
+            ->search();
+        
         foreach ($resultSet as $item) {
             $this->assertTrue($item instanceof ProductAdvertising\Item);
         }
@@ -281,10 +263,7 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
      */
     public function testQueryExceptionCategoryMissing()
     {
-        $this->setExpectedException(
-            'ZendService\Amazon\Exception\RuntimeException',
-            'You must set a category before setting the search parameters'
-        );
+        $this->setExpectedException('ZendService\Amazon\Exception\RuntimeException', 'You must set a category before setting the search parameters');
         $this->_query->Keywords('php');
     }
 
@@ -295,10 +274,7 @@ class OnlineTest extends \PHPUnit_Framework_TestCase
      */
     public function testQueryExceptionCategoryInvalid()
     {
-        $this->setExpectedException(
-            'ZendService\Amazon\Exception\RuntimeException',
-            'The value you specified for SearchIndex is invalid.'
-        );
+        $this->setExpectedException('ZendService\Amazon\Exception\RuntimeException', 'The value you specified for SearchIndex is invalid.');
         $this->_query->category('oops')->search();
     }
 
