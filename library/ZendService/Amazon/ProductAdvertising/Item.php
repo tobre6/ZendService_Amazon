@@ -74,7 +74,7 @@ class Item
     /**
      * @var array of ImageSet
      */
-    public $ImageSets;
+    public $ImageSets = array();
 
     /**
      * @var CustomerReview
