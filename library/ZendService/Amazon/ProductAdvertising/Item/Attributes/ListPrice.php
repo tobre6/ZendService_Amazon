@@ -8,7 +8,7 @@
  * @package   Zend_Service
  */
 
-namespace ZendService\Amazon\ProductAdvertising\Item;
+namespace ZendService\Amazon\ProductAdvertising\Item\Attributes;
 
 use DOMElement;
 use DOMXPath;
@@ -19,20 +19,27 @@ use ZendService\Amazon\ProductAdvertising\ProductAdvertising;
  * @package    Zend_Service
  * @subpackage Amazon
  */
-class Accessories
+class ListPrice
 {
     /**
      * @var string
      */
-    public $ASIN;
+    public $Amount;
 
     /**
+     *
      * @var string
      */
-    public $Title;
+    public $CurrencyCode;
 
     /**
-     * Assigns values to properties relevant to Accessories
+     *
+     * @var string
+     */
+    public $FormattedPrice;
+
+    /**
+     * Assigns values to properties relevant to ListPrice
      *
      * @param DOMElement $dom
      */
@@ -40,8 +47,9 @@ class Accessories
     {
         $xpath = new DOMXPath($dom->ownerDocument);
         $xpath->registerNamespace('az', 'http://webservices.amazon.com/AWSECommerceService/' . ProductAdvertising::getVersion());
-        foreach (array('ASIN', 'Title') as $el) {
-            $this->$el = (string) $xpath->query("./az:$el/text()", $dom)->item(0)->data;
-        }
+
+        $this->Amount = (int) $xpath->query('./az:Amount/text()', $dom)->item(0)->data;
+        $this->CurrencyCode  = $xpath->query('./az:CurrencyCode/text()', $dom)->item(0)->data;
+        $this->FormattedPrice  = $xpath->query('./az:FormattedPrice/text()', $dom)->item(0)->data;
     }
 }

@@ -13,6 +13,7 @@ namespace ZendService\Amazon\ProductAdvertising;
 use DOMElement;
 use DOMXPath;
 use ZendService\Amazon\ProductAdvertising\Item;
+use ZendService\Amazon\ProductAdvertising\Item\Attributes;
 
 /**
  * @category   Zend
@@ -87,9 +88,9 @@ class Item
     public $SimilarProducts = array();
 
     /**
-     * @var array Of Accessories
+     * @var Attributes
      */
-    public $Accessories = array();
+    public $Attributes;
 
     /**
      * @var array
@@ -208,11 +209,9 @@ class Item
             $this->Offers = new Item\OfferSet($dom);
         }
 
-        $result = $xpath->query('./az:Accessories/*', $dom);
-        if ($result->length > 1) {
-            foreach ($result as $r) {
-                $this->Accessories[] = new Item\Accessories($r);
-            }
+        $result = $xpath->query('./az:ItemAttributes', $dom);
+        if ($result->length == 1) {
+            $this->Attributes = new Item\Attributes($result->item(0));
         }
 
         $this->dom = $dom;

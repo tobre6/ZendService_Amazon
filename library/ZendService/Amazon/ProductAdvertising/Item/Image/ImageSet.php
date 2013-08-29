@@ -70,8 +70,6 @@ class ImageSet
             'LargeImage'        => './az:LargeImage',
         );
 
-        $a = $dom->ownerDocument->saveXml($dom);
-
         foreach ($map as $paramName => $xquery) {
             $queryResult = $xpath->query($xquery, $dom);
             if ($queryResult->length <= 0) {

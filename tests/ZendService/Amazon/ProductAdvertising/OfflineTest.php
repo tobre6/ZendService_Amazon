@@ -343,6 +343,41 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf('ZendService\Amazon\ProductAdvertising\Item\CustomerReviews', $customerReviews);
     }
 
+    public function testAttributesFromXml() {
+        $xml = file_get_contents(__DIR__ . ' /../_files/amazon-response-with-reviews.xml');
+        $dom = new \DOMDocument();
+        $dom->loadXML($xml);
+
+        $result = new ProductAdvertising\ItemResultSet($dom);
+        $attributes = $result->current()->Attributes;
+
+        $this->assertInstanceOf('ZendService\Amazon\ProductAdvertising\Item\Attributes', $attributes);
+
+        $this->assertEquals('Accessory', $attributes->Binding);
+        $this->assertEquals('Amazon', $attributes->Brand);
+        $this->assertEquals('0814916017171', $attributes->EAN);
+        $this->assertCount(5, $attributes->Features);
+        $this->assertEquals('Amazon Digital Services, Inc', $attributes->Label);
+        $this->assertEquals(null, $attributes->LegalDisclaimer);
+
+        $this->assertEquals(1999, $attributes->ListPrice->Amount);
+        $this->assertEquals('USD', $attributes->ListPrice->CurrencyCode);
+        $this->assertEquals('$19.99', $attributes->ListPrice->FormattedPrice);
+
+        $this->assertEquals('Amazon Digital Services, Inc', $attributes->Manufacturer);
+        $this->assertEquals('53-000136', $attributes->Model);
+        $this->assertEquals('53-000136', $attributes->MPN);
+        $this->assertEquals('1', $attributes->PackageQuantity);
+        $this->assertEquals('53-000136', $attributes->PartNumber);
+        $this->assertEquals('Digital Device Accessory', $attributes->ProductGroup);
+        $this->assertEquals('ABIS_ELECTRONICS', $attributes->ProductTypeName);
+        $this->assertEquals('Amazon Digital Services, Inc', $attributes->Publisher);
+        $this->assertEquals(null, $attributes->SKU);
+        $this->assertEquals('Amazon Digital Services, Inc', $attributes->Studio);
+        $this->assertEquals('Amazon Kindle PowerFast for Accelerated Charging', $attributes->Title);
+        $this->assertEquals('814916017171', $attributes->UPC);
+    }
+
     /**
      * NOTICE error does not occur even if RequestThrottled error happen in totalResults method.
      */
