@@ -7,7 +7,6 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  * @package   Zend_Service
  */
-
 namespace ZendService\Amazon\ProductAdvertising\Item\Attributes;
 
 use DOMElement;
@@ -15,28 +14,31 @@ use DOMXPath;
 use ZendService\Amazon\ProductAdvertising\ProductAdvertising;
 
 /**
- * @category   Zend
- * @package    Zend_Service
+ *
+ * @category Zend
+ * @package Zend_Service
  * @subpackage Amazon
  */
 class ListPrice
 {
-    /**
-     * @var string
-     */
-    public $Amount;
 
     /**
      *
      * @var string
      */
-    public $CurrencyCode;
+    protected $Amount;
 
     /**
      *
      * @var string
      */
-    public $FormattedPrice;
+    protected $CurrencyCode;
+
+    /**
+     *
+     * @var string
+     */
+    protected $FormattedPrice;
 
     /**
      * Assigns values to properties relevant to ListPrice
@@ -46,10 +48,38 @@ class ListPrice
     public function __construct(DOMElement $dom)
     {
         $xpath = new DOMXPath($dom->ownerDocument);
-        $xpath->registerNamespace('az', 'http://webservices.amazon.com/AWSECommerceService/' . ProductAdvertising::getVersion());
+        $xpath->registerNamespace('az',
+            'http://webservices.amazon.com/AWSECommerceService/' . ProductAdvertising::getVersion());
 
         $this->Amount = (int) $xpath->query('./az:Amount/text()', $dom)->item(0)->data;
-        $this->CurrencyCode  = $xpath->query('./az:CurrencyCode/text()', $dom)->item(0)->data;
-        $this->FormattedPrice  = $xpath->query('./az:FormattedPrice/text()', $dom)->item(0)->data;
+        $this->CurrencyCode = $xpath->query('./az:CurrencyCode/text()', $dom)->item(0)->data;
+        $this->FormattedPrice = $xpath->query('./az:FormattedPrice/text()', $dom)->item(0)->data;
+    }
+
+    /**
+     *
+     * @return the $Amount
+     */
+    public function getAmount()
+    {
+        return $this->Amount;
+    }
+
+    /**
+     *
+     * @return the $CurrencyCode
+     */
+    public function getCurrencyCode()
+    {
+        return $this->CurrencyCode;
+    }
+
+    /**
+     *
+     * @return the $FormattedPrice
+     */
+    public function getFormattedPrice()
+    {
+        return $this->FormattedPrice;
     }
 }

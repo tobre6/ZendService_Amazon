@@ -7,7 +7,6 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  * @package   Zend_Service
  */
-
 namespace ZendService\Amazon\ProductAdvertising\Item;
 
 use DOMElement;
@@ -16,56 +15,67 @@ use DOMXPath;
 use ZendService\Amazon\ProductAdvertising\ProductAdvertising;
 
 /**
- * @category   Zend
- * @package    Zend_Service
+ *
+ * @category Zend
+ * @package Zend_Service
  * @subpackage Amazon
  */
 class Offer
 {
-    /**
-     * @var string
-     */
-    public $MerchantId;
 
     /**
+     *
      * @var string
      */
-    public $MerchantName;
+    protected $MerchantId;
 
     /**
+     *
      * @var string
      */
-    public $GlancePage;
+    protected $MerchantName;
 
     /**
+     *
      * @var string
      */
-    public $Condition;
+    protected $GlancePage;
 
     /**
+     *
      * @var string
      */
-    public $OfferListingId;
+    protected $Condition;
 
     /**
+     *
      * @var string
      */
-    public $Price;
+    protected $OfferListingId;
 
     /**
+     *
      * @var string
      */
-    public $CurrencyCode;
+    protected $Price;
 
     /**
+     *
      * @var string
      */
-    public $Availability;
+    protected $CurrencyCode;
 
     /**
+     *
+     * @var string
+     */
+    protected $Availability;
+
+    /**
+     *
      * @var boolean
      */
-    public $IsEligibleForSuperSaverShipping = false;
+    protected $IsEligibleForSuperSaverShipping = false;
 
     /**
      * Parse the given Offer element
@@ -75,18 +85,19 @@ class Offer
     public function __construct(DOMElement $dom)
     {
         $xpath = new DOMXPath($dom->ownerDocument);
-        $xpath->registerNamespace('az', 'http://webservices.amazon.com/AWSECommerceService/' . ProductAdvertising::getVersion());
+        $xpath->registerNamespace('az',
+            'http://webservices.amazon.com/AWSECommerceService/' . ProductAdvertising::getVersion());
 
         $map = array(
-            'MerchantId'     => './az:Merchant/az:MerchantId/text()',
-            'MerchantName'   => './az:Merchant/az:Name/text()',
-            'GlancePage'     => './az:Merchant/az:GlancePage/text()',
-            'Condition'      => './az:OfferAttributes/az:Condition/text()',
+            'MerchantId' => './az:Merchant/az:MerchantId/text()',
+            'MerchantName' => './az:Merchant/az:Name/text()',
+            'GlancePage' => './az:Merchant/az:GlancePage/text()',
+            'Condition' => './az:OfferAttributes/az:Condition/text()',
             'OfferListingId' => './az:OfferListing/az:OfferListingId/text()',
-            'Price'          => './az:OfferListing/az:Price/az:Amount/text()',
-            'CurrencyCode'   => './az:OfferListing/az:Price/az:CurrencyCode/text()',
-            'Availability'   => './az:OfferListing/az:Availability/text()',
-            'IsEligibleForSuperSaverShipping' => './az:OfferListing/az:IsEligibleForSuperSaverShipping/text()',
+            'Price' => './az:OfferListing/az:Price/az:Amount/text()',
+            'CurrencyCode' => './az:OfferListing/az:Price/az:CurrencyCode/text()',
+            'Availability' => './az:OfferListing/az:Availability/text()',
+            'IsEligibleForSuperSaverShipping' => './az:OfferListing/az:IsEligibleForSuperSaverShipping/text()'
         );
 
         foreach ($map as $param_name => $xquery) {
@@ -95,7 +106,7 @@ class Offer
                 continue;
             }
             $text = $query_result->item(0);
-            if (!$text instanceof DOMText) {
+            if (! $text instanceof DOMText) {
                 continue;
             }
             $this->$param_name = (string) $text->data;
@@ -104,5 +115,86 @@ class Offer
         if (isset($this->IsEligibleForSuperSaverShipping)) {
             $this->IsEligibleForSuperSaverShipping = (bool) $this->IsEligibleForSuperSaverShipping;
         }
+    }
+
+    /**
+     *
+     * @return the $MerchantId
+     */
+    public function getMerchantId()
+    {
+        return $this->MerchantId;
+    }
+
+    /**
+     *
+     * @return the $MerchantName
+     */
+    public function getMerchantName()
+    {
+        return $this->MerchantName;
+    }
+
+    /**
+     *
+     * @return the $GlancePage
+     */
+    public function getGlancePage()
+    {
+        return $this->GlancePage;
+    }
+
+    /**
+     *
+     * @return the $Condition
+     */
+    public function getCondition()
+    {
+        return $this->Condition;
+    }
+
+    /**
+     *
+     * @return the $OfferListingId
+     */
+    public function getOfferListingId()
+    {
+        return $this->OfferListingId;
+    }
+
+    /**
+     *
+     * @return the $Price
+     */
+    public function getPrice()
+    {
+        return $this->Price;
+    }
+
+    /**
+     *
+     * @return the $CurrencyCode
+     */
+    public function getCurrencyCode()
+    {
+        return $this->CurrencyCode;
+    }
+
+    /**
+     *
+     * @return the $Availability
+     */
+    public function getAvailability()
+    {
+        return $this->Availability;
+    }
+
+    /**
+     *
+     * @return the $IsEligibleForSuperSaverShipping
+     */
+    public function getIsEligibleForSuperSaverShipping()
+    {
+        return $this->IsEligibleForSuperSaverShipping;
     }
 }

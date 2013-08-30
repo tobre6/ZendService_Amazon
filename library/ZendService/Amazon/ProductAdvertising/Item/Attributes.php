@@ -7,115 +7,135 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  * @package   Zend_Service
  */
-
 namespace ZendService\Amazon\ProductAdvertising\Item;
 
 use DOMElement;
 use DOMXPath;
 use ZendService\Amazon\ProductAdvertising\ProductAdvertising;
-use ZendService\Amazon\ProductAdvertising\Item\Image\ListPrice;
+use ZendService\Amazon\ProductAdvertising\Item\Attributes\ListPrice;
 
 /**
- * @category   Zend
- * @package    Zend_Service
+ *
+ * @category Zend
+ * @package Zend_Service
  * @subpackage Amazon
  */
 class Attributes
 {
-    /**
-     * @var string
-     */
-    public $Binding;
 
     /**
+     *
      * @var string
      */
-    public $Brand;
+    protected $Binding;
 
     /**
+     *
      * @var string
      */
-    public $EAN;
+    protected $Brand;
 
     /**
+     *
+     * @var string
+     */
+    protected $EAN;
+
+    /**
+     *
      * @var array
      */
-    public $Features = array ();
+    protected $Features = array();
 
     /**
+     *
      * @var string
      */
-    public $Label;
+    protected $Label;
 
     /**
+     *
      * @var string
      */
-    public $LegalDisclaimer;
+    protected $LegalDisclaimer;
 
     /**
+     *
      * @var Attributes\ListPrice
      */
-    public $ListPrice;
+    protected $ListPrice;
 
     /**
+     *
      * @var string
      */
-    public $Manufacturer;
+    protected $Manufacturer;
 
     /**
+     *
      * @var string
      */
-    public $Model;
+    protected $Model;
 
     /**
+     *
      * @var string
      */
-    public $MPN;
+    protected $MPN;
 
     /**
+     *
      * @var string
      */
-    public $PackageQuantity;
+    protected $PackageQuantity;
 
     /**
+     *
      * @var string
      */
-    public $PartNumber;
+    protected $PartNumber;
 
     /**
+     *
      * @var string
      */
-    public $ProductGroup;
+    protected $ProductGroup;
 
     /**
+     *
      * @var string
      */
-    public $ProductTypeName;
+    protected $ProductTypeName;
 
     /**
+     *
      * @var string
      */
-    public $Publisher;
+    protected $Publisher;
 
     /**
+     *
      * @var string
      */
-    public $SKU;
+    protected $SKU;
 
     /**
+     *
      * @var string
      */
-    public $Studio;
+    protected $Studio;
 
     /**
+     *
      * @var string
      */
-    public $Title;
+    protected $Title;
 
     /**
+     *
      * @var string
      */
-    public $UPC;
+    protected $UPC;
 
     /**
      * Assigns values to properties relevant to Attributes
@@ -125,8 +145,9 @@ class Attributes
     public function __construct(DOMElement $dom)
     {
         $xpath = new DOMXPath($dom->ownerDocument);
-        $xpath->registerNamespace('az', 'http://webservices.amazon.com/AWSECommerceService/' . ProductAdvertising::getVersion());
-        $map = array (
+        $xpath->registerNamespace('az',
+            'http://webservices.amazon.com/AWSECommerceService/' . ProductAdvertising::getVersion());
+        $map = array(
             'Binding',
             'Brand',
             'EAN',
@@ -143,7 +164,7 @@ class Attributes
             'SKU',
             'Studio',
             'Title',
-            'UPC',
+            'UPC'
         );
         foreach ($map as $el) {
             $element = $xpath->query("./az:$el/text()", $dom);
@@ -163,5 +184,176 @@ class Attributes
         if ($listPrice->length >= 1) {
             $this->ListPrice = new Attributes\ListPrice($listPrice->item(0));
         }
+    }
+
+    /**
+     *
+     * @return the $Binding
+     */
+    public function getBinding()
+    {
+        return $this->Binding;
+    }
+
+    /**
+     *
+     * @return the $Brand
+     */
+    public function getBrand()
+    {
+        return $this->Brand;
+    }
+
+    /**
+     *
+     * @return the $EAN
+     */
+    public function getEAN()
+    {
+        return $this->EAN;
+    }
+
+    /**
+     *
+     * @return the $Features
+     */
+    public function getFeatures()
+    {
+        return $this->Features;
+    }
+
+    /**
+     *
+     * @return the $Label
+     */
+    public function getLabel()
+    {
+        return $this->Label;
+    }
+
+    /**
+     *
+     * @return the $LegalDisclaimer
+     */
+    public function getLegalDisclaimer()
+    {
+        return $this->LegalDisclaimer;
+    }
+
+    /**
+     *
+     * @return ListPrice
+     */
+    public function getListPrice()
+    {
+        return $this->ListPrice;
+    }
+
+    /**
+     *
+     * @return the $Manufacturer
+     */
+    public function getManufacturer()
+    {
+        return $this->Manufacturer;
+    }
+
+    /**
+     *
+     * @return the $Model
+     */
+    public function getModel()
+    {
+        return $this->Model;
+    }
+
+    /**
+     *
+     * @return the $MPN
+     */
+    public function getMPN()
+    {
+        return $this->MPN;
+    }
+
+    /**
+     *
+     * @return the $PackageQuantity
+     */
+    public function getPackageQuantity()
+    {
+        return $this->PackageQuantity;
+    }
+
+    /**
+     *
+     * @return the $PartNumber
+     */
+    public function getPartNumber()
+    {
+        return $this->PartNumber;
+    }
+
+    /**
+     *
+     * @return the $ProductGroup
+     */
+    public function getProductGroup()
+    {
+        return $this->ProductGroup;
+    }
+
+    /**
+     *
+     * @return the $ProductTypeName
+     */
+    public function getProductTypeName()
+    {
+        return $this->ProductTypeName;
+    }
+
+    /**
+     *
+     * @return the $Publisher
+     */
+    public function getPublisher()
+    {
+        return $this->Publisher;
+    }
+
+    /**
+     *
+     * @return the $SKU
+     */
+    public function getSKU()
+    {
+        return $this->SKU;
+    }
+
+    /**
+     *
+     * @return the $Studio
+     */
+    public function getStudio()
+    {
+        return $this->Studio;
+    }
+
+    /**
+     *
+     * @return the $Title
+     */
+    public function getTitle()
+    {
+        return $this->Title;
+    }
+
+    /**
+     *
+     * @return the $UPC
+     */
+    public function getUPC()
+    {
+        return $this->UPC;
     }
 }

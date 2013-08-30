@@ -7,7 +7,6 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  * @package   Zend_Service
  */
-
 namespace ZendService\Amazon\ProductAdvertising\Item\Image;
 
 use DOMElement;
@@ -16,32 +15,34 @@ use Zend\Uri;
 use ZendService\Amazon\ProductAdvertising\ProductAdvertising;
 
 /**
- * @category   Zend
- * @package    Zend_Service
+ *
+ * @category Zend
+ * @package Zend_Service
  * @subpackage Amazon
  */
 class Image
 {
+
     /**
      * Image URL
      *
      * @var Uri\Uri
      */
-    public $Url;
+    protected $Url;
 
     /**
      * Image height in pixels
      *
      * @var int
      */
-    public $Height;
+    protected $Height;
 
     /**
      * Image width in pixels
      *
      * @var int
      */
-    public $Width;
+    protected $Width;
 
     /**
      * Assigns values to properties relevant to Image
@@ -51,10 +52,38 @@ class Image
     public function __construct(DOMElement $dom)
     {
         $xpath = new DOMXPath($dom->ownerDocument);
-        $xpath->registerNamespace('az', 'http://webservices.amazon.com/AWSECommerceService/' . ProductAdvertising::getVersion());
+        $xpath->registerNamespace('az',
+            'http://webservices.amazon.com/AWSECommerceService/' . ProductAdvertising::getVersion());
 
-        $this->Url    = Uri\UriFactory::factory($xpath->query('./az:URL/text()', $dom)->item(0)->data);
+        $this->Url = Uri\UriFactory::factory($xpath->query('./az:URL/text()', $dom)->item(0)->data);
         $this->Height = (int) $xpath->query('./az:Height/text()', $dom)->item(0)->data;
-        $this->Width  = (int) $xpath->query('./az:Width/text()', $dom)->item(0)->data;
+        $this->Width = (int) $xpath->query('./az:Width/text()', $dom)->item(0)->data;
+    }
+
+    /**
+     *
+     * @return the $Url
+     */
+    public function getUrl()
+    {
+        return $this->Url;
+    }
+
+    /**
+     *
+     * @return the $Height
+     */
+    public function getHeight()
+    {
+        return $this->Height;
+    }
+
+    /**
+     *
+     * @return the $Width
+     */
+    public function getWidth()
+    {
+        return $this->Width;
     }
 }

@@ -7,7 +7,6 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  * @package   Zend_Service
  */
-
 namespace ZendService\Amazon\ProductAdvertising\Item\Image;
 
 use DOMElement;
@@ -15,41 +14,49 @@ use DOMXPath;
 use ZendService\Amazon\ProductAdvertising\ProductAdvertising;
 
 /**
- * @category   Zend
- * @package    Zend_Service
+ *
+ * @category Zend
+ * @package Zend_Service
  * @subpackage Amazon
  */
 class ImageSet
 {
-    /**
-     * @var Image
-     */
-    public $SwatchImage;
 
     /**
+     *
      * @var Image
      */
-    public $SmallImage;
+    protected $SwatchImage;
 
     /**
+     *
      * @var Image
      */
-    public $ThumbnailImage;
+    protected $SmallImage;
 
     /**
+     *
      * @var Image
      */
-    public $TinyImage;
+    protected $ThumbnailImage;
 
     /**
+     *
      * @var Image
      */
-    public $MediumImage;
+    protected $TinyImage;
 
     /**
+     *
      * @var Image
      */
-    public $LargeImage;
+    protected $MediumImage;
+
+    /**
+     *
+     * @var Image
+     */
+    protected $LargeImage;
 
     /**
      * Parse the given Offer Set Element
@@ -59,15 +66,16 @@ class ImageSet
     public function __construct(DOMElement $dom)
     {
         $xpath = new DOMXPath($dom->ownerDocument);
-        $xpath->registerNamespace('az', 'http://webservices.amazon.com/AWSECommerceService/' . ProductAdvertising::getVersion());
+        $xpath->registerNamespace('az',
+            'http://webservices.amazon.com/AWSECommerceService/' . ProductAdvertising::getVersion());
 
         $map = array(
-            'SwatchImage'       => './az:SwatchImage',
-            'SmallImage'        => './az:SmallImage',
-            'ThumbnailImage'    => './az:ThumbnailImage',
-            'TinyImage'         => './az:TinyImage',
-            'MediumImage'       => './az:MediumImage',
-            'LargeImage'        => './az:LargeImage',
+            'SwatchImage' => './az:SwatchImage',
+            'SmallImage' => './az:SmallImage',
+            'ThumbnailImage' => './az:ThumbnailImage',
+            'TinyImage' => './az:TinyImage',
+            'MediumImage' => './az:MediumImage',
+            'LargeImage' => './az:LargeImage'
         );
 
         foreach ($map as $paramName => $xquery) {
@@ -79,5 +87,59 @@ class ImageSet
 
             $this->$paramName = new Image($item);
         }
+    }
+
+    /**
+     *
+     * @return the $SwatchImage
+     */
+    public function getSwatchImage()
+    {
+        return $this->SwatchImage;
+    }
+
+    /**
+     *
+     * @return the $SmallImage
+     */
+    public function getSmallImage()
+    {
+        return $this->SmallImage;
+    }
+
+    /**
+     *
+     * @return the $ThumbnailImage
+     */
+    public function getThumbnailImage()
+    {
+        return $this->ThumbnailImage;
+    }
+
+    /**
+     *
+     * @return the $TinyImage
+     */
+    public function getTinyImage()
+    {
+        return $this->TinyImage;
+    }
+
+    /**
+     *
+     * @return the $MediumImage
+     */
+    public function getMediumImage()
+    {
+        return $this->MediumImage;
+    }
+
+    /**
+     *
+     * @return the $LargeImage
+     */
+    public function getLargeImage()
+    {
+        return $this->LargeImage;
     }
 }

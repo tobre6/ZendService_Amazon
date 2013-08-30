@@ -7,7 +7,6 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  * @package   Zend_Service
  */
-
 namespace ZendService\Amazon\ProductAdvertising;
 
 use DOMElement;
@@ -16,91 +15,110 @@ use ZendService\Amazon\ProductAdvertising\Item;
 use ZendService\Amazon\ProductAdvertising\Item\Attributes;
 
 /**
- * @category   Zend
- * @package    Zend_Service
+ *
+ * @category Zend
+ * @package Zend_Service
  * @subpackage Amazon
  */
 class Item
 {
-    /**
-     * @var string
-     */
-    public $ASIN;
 
     /**
+     *
      * @var string
      */
-    public $DetailPageURL;
+    protected $ASIN;
 
     /**
+     *
+     * @var string
+     */
+    protected $DetailPageURL;
+
+    /**
+     *
+     * @var
+     *
+     */
+    protected $ItemLinks;
+
+    /**
+     *
      * @var int
      */
-    public $SalesRank;
+    protected $SalesRank;
 
     /**
+     *
      * @var int
      */
-    public $TotalReviews;
+    protected $TotalReviews;
 
     /**
+     *
      * @var int
      */
-    public $AverageRating;
+    protected $AverageRating;
 
     /**
+     *
      * @var string
      */
-    public $SmallImage;
+    protected $SmallImage;
 
     /**
+     *
      * @var string
      */
-    public $MediumImage;
+    protected $MediumImage;
 
     /**
+     *
      * @var string
      */
-    public $LargeImage;
+    protected $LargeImage;
 
     /**
+     *
      * @var string
      */
-    public $Subjects;
+    protected $Subjects;
 
     /**
+     *
      * @var OfferSet
      */
-    public $Offers;
+    protected $Offers;
 
     /**
+     *
      * @var array of ImageSet
      */
-    public $ImageSets = array();
+    protected $ImageSets = array();
 
     /**
+     *
      * @var CustomerReview
      */
-    public $CustomerReviews;
+    protected $CustomerReviews;
 
     /**
+     *
      * @var array Of SimilarProduct
      */
-    public $SimilarProducts = array();
+    protected $SimilarProducts = array();
 
     /**
+     *
      * @var Attributes
      */
-    public $Attributes;
+    protected $Attributes;
 
     /**
+     *
      * @var array
      */
-    public $Tracks = array();
-
-    /**
-     * @var array Of ListmaniaList
-     */
-    public $ListmaniaLists = array();
+    protected $Tracks = array();
 
     protected $dom;
 
@@ -108,13 +126,13 @@ class Item
      * Parse the given <Item> element
      *
      * @param DOMElement $dom
-     *
-     * @group ZF-9547
+     *            @group ZF-9547
      */
     public function __construct(DOMElement $dom)
     {
         $xpath = new DOMXPath($dom->ownerDocument);
-        $xpath->registerNamespace('az', 'http://webservices.amazon.com/AWSECommerceService/' . ProductAdvertising::getVersion());
+        $xpath->registerNamespace('az',
+            'http://webservices.amazon.com/AWSECommerceService/' . ProductAdvertising::getVersion());
         $this->ASIN = $xpath->query('./az:ASIN/text()', $dom)->item(0)->data;
 
         $result = $xpath->query('./az:DetailPageURL/text()', $dom);
@@ -122,28 +140,18 @@ class Item
             $this->DetailPageURL = $result->item(0)->data;
         }
 
-        if ($xpath->query('./az:ItemAttributes/az:ListPrice', $dom)->length >= 1) {
-            $this->CurrencyCode = (string) $xpath->query('./az:ItemAttributes/az:ListPrice/az:CurrencyCode/text()', $dom)->item(0)->data;
-            $this->Amount = (int) $xpath->query('./az:ItemAttributes/az:ListPrice/az:Amount/text()', $dom)->item(0)->data;
-            $this->FormattedPrice = (string) $xpath->query('./az:ItemAttributes/az:ListPrice/az:FormattedPrice/text()', $dom)->item(0)->data;
-        }
-
-        $result = $xpath->query('./az:ItemAttributes/az:*/text()', $dom);
+        $result = $xpath->query('./az:ItemLinks/az:*', $dom);
         if ($result->length >= 1) {
-            foreach ($result as $v) {
-                if (isset($this->{$v->parentNode->tagName})) {
-                    if (is_array($this->{$v->parentNode->tagName})) {
-                        array_push($this->{$v->parentNode->tagName}, (string) $v->data);
-                    } else {
-                        $this->{$v->parentNode->tagName} = array($this->{$v->parentNode->tagName}, (string) $v->data);
-                    }
-                } else {
-                    $this->{$v->parentNode->tagName} = (string) $v->data;
-                }
+            foreach ($result as $r) {
+                $this->ItemLinks[] = new Item\ItemLink($r);
             }
         }
 
-        foreach (array('SmallImage', 'MediumImage', 'LargeImage') as $im) {
+        foreach (array(
+            'SmallImage',
+            'MediumImage',
+            'LargeImage'
+        ) as $im) {
             $result = $xpath->query("./az:$im", $dom);
             if ($result->length == 1) {
                 $this->$im = new Item\Image\Image($result->item(0));
@@ -181,13 +189,6 @@ class Item
             }
         }
 
-        $result = $xpath->query('./az:ListmaniaLists/*', $dom);
-        if ($result->length >= 1) {
-            foreach ($result as $r) {
-                $this->ListmaniaLists[] = new Item\ListmaniaList($r);
-            }
-        }
-
         $result = $xpath->query('./az:Tracks/az:Disc', $dom);
         if ($result->length > 1) {
             foreach ($result as $disk) {
@@ -215,6 +216,150 @@ class Item
         }
 
         $this->dom = $dom;
+    }
+
+    /**
+     *
+     * @return the $ASIN
+     */
+    public function getASIN()
+    {
+        return $this->ASIN;
+    }
+
+    /**
+     *
+     * @return the $DetailPageURL
+     */
+    public function getDetailPageURL()
+    {
+        return $this->DetailPageURL;
+    }
+
+    /**
+     *
+     * @return the $ItemLinks
+     */
+    public function getItemLinks()
+    {
+        return $this->ItemLinks;
+    }
+
+    /**
+     *
+     * @return the $SalesRank
+     */
+    public function getSalesRank()
+    {
+        return $this->SalesRank;
+    }
+
+    /**
+     *
+     * @return the $TotalReviews
+     */
+    public function getTotalReviews()
+    {
+        return $this->TotalReviews;
+    }
+
+    /**
+     *
+     * @return the $AverageRating
+     */
+    public function getAverageRating()
+    {
+        return $this->AverageRating;
+    }
+
+    /**
+     *
+     * @return the $SmallImage
+     */
+    public function getSmallImage()
+    {
+        return $this->SmallImage;
+    }
+
+    /**
+     *
+     * @return the $MediumImage
+     */
+    public function getMediumImage()
+    {
+        return $this->MediumImage;
+    }
+
+    /**
+     *
+     * @return the $LargeImage
+     */
+    public function getLargeImage()
+    {
+        return $this->LargeImage;
+    }
+
+    /**
+     *
+     * @return the $Subjects
+     */
+    public function getSubjects()
+    {
+        return $this->Subjects;
+    }
+
+    /**
+     *
+     * @return the $Offers
+     */
+    public function getOffers()
+    {
+        return $this->Offers;
+    }
+
+    /**
+     *
+     * @return the $ImageSets
+     */
+    public function getImageSets()
+    {
+        return $this->ImageSets;
+    }
+
+    /**
+     *
+     * @return the $CustomerReviews
+     */
+    public function getCustomerReviews()
+    {
+        return $this->CustomerReviews;
+    }
+
+    /**
+     *
+     * @return the $SimilarProducts
+     */
+    public function getSimilarProducts()
+    {
+        return $this->SimilarProducts;
+    }
+
+    /**
+     *
+     * @return the $Attributes
+     */
+    public function getAttributes()
+    {
+        return $this->Attributes;
+    }
+
+    /**
+     *
+     * @return the $Tracks
+     */
+    public function getTracks()
+    {
+        return $this->Tracks;
     }
 
     /**

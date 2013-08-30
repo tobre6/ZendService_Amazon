@@ -90,8 +90,8 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
         $result = new ProductAdvertising\ItemResultSet($dom);
 
         foreach ($result as $item) {
-            $trackCount = $mozartTracks[$item->ASIN];
-            $this->assertEquals($trackCount, count($item->Tracks));
+            $trackCount = $mozartTracks[$item->getASIN()];
+            $this->assertEquals($trackCount, count($item->getTracks()));
         }
     }
 
@@ -211,10 +211,10 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
         $result = new ProductAdvertising\ItemResultSet($dom);
 
         foreach ($result as $item) {
-            $data = $dataExpected[$item->ASIN];
-            foreach ($item->Offers->Offers as $offer) {
-                $this->assertEquals($data['offers'][$offer->MerchantId]['name'], $offer->MerchantName);
-                $this->assertEquals($data['offers'][$offer->MerchantId]['price'], $offer->Price);
+            $data = $dataExpected[$item->getASIN()];
+            foreach ($item->getOffers()->getOffers() as $offer) {
+                $this->assertEquals($data['offers'][$offer->getMerchantId()]['name'], $offer->getMerchantName());
+                $this->assertEquals($data['offers'][$offer->getMerchantId()]['price'], $offer->getPrice());
             }
         }
     }
@@ -297,7 +297,7 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
         $currentItem = $result->current();
 
         $this->assertInstanceOf('ZendService\Amazon\ProductAdvertising\Item', $currentItem);
-        $this->assertEquals('0754512673', $currentItem->ASIN);
+        $this->assertEquals('0754512673', $currentItem->getASIN());
     }
 
     /**
@@ -325,10 +325,10 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
         $dom->loadXML($xml);
 
         $result = new ProductAdvertising\ItemResultSet($dom);
-        $itemSets = $result->current()->ImageSets;
+        $itemSets = $result->current()->getImageSets();
 
         $this->assertInstanceOf('ZendService\Amazon\ProductAdvertising\Item\Image\ImageSet', $itemSets[0]);
-        $this->assertInstanceOf('ZendService\Amazon\ProductAdvertising\Item\Image\Image', $itemSets[0]->LargeImage);
+        $this->assertInstanceOf('ZendService\Amazon\ProductAdvertising\Item\Image\Image', $itemSets[0]->getLargeImage());
     }
 
     public function testCustomerReviewsFromXml()
@@ -338,7 +338,7 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
         $dom->loadXML($xml);
 
         $result = new ProductAdvertising\ItemResultSet($dom);
-        $customerReviews = $result->current()->CustomerReviews;
+        $customerReviews = $result->current()->getCustomerReviews();
 
         $this->assertInstanceOf('ZendService\Amazon\ProductAdvertising\Item\CustomerReviews', $customerReviews);
     }
@@ -349,33 +349,46 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
         $dom->loadXML($xml);
 
         $result = new ProductAdvertising\ItemResultSet($dom);
-        $attributes = $result->current()->Attributes;
+        $attributes = $result->current()->getAttributes();
 
         $this->assertInstanceOf('ZendService\Amazon\ProductAdvertising\Item\Attributes', $attributes);
 
-        $this->assertEquals('Accessory', $attributes->Binding);
-        $this->assertEquals('Amazon', $attributes->Brand);
-        $this->assertEquals('0814916017171', $attributes->EAN);
-        $this->assertCount(5, $attributes->Features);
-        $this->assertEquals('Amazon Digital Services, Inc', $attributes->Label);
-        $this->assertEquals(null, $attributes->LegalDisclaimer);
+        $this->assertEquals('Accessory', $attributes->getBinding());
+        $this->assertEquals('Amazon', $attributes->getBrand());
+        $this->assertEquals('0814916017171', $attributes->getEAN());
+        $this->assertCount(5, $attributes->getFeatures());
+        $this->assertEquals('Amazon Digital Services, Inc', $attributes->getLabel());
+        $this->assertEquals(null, $attributes->getLegalDisclaimer());
 
-        $this->assertEquals(1999, $attributes->ListPrice->Amount);
-        $this->assertEquals('USD', $attributes->ListPrice->CurrencyCode);
-        $this->assertEquals('$19.99', $attributes->ListPrice->FormattedPrice);
+        $this->assertEquals(1999, $attributes->getListPrice()->getAmount());
+        $this->assertEquals('USD', $attributes->getListPrice()->getCurrencyCode());
+        $this->assertEquals('$19.99', $attributes->getListPrice()->getFormattedPrice());
 
-        $this->assertEquals('Amazon Digital Services, Inc', $attributes->Manufacturer);
-        $this->assertEquals('53-000136', $attributes->Model);
-        $this->assertEquals('53-000136', $attributes->MPN);
-        $this->assertEquals('1', $attributes->PackageQuantity);
-        $this->assertEquals('53-000136', $attributes->PartNumber);
-        $this->assertEquals('Digital Device Accessory', $attributes->ProductGroup);
-        $this->assertEquals('ABIS_ELECTRONICS', $attributes->ProductTypeName);
-        $this->assertEquals('Amazon Digital Services, Inc', $attributes->Publisher);
-        $this->assertEquals(null, $attributes->SKU);
-        $this->assertEquals('Amazon Digital Services, Inc', $attributes->Studio);
-        $this->assertEquals('Amazon Kindle PowerFast for Accelerated Charging', $attributes->Title);
-        $this->assertEquals('814916017171', $attributes->UPC);
+        $this->assertEquals('Amazon Digital Services, Inc', $attributes->getManufacturer());
+        $this->assertEquals('53-000136', $attributes->getModel());
+        $this->assertEquals('53-000136', $attributes->getMPN());
+        $this->assertEquals('1', $attributes->getPackageQuantity());
+        $this->assertEquals('53-000136', $attributes->getPartNumber());
+        $this->assertEquals('Digital Device Accessory', $attributes->getProductGroup());
+        $this->assertEquals('ABIS_ELECTRONICS', $attributes->getProductTypeName());
+        $this->assertEquals('Amazon Digital Services, Inc', $attributes->getPublisher());
+        $this->assertEquals(null, $attributes->getSKU());
+        $this->assertEquals('Amazon Digital Services, Inc', $attributes->getStudio());
+        $this->assertEquals('Amazon Kindle PowerFast for Accelerated Charging', $attributes->getTitle());
+        $this->assertEquals('814916017171', $attributes->getUPC());
+    }
+
+    public function testItemLinksFromXml() {
+        $xml = file_get_contents(__DIR__ . ' /../_files/amazon-response-with-reviews.xml');
+        $dom = new \DOMDocument();
+        $dom->loadXML($xml);
+
+        $result = new ProductAdvertising\ItemResultSet($dom);
+        $itemLinks = $result->current()->getItemLinks();
+
+        $this->assertCount(7, $itemLinks);
+        $this->assertEquals('Technical Details', $itemLinks[0]->getDescription());
+        $this->assertEquals('Add To Baby Registry', $itemLinks[1]->getDescription());
     }
 
     /**

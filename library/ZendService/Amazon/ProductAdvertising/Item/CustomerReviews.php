@@ -7,7 +7,6 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  * @package   Zend_Service
  */
-
 namespace ZendService\Amazon\ProductAdvertising\Item;
 
 use DOMElement;
@@ -16,21 +15,25 @@ use ZendService\Amazon\ProductAdvertising\ProductAdvertising;
 use Zend\Uri\UriFactory;
 
 /**
- * @category   Zend
- * @package    Zend_Service
+ *
+ * @category Zend
+ * @package Zend_Service
  * @subpackage Amazon
  */
 class CustomerReviews
 {
-    /**
-     * @var Uri
-     */
-    public $IFrameURL;
 
     /**
+     *
+     * @var Uri
+     */
+    protected $IFrameURL;
+
+    /**
+     *
      * @var boolean
      */
-    public $HasReviews;
+    protected $HasReviews;
 
     /**
      * Assigns values to properties relevant to CustomerReviews
@@ -40,9 +43,28 @@ class CustomerReviews
     public function __construct(DOMElement $dom)
     {
         $xpath = new DOMXPath($dom->ownerDocument);
-        $xpath->registerNamespace('az', 'http://webservices.amazon.com/AWSECommerceService/' . ProductAdvertising::getVersion());
+        $xpath->registerNamespace('az',
+            'http://webservices.amazon.com/AWSECommerceService/' . ProductAdvertising::getVersion());
 
         $this->IFrameURL = UriFactory::factory($xpath->query('./az:IFrameURL/text()', $dom)->item(0)->data);
         $this->HasReviews = (boolean) $xpath->query('./az:IFrameURL/text()', $dom)->item(0)->data;
+    }
+
+    /**
+     *
+     * @return the $IFrameURL
+     */
+    public function getIFrameURL()
+    {
+        return $this->IFrameURL;
+    }
+
+    /**
+     *
+     * @return the $HasReviews
+     */
+    public function getHasReviews()
+    {
+        return $this->HasReviews;
     }
 }
