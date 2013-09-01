@@ -52,7 +52,7 @@ class Price
             'http://webservices.amazon.com/AWSECommerceService/' . ProductAdvertising::getVersion());
 
         if ($xpath->query('./az:Amount/text()', $dom) == null || $xpath->query('./az:Amount/text()', $dom)->item(0) == null) {
-            print_r($xpath->query('./az:Amount/text()', $dom));
+            print_r($xpath->query('./az:Amount/text()', $dom)->item(0));
         }
         $this->Amount = (int) $xpath->query('./az:Amount/text()', $dom)->item(0)->data;
         $this->CurrencyCode = $xpath->query('./az:CurrencyCode/text()', $dom)->item(0)->data;
