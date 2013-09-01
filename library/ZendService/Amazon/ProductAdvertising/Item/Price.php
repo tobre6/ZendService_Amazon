@@ -51,7 +51,7 @@ class Price
         $xpath->registerNamespace('az',
             'http://webservices.amazon.com/AWSECommerceService/' . ProductAdvertising::getVersion());
 
-        if ($xpath->query('./az:Amount/text()', $dom) == null) {
+        if ($xpath->query('./az:Amount/text()', $dom) == null || $xpath->query('./az:Amount/text()', $dom)->item(0) == null) {
             print_r($dom);
         }
         $this->Amount = (int) $xpath->query('./az:Amount/text()', $dom)->item(0)->data;
