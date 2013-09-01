@@ -7,7 +7,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  * @package   Zend_Service
  */
-namespace ZendService\Amazon\ProductAdvertising\Item\Attributes;
+namespace ZendService\Amazon\ProductAdvertising\Item;
 
 use DOMElement;
 use DOMXPath;
@@ -19,7 +19,7 @@ use ZendService\Amazon\ProductAdvertising\ProductAdvertising;
  * @package Zend_Service
  * @subpackage Amazon
  */
-class ListPrice
+class Price
 {
 
     /**
@@ -41,7 +41,7 @@ class ListPrice
     protected $FormattedPrice;
 
     /**
-     * Assigns values to properties relevant to ListPrice
+     * Assigns values to properties relevant to Price
      *
      * @param DOMElement $dom
      */

@@ -12,7 +12,6 @@ namespace ZendService\Amazon\ProductAdvertising\Item;
 use DOMElement;
 use DOMXPath;
 use ZendService\Amazon\ProductAdvertising\ProductAdvertising;
-use ZendService\Amazon\ProductAdvertising\Item\Attributes\ListPrice;
 
 /**
  *
@@ -61,7 +60,7 @@ class Attributes
 
     /**
      *
-     * @var Attributes\ListPrice
+     * @var Price
      */
     protected $ListPrice;
 
@@ -182,7 +181,7 @@ class Attributes
 
         $listPrice = $xpath->query('./az:ListPrice', $dom);
         if ($listPrice->length >= 1) {
-            $this->ListPrice = new Attributes\ListPrice($listPrice->item(0));
+            $this->ListPrice = new Price($listPrice->item(0));
         }
     }
 

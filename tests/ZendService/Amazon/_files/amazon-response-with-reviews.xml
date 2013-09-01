@@ -13,7 +13,7 @@
 			<Argument Name="MerchantId" Value="Amazon" />
 			<Argument Name="Timestamp" Value="2013-08-25T22:59:49Z" />
 			<Argument Name="Operation" Value="ItemSearch" />
-			<Argument Name="AssociateTag" Value="thebesuserev-20" />
+			<Argument Name="AssociateTag" Value="xxx" />
 			<Argument Name="BrowseNode" Value="493964" />
 			<Argument Name="Version" Value="2011-08-01" />
 			<Argument Name="Sort" Value="salesrank" />

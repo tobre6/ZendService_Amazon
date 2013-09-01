@@ -13,6 +13,7 @@ use DOMElement;
 use DOMXPath;
 use ZendService\Amazon\ProductAdvertising\Item;
 use ZendService\Amazon\ProductAdvertising\Item\Attributes;
+use ZendService\Amazon\ProductAdvertising\Item\OfferSummary;
 
 /**
  *
@@ -83,6 +84,11 @@ class Item
      * @var string
      */
     protected $Subjects;
+
+    /**
+     * @var OfferSummary
+     */
+    protected $OfferSummary;
 
     /**
      *
@@ -204,6 +210,11 @@ class Item
             }
         }
 
+        $result = $xpath->query('./az:OfferSummary', $dom);
+        if ($result->length == 1) {
+            $this->OfferSummary = new Item\OfferSummary($result->item(0));
+        }
+
         $result = $xpath->query('./az:Offers', $dom);
         $resultSummary = $xpath->query('./az:OfferSummary', $dom);
         if ($result->length > 1 || $resultSummary->length == 1) {
@@ -310,6 +321,15 @@ class Item
 
     /**
      *
+     * @return OfferSummary
+     */
+    public function getOfferSummary()
+    {
+        return $this->OfferSummary;
+    }
+
+    /**
+     *
      * @return the $Offers
      */
     public function getOffers()
@@ -346,7 +366,7 @@ class Item
 
     /**
      *
-     * @return the $Attributes
+     * @return Item\Attributes
      */
     public function getAttributes()
     {

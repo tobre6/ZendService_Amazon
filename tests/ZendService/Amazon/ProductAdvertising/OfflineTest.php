@@ -391,6 +391,22 @@ class OfflineTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('Add To Baby Registry', $itemLinks[1]->getDescription());
     }
 
+    public function testOfferSummaryFromXml() {
+        $xml = file_get_contents(__DIR__ . ' /../_files/amazon-response-with-reviews.xml');
+        $dom = new \DOMDocument();
+        $dom->loadXML($xml);
+
+        $result = new ProductAdvertising\ItemResultSet($dom);
+        $offerSummary= $result->current()->getOfferSummary();
+
+        $this->assertEquals(1999, $offerSummary->getLowestNewPrice()->getAmount());
+        $this->assertEquals(792, $offerSummary->getLowestUsedPrice()->getAmount());
+        $this->assertEquals(0, $offerSummary->getTotalCollectible());
+        $this->assertEquals(1, $offerSummary->getTotalNew());
+        $this->assertEquals(0, $offerSummary->getTotalRefurbished());
+        $this->assertEquals(9, $offerSummary->getTotalUsed());
+    }
+
     /**
      * NOTICE error does not occur even if RequestThrottled error happen in totalResults method.
      */
