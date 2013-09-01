@@ -51,19 +51,19 @@ class Price
         $xpath->registerNamespace('az',
             'http://webservices.amazon.com/AWSECommerceService/' . ProductAdvertising::getVersion());
 
-        $xpath = $xpath->query('./az:Amount/text()', $dom);
-        if ($xpath->length > 0) {
-            $this->Amount = (int) $xpath->item(0)->data;
+        $item = $xpath->query('./az:Amount/text()', $dom);
+        if ($item->length > 0) {
+            $this->Amount = (int) $item->item(0)->data;
         }
 
-        $xpath = $xpath->query('./az:CurrencyCode/text()', $dom);
-        if ($xpath->length > 0) {
-            $this->CurrencyCode = $xpath->item(0)->data;
+        $item = $xpath->query('./az:CurrencyCode/text()', $dom);
+        if ($item->length > 0) {
+            $this->CurrencyCode = $item->item(0)->data;
         }
 
-        $xpath = $xpath->query('./az:FormattedPrice/text()', $dom);
-        if ($xpath->length > 0) {
-            $this->FormattedPrice = (int) $xpath->item(0)->data;
+        $item = $xpath->query('./az:FormattedPrice/text()', $dom);
+        if ($item->length > 0) {
+            $this->FormattedPrice = (int) $item->item(0)->data;
         }
     }
 
