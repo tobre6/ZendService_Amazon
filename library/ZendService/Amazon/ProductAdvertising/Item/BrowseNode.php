@@ -71,7 +71,7 @@ class BrowseNode
         $items = $xpath->query('./az:Children/*', $dom);
         if ($items->length > 0) {
             foreach ($items as $item) {
-                $this->Children = new self($item);
+                $this->Children[] = new self($item);
             }
         }
     }
