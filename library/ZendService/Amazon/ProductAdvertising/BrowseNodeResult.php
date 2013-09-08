@@ -27,7 +27,7 @@ class BrowseNodeResult
      *
      * @var \DOMNodeList
      */
-    protected $browseNode;
+    protected $BrowseNode;
 
     protected $item;
 
@@ -52,9 +52,9 @@ class BrowseNodeResult
             'http://webservices.amazon.com/AWSECommerceService/' . ProductAdvertising::getVersion());
 
         /*$item = $this->xpath->query('//az:Item');
-        $this->item = new Item($item);
-        $browseNode = $this->xpath->query('//az:BrowseNode');
-        $this->browseNode = new BrowseNode($browseNode);*/
+        $this->item = new Item($item);*/
+        $browseNode = $this->xpath->query('//az:BrowseNodes/BrowseNode');
+        $this->BrowseNode = new BrowseNode($browseNode);
     }
 
     public function asXml()

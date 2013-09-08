@@ -26,19 +26,21 @@ class BrowseNode
      *
      * @var string
      */
-    protected $Amount;
+    protected $BrowseNodeId;
 
     /**
      *
      * @var string
      */
-    protected $CurrencyCode;
+    protected $Name;
 
     /**
      *
-     * @var string
+     * @var array
      */
-    protected $FormattedPrice;
+    protected $Children;
+
+    protected $IsCategoryRoot;
 
     /**
      * Assigns values to properties relevant to Price
@@ -51,19 +53,26 @@ class BrowseNode
         $xpath->registerNamespace('az',
             'http://webservices.amazon.com/AWSECommerceService/' . ProductAdvertising::getVersion());
 
-        $item = $xpath->query('./az:Amount/text()', $dom);
+        $item = $xpath->query('./az:BrowseNodeId/text()', $dom);
         if ($item->length > 0) {
-            $this->Amount = (int) $item->item(0)->data;
+            $this->BrowseNodeId = (int) $item->item(0)->data;
         }
 
-        $item = $xpath->query('./az:CurrencyCode/text()', $dom);
+        $item = $xpath->query('./az:Name/text()', $dom);
         if ($item->length > 0) {
-            $this->CurrencyCode = $item->item(0)->data;
+            $this->Name = $item->item(0)->data;
         }
 
-        $item = $xpath->query('./az:FormattedPrice/text()', $dom);
+        $item = $xpath->query('./az:IsCategoryRoot/text()', $dom);
         if ($item->length > 0) {
-            $this->FormattedPrice = (int) $item->item(0)->data;
+            $this->IsCategoryRoot = (boolean) $item->item(0)->data;
+        }
+
+        $items = $xpath->query('./az:Children/*', $dom);
+        if ($items->length > 0) {
+            foreach ($items as $item) {
+                $this->Children = new self($item);
+            }
         }
     }
 
