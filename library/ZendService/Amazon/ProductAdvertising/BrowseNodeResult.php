@@ -29,8 +29,6 @@ class BrowseNodeResult
      */
     protected $BrowseNode;
 
-    protected $item;
-
     /**
      * Amazon Web Service Return Document
      *
@@ -51,12 +49,18 @@ class BrowseNodeResult
         $xpath->registerNamespace('az',
             'http://webservices.amazon.com/AWSECommerceService/' . ProductAdvertising::getVersion());
 
-        /*$item = $this->xpath->query('//az:Item');
-        $this->item = new Item($item);*/
+        /*
+         * $item = $this->xpath->query('//az:Item'); $this->item = new Item($item);
+         */
         $browseNode = $xpath->query('//az:BrowseNodes/az:BrowseNode');
         if ($browseNode->length > 0) {
             $this->BrowseNode = new BrowseNode($browseNode->item(0));
         }
+    }
+
+    public function getBrowseNode()
+    {
+        return $this->BrowseNode;
     }
 
     public function asXml()
