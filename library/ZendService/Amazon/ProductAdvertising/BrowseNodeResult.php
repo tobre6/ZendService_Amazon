@@ -53,7 +53,7 @@ class BrowseNodeResult
 
         /*$item = $this->xpath->query('//az:Item');
         $this->item = new Item($item);*/
-        $browseNode = $xpath->query('//az:BrowseNodes/BrowseNode');
+        $browseNode = $xpath->query('//az:BrowseNodes/az:BrowseNode');
         if ($browseNode->length > 0) {
             $this->BrowseNode = new BrowseNode($browseNode->item(0));
         }
