@@ -38,7 +38,7 @@ class BrowseNode
      *
      * @var array
      */
-    protected $Children;
+    protected $Children = array ();
 
     protected $IsCategoryRoot;
 
