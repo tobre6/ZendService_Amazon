@@ -185,6 +185,36 @@ class ProductAdvertising
     }
 
     /**
+     * Browsing node lookup
+     *
+     * @param array $options
+     *            Options to use for the Search Query
+     * @throws Exception\RuntimeException
+     * @return BrowseNodeResult
+     * @see http://docs.aws.amazon.com/AWSECommerceService/2011-08-01/DG/BrowseNodeLookup.html
+     */
+    public function browseNodeLookup(array $options)
+    {
+        $client = $this->getRestClient();
+        $client->setUri($this->baseUri);
+
+        $options = $this->prepareOptions('BrowseNodeLookup', $options, array ());
+        $client->getHttpClient()->resetParameters();
+        $response = $client->restGet('/onca/xml', $options);
+
+        if ($response->isClientError()) {
+            throw new Exception\RuntimeException(
+                'An error occurred sending request. Status code: ' . $response->getStatusCode());
+        }
+
+        $dom = new DOMDocument();
+        $dom->loadXML($response->getBody());
+        self::checkErrors($dom);
+
+        return new BrowseNodeResult($dom);
+    }
+
+    /**
      * Returns a reference to the REST client
      *
      * @return RestClient
