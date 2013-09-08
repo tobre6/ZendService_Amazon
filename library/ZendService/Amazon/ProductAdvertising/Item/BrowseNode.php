@@ -78,28 +78,37 @@ class BrowseNode
 
     /**
      *
-     * @return the $Amount
+     * @return the $BrowseNodeId
      */
-    public function getAmount()
+    public function getBrowseNodeId()
     {
-        return $this->Amount;
+        return $this->BrowseNodeId;
     }
 
     /**
      *
-     * @return the $CurrencyCode
+     * @return the $Name
      */
-    public function getCurrencyCode()
+    public function getName()
     {
-        return $this->CurrencyCode;
+        return $this->Name;
     }
 
     /**
      *
-     * @return the $FormattedPrice
+     * @return the $Children
      */
-    public function getFormattedPrice()
+    public function getChildren()
     {
-        return $this->FormattedPrice;
+        return $this->Children;
+    }
+
+    /**
+     *
+     * @return the $IsCategoryRoot
+     */
+    public function getIsCategoryRoot()
+    {
+        return $this->IsCategoryRoot;
     }
 }
